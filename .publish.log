@@ -13,3 +13,12 @@ OK -> /Users/xavierlau/Desktop/英语学习/index.html
 [2026-11-13 23:46:38] === 开始 ===
 [2026-11-13 23:46:38] SKIP: 2026-11-13 已有帖子
 [2026-11-13 23:46:38] 今天已有内容，不重复生成（仍检查是否需要推送）
+[2026-11-13 23:46:41] ✅ 推送成功（第 1 次尝试）
+[2026-11-13 23:47:06] 线上检查 1 HTTP 000
+[2026-11-13 23:47:23] 线上检查 2 HTTP 200
+[2026-11-13 23:47:23] === 结束 ===
+[2026-11-13 23:47:31] === 开始 ===
+[2026-11-13 23:47:31] /Library/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python: can't open file '/Users/xavierlau/.hermes/scripts/daily.py': [Errno 2] No such file or directory
+[2026-11-13 23:47:32] 无变更，跳过推送
+[2026-11-13 23:47:32] === 结束 ===
+SKIP: 2026-11-13 已有帖子
