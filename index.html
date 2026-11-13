@@ -234,6 +234,82 @@ a:hover{border-bottom-color:var(--accent)}
   .stat{flex:1 1 45%;padding:14px 0}
   .stat b{font-size:22px}
 }
+/* ---------- 每日 10 词（带逐词例句） ---------- */
+.dailywords{display:flex;flex-direction:column;margin-bottom:20px}
+.dw{display:grid;grid-template-columns:38px 180px 1fr;gap:16px;
+  padding:16px 0;border-bottom:1px solid var(--line-2);align-items:start}
+.dw:first-child{border-top:1px solid var(--line-2)}
+.dw-n{font-family:var(--mono);font-size:11px;color:var(--muted);padding-top:5px}
+.dw-w{font-family:var(--serif);font-size:19px;font-weight:600;line-height:1.3}
+.dw-body{min-width:0}
+.passage .p-en b{color:var(--accent);font-weight:700;background:var(--accent-l);
+  padding:0 3px;border-radius:2px}
+@media (max-width:640px){
+  .dw{grid-template-columns:28px 1fr;gap:10px}
+  .dw-body{grid-column:1/-1;padding-left:38px}
+}
+
+/* ---------- 全量词库浏览器 ---------- */
+.lex-stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px}
+.lex-stat{padding:10px 16px;background:#fff;border:1px solid var(--line);border-radius:3px;min-width:104px}
+.lex-stat b{display:block;font-family:var(--serif);font-size:21px;line-height:1.2}
+.lex-stat span{font-size:10.5px;color:var(--muted);letter-spacing:.05em}
+.lex-bar{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:28px 0 12px;
+  position:sticky;top:56px;z-index:20;background:var(--paper);padding:12px 0;border-bottom:1px solid var(--line-2)}
+#lex-q{
+  flex:1 1 300px;min-width:0;padding:11px 15px;font-size:14.5px;font-family:var(--sans);
+  border:1px solid var(--line);border-radius:3px;background:#fff;color:var(--ink);
+}
+#lex-q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-l)}
+.lex-filters{display:flex;gap:6px;flex-wrap:wrap}
+.lex-filters button{
+  padding:8px 14px;font-size:12.5px;font-family:var(--sans);cursor:pointer;
+  border:1px solid var(--line);background:#fff;color:var(--ink-2);border-radius:3px;
+  transition:all .15s;
+}
+.lex-filters button:hover{background:var(--paper-2)}
+.lex-filters button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.lex-hint{font-size:12.5px;color:var(--muted);margin:0 0 16px}
+.volgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(86px,1fr));gap:8px;margin-bottom:26px}
+.volgrid button{
+  padding:13px 6px;border:1px solid var(--line);background:#fff;border-radius:3px;cursor:pointer;
+  font-family:var(--sans);transition:all .15s;
+}
+.volgrid button:hover{border-color:var(--accent);background:var(--accent-l)}
+.volgrid button.on{background:var(--accent);border-color:var(--accent)}
+.volgrid button.on .vl,.volgrid button.on .vc{color:#fff}
+.volgrid .vl{display:block;font-size:16px;font-weight:600;color:var(--ink);text-transform:uppercase;letter-spacing:.05em}
+.volgrid .vc{display:block;font-size:10px;color:var(--muted);margin-top:2px}
+.lex-list{display:flex;flex-direction:column;gap:0;margin-bottom:10px}
+.lex-item{padding:15px 0;border-bottom:1px solid var(--line-2);display:grid;
+  grid-template-columns:190px 1fr;gap:20px}
+.lex-item:first-child{border-top:1px solid var(--line-2)}
+.lex-w{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink);line-height:1.3}
+.lex-ipa{font-family:var(--mono);font-size:11.5px;color:var(--muted);display:block;margin-top:2px;font-weight:400}
+.lex-tags{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+.lex-tag{font-size:9.5px;padding:1.5px 6px;border-radius:2px;letter-spacing:.03em;font-weight:600}
+.lex-tag.IELTS{background:#E7F0EC;color:#2F6B5A}
+.lex-tag.TOEFL{background:#F9EDE8;color:#B5654A}
+.lex-tag.GRE{background:#EDEAF3;color:#5B4A7A}
+.lex-def{font-size:14px;color:var(--ink-2);line-height:1.65}
+.lex-def .pos{color:var(--accent);font-style:italic;margin-right:5px;font-size:12.5px}
+.lex-ex{margin-top:7px;font-size:13px;color:var(--ink-2);line-height:1.6;
+  padding-left:11px;border-left:2px solid var(--line)}
+.lex-ex em{color:var(--accent);font-style:normal;font-weight:600;background:var(--accent-l);padding:0 2px}
+.lex-ex .zh{display:block;color:var(--muted);font-size:12px;margin-top:3px;border:0;background:none;padding:0;font-weight:400}
+.lex-empty{padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
+.lex-more{text-align:center;margin:22px 0 40px}
+.lex-more button{padding:11px 28px;font-size:13px;cursor:pointer;background:#fff;
+  border:1px solid var(--line);border-radius:3px;color:var(--ink-2);font-family:var(--sans)}
+.lex-more button:hover{border-color:var(--accent);color:var(--accent)}
+.lex-h2{font-family:var(--serif);font-size:25px;font-weight:600;margin:52px 0 6px;
+  padding-top:26px;border-top:1px solid var(--line)}
+.lex-sub{font-size:13px;color:var(--muted);margin:0 0 8px}
+@media (max-width:640px){
+  .lex-item{grid-template-columns:1fr;gap:6px}
+  .lex-bar{top:0;position:static}
+  .volgrid{grid-template-columns:repeat(auto-fill,minmax(64px,1fr))}
+}
 </style>
 </head>
 <body>
@@ -258,166 +334,33 @@ a:hover{border-bottom-color:var(--accent)}
       <h1>每天十组词、几段文、<em>三道口语</em>。</h1>
       <p>不是打卡式的学习，是<b>每天有一点东西真的进到脑子里</b>。词组配文段（在语境里记），阅读配翻译（先读英文，别急着看中文），口语配参考答案（先自己说一遍）。</p>
       <div class="stats">
-        <div class="stat"><b>5</b><span>期帖子</span></div>
+        <div class="stat"><b>3</b><span>期帖子</span></div>
         <div class="stat"><b>70</b><span>词汇文段</span></div>
         <div class="stat"><b>7</b><span>词组分组</span></div>
-        <div class="stat"><b>15</b><span>口语题</span></div>
+        <div class="stat"><b>9</b><span>口语题</span></div>
       </div>
     </div>
     
-<article class="post" id="post-2026-11-17">
-  <header class="post-h">
-    <div class="post-date">
-      <span class="pd-day">11.17</span>
-      <span class="pd-wd">周二 · 2026</span>
-    </div>
-    <h2 class="post-t">Biology 生物 · 关于改变的代价</h2>
-  </header>
-
-  <section class="sec">
-    <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
-      <span class="sec-note">先读下面的文段，再回来对词</span></div>
-    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Biology 生物</span><span class="chunk-exam">托福 TOEFL</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>photosynthesis</td><td class='pos'>n.</td><td class='cn'>光合作用</td><td class='note'>不可数。托福生物第一大词。</td></tr><tr><td class='num'>2</td><td class='w'>symbiosis</td><td class='pos'>n.</td><td class='cn'>共生</td><td class='note'>三种类型：mutualism 互利 / commensalism 偏利 / parasitism 寄生。</td></tr><tr><td class='num'>3</td><td class='w'>adaptation</td><td class='pos'>n.</td><td class='cn'>适应（演化）</td><td class='note'>可数。adaptation to 后接环境。</td></tr><tr><td class='num'>4</td><td class='w'>predator</td><td class='pos'>n.</td><td class='cn'>捕食者</td><td class='note'>prey 猎物。predator-prey relationship。</td></tr><tr><td class='num'>5</td><td class='w'>habitat</td><td class='pos'>n.</td><td class='cn'>栖息地</td><td class='note'>habitat loss 栖息地丧失，物种灭绝首因。</td></tr><tr><td class='num'>6</td><td class='w'>metabolism</td><td class='pos'>n.</td><td class='cn'>新陈代谢</td><td class='note'>metabolic rate 代谢率。冷血/温血动物话题常考。</td></tr><tr><td class='num'>7</td><td class='w'>cell membrane</td><td class='pos'>n.</td><td class='cn'>细胞膜</td><td class='note'>半透性 semi-permeable。</td></tr><tr><td class='num'>8</td><td class='w'>evolutionary advantage</td><td class='pos'>n.</td><td class='cn'>演化优势</td><td class='note'>解释「为什么演化出这个特征」的标准答法。</td></tr><tr><td class='num'>9</td><td class='w'>migration</td><td class='pos'>n.</td><td class='cn'>迁徙</td><td class='note'>动物迁徙；人类移民用 immigration/emigration 区分。</td></tr><tr><td class='num'>10</td><td class='w'>extinction</td><td class='pos'>n.</td><td class='cn'>灭绝</td><td class='note'>mass extinction 大规模灭绝。extinct (adj.)。</td></tr></tbody></table></div></div>
-    <div class="tip">今天这 10 个词里，优先掌握出现频率最高的那三四个；其余的先做到「见到能认出来」，写作时自然会用上。</div>
-  </section>
-
-  <section class="sec">
-    <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
-      <span class="sec-note">目标不是查字典，是读完能复述</span></div>
-    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">这段覆盖今天全部 10 个词。读的时候别查字典——先猜，读完再回头看词表，你会发现它们在句子里有了位置。</div>
-<div class="passage">
-  <div class="p-en"><p>Photosynthesis is the process by which plants convert sunlight into chemical energy, and it underpins almost every food chain on Earth. Yet the relationship between organisms is rarely simple. Symbiosis — in which two species live in close association — takes several forms. In mutualism, both partners benefit: certain ants protect acacia trees and receive shelter and food in return. Parasitism is the opposite: one organism gains at the other&#x27;s expense, sometimes without killing it, since a dead host is a useless host.</p><p>Predators exert a subtler influence. By removing the weakest prey, they keep populations healthy and prevent any single species from dominating. When wolves were reintroduced to Yellowstone in 1995, the elk changed their grazing behaviour, which in turn allowed willow and aspen to recover along riverbanks — a chain of effects that ecologists call a trophic cascade.</p><p>Every organism is shaped by its habitat. A thick coat, a slow metabolism or an ability to store water may each confer an evolutionary advantage in a cold or arid environment. Migration allows animals to exploit resources that appear only seasonally, while hibernation permits them to survive the months when food is scarce.</p><p>Today the dominant pressure is habitat loss. As forests are fragmented, populations become isolated, and a species with a small range faces extinction from a single drought or disease. Conservationists argue that protecting connected corridors matters as much as protecting individual reserves.</p></div>
-  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
-    <div class="p-cn-body"><p>光合作用（photosynthesis）是植物把阳光转化为化学能的过程，它支撑着地球上几乎所有的食物链。但生物之间的关系很少这么简单。共生（symbiosis）——两个物种紧密共处——有好几种形式。互利（mutualism）中双方都受益：某些蚂蚁保护金合欢树，换来住所和食物。寄生（parasitism）正好相反：一方以另一方为代价获益，有时并不杀死对方，因为死掉的宿主等于没用的宿主。</p><p>捕食者（predator）施加的影响更为微妙。它们移除最弱的猎物，使种群保持健康，并防止任何一个物种独大。1995 年狼群被重新引入黄石公园后，麋鹿的取食行为改变了，河岸的柳树和白杨因此得以恢复——生态学家把这种连锁效应称为营养级联。</p><p>每个生物都被它的栖息地（habitat）塑造。厚实的毛皮、缓慢的新陈代谢（metabolism）、储水的能力，在寒冷或干旱的环境中各自构成一种演化优势（evolutionary advantage）。迁徙（migration）让动物能利用只是季节性出现的资源，而冬眠则让它们熬过食物短缺的月份。</p><p>今天最主要的压力是栖息地丧失。森林被切割成碎片后，种群彼此隔离，分布范围狭窄的物种可能因一场干旱或一次疾病就走向灭绝（extinction）。保育人士主张：保护相互连通的廊道，和保护单个保护区同样重要。</p></div>
-  </details>
-  <div class="p-note">💡 托福生物文的高频考点是「因果链」：A 变化 → B 变化 → C 变化。读的时候用箭头把链条画出来。</div>
-</div></div>
-  </section>
-
-  <section class="sec">
-    <div class="sec-h"><span class="sec-n">03</span><h3>今日口语 · 3 题</h3>
-      <span class="sec-note">先自己说一遍，再看参考答案</span></div>
-    
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 2</span></div>
-  <div class="sp-q">Describe a skill you learned that took a long time. You should say: what the skill is; when you learned it; how you learned it; and explain why it took so long.</div>
-  <div class="sp-ans"><p>The skill I&#x27;d describe is writing clearly — not writing well, which is a different and much rarer thing, but writing in a way that doesn&#x27;t waste the reader&#x27;s time. I&#x27;ve been working on it for about four years and I&#x27;m still not done.</p><p>I started because I had to. My job involved writing analysis that other people had to act on, and I kept getting the same response: &#x27;I&#x27;m not sure what you&#x27;re telling me to do.&#x27; That was humbling. I thought I was being thorough. I was being long.</p><p>The way I learned was mostly by deleting. I&#x27;d write something, cut it in half, and see what survived. Then someone showed me that most of what I was cutting was the part where I explained that I wasn&#x27;t sure. The uncertainty was real, but burying it in caveats made the whole document useless.</p><p>Why it takes so long is that the skill isn&#x27;t grammatical — it&#x27;s deciding what matters. You can learn grammar in months. Judging relevance takes years, because you have to be wrong in front of people a lot of times first. I&#x27;m better than I was. I still over-explain when I&#x27;m nervous.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>「writing clearly 不是 writing well」这个区分很好。最后一句「我紧张时还是会解释太多」收了漂亮的自知之明。</div>
-    <div class="sp-swap"><b>换成你的情况</b>换成你真实的技能（开车、做饭、编曲、数据分析）。核心是「为什么它慢」要给一个认知层面的理由，不是「需要多练」。</div>
-  </div>
-</div>
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 1</span></div>
-  <div class="sp-q">Do you prefer reading paper books or e-books?</div>
-  <div class="sp-ans"><p>Paper, though not for the reason people usually give. I don&#x27;t think paper is inherently more romantic — it&#x27;s that I can&#x27;t skim a physical book convincingly. On a screen I scroll and convince myself I&#x27;ve read the page. With paper, my eye has to travel across every line, so I actually finish what I start.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。</div>
-    <div class="sp-swap"><b>换成你的情况</b>如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。</div>
-  </div>
-</div>
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 1</span></div>
-  <div class="sp-q">What kind of weather do you like?</div>
-  <div class="sp-ans"><p>Overcast, which people find strange. Bright sun makes me feel like I should be outside doing something useful; grey weather gives me permission to stay in and read. I spent a winter in a place where it dropped to minus twenty, and oddly that was the most comfortable I&#x27;ve been — the cold was so serious that nobody expected you to be productive.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>反直觉的偏好（喜欢阴天）立刻抓住注意。后面用真实经历做支撑。</div>
-    <div class="sp-swap"><b>换成你的情况</b>换成你真实的天气偏好 + 一个支撑它的记忆。</div>
-  </div>
-</div>
-  </section>
-</article>
-
-<article class="post" id="post-2026-11-16">
-  <header class="post-h">
-    <div class="post-date">
-      <span class="pd-day">11.16</span>
-      <span class="pd-wd">周一 · 2026</span>
-    </div>
-    <h2 class="post-t">科技与工作 · 我为什么要转向 AI 产品</h2>
-  </header>
-
-  <section class="sec">
-    <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
-      <span class="sec-note">先读下面的文段，再回来对词</span></div>
-    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Technology 科技</span><span class="chunk-exam">雅思 IELTS</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>automation</td><td class='pos'>n.</td><td class='cn'>自动化</td><td class='note'>不可数。automate (v.) / automated (adj.)。</td></tr><tr><td class='num'>2</td><td class='w'>displace workers</td><td class='pos'>phr.</td><td class='cn'>取代工人</td><td class='note'>比 fire workers 学术。displacement 是名词形式。</td></tr><tr><td class='num'>3</td><td class='w'>digital divide</td><td class='pos'>n.</td><td class='cn'>数字鸿沟</td><td class='note'>可数。bridge / narrow the digital divide。</td></tr><tr><td class='num'>4</td><td class='w'>algorithm</td><td class='pos'>n.</td><td class='cn'>算法</td><td class='note'>注意发音 /ˈælɡərɪðəm/，重音在第一节。</td></tr><tr><td class='num'>5</td><td class='w'>data privacy</td><td class='pos'>n.</td><td class='cn'>数据隐私</td><td class='note'>不可数。和 data protection 有细微差别：前者是权利，后者是措施。</td></tr><tr><td class='num'>6</td><td class='w'>surveillance</td><td class='pos'>n.</td><td class='cn'>监控</td><td class='note'>不可数。mass surveillance 大规模监控。</td></tr><tr><td class='num'>7</td><td class='w'>innovation</td><td class='pos'>n.</td><td class='cn'>创新</td><td class='note'>可数/不可数皆可。foster innovation 促进创新。</td></tr><tr><td class='num'>8</td><td class='w'>obsolescence</td><td class='pos'>n.</td><td class='cn'>过时 / 淘汰</td><td class='note'>planned obsolescence 计划性淘汰，消费主义话题高分词。</td></tr><tr><td class='num'>9</td><td class='w'>upskill</td><td class='pos'>v.</td><td class='cn'>提升技能</td><td class='note'>reskill 是「重新学一门技能」，upskill 是「在原有基础上升级」。</td></tr><tr><td class='num'>10</td><td class='w'>connectivity</td><td class='pos'>n.</td><td class='cn'>连通性</td><td class='note'>不可数。rural connectivity 农村网络覆盖。</td></tr></tbody></table></div></div>
-    <div class="tip">digital divide、planned obsolescence、upskill 三个词在写作里都能直接用于「不只是技术问题」的论证。注意 obsolete 是形容词，obsolescence 是名词。</div>
-  </section>
-
-  <section class="sec">
-    <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
-      <span class="sec-note">目标不是查字典，是读完能复述</span></div>
-    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">今天这段有明确的三层递进（就业→公平→权利）。读完试着说出第三层为什么和第一层不是同一类问题。</div>
-<div class="passage">
-  <div class="p-en"><p>The debate over automation is often framed as a simple question: will machines take our jobs? The evidence suggests a more complicated answer. Automation rarely eliminates an entire occupation at once; instead it removes specific tasks, and the people who performed those tasks must either upskill or move on. Historians note that similar fears accompanied the arrival of the spinning machine and the personal computer, and that in both cases employment eventually rose — though not necessarily for the same people, in the same places.</p><p>What worries economists today is the speed. Previous transitions took generations; algorithmic systems can now be deployed across an industry in a few years. Call centres, translation services and routine accounting have already been reshaped, and the workers displaced are often those with the least room to retrain.</p><p>The digital divide adds another layer. In cities, connectivity is treated as a utility; in rural areas it can still be a luxury. Without reliable access, distance learning and remote work remain theoretical. Governments have responded with subsidies and infrastructure programmes, but critics argue these rarely keep pace with innovation.</p><p>Data privacy and surveillance raise a different set of questions. The same systems that recommend a film can infer a person&#x27;s health, politics or income. Some commentators point to planned obsolescence as evidence that the problem is not technology itself but the incentives around it: devices are designed to be replaced, and data is collected because it is valuable, not because it is needed.</p></div>
-  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
-    <div class="p-cn-body"><p>关于自动化（automation）的讨论常被简化成一个问题：机器会抢走我们的工作吗？证据指向一个更复杂的答案。自动化很少一次性消灭整个职业，它更多是移除特定的任务，而做这些任务的人必须要么提升技能（upskill），要么转行。历史学家指出，纺纱机和个人电脑出现时也有过类似的恐惧，而两次的结果都是就业最终上升——尽管受益的未必是同一批人，也未必在同一个地方。</p><p>今天让经济学家担心的是速度。过去的转型要花几代人，而算法（algorithm）系统现在可以在几年内铺满一个行业。呼叫中心、翻译服务和常规会计已经被重塑，而被取代（displace workers）的往往是再培训空间最小的那群人。</p><p>数字鸿沟（digital divide）又加了一层。在城市，连通性（connectivity）被当作基础设施；在农村，它仍可能是奢侈品。没有可靠的接入，远程教育和远程办公只能停留在理论上。政府用补贴和基建计划来应对，但批评者认为这些很少跟得上创新（innovation）的节奏。</p><p>数据隐私（data privacy）和监控（surveillance）带来的是另一类问题。给一个人推荐电影的系统，同样能推断出他的健康、政治倾向或收入。一些评论者用计划性淘汰（planned obsolescence）举例，说明问题不在技术本身，而在围绕技术的激励机制：设备被设计成需要更换的，数据被收集是因为它值钱，而不是因为它被需要。</p></div>
-  </details>
-  <div class="p-note">💡 注意这一段的三层递进：就业 → 公平（鸿沟）→ 权利（隐私）。写科技类大作文时，「分层讨论」比「罗列优缺点」更容易上 7。</div>
-</div></div>
-  </section>
-
-  <section class="sec">
-    <div class="sec-h"><span class="sec-n">03</span><h3>今日口语 · 3 题</h3>
-      <span class="sec-note">先自己说一遍，再看参考答案</span></div>
-    
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 1</span></div>
-  <div class="sp-q">Do you use technology more than you&#x27;d like to?</div>
-  <div class="sp-ans"><p>Almost certainly. The honest version is that I don&#x27;t notice it happening — I open my phone to check one thing and surface twenty minutes later having read three articles I didn&#x27;t want. What&#x27;s changed recently is that I&#x27;ve started using AI tools for work, and that has made me more, not less, attached to a screen. I haven&#x27;t decided yet whether that&#x27;s a fair trade.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>「I don&#x27;t notice it happening」是很自然的英语表达。承认矛盾比给结论更真实。</div>
-    <div class="sp-swap"><b>换成你的情况</b>具体工具换成你每天真在用的（AI 助手、日历、笔记软件）。</div>
-  </div>
-</div>
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 1</span></div>
-  <div class="sp-q">Do you think machines will replace human workers?</div>
-  <div class="sp-ans"><p>Partly, and I think the &#x27;replace&#x27; framing hides the interesting part. In my own work, what got automated was the tedious middle — cleaning data, formatting documents, drafting the first version of something. The judgement stayed human. So I&#x27;d say machines are replacing tasks faster than they&#x27;re replacing jobs, and the people who struggle most aren&#x27;t the ones whose whole job disappears; they&#x27;re the ones whose job becomes half-automated and who aren&#x27;t given time to retrain.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>「replace tasks, not jobs」是全篇最有力的区分。后面那句「最难的是半自动化的人」显示你真的想过。</div>
-    <div class="sp-swap"><b>换成你的情况</b>把 cleaning data / formatting documents 换成你真实工作中被自动化掉的部分。</div>
-  </div>
-</div>
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 2</span></div>
-  <div class="sp-q">Describe a piece of technology you find useful. You should say: what it is; how you use it; how long you&#x27;ve used it; and explain why you find it useful.</div>
-  <div class="sp-ans"><p>I&#x27;d like to describe a tool I use every day, which is an AI assistant that runs locally on my laptop.</p><p>I started using it about a year ago, mainly out of curiosity. The first thing I asked it to do was read a long document and pull out the parts that contradicted each other. I expected it to fail. It didn&#x27;t — it found two figures that disagreed and quoted both, which is more than I would have done at eleven at night.</p><p>What makes it genuinely useful isn&#x27;t that it&#x27;s clever. It&#x27;s that it can act rather than just talk. I can ask it to open a file, change something, check the result, and tell me what it did. That loop — do, verify, report — is the difference between a tool that helps and a tool that merely impresses.</p><p>I&#x27;d add one caveat, because I don&#x27;t want to sound like an advertisement. It&#x27;s confidently wrong often enough that I never accept its output without checking. It has made me better at verification, which I suppose is an unexpected side effect.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>关键句：「act rather than just talk」+「do, verify, report」。最后主动说它的缺点，反而增加可信度。</div>
-    <div class="sp-swap"><b>换成你的情况</b>把工具换成你真常用的：某个 App、某个硬件、某个 AI 产品。保留「一个具体失败/意外的故事」。</div>
-  </div>
-</div>
-  </section>
-</article>
-
 <article class="post" id="post-2026-11-15">
   <header class="post-h">
     <div class="post-date">
       <span class="pd-day">11.15</span>
       <span class="pd-wd">周日 · 2026</span>
     </div>
-    <h2 class="post-t">环境 · 从「我很关心环保」到「我能说清一个取舍」</h2>
+    <h2 class="post-t">环境 · 干旱地区农业创新</h2>
   </header>
 
   <section class="sec">
     <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
       <span class="sec-note">先读下面的文段，再回来对词</span></div>
-    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Environment 环境</span><span class="chunk-exam">雅思 IELTS</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>carbon footprint</td><td class='pos'>n.</td><td class='cn'>碳足迹</td><td class='note'>可数。reduce / shrink your carbon footprint。</td></tr><tr><td class='num'>2</td><td class='w'>renewable energy</td><td class='pos'>n.</td><td class='cn'>可再生能源</td><td class='note'>不可数。solar / wind / hydro 都属于它。</td></tr><tr><td class='num'>3</td><td class='w'>emissions</td><td class='pos'>n.</td><td class='cn'>排放物</td><td class='note'>常用复数。cut emissions 是标准动宾搭配。</td></tr><tr><td class='num'>4</td><td class='w'>sustainable</td><td class='pos'>adj.</td><td class='cn'>可持续的</td><td class='note'>名词 sustainability。写作里别滥用，配具体宾语才有力。</td></tr><tr><td class='num'>5</td><td class='w'>deforestation</td><td class='pos'>n.</td><td class='cn'>毁林 / 滥伐森林</td><td class='note'>不可数。反义是 reforestation 再造林。</td></tr><tr><td class='num'>6</td><td class='w'>biodiversity</td><td class='pos'>n.</td><td class='cn'>生物多样性</td><td class='note'>不可数。loss of biodiversity 是高频搭配。</td></tr><tr><td class='num'>7</td><td class='w'>single-use plastic</td><td class='pos'>n.</td><td class='cn'>一次性塑料</td><td class='note'>single-use 是很好的形容词前缀，比 disposable 更现代。</td></tr><tr><td class='num'>8</td><td class='w'>carbon tax</td><td class='pos'>n.</td><td class='cn'>碳税</td><td class='note'>可数。政策类议论文常用。</td></tr><tr><td class='num'>9</td><td class='w'>greenwashing</td><td class='pos'>n.</td><td class='cn'>漂绿 / 伪环保宣传</td><td class='note'>不可数。企业话题的高分词，Band 7+ 辨识度很高。</td></tr><tr><td class='num'>10</td><td class='w'>offset</td><td class='pos'>v.</td><td class='cn'>抵消</td><td class='note'>carbon offset 碳抵消。也可说 offset the cost。</td></tr></tbody></table></div></div>
-    <div class="tip">greenwashing 和 planned obsolescence 是那种「一用就显水平」的词，但别硬塞。carbon footprint 已经很常用，不算高分词，用它只是为了让句子具体。</div>
+    <div class="dailywords"><div class="dw"><div class="dw-n">01</div><div class="dw-main"><div class="dw-w">tag<span class="lex-ipa">/tæg/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>标签；称号</div><div class="lex-ex">Each item in the recycling bin carries a tag showing which materials can be processed.<span class="zh">回收箱里的每件物品都贴有标签，标明哪些材料可以被处理。</span></div></div></div><div class="dw"><div class="dw-n">02</div><div class="dw-main"><div class="dw-w">wax<span class="lex-ipa">/wæks/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>蜡；蜂蜡</div><div class="lex-ex">Historians believe the ancient letters were sealed with wax to protect their contents.<span class="zh">历史学家认为这些古代信件用蜡封口以保护内容。</span></div></div></div><div class="dw"><div class="dw-n">03</div><div class="dw-main"><div class="dw-w">arid<span class="lex-ipa">/&#x27;ærid/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">adj.</span>干燥的；干旱的；枯燥的</div><div class="lex-ex">Few crops can survive in such an arid climate, where rainfall is extremely rare.<span class="zh">在如此干旱的气候中，降雨极为稀少，很少有作物能存活。</span></div></div></div><div class="dw"><div class="dw-n">04</div><div class="dw-main"><div class="dw-w">axis<span class="lex-ipa">/&#x27;æksis/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>轴；轴线</div><div class="lex-ex">The Earth rotates on its axis once every twenty-four hours, causing day and night.<span class="zh">地球每二十四小时绕地轴自转一周，从而产生昼夜。</span></div></div></div><div class="dw"><div class="dw-n">05</div><div class="dw-main"><div class="dw-w">bark<span class="lex-ipa">/bɑ:k/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">v./n.</span>吠；大声嚷；树皮</div><div class="lex-ex">The dog began to bark loudly whenever strangers approached the farmhouse gate.<span class="zh">每当陌生人走近农舍大门，那条狗就会大声吠叫。</span></div></div></div><div class="dw"><div class="dw-n">06</div><div class="dw-main"><div class="dw-w">barn<span class="lex-ipa">/bɑ:n/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>谷仓；牲口棚</div><div class="lex-ex">The old wooden barn now serves as a workshop where local artists display their work.<span class="zh">这座旧木谷仓如今成了当地艺术家展示作品的工作室。</span></div></div></div><div class="dw"><div class="dw-n">07</div><div class="dw-main"><div class="dw-w">brim<span class="lex-ipa">/brim/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>边缘；帽檐</div><div class="lex-ex">She filled the cup to the brim with hot tea and carefully carried it to the table.<span class="zh">她把杯子斟满热茶，小心地端到桌上。</span></div></div></div><div class="dw"><div class="dw-n">08</div><div class="dw-main"><div class="dw-w">bulb<span class="lex-ipa">/bʌlb/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>电灯泡；球茎；球茎状物</div><div class="lex-ex">Replacing traditional light bulbs with energy-saving ones can greatly reduce electricity consumption.<span class="zh">用节能灯泡替换传统灯泡可以大大降低电力消耗。</span></div></div></div><div class="dw"><div class="dw-n">09</div><div class="dw-main"><div class="dw-w">cell<span class="lex-ipa">/sel/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">n.</span>蜂房巢室；细胞；单人牢房</div><div class="lex-ex">The honeycomb is made up of thousands of hexagonal cells built by worker bees.<span class="zh">蜂巢由工蜂建造的成千上万个六边形巢室组成。</span></div></div></div><div class="dw"><div class="dw-n">10</div><div class="dw-main"><div class="dw-w">cite<span class="lex-ipa">/sait/</span></div><div class="lex-tags"><span class="lex-tag GRE">GRE</span><span class="lex-tag IELTS">IELTS</span><span class="lex-tag TOEFL">TOEFL</span></div></div><div class="dw-body"><div class="lex-def"><span class="pos">v.</span>引用</div><div class="lex-ex">Students must cite all sources properly, or their essays may be rejected for plagiarism.<span class="zh">学生必须正确引用所有资料来源，否则论文可能因抄袭而被拒。</span></div></div></div></div>
+    <div class="tip">今天这 10 个词里，tag、wax、arid 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。</div>
   </section>
 
   <section class="sec">
     <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
       <span class="sec-note">目标不是查字典，是读完能复述</span></div>
-    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">环境类文章几乎都是「成效 + 但是」结构。今天读完，试着用一句话说出作者对 greenwashing 的态度。</div>
-<div class="passage">
-  <div class="p-en"><p>Every product we buy carries a carbon footprint, from the raw materials extracted to the transport that brings it to our door. In response, many governments have promoted renewable energy and introduced a carbon tax designed to make pollution expensive. The logic is simple: if emissions cost money, companies will find ways to reduce them.</p><p>The results have been mixed. Between 2010 and 2020, the cost of solar panels fell by more than eighty per cent, and in several countries renewable energy now supplies a larger share of electricity than coal. Yet global emissions continued to rise, largely because demand for energy grew even faster than clean supply.</p><p>Deforestation remains a stubborn problem. Forests absorb roughly a third of the carbon dioxide released each year, and losing them threatens biodiversity in ways that are difficult to reverse. Meanwhile, consumer campaigns against single-use plastic have changed behaviour in visible ways, but some researchers caution that such gestures can distract from the harder structural questions.</p><p>The most persistent criticism concerns greenwashing. A company may advertise a sustainable packaging line while expanding the factories behind it. Unless claims are audited, shoppers have little way of knowing whether a product genuinely offsets its impact, or simply markets the appearance of doing so.</p></div>
-  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
-    <div class="p-cn-body"><p>我们购买的每件商品都带有碳足迹（carbon footprint）——从开采的原材料，到把它送到家门口的运输。作为回应，许多政府推广可再生能源（renewable energy），并引入碳税（carbon tax），意在让污染变得昂贵。逻辑很简单：如果排放（emissions）要花钱，企业就会想办法减少排放。</p><p>结果是好坏参半。2010 到 2020 年间，太阳能板的成本下降超过八成，在几个国家，可再生能源提供的电力占比已经超过煤炭。但全球排放量仍在上升，主要原因是能源需求的增长比清洁供给更快。</p><p>毁林（deforestation）仍是个顽固的难题。森林吸收了每年排放的二氧化碳中约三分之一，失去森林会以难以逆转的方式威胁生物多样性（biodiversity）。与此同时，反对一次性塑料（single-use plastic）的消费者运动确实可见地改变了行为，但有研究者提醒：这类姿态性行动可能让人分心，忽略了更艰难的结构性问题。</p><p>最持续的批评指向漂绿（greenwashing）。一家公司可以一边宣传可持续（sustainable）包装线，一边扩建背后的工厂。除非宣传被第三方审核，消费者几乎无从判断一件产品是真的抵消（offset）了它的影响，还是只是在营销一种「我在做」的样子。</p></div>
-  </details>
-  <div class="p-note">💡 「对比 + 转折」是环境类文章最常用的骨架：说成效 → 说但是。注意 Meanwhile / Yet / Unless 三个衔接词的用法。</div>
-</div></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。</div><div class="passage"><div class="p-en"><p>In many <b>arid</b> regions, agricultural innovation has become a vital <b>axis</b> of sustainable development, since conventional farming often struggles where rainfall is scarce. One promising approach involves cultivating crops beneath a protective layer of <b>wax</b>, which significantly reduces water loss from the soil surface. Researchers also <b>cite</b> traditional practices, such as using <b>bark</b> mulch, as evidence that local knowledge can complement modern techniques. Meanwhile, engineers have redesigned the <b>barn</b> so that its roof <b>brim</b> channels rare rainwater into storage tanks, and a single solar <b>bulb</b> now lights the interior at night. Each storage <b>cell</b> within these tanks preserves every precious drop, while the <b>tag</b> of “climate-smart farming” has helped attract international funding. Although critics sometimes <b>bark</b> that such projects are too costly, pilot studies suggest they raise yields substantially. Consequently, this integrated model deserves serious consideration wherever drought threatens food security.</p></div><details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary><div class="p-cn-body"><p>在许多**干旱**地区，农业创新已成为可持续发展的关键**轴心**，因为传统耕作在降雨稀少的地方往往举步维艰。一种前景可观的方法是在一层保护性**蜡**下种植作物，这能显著减少土壤表面的水分流失。研究人员还**引用**诸如使用**树皮**覆盖物等传统做法，作为本地知识能够补充现代技术的证据。与此同时，工程师重新设计了**谷仓**，使其屋顶**边缘**将稀少的雨水引入储水箱，而一盏太阳能**灯泡**如今在夜间照亮内部。这些水箱中的每个储水**单元**都保存着每一滴珍贵的水，而“气候智能型农业”的**称号**也帮助吸引了国际资金。尽管批评者有时会**大声抱怨**此类项目成本过高，但试点研究表明它们能大幅提高产量。因此，在干旱威胁粮食安全的任何地方，这一综合模式都值得认真考虑。</p></div></details></div></div>
   </section>
 
   <section class="sec">
@@ -426,29 +369,29 @@ a:hover{border-bottom-color:var(--accent)}
     
 <div class="speak">
   <div class="sp-head"><span class="sp-part">Part 1</span></div>
-  <div class="sp-q">Do you do anything to protect the environment?</div>
-  <div class="sp-ans"><p>Nothing heroic, I&#x27;m afraid. I cycle rather than drive when the weather allows, and I&#x27;ve got much better at not buying things I don&#x27;t need — which, honestly, is the part that took the longest. I used to think environmentalism was about sorting rubbish correctly. Now I think it&#x27;s mostly about buying less, which is far less satisfying to talk about at dinner parties.</p></div>
+  <div class="sp-q">Do you prefer to spend time with a large group or a few close friends?</div>
+  <div class="sp-ans"><p>A few, definitely. I&#x27;m not shy exactly, but I find large groups exhausting in a way I can&#x27;t fully explain — I come home feeling like I&#x27;ve been performing rather than talking. With two or three people I can be slower and more honest, and I&#x27;ve noticed that&#x27;s when I actually remember the conversation afterwards.</p></div>
   <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>诚实 + 一句自嘲，比「我每天都做环保」可信得多。结尾那个反讽是加分项。</div>
-    <div class="sp-swap"><b>换成你的情况</b>cycling 换成你真实做的：自带杯、少点外卖、买二手、修而不换。</div>
-  </div>
-</div>
-<div class="speak">
-  <div class="sp-head"><span class="sp-part">Part 1</span></div>
-  <div class="sp-q">Is recycling important in your country?</div>
-  <div class="sp-ans"><p>It&#x27;s become a routine, at least in cities. Most residential compounds have sorting bins and there&#x27;s real social pressure to use them properly. My scepticism is about what happens afterwards — I&#x27;ve read that a fair amount of sorted waste is recombined at the collection stage, which makes the household effort feel a bit theatrical. I still do it, but I&#x27;d rather see investment in the sorting infrastructure than another campaign poster.</p></div>
-  <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>「制度性怀疑」是成熟观点。别说「很重要，我们都应该做」——那是没有信息量的答案。</div>
-    <div class="sp-swap"><b>换成你的情况</b>如果你所在城市执行力度不同，把 residential compounds 换成真实场景。</div>
+    <div class="sp-note"><b>答题思路</b>「performing rather than talking」是很精准的对比。用「我记得那次对话」作为证据，比空说「我更放松」有说服力。</div>
+    <div class="sp-swap"><b>换成你的情况</b>如果你更爱大群体，就说它的好处：能量、随机性、认识新人。保持「用具体体验作证据」的结构。</div>
   </div>
 </div>
 <div class="speak">
   <div class="sp-head"><span class="sp-part">Part 3</span></div>
-  <div class="sp-q">Some people argue that individual action is meaningless and only government policy can address environmental problems. To what extent do you agree?</div>
-  <div class="sp-ans"><p>I&#x27;d push back on the word &#x27;meaningless&#x27;, though I&#x27;d agree that individual action alone is insufficient.</p><p>The strongest version of the pessimistic argument is about scale. If a household cuts its carbon footprint by twenty per cent while national emissions rise, the aggregate effect is invisible. And there&#x27;s a fairness problem too: when responsibility is framed as personal virtue, it conveniently shifts attention away from the small number of companies and policies that account for most emissions.</p><p>But I don&#x27;t think that leads where the argument wants to go. Individual behaviour is what creates political permission. A carbon tax is electorally impossible in a country where nobody has changed their habits; it becomes possible once enough people have. So I&#x27;d frame it as sequence rather than substitution: individual action doesn&#x27;t replace policy, it makes policy survivable. The mistake is treating it as the finish line when it&#x27;s actually the precondition.</p></div>
+  <div class="sp-q">Should old traditions be preserved?</div>
+  <div class="sp-ans"><p>I&#x27;d want to distinguish preserving a tradition from preserving the practice of it, because those often conflict.</p><p>There&#x27;s a strong case for keeping the knowledge. If a craft or a form of music disappears, you lose something you can&#x27;t reconstruct from a description — the technique lives in people, not in documents. In that sense preservation is genuinely urgent.</p><p>The weaker case is the one that gets made most often, which is that a tradition should continue simply because it&#x27;s old. Age isn&#x27;t an argument; plenty of old things were bad ideas. And there&#x27;s a real cost to this framing, because it tends to freeze practices that were always changing, turning something living into a museum piece.</p><p>So I&#x27;d say: preserve the knowledge, be sceptical of the obligation. The traditions that survive are usually the ones people keep choosing, not the ones they&#x27;re told to keep.</p></div>
   <div class="sp-foot">
-    <div class="sp-note"><b>答题思路</b>Part 3 高分结构：先给对手最强版本 → 承认其合理处 → 指出它推不到结论 → 给一个替代框架（sequence not substitution）。注意「conveniently」这类态度词。</div>
-    <div class="sp-swap"><b>换成你的情况</b>这套「先强化对手论点再拆」的框架可用于任何 Part 3 的 agree/disagree 题。</div>
+    <div class="sp-note"><b>答题思路</b>「preserve the knowledge vs preserve the obligation」这个拆分是全篇骨架。最后一句「活下来的是人们仍在选择的东西」很有力。</div>
+    <div class="sp-swap"><b>换成你的情况</b>这类「应该保留 X 吗」的题，核心动作是「把 X 拆成两种东西」，然后分别判断。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you work or are you a student?</div>
+  <div class="sp-ans"><p>I&#x27;m working, though the honest description is that I&#x27;m between two things. My background is in finance — I did a master&#x27;s in that — but for the past year or so I&#x27;ve been working on AI products, which is a fairly big jump. Right now I&#x27;m taking some time to prepare for the next step, which involves both studying and job hunting.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>「between two things」比直接说「我在找工作」体面且真实。主动说出转折，反而让后面的话题有抓手。</div>
+    <div class="sp-swap"><b>换成你的情况</b>把 finance→AI 换成你自己的转折。核心句式：My background is X, but recently I&#x27;ve been Y.</div>
   </div>
 </div>
   </section>
@@ -587,10 +530,30 @@ a:hover{border-bottom-color:var(--accent)}
 <div class="page" id="page-bank">
   <div class="wrap">
     <div class="hero">
-      <div class="hero-kicker">Knowledge Base</div>
+      <div class="hero-kicker">Knowledge Base · 全量词库</div>
       <h1>三考试共用的<em>词库底座</em></h1>
-      <p>雅思偏学术议论文，托福偏学术讲座，GRE 偏逻辑辨析。三个考试的词不是三套，而是<b>同一批知识在不同难度上的切片</b>——所以放在一个底座里，每天从里面取用。</p>
+      <p>雅思偏学术议论文，托福偏学术讲座，GRE 偏逻辑辨析。三个考试的词不是三套，而是<b>同一批知识在不同难度上的切片</b>——所以放在一个底座里，<b id="lex-total">10,000+</b> 词全在这里，每天从里面取 10 个。</p>
+      <div class="lex-stats" id="lex-stats"></div>
     </div>
+
+    <div class="lex-bar">
+      <input type="search" id="lex-q" placeholder="搜单词或中文释义（试试 abandon、放弃）" autocomplete="off">
+      <div class="lex-filters" id="lex-filters">
+        <button data-exam="all" class="on">全部</button>
+        <button data-exam="IELTS">雅思</button>
+        <button data-exam="TOEFL">托福</button>
+        <button data-exam="GRE">GRE</button>
+        <button data-exam="multi">三考通用</button>
+      </div>
+    </div>
+
+    <div class="lex-hint" id="lex-hint">输入关键词搜索，或点下面的字母翻全量词表。</div>
+    <div class="volgrid" id="volgrid"></div>
+    <div class="lex-list" id="lex-list"></div>
+    <div class="lex-more"><button id="lex-more-btn" hidden>加载更多</button></div>
+
+    <h2 class="lex-h2">按主题分组（带完整文段）</h2>
+    <p class="lex-sub">下面这些是按考试话题整理的词组，每 10 个词配一段完整英文文段——用来在语境里记忆。</p>
     
 <section class="bank">
   <div class="bank-h"><h2>雅思 IELTS</h2>
@@ -1200,7 +1163,7 @@ a:hover{border-bottom-color:var(--accent)}
 </div>
 
 <div class="foot">
-  <b>英语每天</b> · 内容构建于 2026-11-13 · 最近一期 2026-11-17<br>
+  <b>英语每天</b> · 内容构建于 2026-11-14 · 最近一期 2026-11-15<br>
   考纲信息来源：ielts.org 官方页面与官方 Band Descriptors PDF（查证 2026-11-13）。<br>
   个人学习用站点 · 单文件零依赖 · 断网可读
 </div>
@@ -1240,6 +1203,157 @@ a:hover{border-bottom-color:var(--accent)}
     var n = parseInt(e.key, 10);
     if (n >= 1 && n <= 4) go(pages[n-1]);
   });
+
+  // ---------- 全量词库浏览器 ----------
+  var LEX = { idx:null, vols:{}, words:[], shown:0, exam:'all', q:'' };
+  var PAGE = 60;
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){
+    return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
+
+  function lexItem(w){
+    var tags = (w.exams||[]).map(function(x){ return '<span class="lex-tag '+x+'">'+x+'</span>'; }).join('');
+    var d = (w.defs||[])[0] || '';
+    var pos = w.pos ? '<span class="pos">'+esc(w.pos)+'</span>' : '';
+    var h = '<div class="lex-item"><div><div class="lex-w">'+esc(w.w)+
+      (w.ipa?'<span class="lex-ipa">/'+esc(w.ipa)+'/</span>':'')+
+      '</div><div class="lex-tags">'+tags+'</div></div><div>';
+    h += '<div class="lex-def">'+pos+esc(d);
+    if ((w.defs||[]).length>1){
+      h += ' <span style="color:var(--muted);font-size:12px">（另：'+
+        esc(w.defs.slice(1,3).join('；'))+'）</span>';
+    }
+    h += '</div>';
+    if (w.ex){
+      var ex = esc(w.ex);
+      // 高亮词根
+      try {
+        var root = w.w.replace(/[^A-Za-z]/g,'').slice(0, Math.max(4, w.w.length-2));
+        if (root.length>=4){
+          var re = new RegExp('\\b('+root+'[a-z]*)','ig');
+          ex = ex.replace(re, '<em>$1</em>');
+        }
+      } catch(e){}
+      h += '<div class="lex-ex">'+ex+(w.zh?'<span class="zh">'+esc(w.zh)+'</span>':'')+'</div>';
+    }
+    return h+'</div></div>';
+  }
+
+  function lexRender(){
+    var list = document.getElementById('lex-list');
+    if (!LEX.words.length){ list.innerHTML=''; return; }
+    var slice = LEX.words.slice(0, LEX.shown);
+    list.innerHTML = slice.map(lexItem).join('');
+    var btn = document.getElementById('lex-more-btn');
+    if (LEX.shown < LEX.words.length){
+      btn.hidden = false;
+      btn.textContent = '加载更多（还有 '+(LEX.words.length-LEX.shown)+' 词）';
+    } else btn.hidden = true;
+  }
+
+  function lexApply(){
+    var q = LEX.q.trim().toLowerCase();
+    var ex = LEX.exam;
+    LEX.words = LEX.all.filter(function(w){
+      if (ex!=='all'){
+        if (ex==='multi'){ if ((w.exams||[]).length<3) return false; }
+        else if ((w.exams||[]).indexOf(ex)===-1) return false;
+      }
+      if (!q) return true;
+      if (w.w.toLowerCase().indexOf(q)===0) return true;
+      if (w.w.toLowerCase().indexOf(q)>-1) return true;
+      return (w.defs||[]).join(' ').indexOf(q)>-1;
+    });
+    // 前缀匹配优先
+    if (q){
+      LEX.words.sort(function(a,b){
+        var ai = a.w.toLowerCase().indexOf(q), bi = b.w.toLowerCase().indexOf(q);
+        if (ai!==bi) return ai-bi;
+        return a.w.length-b.w.length;
+      });
+    }
+    LEX.shown = PAGE;
+    var hint = document.getElementById('lex-hint');
+    if (q) hint.textContent = '找到 '+LEX.words.length+' 个匹配「'+LEX.q+'」的词';
+    else if (ex!=='all') hint.textContent = '筛选出 '+LEX.words.length+' 个词';
+    else hint.textContent = '输入关键词搜索，或点上面的字母翻全量词表。';
+    if (!LEX.words.length) document.getElementById('lex-list').innerHTML =
+      '<div class="lex-empty">没有匹配的词，换个关键词试试。</div>';
+    else lexRender();
+  }
+
+  function loadVol(key){
+    if (LEX.vols[key]) return Promise.resolve(LEX.vols[key]);
+    var meta = LEX.idx.vols.filter(function(v){ return v.key===key; })[0];
+    if (!meta) return Promise.reject('no vol');
+    return fetch('data/lexicon/'+meta.file).then(function(r){ return r.json(); })
+      .then(function(d){ LEX.vols[key]=d; return d; });
+  }
+
+  function lexBoot(){
+    fetch('data/lexicon/index.json').then(function(r){ return r.json(); }).then(function(idx){
+      LEX.idx = idx;
+      document.getElementById('lex-total').textContent = idx.total.toLocaleString();
+      var s = document.getElementById('lex-stats');
+      s.innerHTML =
+        '<div class="lex-stat"><b>'+idx.total.toLocaleString()+'</b><span>全量词条</span></div>'+
+        '<div class="lex-stat"><b>'+idx.exams.IELTS.toLocaleString()+'</b><span>雅思</span></div>'+
+        '<div class="lex-stat"><b>'+idx.exams.TOEFL.toLocaleString()+'</b><span>托福</span></div>'+
+        '<div class="lex-stat"><b>'+idx.exams.GRE.toLocaleString()+'</b><span>GRE</span></div>'+
+        '<div class="lex-stat"><b>'+idx.exams.all3.toLocaleString()+'</b><span>三考通用</span></div>';
+      var grid = document.getElementById('volgrid');
+      grid.innerHTML = idx.vols.map(function(v){
+        return '<button data-vol="'+v.key+'"><span class="vl">'+v.key+'</span><span class="vc">'+v.count+'</span></button>';
+      }).join('');
+      // 默认加载全部（后台异步合并）
+      var keys = idx.vols.map(function(v){ return v.key; });
+      LEX.all = [];
+      var loaded = 0;
+      keys.forEach(function(k){
+        loadVol(k).then(function(d){
+          LEX.all = LEX.all.concat(d);
+          loaded++;
+          if (loaded===keys.length){
+            LEX.all.sort(function(a,b){ return a.w.toLowerCase()<b.w.toLowerCase()?-1:1; });
+            LEX.words = LEX.all.slice();
+            LEX.shown = PAGE;
+            lexRender();
+            document.getElementById('lex-hint').textContent =
+              '全量 '+LEX.all.length.toLocaleString()+' 词已加载 · 搜索或筛选';
+          }
+        }).catch(function(){});
+      });
+      grid.addEventListener('click', function(e){
+        var b = e.target.closest('button[data-vol]'); if(!b) return;
+        [].slice.call(grid.children).forEach(function(x){ x.classList.toggle('on', x===b); });
+        loadVol(b.dataset.vol).then(function(d){
+          LEX.words = d; LEX.shown = PAGE;
+          document.getElementById('lex-hint').textContent = '字母 '+b.dataset.vol.toUpperCase()+' · '+d.length+' 词';
+          lexRender();
+        });
+      });
+    }).catch(function(e){
+      document.getElementById('lex-hint').textContent = '词库加载失败：'+e;
+    });
+  }
+
+  var lq = document.getElementById('lex-q');
+  if (lq){
+    var tmr;
+    lq.addEventListener('input', function(){
+      clearTimeout(tmr);
+      tmr = setTimeout(function(){ LEX.q = lq.value; lexApply(); }, 160);
+    });
+    document.getElementById('lex-filters').addEventListener('click', function(e){
+      var b = e.target.closest('button[data-exam]'); if(!b) return;
+      [].slice.call(e.currentTarget.children).forEach(function(x){ x.classList.toggle('on', x===b); });
+      LEX.exam = b.dataset.exam; lexApply();
+    });
+    document.getElementById('lex-more-btn').addEventListener('click', function(){
+      LEX.shown += PAGE*2; lexRender();
+    });
+    lexBoot();
+  }
 })();
 </script>
 </body>

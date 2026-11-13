@@ -187,29 +187,84 @@ def render_speaking(sp):
 </div>"""
 
 
+def render_daily_words(words):
+    """渲染 daily.py 生成的 10 词表（每行带独立例句）"""
+    if not words:
+        return ""
+    rows = []
+    for i, w in enumerate(words):
+        tags = "".join(f'<span class="lex-tag {x}">{x}</span>' for x in w.get("exams", []))
+        d = w["defs"][0] if w.get("defs") else ""
+        pos = f'<span class="pos">{esc(w["pos"])}</span>' if w.get("pos") else ""
+        ipa = f'<span class="lex-ipa">/{esc(w["ipa"])}/</span>' if w.get("ipa") else ""
+        rows.append(
+            f'<div class="dw">'
+            f'<div class="dw-n">{i+1:02d}</div>'
+            f'<div class="dw-main">'
+            f'<div class="dw-w">{esc(w["w"])}{ipa}</div>'
+            f'<div class="lex-tags">{tags}</div></div>'
+            f'<div class="dw-body"><div class="lex-def">{pos}{esc(d)}</div>'
+            + (f'<div class="lex-ex">{esc(w["ex"])}'
+               + (f'<span class="zh">{esc(w["zh"])}</span>' if w.get("zh") else "")
+               + '</div>' if w.get("ex") else "")
+            + '</div></div>'
+        )
+    return '<div class="dailywords">' + "".join(rows) + "</div>"
+
+
+def render_daily_passage(reading):
+    """渲染 daily.py 生成的文段（en + zh 折叠）"""
+    en = reading.get("en", "")
+    zh = reading.get("zh", "")
+    if not en:
+        return ""
+    paras = "".join(f"<p>{esc(p)}</p>" for p in en.split("\n\n") if p.strip())
+    # 把 **word** 转成高亮
+    def bold(html_frag):
+        return re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", html_frag)
+    paras = bold(paras)
+    zh_html = ""
+    if zh:
+        zh_paras = "".join(f"<p>{esc(p)}</p>" for p in zh.split("\n\n") if p.strip())
+        zh_html = ('<details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>'
+                   f'<div class="p-cn-body">{zh_paras}</div></details>')
+    return f'<div class="passage"><div class="p-en">{paras}</div>{zh_html}</div>'
+
+
 def render_post(post, chunk_idx):
     chunks = [chunk_idx[c] for c in post["chunks"] if c in chunk_idx]
     date_obj = datetime.strptime(post["date"], "%Y-%m-%d")
     wd = "一二三四五六日"[date_obj.weekday()]
 
-    # 词组
-    words_html = ""
-    for c in chunks:
-        words_html += (
-            f'<div class="chunk"><div class="chunk-h">'
-            f'<span class="chunk-topic">{esc(c["topic"])}</span>'
-            f'<span class="chunk-exam">{esc(c["examLabel"])}</span></div>'
-            + render_words_table(c) + "</div>"
-        )
+    # 词组：优先用 post 自带的 daily words，否则回退到 chunks
+    if post.get("words"):
+        words_html = render_daily_words(post["words"])
+    else:
+        words_html = ""
+        for c in chunks:
+            words_html += (
+                f'<div class="chunk"><div class="chunk-h">'
+                f'<span class="chunk-topic">{esc(c["topic"])}</span>'
+                f'<span class="chunk-exam">{esc(c["examLabel"])}</span></div>'
+                + render_words_table(c) + "</div>"
+            )
 
-    # 阅读
-    reading_html = "".join(
-        f'<div class="chunk"><div class="chunk-h">'
-        f'<span class="chunk-topic">阅读 Reading</span></div>'
-        f'<div class="p-why">{esc(post["reading"]["why"])}</div>'
-        + render_passage(c["passage"]) + "</div>"
-        for c in chunks if c.get("passage")
-    )
+    # 阅读：优先用 reading.en / zh
+    if post.get("reading", {}).get("en"):
+        reading_html = (
+            f'<div class="chunk"><div class="chunk-h">'
+            f'<span class="chunk-topic">阅读 Reading</span></div>'
+            f'<div class="p-why">{esc(post["reading"].get("why",""))}</div>'
+            + render_daily_passage(post["reading"]) + "</div>"
+        )
+    else:
+        reading_html = "".join(
+            f'<div class="chunk"><div class="chunk-h">'
+            f'<span class="chunk-topic">阅读 Reading</span></div>'
+            f'<div class="p-why">{esc(post["reading"]["why"])}</div>'
+            + render_passage(c["passage"]) + "</div>"
+            for c in chunks if c.get("passage")
+        )
 
     speaking_html = "".join(render_speaking(s) for s in post["speaking"])
 

@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .venv/
+.publish.log
+.enrich.log
+*.tmp
+data/lexicon/examples.json.tmp
