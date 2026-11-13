@@ -58,7 +58,7 @@ CODE=000
 for i in 1 2 3 4 5; do
   CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 25 -x http://127.0.0.1:7897 \
          "https://akitolau.github.io/english-daily/?v=$(date +%s)")
-  say "线上检查 $i：HTTP $CODE"
+  say "线上检查 ${i} HTTP $CODE"
   if [ "$CODE" = "200" ]; then
     break
   fi
