@@ -11,6 +11,41 @@
   },
   "posts": [
     {
+      "date": "2026-11-13",
+      "title": "Geology 地质 · 具体比正确重要",
+      "chunks": [
+        "toefl-geo-01"
+      ],
+      "reading": {
+        "source": "toefl-geo-01 passage",
+        "why": "这段覆盖今天全部 10 个词。读的时候别查字典——先猜，读完再回头看词表，你会发现它们在句子里有了位置。"
+      },
+      "speaking": [
+        {
+          "part": "Part 2",
+          "q": "Describe an important decision you made. You should say: what the decision was; when you made it; what alternatives you had; and explain why you think it was important.",
+          "ans": "The decision I'd describe is deciding to leave a stable job without having another one lined up. That was about a year ago.\n\nAt the time the choice looked different from how it looks now. On paper I had two options: stay, keep the salary and the title, and wait for a better moment to move; or leave and figure out the next thing while looking. The reasonable choice was obviously the first one. Almost everyone I trusted said so, and they weren't being unkind — they were right about the risk.\n\nWhat made me leave was a realisation that was not really about the job. I noticed that I'd been choosing the second-best version of a career I wasn't sure I wanted. Staying would have been comfortable and it would have made the next decision harder, not easier, because every year the salary gets a bit better and the switching cost gets a bit higher.\n\nWas it a good decision? I don't think I'm the right person to judge yet, honestly. What I can say is that it forced me to find out what I'm actually good at, rather than what I've done before. That's worth something even if the timing turns out to have been bad.",
+          "note": "「我不知道这决定好不好」这种诚实比「这是我最正确的决定」高级得多。注意「choosing the second-best version of a career」是全文最强的一句。",
+          "swap": "换成你真实的决定。保留「承认风险、不确定结论」的态度——考官更信这个。"
+        },
+        {
+          "part": "Part 1",
+          "q": "What do you usually do at weekends?",
+          "ans": "It depends on how the week went. If I've been staring at a screen for five days, I try to spend Saturday somewhere with no signal — a long walk, or a book in a café where nobody knows me. Sunday is more practical: I plan the week, catch up on the reading I skipped, and try not to panic about Monday.",
+          "note": "「It depends」开头很好，避免变成一个贫乏的清单。「where nobody knows me」这种细节很生动。",
+          "swap": "换成你真实的周末节奏。保留「周六恢复 / 周日准备」这个对照结构。"
+        },
+        {
+          "part": "Part 1",
+          "q": "Do you prefer reading paper books or e-books?",
+          "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+          "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+          "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+        }
+      ],
+      "wordtips": "今天这 10 个词里，优先掌握出现频率最高的那三四个；其余的先做到「见到能认出来」，写作时自然会用上。"
+    },
+    {
       "date": "2026-11-14",
       "title": "教育与学习 · 为什么我重新开始学英语",
       "chunks": [
