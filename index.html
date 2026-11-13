@@ -1,0 +1,1183 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>英语每天 · IELTS / TOEFL / GRE 综合学习站</title>
+<meta name="description" content="每天 10 个词组、几段阅读、3 道口语。含雅思 2026 考纲与三考试词库底座。">
+<style>
+:root{
+  --paper:#FBF9F4; --paper-2:#F4F1E8; --ink:#22201C; --ink-2:#4A463F;
+  --muted:#8A8377; --line:#E2DCCE; --line-2:#EFEADE;
+  --accent:#2F6B5A;      /* 墨绿：主色 */
+  --accent-l:#E7F0EC;
+  --warm:#B5654A;        /* 陶土：强调 */
+  --warm-l:#F9EDE8;
+  --blue:#3C5A78;
+  --blue-l:#EAF0F5;
+  --gold:#96762F;
+  --serif:"Songti SC","Source Han Serif SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(47,107,90,.3)}
+a:hover{border-bottom-color:var(--accent)}
+
+/* ---------- 顶栏 ---------- */
+.top{
+  position:sticky;top:0;z-index:50;background:rgba(251,249,244,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+}
+.top-in{
+  max-width:1080px;margin:0 auto;padding:0 22px;
+  display:flex;align-items:center;gap:22px;height:60px;
+}
+.brand{display:flex;align-items:baseline;gap:9px;flex:0 0 auto}
+.brand b{font-family:var(--serif);font-size:17px;letter-spacing:.04em;font-weight:600}
+.brand span{font-size:10.5px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+.nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav button{
+  border:none;background:transparent;cursor:pointer;white-space:nowrap;
+  font-family:var(--sans);font-size:13px;color:var(--ink-2);
+  padding:7px 13px;border-radius:5px;transition:.15s;
+}
+.nav button:hover{background:var(--paper-2)}
+.nav button.on{background:var(--accent);color:#fff}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px 80px}
+.page{display:none;animation:fade .3s ease}
+.page.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ---------- 首页 Hero ---------- */
+.hero{padding:64px 0 44px;border-bottom:1px solid var(--line)}
+.hero-kicker{font-size:11px;letter-spacing:.24em;color:var(--warm);text-transform:uppercase;font-weight:600}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(30px,5vw,46px);line-height:1.25;
+  margin:14px 0 16px;letter-spacing:-.01em;font-weight:600;
+}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:15.5px;color:var(--ink-2);max-width:640px;margin:0}
+.stats{display:flex;gap:0;margin-top:36px;flex-wrap:wrap;border-top:1px solid var(--line)}
+.stat{flex:1 1 130px;padding:18px 20px 18px 0;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat b{display:block;font-family:var(--serif);font-size:27px;color:var(--accent);line-height:1.2}
+.stat span{font-size:11.5px;color:var(--muted);letter-spacing:.06em}
+
+/* ---------- 每日帖子 ---------- */
+.post{
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:30px 32px 34px;margin:30px 0;
+}
+.post-h{display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid var(--line-2)}
+.post-date{flex:0 0 auto;text-align:center;padding-right:18px;border-right:1px solid var(--line-2)}
+.pd-day{display:block;font-family:var(--serif);font-size:22px;color:var(--warm);font-weight:600;line-height:1.2}
+.pd-wd{display:block;font-size:10.5px;color:var(--muted);letter-spacing:.06em;margin-top:3px}
+.post-t{font-family:var(--serif);font-size:22px;margin:0;line-height:1.4;font-weight:600;padding-top:2px}
+
+.sec{margin-top:30px}
+.sec-h{display:flex;align-items:baseline;gap:11px;margin-bottom:15px;flex-wrap:wrap}
+.sec-n{
+  font-family:var(--mono);font-size:11px;color:var(--warm);font-weight:700;
+  border:1px solid var(--warm);border-radius:3px;padding:2px 6px;line-height:1;
+}
+.sec-h h3{font-family:var(--serif);font-size:17px;margin:0;font-weight:600;letter-spacing:.02em}
+.sec-note{font-size:11.5px;color:var(--muted);margin-left:auto}
+
+.chunk{margin-bottom:22px}
+.chunk-h{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.chunk-topic{font-size:12.5px;font-weight:600;color:var(--accent);letter-spacing:.04em}
+.chunk-exam{
+  font-size:10px;color:var(--muted);border:1px solid var(--line);
+  border-radius:3px;padding:1px 6px;letter-spacing:.04em;
+}
+
+/* 词表 */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.tw table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}
+.tw th{
+  background:var(--paper-2);text-align:left;padding:8px 11px;
+  font-size:11px;letter-spacing:.08em;color:var(--ink-2);font-weight:600;
+  border-bottom:1px solid var(--line);white-space:nowrap;
+}
+.tw td{padding:9px 11px;border-bottom:1px solid var(--line-2);vertical-align:top;line-height:1.65}
+.tw tr:last-child td{border-bottom:none}
+.tw td.num{color:var(--muted);font-family:var(--mono);font-size:11px;width:26px}
+.tw td.w{font-weight:600;color:var(--ink);white-space:nowrap}
+.tw td.pos{color:var(--warm);font-size:11.5px;white-space:nowrap}
+.tw td.cn{color:var(--ink-2);white-space:nowrap}
+.tw td.note{color:var(--muted);font-size:12px}
+
+/* 文段 */
+.passage{margin-top:12px;border-left:2px solid var(--accent-l);padding-left:16px}
+.p-en p{margin:0 0 14px;font-size:14.5px;line-height:1.95;color:var(--ink-2);font-family:Georgia,var(--serif)}
+.p-why{
+  font-size:12.5px;color:var(--ink-2);background:var(--blue-l);
+  border-radius:5px;padding:10px 13px;margin-bottom:13px;line-height:1.7;
+}
+.p-cn{margin:14px 0 0}
+.p-cn summary{
+  cursor:pointer;font-size:12.5px;color:var(--accent);font-weight:600;
+  list-style:none;padding:7px 0;
+}
+.p-cn summary::-webkit-details-marker{display:none}
+.p-cn summary::before{content:"▸ ";transition:.2s;display:inline-block}
+.p-cn[open] summary::before{transform:rotate(90deg)}
+.p-cn summary span{font-weight:400;color:var(--muted);font-size:11px;margin-left:6px}
+.p-cn-body{background:var(--paper-2);border-radius:6px;padding:14px 16px;margin-top:6px}
+.p-cn-body p{margin:0 0 12px;font-size:13.5px;line-height:1.95;color:var(--ink-2)}
+.p-cn-body p:last-child{margin-bottom:0}
+.p-note{
+  margin-top:12px;font-size:12.5px;color:var(--ink-2);
+  background:var(--warm-l);border-radius:5px;padding:10px 13px;line-height:1.7;
+}
+
+/* 口语 */
+.speak{
+  border:1px solid var(--line);border-radius:8px;padding:18px 20px;
+  margin-bottom:14px;background:#fff;
+}
+.sp-head{margin-bottom:8px}
+.sp-part{
+  font-size:10.5px;font-weight:700;letter-spacing:.1em;color:var(--blue);
+  background:var(--blue-l);border-radius:3px;padding:2px 8px;
+}
+.sp-q{
+  font-family:var(--serif);font-size:16px;color:var(--ink);
+  line-height:1.6;margin-bottom:13px;font-weight:600;
+}
+.sp-ans{background:var(--paper-2);border-radius:6px;padding:14px 16px}
+.sp-ans p{margin:0 0 12px;font-size:14px;line-height:1.9;color:var(--ink-2);font-family:Georgia,var(--serif)}
+.sp-ans p:last-child{margin-bottom:0}
+.sp-foot{margin-top:12px;display:flex;flex-direction:column;gap:7px}
+.sp-note,.sp-swap{font-size:12.5px;line-height:1.7;color:var(--ink-2);padding-left:2px}
+.sp-note b,.sp-swap b{
+  display:inline-block;font-size:10.5px;letter-spacing:.08em;color:var(--accent);
+  margin-right:8px;font-weight:700;
+}
+.sp-swap b{color:var(--warm)}
+
+.tip{
+  font-size:12.5px;color:var(--ink-2);background:var(--accent-l);
+  border-left:2px solid var(--accent);border-radius:0 5px 5px 0;
+  padding:11px 14px;line-height:1.75;margin-top:16px;
+}
+
+/* ---------- 词库页 ---------- */
+.bank{margin:40px 0}
+.bank-h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.bank-h h2{font-family:var(--serif);font-size:25px;margin:0;font-weight:600}
+.bank-count{font-size:11.5px;color:var(--muted);letter-spacing:.05em}
+.bank-desc{font-size:13.5px;color:var(--ink-2);max-width:700px;margin:10px 0 22px}
+
+/* ---------- 考纲页 ---------- */
+.outline{background:#fff;border:1px solid var(--line);border-radius:10px;padding:34px 38px;margin-top:28px}
+.outline h2{font-family:var(--serif);font-size:24px;margin:34px 0 12px;font-weight:600;padding-bottom:8px;border-bottom:1px solid var(--line-2)}
+.outline h2:first-child{margin-top:0}
+.outline h3{font-family:var(--serif);font-size:18px;margin:26px 0 10px;color:var(--ink);font-weight:600}
+.outline h4{font-size:15px;margin:20px 0 8px;color:var(--ink-2);font-weight:600}
+.outline p{font-size:13.5px;line-height:1.85;color:var(--ink-2);margin:0 0 13px}
+.outline ul,.outline ol{margin:0 0 14px;padding-left:22px}
+.outline li{font-size:13.5px;line-height:1.8;color:var(--ink-2);margin-bottom:5px}
+.outline blockquote{
+  margin:12px 0;padding:11px 15px;background:var(--paper-2);
+  border-left:2px solid var(--warm);border-radius:0 5px 5px 0;
+  font-size:13px;color:var(--ink-2);line-height:1.8;
+}
+.outline blockquote p{margin:0;font-size:13px}
+.outline code{
+  font-family:var(--mono);font-size:12px;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:3px;padding:1px 5px;color:var(--warm);
+}
+.outline .code{
+  background:#2E2C27;color:#EDE7D6;padding:14px 16px;border-radius:5px;
+  overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.8;
+}
+.outline hr{border:none;border-top:1px dashed var(--line);margin:26px 0}
+.outline .tw table{font-size:12.5px}
+.outline .tw table td:first-child{white-space:nowrap;font-weight:600}
+
+/* ---------- 页脚 ---------- */
+.foot{
+  max-width:1080px;margin:0 auto;padding:34px 22px 50px;
+  border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.9;
+}
+.foot b{color:var(--ink-2);font-weight:600}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:760px){
+  .top-in{height:auto;flex-wrap:wrap;padding:10px 16px;gap:10px}
+  .brand{width:100%}
+  .nav{margin-left:0;width:100%;padding-bottom:2px}
+  .wrap{padding:0 16px 60px}
+  .hero{padding:38px 0 30px}
+  .post{padding:20px 16px 24px;margin:20px 0;border-radius:8px}
+  .post-h{flex-direction:column;gap:8px}
+  .post-date{display:flex;gap:8px;align-items:baseline;border-right:none;padding-right:0}
+  .pd-day{font-size:18px}
+  .post-t{font-size:18.5px}
+  .sec-note{margin-left:0;width:100%;font-size:11px}
+  .outline{padding:20px 16px}
+  .outline h2{font-size:20px}
+  .outline h3{font-size:16px}
+  .sp-q{font-size:15px}
+  .stats{margin-top:24px}
+  .stat{flex:1 1 45%;padding:14px 0}
+  .stat b{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <div class="brand"><b>英语每天</b><span>Daily English</span></div>
+    <nav class="nav" id="nav">
+      <button data-go="today" class="on">每日</button>
+      <button data-go="bank">词库底座</button>
+      <button data-go="outline">雅思考纲</button>
+      <button data-go="about">怎么用</button>
+    </nav>
+  </div>
+</div>
+
+<!-- ============ 首页 / 每日 ============ -->
+<div class="page on" id="page-today">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">IELTS · TOEFL · GRE</div>
+      <h1>每天十组词、几段文、<em>三道口语</em>。</h1>
+      <p>不是打卡式的学习，是<b>每天有一点东西真的进到脑子里</b>。词组配文段（在语境里记），阅读配翻译（先读英文，别急着看中文），口语配参考答案（先自己说一遍）。</p>
+      <div class="stats">
+        <div class="stat"><b>4</b><span>期帖子</span></div>
+        <div class="stat"><b>70</b><span>词汇文段</span></div>
+        <div class="stat"><b>7</b><span>词组分组</span></div>
+        <div class="stat"><b>12</b><span>口语题</span></div>
+      </div>
+    </div>
+    
+<article class="post" id="post-2026-11-17">
+  <header class="post-h">
+    <div class="post-date">
+      <span class="pd-day">11.17</span>
+      <span class="pd-wd">周二 · 2026</span>
+    </div>
+    <h2 class="post-t">Biology 生物 · 关于改变的代价</h2>
+  </header>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
+      <span class="sec-note">先读下面的文段，再回来对词</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Biology 生物</span><span class="chunk-exam">托福 TOEFL</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>photosynthesis</td><td class='pos'>n.</td><td class='cn'>光合作用</td><td class='note'>不可数。托福生物第一大词。</td></tr><tr><td class='num'>2</td><td class='w'>symbiosis</td><td class='pos'>n.</td><td class='cn'>共生</td><td class='note'>三种类型：mutualism 互利 / commensalism 偏利 / parasitism 寄生。</td></tr><tr><td class='num'>3</td><td class='w'>adaptation</td><td class='pos'>n.</td><td class='cn'>适应（演化）</td><td class='note'>可数。adaptation to 后接环境。</td></tr><tr><td class='num'>4</td><td class='w'>predator</td><td class='pos'>n.</td><td class='cn'>捕食者</td><td class='note'>prey 猎物。predator-prey relationship。</td></tr><tr><td class='num'>5</td><td class='w'>habitat</td><td class='pos'>n.</td><td class='cn'>栖息地</td><td class='note'>habitat loss 栖息地丧失，物种灭绝首因。</td></tr><tr><td class='num'>6</td><td class='w'>metabolism</td><td class='pos'>n.</td><td class='cn'>新陈代谢</td><td class='note'>metabolic rate 代谢率。冷血/温血动物话题常考。</td></tr><tr><td class='num'>7</td><td class='w'>cell membrane</td><td class='pos'>n.</td><td class='cn'>细胞膜</td><td class='note'>半透性 semi-permeable。</td></tr><tr><td class='num'>8</td><td class='w'>evolutionary advantage</td><td class='pos'>n.</td><td class='cn'>演化优势</td><td class='note'>解释「为什么演化出这个特征」的标准答法。</td></tr><tr><td class='num'>9</td><td class='w'>migration</td><td class='pos'>n.</td><td class='cn'>迁徙</td><td class='note'>动物迁徙；人类移民用 immigration/emigration 区分。</td></tr><tr><td class='num'>10</td><td class='w'>extinction</td><td class='pos'>n.</td><td class='cn'>灭绝</td><td class='note'>mass extinction 大规模灭绝。extinct (adj.)。</td></tr></tbody></table></div></div>
+    <div class="tip">今天这 10 个词里，优先掌握出现频率最高的那三四个；其余的先做到「见到能认出来」，写作时自然会用上。</div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
+      <span class="sec-note">目标不是查字典，是读完能复述</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">这段覆盖今天全部 10 个词。读的时候别查字典——先猜，读完再回头看词表，你会发现它们在句子里有了位置。</div>
+<div class="passage">
+  <div class="p-en"><p>Photosynthesis is the process by which plants convert sunlight into chemical energy, and it underpins almost every food chain on Earth. Yet the relationship between organisms is rarely simple. Symbiosis — in which two species live in close association — takes several forms. In mutualism, both partners benefit: certain ants protect acacia trees and receive shelter and food in return. Parasitism is the opposite: one organism gains at the other&#x27;s expense, sometimes without killing it, since a dead host is a useless host.</p><p>Predators exert a subtler influence. By removing the weakest prey, they keep populations healthy and prevent any single species from dominating. When wolves were reintroduced to Yellowstone in 1995, the elk changed their grazing behaviour, which in turn allowed willow and aspen to recover along riverbanks — a chain of effects that ecologists call a trophic cascade.</p><p>Every organism is shaped by its habitat. A thick coat, a slow metabolism or an ability to store water may each confer an evolutionary advantage in a cold or arid environment. Migration allows animals to exploit resources that appear only seasonally, while hibernation permits them to survive the months when food is scarce.</p><p>Today the dominant pressure is habitat loss. As forests are fragmented, populations become isolated, and a species with a small range faces extinction from a single drought or disease. Conservationists argue that protecting connected corridors matters as much as protecting individual reserves.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>光合作用（photosynthesis）是植物把阳光转化为化学能的过程，它支撑着地球上几乎所有的食物链。但生物之间的关系很少这么简单。共生（symbiosis）——两个物种紧密共处——有好几种形式。互利（mutualism）中双方都受益：某些蚂蚁保护金合欢树，换来住所和食物。寄生（parasitism）正好相反：一方以另一方为代价获益，有时并不杀死对方，因为死掉的宿主等于没用的宿主。</p><p>捕食者（predator）施加的影响更为微妙。它们移除最弱的猎物，使种群保持健康，并防止任何一个物种独大。1995 年狼群被重新引入黄石公园后，麋鹿的取食行为改变了，河岸的柳树和白杨因此得以恢复——生态学家把这种连锁效应称为营养级联。</p><p>每个生物都被它的栖息地（habitat）塑造。厚实的毛皮、缓慢的新陈代谢（metabolism）、储水的能力，在寒冷或干旱的环境中各自构成一种演化优势（evolutionary advantage）。迁徙（migration）让动物能利用只是季节性出现的资源，而冬眠则让它们熬过食物短缺的月份。</p><p>今天最主要的压力是栖息地丧失。森林被切割成碎片后，种群彼此隔离，分布范围狭窄的物种可能因一场干旱或一次疾病就走向灭绝（extinction）。保育人士主张：保护相互连通的廊道，和保护单个保护区同样重要。</p></div>
+  </details>
+  <div class="p-note">💡 托福生物文的高频考点是「因果链」：A 变化 → B 变化 → C 变化。读的时候用箭头把链条画出来。</div>
+</div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">03</span><h3>今日口语 · 3 题</h3>
+      <span class="sec-note">先自己说一遍，再看参考答案</span></div>
+    
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 2</span></div>
+  <div class="sp-q">Describe a skill you learned that took a long time. You should say: what the skill is; when you learned it; how you learned it; and explain why it took so long.</div>
+  <div class="sp-ans"><p>The skill I&#x27;d describe is writing clearly — not writing well, which is a different and much rarer thing, but writing in a way that doesn&#x27;t waste the reader&#x27;s time. I&#x27;ve been working on it for about four years and I&#x27;m still not done.</p><p>I started because I had to. My job involved writing analysis that other people had to act on, and I kept getting the same response: &#x27;I&#x27;m not sure what you&#x27;re telling me to do.&#x27; That was humbling. I thought I was being thorough. I was being long.</p><p>The way I learned was mostly by deleting. I&#x27;d write something, cut it in half, and see what survived. Then someone showed me that most of what I was cutting was the part where I explained that I wasn&#x27;t sure. The uncertainty was real, but burying it in caveats made the whole document useless.</p><p>Why it takes so long is that the skill isn&#x27;t grammatical — it&#x27;s deciding what matters. You can learn grammar in months. Judging relevance takes years, because you have to be wrong in front of people a lot of times first. I&#x27;m better than I was. I still over-explain when I&#x27;m nervous.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>「writing clearly 不是 writing well」这个区分很好。最后一句「我紧张时还是会解释太多」收了漂亮的自知之明。</div>
+    <div class="sp-swap"><b>换成你的情况</b>换成你真实的技能（开车、做饭、编曲、数据分析）。核心是「为什么它慢」要给一个认知层面的理由，不是「需要多练」。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you prefer reading paper books or e-books?</div>
+  <div class="sp-ans"><p>Paper, though not for the reason people usually give. I don&#x27;t think paper is inherently more romantic — it&#x27;s that I can&#x27;t skim a physical book convincingly. On a screen I scroll and convince myself I&#x27;ve read the page. With paper, my eye has to travel across every line, so I actually finish what I start.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。</div>
+    <div class="sp-swap"><b>换成你的情况</b>如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">What kind of weather do you like?</div>
+  <div class="sp-ans"><p>Overcast, which people find strange. Bright sun makes me feel like I should be outside doing something useful; grey weather gives me permission to stay in and read. I spent a winter in a place where it dropped to minus twenty, and oddly that was the most comfortable I&#x27;ve been — the cold was so serious that nobody expected you to be productive.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>反直觉的偏好（喜欢阴天）立刻抓住注意。后面用真实经历做支撑。</div>
+    <div class="sp-swap"><b>换成你的情况</b>换成你真实的天气偏好 + 一个支撑它的记忆。</div>
+  </div>
+</div>
+  </section>
+</article>
+
+<article class="post" id="post-2026-11-16">
+  <header class="post-h">
+    <div class="post-date">
+      <span class="pd-day">11.16</span>
+      <span class="pd-wd">周一 · 2026</span>
+    </div>
+    <h2 class="post-t">科技与工作 · 我为什么要转向 AI 产品</h2>
+  </header>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
+      <span class="sec-note">先读下面的文段，再回来对词</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Technology 科技</span><span class="chunk-exam">雅思 IELTS</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>automation</td><td class='pos'>n.</td><td class='cn'>自动化</td><td class='note'>不可数。automate (v.) / automated (adj.)。</td></tr><tr><td class='num'>2</td><td class='w'>displace workers</td><td class='pos'>phr.</td><td class='cn'>取代工人</td><td class='note'>比 fire workers 学术。displacement 是名词形式。</td></tr><tr><td class='num'>3</td><td class='w'>digital divide</td><td class='pos'>n.</td><td class='cn'>数字鸿沟</td><td class='note'>可数。bridge / narrow the digital divide。</td></tr><tr><td class='num'>4</td><td class='w'>algorithm</td><td class='pos'>n.</td><td class='cn'>算法</td><td class='note'>注意发音 /ˈælɡərɪðəm/，重音在第一节。</td></tr><tr><td class='num'>5</td><td class='w'>data privacy</td><td class='pos'>n.</td><td class='cn'>数据隐私</td><td class='note'>不可数。和 data protection 有细微差别：前者是权利，后者是措施。</td></tr><tr><td class='num'>6</td><td class='w'>surveillance</td><td class='pos'>n.</td><td class='cn'>监控</td><td class='note'>不可数。mass surveillance 大规模监控。</td></tr><tr><td class='num'>7</td><td class='w'>innovation</td><td class='pos'>n.</td><td class='cn'>创新</td><td class='note'>可数/不可数皆可。foster innovation 促进创新。</td></tr><tr><td class='num'>8</td><td class='w'>obsolescence</td><td class='pos'>n.</td><td class='cn'>过时 / 淘汰</td><td class='note'>planned obsolescence 计划性淘汰，消费主义话题高分词。</td></tr><tr><td class='num'>9</td><td class='w'>upskill</td><td class='pos'>v.</td><td class='cn'>提升技能</td><td class='note'>reskill 是「重新学一门技能」，upskill 是「在原有基础上升级」。</td></tr><tr><td class='num'>10</td><td class='w'>connectivity</td><td class='pos'>n.</td><td class='cn'>连通性</td><td class='note'>不可数。rural connectivity 农村网络覆盖。</td></tr></tbody></table></div></div>
+    <div class="tip">digital divide、planned obsolescence、upskill 三个词在写作里都能直接用于「不只是技术问题」的论证。注意 obsolete 是形容词，obsolescence 是名词。</div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
+      <span class="sec-note">目标不是查字典，是读完能复述</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">今天这段有明确的三层递进（就业→公平→权利）。读完试着说出第三层为什么和第一层不是同一类问题。</div>
+<div class="passage">
+  <div class="p-en"><p>The debate over automation is often framed as a simple question: will machines take our jobs? The evidence suggests a more complicated answer. Automation rarely eliminates an entire occupation at once; instead it removes specific tasks, and the people who performed those tasks must either upskill or move on. Historians note that similar fears accompanied the arrival of the spinning machine and the personal computer, and that in both cases employment eventually rose — though not necessarily for the same people, in the same places.</p><p>What worries economists today is the speed. Previous transitions took generations; algorithmic systems can now be deployed across an industry in a few years. Call centres, translation services and routine accounting have already been reshaped, and the workers displaced are often those with the least room to retrain.</p><p>The digital divide adds another layer. In cities, connectivity is treated as a utility; in rural areas it can still be a luxury. Without reliable access, distance learning and remote work remain theoretical. Governments have responded with subsidies and infrastructure programmes, but critics argue these rarely keep pace with innovation.</p><p>Data privacy and surveillance raise a different set of questions. The same systems that recommend a film can infer a person&#x27;s health, politics or income. Some commentators point to planned obsolescence as evidence that the problem is not technology itself but the incentives around it: devices are designed to be replaced, and data is collected because it is valuable, not because it is needed.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>关于自动化（automation）的讨论常被简化成一个问题：机器会抢走我们的工作吗？证据指向一个更复杂的答案。自动化很少一次性消灭整个职业，它更多是移除特定的任务，而做这些任务的人必须要么提升技能（upskill），要么转行。历史学家指出，纺纱机和个人电脑出现时也有过类似的恐惧，而两次的结果都是就业最终上升——尽管受益的未必是同一批人，也未必在同一个地方。</p><p>今天让经济学家担心的是速度。过去的转型要花几代人，而算法（algorithm）系统现在可以在几年内铺满一个行业。呼叫中心、翻译服务和常规会计已经被重塑，而被取代（displace workers）的往往是再培训空间最小的那群人。</p><p>数字鸿沟（digital divide）又加了一层。在城市，连通性（connectivity）被当作基础设施；在农村，它仍可能是奢侈品。没有可靠的接入，远程教育和远程办公只能停留在理论上。政府用补贴和基建计划来应对，但批评者认为这些很少跟得上创新（innovation）的节奏。</p><p>数据隐私（data privacy）和监控（surveillance）带来的是另一类问题。给一个人推荐电影的系统，同样能推断出他的健康、政治倾向或收入。一些评论者用计划性淘汰（planned obsolescence）举例，说明问题不在技术本身，而在围绕技术的激励机制：设备被设计成需要更换的，数据被收集是因为它值钱，而不是因为它被需要。</p></div>
+  </details>
+  <div class="p-note">💡 注意这一段的三层递进：就业 → 公平（鸿沟）→ 权利（隐私）。写科技类大作文时，「分层讨论」比「罗列优缺点」更容易上 7。</div>
+</div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">03</span><h3>今日口语 · 3 题</h3>
+      <span class="sec-note">先自己说一遍，再看参考答案</span></div>
+    
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you use technology more than you&#x27;d like to?</div>
+  <div class="sp-ans"><p>Almost certainly. The honest version is that I don&#x27;t notice it happening — I open my phone to check one thing and surface twenty minutes later having read three articles I didn&#x27;t want. What&#x27;s changed recently is that I&#x27;ve started using AI tools for work, and that has made me more, not less, attached to a screen. I haven&#x27;t decided yet whether that&#x27;s a fair trade.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>「I don&#x27;t notice it happening」是很自然的英语表达。承认矛盾比给结论更真实。</div>
+    <div class="sp-swap"><b>换成你的情况</b>具体工具换成你每天真在用的（AI 助手、日历、笔记软件）。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you think machines will replace human workers?</div>
+  <div class="sp-ans"><p>Partly, and I think the &#x27;replace&#x27; framing hides the interesting part. In my own work, what got automated was the tedious middle — cleaning data, formatting documents, drafting the first version of something. The judgement stayed human. So I&#x27;d say machines are replacing tasks faster than they&#x27;re replacing jobs, and the people who struggle most aren&#x27;t the ones whose whole job disappears; they&#x27;re the ones whose job becomes half-automated and who aren&#x27;t given time to retrain.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>「replace tasks, not jobs」是全篇最有力的区分。后面那句「最难的是半自动化的人」显示你真的想过。</div>
+    <div class="sp-swap"><b>换成你的情况</b>把 cleaning data / formatting documents 换成你真实工作中被自动化掉的部分。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 2</span></div>
+  <div class="sp-q">Describe a piece of technology you find useful. You should say: what it is; how you use it; how long you&#x27;ve used it; and explain why you find it useful.</div>
+  <div class="sp-ans"><p>I&#x27;d like to describe a tool I use every day, which is an AI assistant that runs locally on my laptop.</p><p>I started using it about a year ago, mainly out of curiosity. The first thing I asked it to do was read a long document and pull out the parts that contradicted each other. I expected it to fail. It didn&#x27;t — it found two figures that disagreed and quoted both, which is more than I would have done at eleven at night.</p><p>What makes it genuinely useful isn&#x27;t that it&#x27;s clever. It&#x27;s that it can act rather than just talk. I can ask it to open a file, change something, check the result, and tell me what it did. That loop — do, verify, report — is the difference between a tool that helps and a tool that merely impresses.</p><p>I&#x27;d add one caveat, because I don&#x27;t want to sound like an advertisement. It&#x27;s confidently wrong often enough that I never accept its output without checking. It has made me better at verification, which I suppose is an unexpected side effect.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>关键句：「act rather than just talk」+「do, verify, report」。最后主动说它的缺点，反而增加可信度。</div>
+    <div class="sp-swap"><b>换成你的情况</b>把工具换成你真常用的：某个 App、某个硬件、某个 AI 产品。保留「一个具体失败/意外的故事」。</div>
+  </div>
+</div>
+  </section>
+</article>
+
+<article class="post" id="post-2026-11-15">
+  <header class="post-h">
+    <div class="post-date">
+      <span class="pd-day">11.15</span>
+      <span class="pd-wd">周日 · 2026</span>
+    </div>
+    <h2 class="post-t">环境 · 从「我很关心环保」到「我能说清一个取舍」</h2>
+  </header>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
+      <span class="sec-note">先读下面的文段，再回来对词</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Environment 环境</span><span class="chunk-exam">雅思 IELTS</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>carbon footprint</td><td class='pos'>n.</td><td class='cn'>碳足迹</td><td class='note'>可数。reduce / shrink your carbon footprint。</td></tr><tr><td class='num'>2</td><td class='w'>renewable energy</td><td class='pos'>n.</td><td class='cn'>可再生能源</td><td class='note'>不可数。solar / wind / hydro 都属于它。</td></tr><tr><td class='num'>3</td><td class='w'>emissions</td><td class='pos'>n.</td><td class='cn'>排放物</td><td class='note'>常用复数。cut emissions 是标准动宾搭配。</td></tr><tr><td class='num'>4</td><td class='w'>sustainable</td><td class='pos'>adj.</td><td class='cn'>可持续的</td><td class='note'>名词 sustainability。写作里别滥用，配具体宾语才有力。</td></tr><tr><td class='num'>5</td><td class='w'>deforestation</td><td class='pos'>n.</td><td class='cn'>毁林 / 滥伐森林</td><td class='note'>不可数。反义是 reforestation 再造林。</td></tr><tr><td class='num'>6</td><td class='w'>biodiversity</td><td class='pos'>n.</td><td class='cn'>生物多样性</td><td class='note'>不可数。loss of biodiversity 是高频搭配。</td></tr><tr><td class='num'>7</td><td class='w'>single-use plastic</td><td class='pos'>n.</td><td class='cn'>一次性塑料</td><td class='note'>single-use 是很好的形容词前缀，比 disposable 更现代。</td></tr><tr><td class='num'>8</td><td class='w'>carbon tax</td><td class='pos'>n.</td><td class='cn'>碳税</td><td class='note'>可数。政策类议论文常用。</td></tr><tr><td class='num'>9</td><td class='w'>greenwashing</td><td class='pos'>n.</td><td class='cn'>漂绿 / 伪环保宣传</td><td class='note'>不可数。企业话题的高分词，Band 7+ 辨识度很高。</td></tr><tr><td class='num'>10</td><td class='w'>offset</td><td class='pos'>v.</td><td class='cn'>抵消</td><td class='note'>carbon offset 碳抵消。也可说 offset the cost。</td></tr></tbody></table></div></div>
+    <div class="tip">greenwashing 和 planned obsolescence 是那种「一用就显水平」的词，但别硬塞。carbon footprint 已经很常用，不算高分词，用它只是为了让句子具体。</div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
+      <span class="sec-note">目标不是查字典，是读完能复述</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">环境类文章几乎都是「成效 + 但是」结构。今天读完，试着用一句话说出作者对 greenwashing 的态度。</div>
+<div class="passage">
+  <div class="p-en"><p>Every product we buy carries a carbon footprint, from the raw materials extracted to the transport that brings it to our door. In response, many governments have promoted renewable energy and introduced a carbon tax designed to make pollution expensive. The logic is simple: if emissions cost money, companies will find ways to reduce them.</p><p>The results have been mixed. Between 2010 and 2020, the cost of solar panels fell by more than eighty per cent, and in several countries renewable energy now supplies a larger share of electricity than coal. Yet global emissions continued to rise, largely because demand for energy grew even faster than clean supply.</p><p>Deforestation remains a stubborn problem. Forests absorb roughly a third of the carbon dioxide released each year, and losing them threatens biodiversity in ways that are difficult to reverse. Meanwhile, consumer campaigns against single-use plastic have changed behaviour in visible ways, but some researchers caution that such gestures can distract from the harder structural questions.</p><p>The most persistent criticism concerns greenwashing. A company may advertise a sustainable packaging line while expanding the factories behind it. Unless claims are audited, shoppers have little way of knowing whether a product genuinely offsets its impact, or simply markets the appearance of doing so.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>我们购买的每件商品都带有碳足迹（carbon footprint）——从开采的原材料，到把它送到家门口的运输。作为回应，许多政府推广可再生能源（renewable energy），并引入碳税（carbon tax），意在让污染变得昂贵。逻辑很简单：如果排放（emissions）要花钱，企业就会想办法减少排放。</p><p>结果是好坏参半。2010 到 2020 年间，太阳能板的成本下降超过八成，在几个国家，可再生能源提供的电力占比已经超过煤炭。但全球排放量仍在上升，主要原因是能源需求的增长比清洁供给更快。</p><p>毁林（deforestation）仍是个顽固的难题。森林吸收了每年排放的二氧化碳中约三分之一，失去森林会以难以逆转的方式威胁生物多样性（biodiversity）。与此同时，反对一次性塑料（single-use plastic）的消费者运动确实可见地改变了行为，但有研究者提醒：这类姿态性行动可能让人分心，忽略了更艰难的结构性问题。</p><p>最持续的批评指向漂绿（greenwashing）。一家公司可以一边宣传可持续（sustainable）包装线，一边扩建背后的工厂。除非宣传被第三方审核，消费者几乎无从判断一件产品是真的抵消（offset）了它的影响，还是只是在营销一种「我在做」的样子。</p></div>
+  </details>
+  <div class="p-note">💡 「对比 + 转折」是环境类文章最常用的骨架：说成效 → 说但是。注意 Meanwhile / Yet / Unless 三个衔接词的用法。</div>
+</div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">03</span><h3>今日口语 · 3 题</h3>
+      <span class="sec-note">先自己说一遍，再看参考答案</span></div>
+    
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you do anything to protect the environment?</div>
+  <div class="sp-ans"><p>Nothing heroic, I&#x27;m afraid. I cycle rather than drive when the weather allows, and I&#x27;ve got much better at not buying things I don&#x27;t need — which, honestly, is the part that took the longest. I used to think environmentalism was about sorting rubbish correctly. Now I think it&#x27;s mostly about buying less, which is far less satisfying to talk about at dinner parties.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>诚实 + 一句自嘲，比「我每天都做环保」可信得多。结尾那个反讽是加分项。</div>
+    <div class="sp-swap"><b>换成你的情况</b>cycling 换成你真实做的：自带杯、少点外卖、买二手、修而不换。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Is recycling important in your country?</div>
+  <div class="sp-ans"><p>It&#x27;s become a routine, at least in cities. Most residential compounds have sorting bins and there&#x27;s real social pressure to use them properly. My scepticism is about what happens afterwards — I&#x27;ve read that a fair amount of sorted waste is recombined at the collection stage, which makes the household effort feel a bit theatrical. I still do it, but I&#x27;d rather see investment in the sorting infrastructure than another campaign poster.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>「制度性怀疑」是成熟观点。别说「很重要，我们都应该做」——那是没有信息量的答案。</div>
+    <div class="sp-swap"><b>换成你的情况</b>如果你所在城市执行力度不同，把 residential compounds 换成真实场景。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 3</span></div>
+  <div class="sp-q">Some people argue that individual action is meaningless and only government policy can address environmental problems. To what extent do you agree?</div>
+  <div class="sp-ans"><p>I&#x27;d push back on the word &#x27;meaningless&#x27;, though I&#x27;d agree that individual action alone is insufficient.</p><p>The strongest version of the pessimistic argument is about scale. If a household cuts its carbon footprint by twenty per cent while national emissions rise, the aggregate effect is invisible. And there&#x27;s a fairness problem too: when responsibility is framed as personal virtue, it conveniently shifts attention away from the small number of companies and policies that account for most emissions.</p><p>But I don&#x27;t think that leads where the argument wants to go. Individual behaviour is what creates political permission. A carbon tax is electorally impossible in a country where nobody has changed their habits; it becomes possible once enough people have. So I&#x27;d frame it as sequence rather than substitution: individual action doesn&#x27;t replace policy, it makes policy survivable. The mistake is treating it as the finish line when it&#x27;s actually the precondition.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>Part 3 高分结构：先给对手最强版本 → 承认其合理处 → 指出它推不到结论 → 给一个替代框架（sequence not substitution）。注意「conveniently」这类态度词。</div>
+    <div class="sp-swap"><b>换成你的情况</b>这套「先强化对手论点再拆」的框架可用于任何 Part 3 的 agree/disagree 题。</div>
+  </div>
+</div>
+  </section>
+</article>
+
+<article class="post" id="post-2026-11-14">
+  <header class="post-h">
+    <div class="post-date">
+      <span class="pd-day">11.14</span>
+      <span class="pd-wd">周六 · 2026</span>
+    </div>
+    <h2 class="post-t">教育与学习 · 为什么我重新开始学英语</h2>
+  </header>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">01</span><h3>今日词组 · 10 个</h3>
+      <span class="sec-note">先读下面的文段，再回来对词</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">Education 教育</span><span class="chunk-exam">雅思 IELTS</span></div><div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>curriculum</td><td class='pos'>n.</td><td class='cn'>课程体系</td><td class='note'>可数，复数 curricula / curriculums。比 course 大，指整个课程设置。</td></tr><tr><td class='num'>2</td><td class='w'>rote learning</td><td class='pos'>n.</td><td class='cn'>死记硬背</td><td class='note'>固定搭配。反义是 hands-on learning / experiential learning。</td></tr><tr><td class='num'>3</td><td class='w'>critical thinking</td><td class='pos'>n.</td><td class='cn'>批判性思维</td><td class='note'>议论文高频。collocation: foster / cultivate critical thinking。</td></tr><tr><td class='num'>4</td><td class='w'>vocational training</td><td class='pos'>n.</td><td class='cn'>职业培训</td><td class='note'>对照 academic education。写职业教育话题必备。</td></tr><tr><td class='num'>5</td><td class='w'>syllabus</td><td class='pos'>n.</td><td class='cn'>教学大纲</td><td class='note'>单数 syllabus，复数 syllabi / syllabuses。</td></tr><tr><td class='num'>6</td><td class='w'>truancy</td><td class='pos'>n.</td><td class='cn'>旷课</td><td class='note'>不可数。truancy rate 旷课率。动词是 play truant。</td></tr><tr><td class='num'>7</td><td class='w'>peer pressure</td><td class='pos'>n.</td><td class='cn'>同辈压力</td><td class='note'>不可数。青少年话题极高频。</td></tr><tr><td class='num'>8</td><td class='w'>extra-curricular activities</td><td class='pos'>n.</td><td class='cn'>课外活动</td><td class='note'>常用复数。写作时说明「软技能来源」很好用。</td></tr><tr><td class='num'>9</td><td class='w'>literacy rate</td><td class='pos'>n.</td><td class='cn'>识字率 / 文化程度</td><td class='note'>数字型话题（如教育投入）常配数据描述。</td></tr><tr><td class='num'>10</td><td class='w'>academic performance</td><td class='pos'>n.</td><td class='cn'>学业表现</td><td class='note'>比 grades 正式。collocation: improve / decline in academic performance。</td></tr></tbody></table></div></div>
+    <div class="tip">今天 10 个词里，最值得直接用在作文的是 critical thinking、vocational training、academic performance。rote learning 和 peer pressure 是「负面词」，写议论文时用来描述问题很顺手。</div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">02</span><h3>今日阅读</h3>
+      <span class="sec-note">目标不是查字典，是读完能复述</span></div>
+    <div class="chunk"><div class="chunk-h"><span class="chunk-topic">阅读 Reading</span></div><div class="p-why">教育类是雅思写作和口语 Part 3 的第一大话题。今天这段覆盖 10 个核心词，读完请用中文说出「死记硬背 vs 批判性思维」这对矛盾。</div>
+<div class="passage">
+  <div class="p-en"><p>For decades, education systems in many countries were built around a fixed curriculum and a single syllabus that every student had to follow at the same pace. Rote learning was the default method: students memorised facts, recited them in exams, and moved on. Critics argue that this approach leaves little room for critical thinking, which is now considered one of the most valuable skills in the workplace.</p><p>Vocational training has gradually gained ground as an alternative. Instead of pushing every student towards university, some governments now fund apprenticeships and technical colleges, arguing that a country needs both engineers and electricians. Supporters point to lower truancy rates and higher employment among graduates of such programmes.</p><p>However, the picture is not entirely positive. Peer pressure and a culture of comparison can push students towards paths their families consider respectable rather than ones that suit them. Extra-curricular activities, which used to be treated as optional, are increasingly seen as essential, because they build teamwork and resilience that academic performance alone cannot measure. Some researchers also warn that rising literacy rates do not automatically translate into better judgement.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>几十年来，许多国家的教育体系都围绕一套固定的课程（curriculum）和所有人必须按同一进度完成的教学大纲（syllabus）来搭建。死记硬背（rote learning）是默认的方法：学生记住事实，在考试中背诵出来，然后继续往前走。批评者认为，这种做法几乎没有给批判性思维（critical thinking）留出空间——而这在今天被视为职场中最有价值的能力之一。</p><p>职业培训（vocational training）作为一种替代路径逐渐受到重视。一些政府不再把每个学生都往大学里推，而是资助学徒制和技术学院，理由是：一个国家既需要工程师，也需要电工。支持者指出，这类项目的毕业生旷课率（truancy rate）更低，就业率更高。</p><p>但情况并非全然正面。同辈压力（peer pressure）和攀比文化，可能把学生推向家人认为体面的道路，而不是真正适合他们的道路。课外活动（extra-curricular activities）过去被视为可有可无，现在越来越被看作必需品，因为它们培养的团队协作与韧性，是单看学业表现（academic performance）衡量不出来的。也有研究者警告：识字率（literacy rate）的上升，并不会自动转化为更好的判断力。</p></div>
+  </details>
+  <div class="p-note">💡 这段覆盖本组 10 个词。建议朗读 3 遍，然后遮住中文复述大意——能复述出来才算真记住。</div>
+</div></div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-h"><span class="sec-n">03</span><h3>今日口语 · 3 题</h3>
+      <span class="sec-note">先自己说一遍，再看参考答案</span></div>
+    
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you enjoy learning languages?</div>
+  <div class="sp-ans"><p>I do now, though I didn&#x27;t when I was younger. At school, English was just another subject I had to pass — I memorised vocabulary lists and forgot them within a week. Things changed when I started reading music criticism in English. I wanted to understand why a reviewer called an album &#x27;deceptively simple&#x27;, and that curiosity did what ten years of exams couldn&#x27;t. So now I&#x27;d say I learn languages out of appetite rather than obligation.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>结构：现在的答案 → 转折 → 一个具体的触发点。考官最想听「一个具体细节」，不是「英语很重要」。</div>
+    <div class="sp-swap"><b>换成你的情况</b>把 reading music criticism 换成你自己真实的触发点：看美剧、和一个外国朋友聊天、读论文、听播客。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 1</span></div>
+  <div class="sp-q">Do you think it&#x27;s important to learn a second language?</div>
+  <div class="sp-ans"><p>I think it changes what you can access rather than simply adding a skill. My work involves a lot of reading about AI products, and the best material is still published in English first — by the time something is translated, the conversation has moved on. Beyond that, there&#x27;s a subtler benefit: when you speak a language badly but willingly, you get used to being wrong in public, and that turns out to be useful in almost every other part of life.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>两个层次：实用层（获取信息）+ 心理层（容忍犯错）。第二层是 7 分以上的加分点。</div>
+    <div class="sp-swap"><b>换成你的情况</b>把 AI products 换成你的行业；「being wrong in public」这个观察很通用，可以保留。</div>
+  </div>
+</div>
+<div class="speak">
+  <div class="sp-head"><span class="sp-part">Part 2</span></div>
+  <div class="sp-q">Describe a subject you found difficult but now find interesting. You should say: what the subject was; when you studied it; why it was difficult; and explain why your attitude changed.</div>
+  <div class="sp-ans"><p>I&#x27;d like to talk about statistics. I first met it during my master&#x27;s degree in finance, and I have to admit I struggled badly. The formulas themselves weren&#x27;t the problem — I could follow the algebra. What defeated me was that I couldn&#x27;t see what any of it was for. We were asked to compute confidence intervals for abstract datasets, and I remember thinking that this had nothing to do with anything I cared about.</p><p>It was difficult for a second reason, which is less flattering. I&#x27;d been good at exams my whole life by being good at memorising, and statistics doesn&#x27;t reward that. You can memorise the formula and still get the interpretation wrong. It exposed a habit I&#x27;d been relying on for years.</p><p>My attitude changed quite suddenly, when I started working on real data. I was asked to judge whether a difference in survey results between two regions was meaningful or just noise, and I realised I finally had a reason to care. Once the question was concrete, the statistics stopped being abstract machinery and became the only honest way to answer it. Now I find it genuinely elegant — it&#x27;s a discipline for admitting how little you can actually conclude, which is rarer and more valuable than it sounds.</p></div>
+  <div class="sp-foot">
+    <div class="sp-note"><b>答题思路</b>Part 2 拿高分的关键是「讲一个变化」而不是「描述一个科目」。注意用了两层困难 + 一个转折点 + 一个现在的评价。全程约 2 分钟。</div>
+    <div class="sp-swap"><b>换成你的情况</b>如果你不想讲统计，可换成：编程 / 会计 / 数据可视化。把「我喜欢记忆式学习」这个自我观察保留，它让你显得真实。</div>
+  </div>
+</div>
+  </section>
+</article>
+
+  </div>
+</div>
+
+<!-- ============ 词库底座 ============ -->
+<div class="page" id="page-bank">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">Knowledge Base</div>
+      <h1>三考试共用的<em>词库底座</em></h1>
+      <p>雅思偏学术议论文，托福偏学术讲座，GRE 偏逻辑辨析。三个考试的词不是三套，而是<b>同一批知识在不同难度上的切片</b>——所以放在一个底座里，每天从里面取用。</p>
+    </div>
+    
+<section class="bank">
+  <div class="bank-h"><h2>雅思 IELTS</h2>
+    <span class="bank-count">3 组 · 30 词</span></div>
+  <p class="bank-desc">Academic 与 General Training 共用。偏学术阅读与议论文写作，Band 6→7 的关键是「用得上、用得准」而不是生僻。</p>
+
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">Education 教育</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>curriculum</td><td class='pos'>n.</td><td class='cn'>课程体系</td><td class='note'>可数，复数 curricula / curriculums。比 course 大，指整个课程设置。</td></tr><tr><td class='num'>2</td><td class='w'>rote learning</td><td class='pos'>n.</td><td class='cn'>死记硬背</td><td class='note'>固定搭配。反义是 hands-on learning / experiential learning。</td></tr><tr><td class='num'>3</td><td class='w'>critical thinking</td><td class='pos'>n.</td><td class='cn'>批判性思维</td><td class='note'>议论文高频。collocation: foster / cultivate critical thinking。</td></tr><tr><td class='num'>4</td><td class='w'>vocational training</td><td class='pos'>n.</td><td class='cn'>职业培训</td><td class='note'>对照 academic education。写职业教育话题必备。</td></tr><tr><td class='num'>5</td><td class='w'>syllabus</td><td class='pos'>n.</td><td class='cn'>教学大纲</td><td class='note'>单数 syllabus，复数 syllabi / syllabuses。</td></tr><tr><td class='num'>6</td><td class='w'>truancy</td><td class='pos'>n.</td><td class='cn'>旷课</td><td class='note'>不可数。truancy rate 旷课率。动词是 play truant。</td></tr><tr><td class='num'>7</td><td class='w'>peer pressure</td><td class='pos'>n.</td><td class='cn'>同辈压力</td><td class='note'>不可数。青少年话题极高频。</td></tr><tr><td class='num'>8</td><td class='w'>extra-curricular activities</td><td class='pos'>n.</td><td class='cn'>课外活动</td><td class='note'>常用复数。写作时说明「软技能来源」很好用。</td></tr><tr><td class='num'>9</td><td class='w'>literacy rate</td><td class='pos'>n.</td><td class='cn'>识字率 / 文化程度</td><td class='note'>数字型话题（如教育投入）常配数据描述。</td></tr><tr><td class='num'>10</td><td class='w'>academic performance</td><td class='pos'>n.</td><td class='cn'>学业表现</td><td class='note'>比 grades 正式。collocation: improve / decline in academic performance。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>For decades, education systems in many countries were built around a fixed curriculum and a single syllabus that every student had to follow at the same pace. Rote learning was the default method: students memorised facts, recited them in exams, and moved on. Critics argue that this approach leaves little room for critical thinking, which is now considered one of the most valuable skills in the workplace.</p><p>Vocational training has gradually gained ground as an alternative. Instead of pushing every student towards university, some governments now fund apprenticeships and technical colleges, arguing that a country needs both engineers and electricians. Supporters point to lower truancy rates and higher employment among graduates of such programmes.</p><p>However, the picture is not entirely positive. Peer pressure and a culture of comparison can push students towards paths their families consider respectable rather than ones that suit them. Extra-curricular activities, which used to be treated as optional, are increasingly seen as essential, because they build teamwork and resilience that academic performance alone cannot measure. Some researchers also warn that rising literacy rates do not automatically translate into better judgement.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>几十年来，许多国家的教育体系都围绕一套固定的课程（curriculum）和所有人必须按同一进度完成的教学大纲（syllabus）来搭建。死记硬背（rote learning）是默认的方法：学生记住事实，在考试中背诵出来，然后继续往前走。批评者认为，这种做法几乎没有给批判性思维（critical thinking）留出空间——而这在今天被视为职场中最有价值的能力之一。</p><p>职业培训（vocational training）作为一种替代路径逐渐受到重视。一些政府不再把每个学生都往大学里推，而是资助学徒制和技术学院，理由是：一个国家既需要工程师，也需要电工。支持者指出，这类项目的毕业生旷课率（truancy rate）更低，就业率更高。</p><p>但情况并非全然正面。同辈压力（peer pressure）和攀比文化，可能把学生推向家人认为体面的道路，而不是真正适合他们的道路。课外活动（extra-curricular activities）过去被视为可有可无，现在越来越被看作必需品，因为它们培养的团队协作与韧性，是单看学业表现（academic performance）衡量不出来的。也有研究者警告：识字率（literacy rate）的上升，并不会自动转化为更好的判断力。</p></div>
+  </details>
+  <div class="p-note">💡 这段覆盖本组 10 个词。建议朗读 3 遍，然后遮住中文复述大意——能复述出来才算真记住。</div>
+</div>
+  </div>
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">Environment 环境</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>carbon footprint</td><td class='pos'>n.</td><td class='cn'>碳足迹</td><td class='note'>可数。reduce / shrink your carbon footprint。</td></tr><tr><td class='num'>2</td><td class='w'>renewable energy</td><td class='pos'>n.</td><td class='cn'>可再生能源</td><td class='note'>不可数。solar / wind / hydro 都属于它。</td></tr><tr><td class='num'>3</td><td class='w'>emissions</td><td class='pos'>n.</td><td class='cn'>排放物</td><td class='note'>常用复数。cut emissions 是标准动宾搭配。</td></tr><tr><td class='num'>4</td><td class='w'>sustainable</td><td class='pos'>adj.</td><td class='cn'>可持续的</td><td class='note'>名词 sustainability。写作里别滥用，配具体宾语才有力。</td></tr><tr><td class='num'>5</td><td class='w'>deforestation</td><td class='pos'>n.</td><td class='cn'>毁林 / 滥伐森林</td><td class='note'>不可数。反义是 reforestation 再造林。</td></tr><tr><td class='num'>6</td><td class='w'>biodiversity</td><td class='pos'>n.</td><td class='cn'>生物多样性</td><td class='note'>不可数。loss of biodiversity 是高频搭配。</td></tr><tr><td class='num'>7</td><td class='w'>single-use plastic</td><td class='pos'>n.</td><td class='cn'>一次性塑料</td><td class='note'>single-use 是很好的形容词前缀，比 disposable 更现代。</td></tr><tr><td class='num'>8</td><td class='w'>carbon tax</td><td class='pos'>n.</td><td class='cn'>碳税</td><td class='note'>可数。政策类议论文常用。</td></tr><tr><td class='num'>9</td><td class='w'>greenwashing</td><td class='pos'>n.</td><td class='cn'>漂绿 / 伪环保宣传</td><td class='note'>不可数。企业话题的高分词，Band 7+ 辨识度很高。</td></tr><tr><td class='num'>10</td><td class='w'>offset</td><td class='pos'>v.</td><td class='cn'>抵消</td><td class='note'>carbon offset 碳抵消。也可说 offset the cost。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>Every product we buy carries a carbon footprint, from the raw materials extracted to the transport that brings it to our door. In response, many governments have promoted renewable energy and introduced a carbon tax designed to make pollution expensive. The logic is simple: if emissions cost money, companies will find ways to reduce them.</p><p>The results have been mixed. Between 2010 and 2020, the cost of solar panels fell by more than eighty per cent, and in several countries renewable energy now supplies a larger share of electricity than coal. Yet global emissions continued to rise, largely because demand for energy grew even faster than clean supply.</p><p>Deforestation remains a stubborn problem. Forests absorb roughly a third of the carbon dioxide released each year, and losing them threatens biodiversity in ways that are difficult to reverse. Meanwhile, consumer campaigns against single-use plastic have changed behaviour in visible ways, but some researchers caution that such gestures can distract from the harder structural questions.</p><p>The most persistent criticism concerns greenwashing. A company may advertise a sustainable packaging line while expanding the factories behind it. Unless claims are audited, shoppers have little way of knowing whether a product genuinely offsets its impact, or simply markets the appearance of doing so.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>我们购买的每件商品都带有碳足迹（carbon footprint）——从开采的原材料，到把它送到家门口的运输。作为回应，许多政府推广可再生能源（renewable energy），并引入碳税（carbon tax），意在让污染变得昂贵。逻辑很简单：如果排放（emissions）要花钱，企业就会想办法减少排放。</p><p>结果是好坏参半。2010 到 2020 年间，太阳能板的成本下降超过八成，在几个国家，可再生能源提供的电力占比已经超过煤炭。但全球排放量仍在上升，主要原因是能源需求的增长比清洁供给更快。</p><p>毁林（deforestation）仍是个顽固的难题。森林吸收了每年排放的二氧化碳中约三分之一，失去森林会以难以逆转的方式威胁生物多样性（biodiversity）。与此同时，反对一次性塑料（single-use plastic）的消费者运动确实可见地改变了行为，但有研究者提醒：这类姿态性行动可能让人分心，忽略了更艰难的结构性问题。</p><p>最持续的批评指向漂绿（greenwashing）。一家公司可以一边宣传可持续（sustainable）包装线，一边扩建背后的工厂。除非宣传被第三方审核，消费者几乎无从判断一件产品是真的抵消（offset）了它的影响，还是只是在营销一种「我在做」的样子。</p></div>
+  </details>
+  <div class="p-note">💡 「对比 + 转折」是环境类文章最常用的骨架：说成效 → 说但是。注意 Meanwhile / Yet / Unless 三个衔接词的用法。</div>
+</div>
+  </div>
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">Technology 科技</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>automation</td><td class='pos'>n.</td><td class='cn'>自动化</td><td class='note'>不可数。automate (v.) / automated (adj.)。</td></tr><tr><td class='num'>2</td><td class='w'>displace workers</td><td class='pos'>phr.</td><td class='cn'>取代工人</td><td class='note'>比 fire workers 学术。displacement 是名词形式。</td></tr><tr><td class='num'>3</td><td class='w'>digital divide</td><td class='pos'>n.</td><td class='cn'>数字鸿沟</td><td class='note'>可数。bridge / narrow the digital divide。</td></tr><tr><td class='num'>4</td><td class='w'>algorithm</td><td class='pos'>n.</td><td class='cn'>算法</td><td class='note'>注意发音 /ˈælɡərɪðəm/，重音在第一节。</td></tr><tr><td class='num'>5</td><td class='w'>data privacy</td><td class='pos'>n.</td><td class='cn'>数据隐私</td><td class='note'>不可数。和 data protection 有细微差别：前者是权利，后者是措施。</td></tr><tr><td class='num'>6</td><td class='w'>surveillance</td><td class='pos'>n.</td><td class='cn'>监控</td><td class='note'>不可数。mass surveillance 大规模监控。</td></tr><tr><td class='num'>7</td><td class='w'>innovation</td><td class='pos'>n.</td><td class='cn'>创新</td><td class='note'>可数/不可数皆可。foster innovation 促进创新。</td></tr><tr><td class='num'>8</td><td class='w'>obsolescence</td><td class='pos'>n.</td><td class='cn'>过时 / 淘汰</td><td class='note'>planned obsolescence 计划性淘汰，消费主义话题高分词。</td></tr><tr><td class='num'>9</td><td class='w'>upskill</td><td class='pos'>v.</td><td class='cn'>提升技能</td><td class='note'>reskill 是「重新学一门技能」，upskill 是「在原有基础上升级」。</td></tr><tr><td class='num'>10</td><td class='w'>connectivity</td><td class='pos'>n.</td><td class='cn'>连通性</td><td class='note'>不可数。rural connectivity 农村网络覆盖。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>The debate over automation is often framed as a simple question: will machines take our jobs? The evidence suggests a more complicated answer. Automation rarely eliminates an entire occupation at once; instead it removes specific tasks, and the people who performed those tasks must either upskill or move on. Historians note that similar fears accompanied the arrival of the spinning machine and the personal computer, and that in both cases employment eventually rose — though not necessarily for the same people, in the same places.</p><p>What worries economists today is the speed. Previous transitions took generations; algorithmic systems can now be deployed across an industry in a few years. Call centres, translation services and routine accounting have already been reshaped, and the workers displaced are often those with the least room to retrain.</p><p>The digital divide adds another layer. In cities, connectivity is treated as a utility; in rural areas it can still be a luxury. Without reliable access, distance learning and remote work remain theoretical. Governments have responded with subsidies and infrastructure programmes, but critics argue these rarely keep pace with innovation.</p><p>Data privacy and surveillance raise a different set of questions. The same systems that recommend a film can infer a person&#x27;s health, politics or income. Some commentators point to planned obsolescence as evidence that the problem is not technology itself but the incentives around it: devices are designed to be replaced, and data is collected because it is valuable, not because it is needed.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>关于自动化（automation）的讨论常被简化成一个问题：机器会抢走我们的工作吗？证据指向一个更复杂的答案。自动化很少一次性消灭整个职业，它更多是移除特定的任务，而做这些任务的人必须要么提升技能（upskill），要么转行。历史学家指出，纺纱机和个人电脑出现时也有过类似的恐惧，而两次的结果都是就业最终上升——尽管受益的未必是同一批人，也未必在同一个地方。</p><p>今天让经济学家担心的是速度。过去的转型要花几代人，而算法（algorithm）系统现在可以在几年内铺满一个行业。呼叫中心、翻译服务和常规会计已经被重塑，而被取代（displace workers）的往往是再培训空间最小的那群人。</p><p>数字鸿沟（digital divide）又加了一层。在城市，连通性（connectivity）被当作基础设施；在农村，它仍可能是奢侈品。没有可靠的接入，远程教育和远程办公只能停留在理论上。政府用补贴和基建计划来应对，但批评者认为这些很少跟得上创新（innovation）的节奏。</p><p>数据隐私（data privacy）和监控（surveillance）带来的是另一类问题。给一个人推荐电影的系统，同样能推断出他的健康、政治倾向或收入。一些评论者用计划性淘汰（planned obsolescence）举例，说明问题不在技术本身，而在围绕技术的激励机制：设备被设计成需要更换的，数据被收集是因为它值钱，而不是因为它被需要。</p></div>
+  </details>
+  <div class="p-note">💡 注意这一段的三层递进：就业 → 公平（鸿沟）→ 权利（隐私）。写科技类大作文时，「分层讨论」比「罗列优缺点」更容易上 7。</div>
+</div>
+  </div></section>
+<section class="bank">
+  <div class="bank-h"><h2>托福 TOEFL</h2>
+    <span class="bank-count">2 组 · 20 词</span></div>
+  <p class="bank-desc">偏北美学术场景：讲座、教科书、自然科学与人文社科。词汇要求「认得出」多于「写得出」，但学术名词密度高。</p>
+
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">Geology 地质</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>tectonic plate</td><td class='pos'>n.</td><td class='cn'>构造板块</td><td class='note'>托福地质听力第一大主题。plate boundary 板块边界。</td></tr><tr><td class='num'>2</td><td class='w'>sediment</td><td class='pos'>n.</td><td class='cn'>沉积物</td><td class='note'>不可数。sedimentary rock 沉积岩。</td></tr><tr><td class='num'>3</td><td class='w'>erosion</td><td class='pos'>n.</td><td class='cn'>侵蚀</td><td class='note'>不可数。动词 erode。风蚀 wind erosion / 水蚀 water erosion。</td></tr><tr><td class='num'>4</td><td class='w'>magma</td><td class='pos'>n.</td><td class='cn'>岩浆（地下）</td><td class='note'>注意：喷出地表后叫 lava。托福常考这个区分。</td></tr><tr><td class='num'>5</td><td class='w'>fossil record</td><td class='pos'>n.</td><td class='cn'>化石记录</td><td class='note'>不可数。the fossil record shows / suggests。</td></tr><tr><td class='num'>6</td><td class='w'>stratigraphy</td><td class='pos'>n.</td><td class='cn'>地层学</td><td class='note'>通过地层顺序断代的方法。</td></tr><tr><td class='num'>7</td><td class='w'>continental drift</td><td class='pos'>n.</td><td class='cn'>大陆漂移</td><td class='note'>魏格纳提出，后被板块构造理论取代。</td></tr><tr><td class='num'>8</td><td class='w'>subduction</td><td class='pos'>n.</td><td class='cn'>俯冲（板块）</td><td class='note'>subduction zone 俯冲带，地震高发区。</td></tr><tr><td class='num'>9</td><td class='w'>mineral deposit</td><td class='pos'>n.</td><td class='cn'>矿床</td><td class='note'>可数。</td></tr><tr><td class='num'>10</td><td class='w'>radiometric dating</td><td class='pos'>n.</td><td class='cn'>放射性测年</td><td class='note'>靠同位素半衰期定年代。托福常考方法题。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>In the early twentieth century, Alfred Wegener noticed that the coastlines of South America and Africa appeared to fit together like pieces of a puzzle. He proposed the theory of continental drift, arguing that the continents had once formed a single landmass and had since drifted apart. His evidence included matching fossil record across oceans and similar rock formations on opposite shores. The theory was largely dismissed for decades, because Wegener could not explain what force could move something as massive as a continent.</p><p>The answer came from the ocean floor. Mapping after the Second World War revealed a chain of underwater mountains, and scientists realised that new crust was forming along them. As magma rises and cools, it records the direction of the Earth&#x27;s magnetic field at that moment — producing symmetrical stripes on either side of the ridge. This became strong support for the idea of tectonic plate movement.</p><p>Where plates meet, the consequences are dramatic. At a subduction zone, one plate slides beneath another, generating earthquakes and volcanic activity. Sediment carried by rivers is compressed over millions of years into sedimentary rock, and stratigraphy allows geologists to reconstruct the sequence of events. Radiometric dating then provides absolute ages, while the fossil record supplies a parallel timeline of life. Mineral deposits, often concentrated along ancient plate boundaries, became the practical incentive for much of this research.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>二十世纪初，阿尔弗雷德·魏格纳注意到南美洲和非洲的海岸线看起来像拼图一样能对合。他提出了大陆漂移（continental drift）理论，主张各大陆曾经连成一整块陆地，后来才彼此分开。他的证据包括跨越大洋相互吻合的化石记录（fossil record），以及对岸相似的岩层构造。这个理论在此后几十年里基本被否定，因为魏格纳无法解释，什么样的力能推动像大陆这么巨大的东西。</p><p>答案来自海底。二战后的海底测绘揭示出一条海底山脉，科学家意识到新的地壳正沿着它生成。岩浆（magma）上升冷却时，会记录下当时地磁场的方向——于是在洋脊两侧形成对称的条纹。这成为构造板块（tectonic plate）运动的有力证据。</p><p>板块相交之处，后果非常剧烈。在俯冲（subduction）带，一个板块滑入另一个板块之下，引发地震和火山活动。河流携带的沉积物（sediment）在数百万年里被压成沉积岩，而地层学（stratigraphy）让地质学家得以重建事件的先后顺序。放射性测年（radiometric dating）提供绝对年代，化石记录则提供一条平行的生命时间线。矿床（mineral deposit）常富集于古板块边界附近，这成了推动这类研究的现实动力。</p></div>
+  </details>
+  <div class="p-note">💡 托福阅读的典型结构：提出旧理论 → 指出漏洞 → 新证据推翻 → 补充细节。抓住这个骨架，细节题就不慌。</div>
+</div>
+  </div>
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">Biology 生物</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>photosynthesis</td><td class='pos'>n.</td><td class='cn'>光合作用</td><td class='note'>不可数。托福生物第一大词。</td></tr><tr><td class='num'>2</td><td class='w'>symbiosis</td><td class='pos'>n.</td><td class='cn'>共生</td><td class='note'>三种类型：mutualism 互利 / commensalism 偏利 / parasitism 寄生。</td></tr><tr><td class='num'>3</td><td class='w'>adaptation</td><td class='pos'>n.</td><td class='cn'>适应（演化）</td><td class='note'>可数。adaptation to 后接环境。</td></tr><tr><td class='num'>4</td><td class='w'>predator</td><td class='pos'>n.</td><td class='cn'>捕食者</td><td class='note'>prey 猎物。predator-prey relationship。</td></tr><tr><td class='num'>5</td><td class='w'>habitat</td><td class='pos'>n.</td><td class='cn'>栖息地</td><td class='note'>habitat loss 栖息地丧失，物种灭绝首因。</td></tr><tr><td class='num'>6</td><td class='w'>metabolism</td><td class='pos'>n.</td><td class='cn'>新陈代谢</td><td class='note'>metabolic rate 代谢率。冷血/温血动物话题常考。</td></tr><tr><td class='num'>7</td><td class='w'>cell membrane</td><td class='pos'>n.</td><td class='cn'>细胞膜</td><td class='note'>半透性 semi-permeable。</td></tr><tr><td class='num'>8</td><td class='w'>evolutionary advantage</td><td class='pos'>n.</td><td class='cn'>演化优势</td><td class='note'>解释「为什么演化出这个特征」的标准答法。</td></tr><tr><td class='num'>9</td><td class='w'>migration</td><td class='pos'>n.</td><td class='cn'>迁徙</td><td class='note'>动物迁徙；人类移民用 immigration/emigration 区分。</td></tr><tr><td class='num'>10</td><td class='w'>extinction</td><td class='pos'>n.</td><td class='cn'>灭绝</td><td class='note'>mass extinction 大规模灭绝。extinct (adj.)。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>Photosynthesis is the process by which plants convert sunlight into chemical energy, and it underpins almost every food chain on Earth. Yet the relationship between organisms is rarely simple. Symbiosis — in which two species live in close association — takes several forms. In mutualism, both partners benefit: certain ants protect acacia trees and receive shelter and food in return. Parasitism is the opposite: one organism gains at the other&#x27;s expense, sometimes without killing it, since a dead host is a useless host.</p><p>Predators exert a subtler influence. By removing the weakest prey, they keep populations healthy and prevent any single species from dominating. When wolves were reintroduced to Yellowstone in 1995, the elk changed their grazing behaviour, which in turn allowed willow and aspen to recover along riverbanks — a chain of effects that ecologists call a trophic cascade.</p><p>Every organism is shaped by its habitat. A thick coat, a slow metabolism or an ability to store water may each confer an evolutionary advantage in a cold or arid environment. Migration allows animals to exploit resources that appear only seasonally, while hibernation permits them to survive the months when food is scarce.</p><p>Today the dominant pressure is habitat loss. As forests are fragmented, populations become isolated, and a species with a small range faces extinction from a single drought or disease. Conservationists argue that protecting connected corridors matters as much as protecting individual reserves.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>光合作用（photosynthesis）是植物把阳光转化为化学能的过程，它支撑着地球上几乎所有的食物链。但生物之间的关系很少这么简单。共生（symbiosis）——两个物种紧密共处——有好几种形式。互利（mutualism）中双方都受益：某些蚂蚁保护金合欢树，换来住所和食物。寄生（parasitism）正好相反：一方以另一方为代价获益，有时并不杀死对方，因为死掉的宿主等于没用的宿主。</p><p>捕食者（predator）施加的影响更为微妙。它们移除最弱的猎物，使种群保持健康，并防止任何一个物种独大。1995 年狼群被重新引入黄石公园后，麋鹿的取食行为改变了，河岸的柳树和白杨因此得以恢复——生态学家把这种连锁效应称为营养级联。</p><p>每个生物都被它的栖息地（habitat）塑造。厚实的毛皮、缓慢的新陈代谢（metabolism）、储水的能力，在寒冷或干旱的环境中各自构成一种演化优势（evolutionary advantage）。迁徙（migration）让动物能利用只是季节性出现的资源，而冬眠则让它们熬过食物短缺的月份。</p><p>今天最主要的压力是栖息地丧失。森林被切割成碎片后，种群彼此隔离，分布范围狭窄的物种可能因一场干旱或一次疾病就走向灭绝（extinction）。保育人士主张：保护相互连通的廊道，和保护单个保护区同样重要。</p></div>
+  </details>
+  <div class="p-note">💡 托福生物文的高频考点是「因果链」：A 变化 → B 变化 → C 变化。读的时候用箭头把链条画出来。</div>
+</div>
+  </div></section>
+<section class="bank">
+  <div class="bank-h"><h2>GRE</h2>
+    <span class="bank-count">2 组 · 20 词</span></div>
+  <p class="bank-desc">Verbal 部分考的是「词义的精确分辨」和「句内逻辑」。核心不在认识多少词，而在同义词群的分野和填空的逻辑信号。</p>
+
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">高频动词 Verbs</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>mitigate</td><td class='pos'>v.</td><td class='cn'>减轻（不良影响）</td><td class='note'>同义 alleviate / assuage。宾语多为负面事物。</td></tr><tr><td class='num'>2</td><td class='w'>exacerbate</td><td class='pos'>v.</td><td class='cn'>加剧（负面）</td><td class='note'>mitigate 的反义。GRE 填空常成对出现。</td></tr><tr><td class='num'>3</td><td class='w'>corroborate</td><td class='pos'>v.</td><td class='cn'>佐证</td><td class='note'>≈ confirm / substantiate。宾语是证词、说法。</td></tr><tr><td class='num'>4</td><td class='w'>refute</td><td class='pos'>v.</td><td class='cn'>反驳</td><td class='note'>≈ disprove。别和 rebut（仅口头反驳）混。</td></tr><tr><td class='num'>5</td><td class='w'>vindicate</td><td class='pos'>v.</td><td class='cn'>证明…正确</td><td class='note'>偏「洗清冤屈/证明清白」。</td></tr><tr><td class='num'>6</td><td class='w'>attenuate</td><td class='pos'>v.</td><td class='cn'>使减弱/稀释</td><td class='note'>偏物理或强度上的减弱，比 weaken 正式。</td></tr><tr><td class='num'>7</td><td class='w'>proliferate</td><td class='pos'>v.</td><td class='cn'>激增 / 扩散</td><td class='note'>≈ multiply。主语常是抽象事物（谣言、平台）。</td></tr><tr><td class='num'>8</td><td class='w'>undermine</td><td class='pos'>v.</td><td class='cn'>削弱（根基）</td><td class='note'>≈ weaken / erode。宾语常是 confidence / authority。</td></tr><tr><td class='num'>9</td><td class='w'>capitulate</td><td class='pos'>v.</td><td class='cn'>投降 / 让步</td><td class='note'>≈ surrender，偏有条件地屈服。</td></tr><tr><td class='num'>10</td><td class='w'>extol</td><td class='pos'>v.</td><td class='cn'>极力赞扬</td><td class='note'>≈ praise lavishly。反义 decry / disparage。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>In the closing decades of the twentieth century, a group of economists set out to refute the prevailing view that urban growth inevitably exacerbates inequality. Their argument rested on a distinction that their critics had largely ignored: growth may indeed widen the gap in the short term, but the same forces that produce congestion also generate the tax base needed to mitigate it.</p><p>At first the evidence seemed to corroborate them. Cities that expanded most rapidly also invested most heavily in transit, and the wage premium for low-skill service work rose rather than fell. But subsequent work began to undermine the claim. When researchers extended the sample to smaller cities, the pattern vanished; in several cases inequality proliferated precisely where growth was slowest.</p><p>A second line of criticism was methodological. If the original authors had selectively cited cases that vindicated their position, the correlation they reported might attenuate or even reverse under a fuller dataset. One sceptical reviewer was blunt: he did not think the thesis could capitulate to the weight of evidence, because the thesis had never really been about evidence. Others extolled the study for raising a question the field had avoided for years.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>在二十世纪的最后几十年，一群经济学家着手反驳（refute）当时的主流看法——城市增长必然加剧（exacerbate）不平等。他们的论证建立在一个批评者基本忽略的区分上：增长确实可能在短期扩大差距，但产生拥堵的那些力量，同时也在创造减轻（mitigate）它所需的税基。</p><p>起初，证据似乎佐证（corroborate）了他们。扩张最快的城市在交通上的投入也最多，低技能服务业的工资溢价是上升而非下降的。但后续研究开始削弱（undermine）这个论断。当研究者把样本扩展到较小的城市时，规律消失了；在若干案例中，不平等恰恰在增长最慢的地方激增（proliferate）。</p><p>第二条批评是方法论的。如果原作者选择性地引用那些能证明（vindicate）其立场的案例，他们所报告的相关性在更完整的数据集下可能减弱（attenuate），甚至反向。一位持怀疑态度的评论者说得很直白：他认为这个论点不会向证据的分量投降（capitulate），因为这个论点从来就不是关于证据的。另一些人则赞扬（extol）这项研究，因为它提出了学界多年回避的问题。</p></div>
+  </details>
+  <div class="p-note">💡 GRE 阅读的关键是分清「作者说的」和「作者引用的别人说的」。这段里 At first / But / A second line 是三个转向信号。</div>
+</div>
+  </div>
+  <div class="chunk">
+    <div class="chunk-h"><span class="chunk-topic">高频形容词 Adjectives</span>
+      <span class="chunk-exam">10 词</span></div>
+    <div class='tw'><table class='wt'><thead><tr><th>#</th><th>词组 / 单词</th><th>词性</th><th>中文</th><th>用法提示</th></tr></thead><tbody><tr><td class='num'>1</td><td class='w'>ambiguous</td><td class='pos'>adj.</td><td class='cn'>歧义的 / 含糊的</td><td class='note'>双义性。反义 unambiguous / explicit。</td></tr><tr><td class='num'>2</td><td class='w'>equivocal</td><td class='pos'>adj.</td><td class='cn'>模棱两可的（有意含混）</td><td class='note'>比 ambiguous 多一层「回避表态」的意味。</td></tr><tr><td class='num'>3</td><td class='w'>tenuous</td><td class='pos'>adj.</td><td class='cn'>薄弱的 / 牵强的</td><td class='note'>常修饰 link / connection / evidence。GRE 经典词。</td></tr><tr><td class='num'>4</td><td class='w'>ubiquitous</td><td class='pos'>adj.</td><td class='cn'>无处不在的</td><td class='note'>≈ omnipresent。修饰技术、广告、现象。</td></tr><tr><td class='num'>5</td><td class='w'>ephemeral</td><td class='pos'>adj.</td><td class='cn'>转瞬即逝的</td><td class='note'>≈ fleeting / transient。修饰流行、快乐、名声。</td></tr><tr><td class='num'>6</td><td class='w'>pragmatic</td><td class='pos'>adj.</td><td class='cn'>务实的</td><td class='note'>≈ practical。对立面通常是 dogmatic / idealistic。</td></tr><tr><td class='num'>7</td><td class='w'>obscure</td><td class='pos'>adj./v.</td><td class='cn'>晦涩的 / 使模糊</td><td class='note'>作动词是「遮蔽」，GRE 填空常作 adj. 用。</td></tr><tr><td class='num'>8</td><td class='w'>intractable</td><td class='pos'>adj.</td><td class='cn'>棘手的 / 难处理的</td><td class='note'>修饰 problem / conflict。反义 tractable。</td></tr><tr><td class='num'>9</td><td class='w'>meticulous</td><td class='pos'>adj.</td><td class='cn'>一丝不苟的</td><td class='note'>≈ scrupulous。修饰 research / attention to detail。</td></tr><tr><td class='num'>10</td><td class='w'>spurious</td><td class='pos'>adj.</td><td class='cn'>虚假的 / 站不住脚的</td><td class='note'>≈ false。修饰 correlation / argument。</td></tr></tbody></table></div>
+    
+<div class="passage">
+  <div class="p-en"><p>The report&#x27;s central claim is deliberately equivocal. It asserts that the link between screen time and adolescent anxiety is &quot;tenuous at best&quot;, yet the evidence it presents is ambiguous enough to be read either way. This is not necessarily dishonest; policy documents often adopt a pragmatic tone precisely because the underlying science is intractable.</p><p>What is clear is that such devices are now ubiquitous. A generation ago a telephone was a fixed object in a hallway; today the same functions are distributed across an ephemeral stream of notifications. Whether this represents a durable change in cognition or a transient fashion is an empirical question, and no study has yet answered it with the meticulous care the question deserves.</p><p>The most damaging criticism is not that the report is wrong, but that several of its supporting citations are obscure in a way that discourages verification, and that at least one widely quoted statistic appears to be spurious. The authors have since argued that the omission was inadvertent. Critics remain unconvinced, noting that the same error appeared in two earlier drafts.</p></div>
+  <details class="p-cn"><summary>中文翻译 <span>读完全文再展开</span></summary>
+    <div class="p-cn-body"><p>这份报告的核心主张是刻意模棱两可（equivocal）的。它声称屏幕时间与青少年焦虑之间的联系「最多只能算薄弱（tenuous at best）」，然而它给出的证据足够含糊（ambiguous），怎么解读都说得通。这未必是不诚实；政策文件常常刻意采用务实（pragmatic）的语气，恰恰是因为背后的科学本身棘手（intractable）。</p><p>可以确定的是，这类设备如今无处不在（ubiquitous）。一代人之前，电话是走廊里固定的一件东西；今天同样的功能被分散在不断流动、转瞬即逝（ephemeral）的通知流里。这究竟意味着认知上的一种持久改变，还是一时的风潮，是一个要靠实证回答的问题，而目前还没有任何研究以这个问题应得的一丝不苟（meticulous）的态度给出答案。</p><p>最致命的批评不是说报告错了，而是它引用的若干文献来源晦涩（obscure）到让人不愿去核实，而至少有一个被广泛引用的统计数字看起来是虚假（spurious）的。作者后来辩称这是无心之失。批评者并不信服，指出同一个错误在早前两版草稿中也出现过。</p></div>
+  </details>
+  <div class="p-note">💡 GRE 形容词题的解题核心：判断这个词是「正、负、还是中性」。形容词往往在句中承担了作者态度的方向。</div>
+</div>
+  </div></section>
+  </div>
+</div>
+
+<!-- ============ 考纲 ============ -->
+<div class="page" id="page-outline">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">IELTS 2026 · 官方考纲</div>
+      <h1>最新雅思<em>考纲</em>（读 / 写 / 说）</h1>
+      <p>查证日期 2026-11-13，来源为 ielts.org 官方页面与官网 PDF。每条都标了核实状态：<b>已核实</b>／<b>部分核实</b>／<b>存疑</b>／<b>未查到官方原文</b>。最重要的变化是——<b>2026 年年中起全面转机考，中国大陆已全面机考</b>，但题型和评分标准没有任何变化。</p>
+    </div>
+    <div class="outline"><h2>雅思（IELTS）2026 年考试大纲与题型总结：读 / 写 / 说 三大板块</h2>
+<blockquote><strong>查证日期：2026 年 11 月 13 日</strong>（所有页面实时抓取日期；官方页面版权年显示 (c) 2026）</blockquote>
+<blockquote><strong>适用范围：</strong> 中国大陆考生为主，兼顾全球通用规则。</blockquote>
+<blockquote><strong>标记约定：</strong></blockquote>
+<blockquote>- 【已核实】：官方原文直接可读</blockquote>
+<blockquote>- 【部分核实】：官方有表述，但特定数字或地区差异需注明</blockquote>
+<blockquote>- 【存疑】：官方无原文，或不同官方站点表述冲突</blockquote>
+<blockquote>- 【未查到官方原文】：明确说明</blockquote>
+<hr>
+<h3>0. 背景：听力（只作一句背景）</h3>
+<p>雅思 4 板块：<strong>Listening 听力（约 30 分钟，4 部分 / 40 题）、Reading 阅读、Writing 写作、Speaking 口语（11-14 分钟）</strong>；Academic 与 General Training 的<strong>听力与口语完全相同</strong>，只有阅读与写作不同。【已核实】</p>
+<p>（来源：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test</a> ）</p>
+<hr>
+<h3>1. 考试类型：Academic vs General Training，以及三种考试形式</h3>
+<h4>1.1 Academic vs General Training</h4>
+<div class='tw'><table><thead>
+<tr><th>项目</th><th>IELTS Academic（学术类）</th><th>IELTS General Training（培训类）</th></tr>
+</thead><tbody>
+<tr><td>官方用途</td><td>申请本科/研究生学位、专业注册（医生、护士等）</td><td>移民（澳、加、新、英等）、就读中学/职业培训/非学位课程、工作</td></tr>
+<tr><td>阅读</td><td>3 篇长文（书籍、期刊、杂志、报纸、网络），总长 <strong>2150-2750 词</strong></td><td>3 个 section（S1 日常、S2 工作、S3 一般兴趣长文），总长 <strong>2150-2375 词</strong></td></tr>
+<tr><td>写作 Task 1</td><td>图表/流程图描述（&gt;=150 词）</td><td>书信（&gt;=150 词）</td></tr>
+<tr><td>写作 Task 2</td><td>议论文（&gt;=250 词）</td><td>议论文（&gt;=250 词，semi-formal/neutral）</td></tr>
+<tr><td>听力 / 口语</td><td>与 GT 完全相同</td><td>与 Academic 完全相同</td></tr>
+</tbody></table></div>
+<p>来源：</p>
+<ul>
+<li>【已核实】Academic：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test</a></li>
+<li>【已核实】General Training：<a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-general-training-test</a></li>
+<li>【已核实】GT 阅读结构原文：&quot;There are three sections of increasing difficulty... Section 1 may contain two or three short texts... Section 2 contains two texts. In Section 3, there is one long text.&quot;：<a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading</a></li>
+</ul>
+<h4>1.2 三种考试形式对比（2026 年 11 月最新状态）</h4>
+<div class='tw'><table><thead>
+<tr><th>项目</th><th>IELTS on Computer（机考，考试中心）</th><th>IELTS on Paper（纸笔，考试中心）</th><th>IELTS Online（在家线上）</th></tr>
+</thead><tbody>
+<tr><td>2026-11 是否开放</td><td>是，当前唯一主流形式</td><td><strong>2026 年年中起按市场逐步停止</strong>（见第 2 节）</td><td>是，但<strong>仅 Academic</strong>，仅部分国家</td></tr>
+<tr><td>听/读/写作答</td><td>电脑作答</td><td>纸笔作答</td><td>电脑作答（与机考一致）</td></tr>
+<tr><td>口语</td><td>真人考官（大陆为<strong>视频通话</strong>，见下）</td><td>真人考官面对面</td><td>真人考官<strong>视频通话</strong></td></tr>
+<tr><td>出分</td><td><strong>通常 1-2 天</strong></td><td>历史 13 天；新 Writing on Paper 选项为 <strong>5 天内</strong></td><td><strong>6-8 天</strong></td></tr>
+<tr><td>可否 One Skill Retake</td><td>可以（OSR 仅限机考）</td><td>不可以</td><td>【未查到官方原文】</td></tr>
+</tbody></table></div>
+<p>来源：<a href="https://ielts.org/organisations/ielts-for-organisations/test-types/ways-to-take-ielts" target="_blank" rel="noopener">https://ielts.org/organisations/ielts-for-organisations/test-types/ways-to-take-ielts</a> ；<a href="https://ielts.org/take-a-test/your-results/fast-test-results-and-sharing" target="_blank" rel="noopener">https://ielts.org/take-a-test/your-results/fast-test-results-and-sharing</a></p>
+<p><strong>补充说明（重要）：</strong></p>
+<li class='ol'><strong>口语形式的地区差异</strong>【部分核实】：ielts.org 官方表述 Speaking 为「与考官面对面（face-to-face with an examiner）」，机考口语「同一天进行」；但 <strong>BC 中国大陆官网明确写：「口语部分则通过视频通话形式与真人考官在线面对面完成考试」</strong>。两者都是真人考官、评分标准一致，但形式不同。<strong>不要对大陆考生说「同房间面对面」。</strong></li>
+<p>   - 来源：<a href="https://ielts.org/organisations/ielts-for-organisations/test-types/ways-to-take-ielts" target="_blank" rel="noopener">https://ielts.org/organisations/ielts-for-organisations/test-types/ways-to-take-ielts</a> ；<a href="https://www.chinaielts.org/about-ielts/computer" target="_blank" rel="noopener">https://www.chinaielts.org/about-ielts/computer</a></p>
+<li class='ol'><strong>题型 / 时长在纸考与机考之间没有差别</strong>【已核实】：官方原文 &quot;The task types, scoring and time allocation ... are the same whether it is taken on computer or on paper.&quot;</li>
+<p>   - 来源：<a href="https://ielts.org/take-a-test/test-types/ielts-on-computer-writing-on-paper" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-on-computer-writing-on-paper</a></p>
+<li class='ol'><strong>差别主要在</strong>：出分速度、考试日期密度、OSR 可用性、作答方式（手写 vs 打字）。</li>
+<hr>
+<h3>2. 2026 年最新改革（重点核实，全部为 2026 年官方公告）</h3>
+<h4>2.1 最重要：纸笔考试自 2026 年年中起逐步取消</h4>
+<ul>
+<li>【已核实】2026 年 3 月 5 日官方新闻《Updates to IELTS test delivery》原文：</li>
+<p>  &gt; &quot;after careful review, <strong>from mid-2026, we will no longer offer IELTS as a paper-based test. All IELTS tests will be delivered on computer.</strong> Exact timelines will vary by market.&quot;</p>
+</ul>
+<p>  即：<strong>2026 年中期起全面转机考，各地区时间表不同</strong>（market-by-market）。</p>
+<p>  来源：<a href="https://ielts.org/news-and-insights/updates-to-ielts-test-delivery" target="_blank" rel="noopener">https://ielts.org/news-and-insights/updates-to-ielts-test-delivery</a> （发布日期 2026-03-05）</p>
+<ul>
+<li>【已核实】中国大陆已落地：BC 中国官网（chinaielts.org）：<strong>「英国文化教育协会所有雅思考试均采用机考模式」</strong>。</li>
+<p>  来源：<a href="https://www.chinaielts.org/about-ielts/computer" target="_blank" rel="noopener">https://www.chinaielts.org/about-ielts/computer</a></p>
+</ul>
+<ul>
+<li>【部分核实】地区差异仍存在：IDP 台湾站（2026-11 抓取）<strong>仍在宣传「紙筆 / 電腦 / IELTS Online 三種形式」</strong>，说明部分站点尚未切换或未更新。对外表述建议：<strong>「2026 年下半年起全球陆续全面机考，各国时间点不同；中国大陆已全面机考。」</strong></li>
+<p>  来源：<a href="https://ielts.idp.com/taiwan/about/ielts-test-format" target="_blank" rel="noopener">https://ielts.idp.com/taiwan/about/ielts-test-format</a> （未同步 2026 年改革）</p>
+</ul>
+<h4>2.2 新增：Writing on Paper（机考中的「手写写作」选项）</h4>
+<ul>
+<li>【已核实】2026 年中期起，<strong>部分国家</strong>在 IELTS on Computer 中提供 &quot;Writing on Paper&quot;：<strong>题目仍在屏幕上显示，但用笔在纸质答题卡上手写</strong>。</li>
+<p>  - 只影响 Writing；Listening / Reading 仍机考。</p>
+<p>  - Writing 的<strong>题型、评分标准、时间（60 分钟）完全不变</strong>。</p>
+<p>  - <strong>不适用于 IELTS for UKVI</strong>。</p>
+<p>  - 出分：<strong>5 天内</strong>；成绩单不标注所选方式。</p>
+<p>  - 若参加 OSR 且选了 Writing on Paper，<strong>重考写作必须同样用 Writing on Paper</strong>。</p>
+<p>  - 2025 年 11 月做过 field trial，分数可比性良好。</p>
+<p>  - 来源：<a href="https://ielts.org/take-a-test/test-types/ielts-on-computer-writing-on-paper" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-on-computer-writing-on-paper</a> ；<a href="https://ielts.org/organisations/ielts-for-organisations/test-types/ways-to-take-ielts/updates-to-ielts-writing-test-delivery-mode" target="_blank" rel="noopener">https://ielts.org/organisations/ielts-for-organisations/test-types/ways-to-take-ielts/updates-to-ielts-writing-test-delivery-mode</a></p>
+<p>  - 【未查到官方原文】中国大陆是否提供 Writing on Paper（chinaielts.org 未提及）。</p>
+</ul>
+<h4>2.3 One Skill Retake（单项重考）：2026 年仍然有效</h4>
+<ul>
+<li>【已核实】有效，且范围<strong>扩大</strong>到 Writing on Paper（必须与原考试同一模式）。</li>
+<li>核心规则（官方原文）：</li>
+<p>  - 必须在<strong>原考试日起 60 天内</strong>完成；</p>
+<p>  - <strong>每次全科考试只能重考 1 次</strong>（once per original test）；</p>
+<p>  - <strong>仅限机考</strong>全科考生；</p>
+<p>  - 得到新 TRF（新单科成绩 + 原三科成绩 + 新总分）；</p>
+<p>  - 出分：<strong>3-5 天</strong>；</p>
+<p>  - 全球 &quot;widely available&quot;，但需考点支持；UKVI 在<strong>部分地点</strong>接受。</p>
+<p>  - 来源：<a href="https://ielts.org/take-a-test/booking-your-test/one-skill-retake" target="_blank" rel="noopener">https://ielts.org/take-a-test/booking-your-test/one-skill-retake</a></p>
+<li>【已核实】中国大陆具体规则：仅面向 BC 机考考生；60 天内；须用同一证件；<strong>报名费 1400 元人民币，退/转考费 380 元</strong>；覆盖 12 城 17 个考点。</li>
+<p>  - 来源：<a href="https://www.chinaielts.org/book-ielts/one-skill-retake" target="_blank" rel="noopener">https://www.chinaielts.org/book-ielts/one-skill-retake</a> （查证日 2026-11-13）</p>
+</ul>
+<h4>2.4 出分时效（2026 年现状）</h4>
+<div class='tw'><table><thead>
+<tr><th>形式</th><th>出分时间</th><th>来源</th></tr>
+</thead><tbody>
+<tr><td>机考（考试中心）</td><td><strong>1-2 天</strong>（约 80% 成绩 2 天内出，约一半 1 天内出）</td><td><a href="https://ielts.org/take-a-test/your-results/fast-test-results-and-sharing" target="_blank" rel="noopener">https://ielts.org/take-a-test/your-results/fast-test-results-and-sharing</a> 【已核实】</td></tr>
+<tr><td>机考 + Writing on Paper</td><td><strong>5 天内</strong></td><td><a href="https://ielts.org/take-a-test/test-types/ielts-on-computer-writing-on-paper" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-on-computer-writing-on-paper</a> 【已核实】</td></tr>
+<tr><td>IELTS Online</td><td><strong>6-8 天</strong></td><td><a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-online</a> 【已核实】</td></tr>
+<tr><td>UKVI Life Skills</td><td>9 天内</td><td>同上 fast-results 页 【已核实】</td></tr>
+<tr><td>OSR 单科重考</td><td>3-5 天</td><td><a href="https://ielts.org/take-a-test/booking-your-test/one-skill-retake" target="_blank" rel="noopener">https://ielts.org/take-a-test/booking-your-test/one-skill-retake</a> 【已核实】</td></tr>
+<tr><td>中国大陆 BC 机考</td><td>官方宣传「考后 1-5 天」「最快 1 天」</td><td><a href="https://www.chinaielts.org/about-ielts/computer" target="_blank" rel="noopener">https://www.chinaielts.org/about-ielts/computer</a> 【部分核实】（比 ielts.org 略保守）</td></tr>
+</tbody></table></div>
+<h4>2.5 其他 2026 年官方变更</h4>
+<div class='tw'><table><thead>
+<tr><th>变更</th><th>日期</th><th>要点</th><th>来源</th><th>状态</th></tr>
+</thead><tbody>
+<tr><td><strong>成绩单（TRF）改版</strong></td><td>2026-07-15 起</td><td>为符合 Ofqual 要求，TRF 增加 Ofqual logo 与资格名称；新旧 TRF 均有效，不改变有效期</td><td><a href="https://ielts.org/news-and-insights/changes-to-test-report-forms" target="_blank" rel="noopener">https://ielts.org/news-and-insights/changes-to-test-report-forms</a></td><td>【已核实】</td></tr>
+<tr><td><strong>雅思退出英国 Home Office 英语考试招标（HOELT）</strong></td><td>2026-03-17</td><td>英国将改用「fully remote」新移民英语考试；雅思不投标。<strong>不影响现有 UKVI 雅思的认可与使用</strong></td><td><a href="https://ielts.org/news-and-insights/ielts-withdraws-from-uk-home-office-english-language-test-tender" target="_blank" rel="noopener">https://ielts.org/news-and-insights/ielts-withdraws-from-uk-home-office-english-language-test-tender</a></td><td>【已核实】</td></tr>
+<tr><td><strong>中国大陆考试费调整</strong></td><td>2026-01-01 起</td><td>官网列示 IELTS <strong>1990 元</strong>、Life Skills 1250 元</td><td><a href="https://www.chinaielts.org/about-ielts/which-test-do-i-take" target="_blank" rel="noopener">https://www.chinaielts.org/about-ielts/which-test-do-i-take</a></td><td>【已核实】（以报名页为准）</td></tr>
+<tr><td><strong>剑桥大学 2026 年起调整本科语言成绩认可</strong></td><td>2026-01 起</td><td>部分英语考试不再被接受（新闻提及，非雅思规则变化）</td><td><a href="https://www.chinaielts.org/press-office" target="_blank" rel="noopener">https://www.chinaielts.org/press-office</a></td><td>【部分核实】二手表述，以剑桥官网为准</td></tr>
+</tbody></table></div>
+<blockquote><strong>没有发生的改革（不要误传）：</strong></blockquote>
+<blockquote>- 「2026 年雅思题型大改 / 新增题型」——<strong>未查到任何官方原文</strong>。官方明确 &quot;this update does not change the IELTS skills assessed, the test construct&quot;。</blockquote>
+<blockquote>- 「2026 年考试时长缩短」——无此变化，仍为 2 小时 45 分钟（不含口语）。</blockquote>
+<blockquote>- 「纸笔 2026-01-01 立即全部取消」——实际是「2026 年中期起，按市场分批」。</blockquote>
+<hr>
+<h3>3. 阅读 Reading</h3>
+<h4>3.1 基本结构</h4>
+<div class='tw'><table><thead>
+<tr><th>项目</th><th>Academic Reading</th><th>General Training Reading</th></tr>
+</thead><tbody>
+<tr><td>时间</td><td><strong>60 分钟</strong>（含转写答案）</td><td><strong>60 分钟</strong>（含转写）</td></tr>
+<tr><td>文章数</td><td><strong>3 篇（3 passages）</strong></td><td><strong>3 个 section</strong></td></tr>
+<tr><td>总词数</td><td><strong>2150-2750 词</strong></td><td><strong>2150-2375 词</strong></td></tr>
+<tr><td>题目数</td><td><strong>40 题</strong></td><td><strong>40 题</strong></td></tr>
+<tr><td>计分</td><td>每题 1 分；换算为 1-9 分（整分/半分）</td><td>同左</td></tr>
+<tr><td>文章来源</td><td>书籍、期刊、杂志、报纸、网络；面向非专业读者；至少一篇含详细逻辑论证；可能含图表</td><td>S1：通知、广告、时刻表等日常文本；S2：职位描述、合同、培训材料等工作文本；S3：报纸/杂志/书籍的一般兴趣长文（描述性、叙述性）</td></tr>
+<tr><td>难度递进</td><td>通常 P1 易 -&gt; P3 难（【部分核实】非官方明写）</td><td>官方明确「three sections of increasing difficulty」【已核实】</td></tr>
+</tbody></table></div>
+<p>来源：</p>
+<ul>
+<li>【已核实】Academic：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading</a></li>
+<li>【已核实】GT：<a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading</a></li>
+<li>【部分核实】Academic 的「难度递增」官方页<strong>未明写</strong>，属真题规律/行业共识。</li>
+</ul>
+<h4>3.2 Academic Reading 官方题型清单（共 <strong>11 种</strong>，官方编号 1-11）【已核实】</h4>
+<div class='tw'><table><thead>
+<tr><th>#</th><th>官方英文名</th><th>中文</th><th>官方要点</th></tr>
+</thead><tbody>
+<tr><td>1</td><td>Multiple choice</td><td>选择题</td><td>四选一，或句子前半 + 四个结尾；有时需选多个答案</td></tr>
+<tr><td>2</td><td>Identifying information (True/False/Not given)</td><td>判断信息 T/F/NG</td><td>False = 与原文矛盾；Not given = 既不支持也不矛盾</td></tr>
+<tr><td>3</td><td>Identifying writer&#x27;s views/claims (Yes/No/Not given)</td><td>判断作者观点 Y/N/NG</td><td>针对<strong>观点/主张</strong></td></tr>
+<tr><td>4</td><td>Matching information</td><td>信息匹配</td><td>找具体信息所在段落（A, B, C...）；段落可重复使用</td></tr>
+<tr><td>5</td><td>Matching headings</td><td>段落标题匹配</td><td>标题数 &gt; 段落数；每个标题只能用一次；考主旨 vs 支撑细节</td></tr>
+<tr><td>6</td><td>Matching features</td><td>特征匹配</td><td>把陈述匹配到人物/事物等特征列表；选项可重复</td></tr>
+<tr><td>7</td><td>Matching sentence endings</td><td>句子结尾匹配</td><td>给句子前半，从结尾列表中选；结尾数 &gt; 前半数</td></tr>
+<tr><td>8</td><td>Sentence completion</td><td>句子填空</td><td>从原文取词填空；有字数限制（如 NO MORE THAN TWO WORDS AND/OR A NUMBER）</td></tr>
+<tr><td>9</td><td>Summary / note / table / flow-chart completion</td><td>摘要 / 笔记 / 表格 / 流程图填空</td><td>两种变体：①从原文选词 ②从词库选词</td></tr>
+<tr><td>10</td><td>Diagram label completion</td><td>图表/示意图标签填空</td><td>依据原文描述补全示意图标签</td></tr>
+<tr><td>11</td><td>Short-answer questions</td><td>简答题</td><td>用原文词语回答事实性问题；答案顺序与原文一致</td></tr>
+</tbody></table></div>
+<ul>
+<li>来源：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading</a> 【已核实】</li>
+<li><strong>General Training Reading 的题型清单</strong>：官方 GT 页面列出 <strong>8 种</strong>（Multiple choice、T/F/NG、Matching information、Matching headings、Matching features、Summary/note/sentence/table/flow-chart completion、Diagram label completion、Short-answer）。<strong>GT 不考 Y/N/NG 与 Matching sentence endings</strong>（官方 GT 页未列）。【已核实】</li>
+<p>  来源：<a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-reading</a></p>
+<li>【部分核实】官方 GT 把 &quot;Sentence completion&quot; 并入 &quot;Summary/note/<strong>sentence</strong>/table/flow chart completion&quot; 一个题型；Academic 则把 Sentence completion 单列为 Type 8。所以「题型数」网上说法不一（Academic 11 / GT 8）。</li>
+</ul>
+<h4>3.3 评分换算（raw score 40 -&gt; band）【已核实】官方表格</h4>
+<p>官方原话：「the <strong>average</strong> number of marks scored at different levels... The precise number of marks needed... will vary slightly from test version to test version.」</p>
+<p><strong>Academic Reading（官方仅给 5-8 分段）：</strong></p>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>答对题数（/40，约）</th></tr>
+</thead><tbody>
+<tr><td>8</td><td>35</td></tr>
+<tr><td>7</td><td>30</td></tr>
+<tr><td>6</td><td>23</td></tr>
+<tr><td>5</td><td>15</td></tr>
+</tbody></table></div>
+<p><strong>General Training Reading（官方仅给 4-7 分段）：</strong></p>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>答对题数（/40，约）</th></tr>
+</thead><tbody>
+<tr><td>7</td><td>35</td></tr>
+<tr><td>6</td><td>30</td></tr>
+<tr><td>5</td><td>23</td></tr>
+<tr><td>4</td><td>15</td></tr>
+</tbody></table></div>
+<ul>
+<li>来源：<a href="https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail" target="_blank" rel="noopener">https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail</a> 【已核实】</li>
+<li>【未查到官方原文】：Band 9 / 8（GT）/ 4 以下（Academic）对应题数；以及「39 题 = 8.5」这类逐题对照表。网上流传的完整 40 行表均为<strong>培训机构推算</strong>。建议网站只展示官方 4 行并注释「具体略有浮动」。</li>
+</ul>
+<h4>3.4 阅读的 Band 描述</h4>
+<p>【已核实】官方<strong>没有</strong>单独的「阅读 band descriptors」——阅读是<strong>客观计分换算</strong>，无评分细则表。可参考第 6.1 节总分 band 描述。</p>
+<hr>
+<h3>4. 写作 Writing</h3>
+<h4>4.1 结构与时间</h4>
+<div class='tw'><table><thead>
+<tr><th>项目</th><th>Academic</th><th>General Training</th></tr>
+</thead><tbody>
+<tr><td>总时长</td><td><strong>60 分钟</strong></td><td><strong>60 分钟</strong></td></tr>
+<tr><td>Task 1</td><td>描述视觉信息（图表/表格/流程/物体图），<strong>&gt;=150 词，建议 20 分钟</strong></td><td><strong>书信</strong>，<strong>&gt;=150 词，建议 20 分钟</strong></td></tr>
+<tr><td>Task 2</td><td>议论文，<strong>&gt;=250 词，建议 40 分钟</strong></td><td>议论文（semi-formal/neutral），<strong>&gt;=250 词，建议 40 分钟</strong></td></tr>
+<tr><td>权重</td><td><strong>Task 2 的分值是 Task 1 的两倍</strong></td><td>同左</td></tr>
+<tr><td>作答要求</td><td>必须完整句子；不能写要点/项目符号；抄袭严重扣分</td><td>同左</td></tr>
+</tbody></table></div>
+<p>来源：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing</a> ；<a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-writing" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-writing</a> 【已核实】</p>
+<h4>4.2 Academic Task 1：图表类型</h4>
+<p>官方原文只给两大类：</p>
+<blockquote>&quot;you may be asked to describe: • <strong>one or more graphs, charts or tables</strong> • <strong>a diagram of an object, device, process or event</strong>&quot;</blockquote>
+<p>【已核实】来源同上。</p>
+<p>官方页<strong>没有</strong>逐一列举 line graph / bar chart / pie chart / map / process diagram。下列为<strong>行业通行分类</strong>（【部分核实】非官方逐项原文），但都能归入官方两大类：</p>
+<div class='tw'><table><thead>
+<tr><th>大类（官方）</th><th>具体图形（通行分类）</th><th>关键写法</th></tr>
+</thead><tbody>
+<tr><td>数据图（graphs, charts, tables）</td><td>折线图 line graph</td><td>趋势（上升/下降/波动/平稳）</td></tr>
+<tr><td></td><td>柱状图 bar chart</td><td>比较（横向对比）</td></tr>
+<tr><td></td><td>饼图 pie chart</td><td>占比/构成</td></tr>
+<tr><td></td><td>表格 table</td><td>多维数据对比</td></tr>
+<tr><td></td><td>混合图（两图组合）</td><td>分别概述 + 关联</td></tr>
+<tr><td>非数据图（diagram）</td><td>流程图 process diagram</td><td>阶段、被动语态、顺序连接</td></tr>
+<tr><td></td><td>地图 map</td><td>方位、变化、被动语态</td></tr>
+</tbody></table></div>
+<ul>
+<li>【部分核实】<strong>map 是否算官方 Task 1 类型</strong>：官方 &quot;diagram of an object, device, process or event&quot; 中<strong>未直接写 map</strong>，但剑桥真题中大量出现地图题。</li>
+<li>官方要求的四项能力【已核实】：</li>
+<p>  1. organise, present and possibly <strong>compare data</strong></p>
+<p>  2. describe <strong>stages of a process</strong> or procedure</p>
+<p>  3. describe an <strong>object, event or sequence of events</strong></p>
+<p>  4. <strong>explain how something works</strong></p>
+<li>【部分核实】<strong>不能写个人观点/原因解释</strong>（Task 1 只描述所给信息）——由 band descriptor「Key features are skilfully selected, and clearly presented, highlighted and illustrated」推论，官方无逐字禁令。</li>
+</ul>
+<h4>4.3 Task 2（Academic 与 GT 通用）：题型分类</h4>
+<p>官方<strong>没有</strong>给出「5 种题型」的官方分类表；官方只描述任务性质：</p>
+<blockquote>Academic: &quot;you are given a point of view, argument or problem which you need to discuss&quot;</blockquote>
+<p>官方能力项【已核实】：present a solution to a problem / present and justify an opinion / compare and contrast evidence, opinions and implications / evaluate and challenge ideas, evidence or an argument。</p>
+<p>行业内通行分类（【部分核实】<strong>非官方术语</strong>，但对应官方能力项）：</p>
+<div class='tw'><table><thead>
+<tr><th>题型</th><th>典型问法</th><th>对应官方能力</th></tr>
+</thead><tbody>
+<tr><td>1. Opinion（同意/不同意）</td><td>&quot;To what extent do you agree or disagree?&quot;</td><td>present and justify an opinion</td></tr>
+<tr><td>2. Discussion（双边讨论）</td><td>&quot;Discuss both views and give your own opinion.&quot;</td><td>compare and contrast / evaluate</td></tr>
+<tr><td>3. Problem-Solution</td><td>&quot;What problems does this cause and what measures could be taken?&quot;</td><td>present a solution to a problem</td></tr>
+<tr><td>4. Advantage-Disadvantage</td><td>&quot;Do the advantages outweigh the disadvantages?&quot;</td><td>evaluate and challenge</td></tr>
+<tr><td>5. Two-part question（双问句）</td><td>&quot;Why is this happening? Is it a positive or negative development?&quot;</td><td>综合</td></tr>
+</tbody></table></div>
+<ul>
+<li>【部分核实】考官<strong>不按「题型模板」评分</strong>，评分只看 4 项标准。所谓 5 类题型是<strong>备考方法论</strong>，不是官方大纲。网站应标注「教学分类」。</li>
+<li>官方明确的常见 GT Task 2 话题举例【已核实】（举例 != 题库）：儿童闲暇活动是否应有教育性、环境问题如何解决、公共场所是否应禁烟。</li>
+</ul>
+<h4>4.4 General Training Task 1：书信题型与风格</h4>
+<p>【已核实】官方原文：给一个情境，写 <strong>&gt;=150 词的信</strong>，题目给出<strong>三个 bullet points</strong> 要你涵盖。信的风格可以是 <strong>personal（私人）/ semi-formal（半正式）/ formal（正式）</strong>，取决于收信人。</p>
+<p>官方举例（原文）：</p>
+<ul>
+<li>写给大学住宿管理员反映住宿问题</li>
+<li>写给新雇主反映时间管理问题</li>
+<li>写给本地报纸谈机场开发计划</li>
+<li>写给租房中介解决暖气故障</li>
+</ul>
+<p>官方要求的三种功能能力【已核实】：</p>
+<li class='ol'>ask for and/or provide general factual information</li>
+<li class='ol'>express needs, wants, likes and dislikes</li>
+<li class='ol'>express opinions (views, complaints, etc.)</li>
+<p>行业通行的「书信类型」分类（【部分核实】非官方术语）：</p>
+<div class='tw'><table><thead>
+<tr><th>类型</th><th>示例</th></tr>
+</thead><tbody>
+<tr><td>投诉信 complaint</td><td>投诉服务/商品/住宿</td></tr>
+<tr><td>请求/询问信 request / enquiry</td><td>询问课程、住宿信息</td></tr>
+<tr><td>申请信 application</td><td>申请工作、志愿者</td></tr>
+<tr><td>感谢信 thanks</td><td>感谢接待/帮助</td></tr>
+<tr><td>道歉信 apology</td><td>为失约、损坏物品道歉</td></tr>
+<tr><td>建议/推荐信 suggestion / recommendation</td><td>向朋友推荐地点、向公司提建议</td></tr>
+<tr><td>邀请信 invitation</td><td>邀请朋友参加活动</td></tr>
+<tr><td>说明/告知信 explanation / information</td><td>向房东说明情况</td></tr>
+</tbody></table></div>
+<p>官方还强调【已核实】：<strong>信开头不需要写地址</strong>；不写 bullet points；语气（tone）要与收信人关系一致（Band 7 要求 &quot;The tone is consistent and appropriate&quot;）。</p>
+<h4>4.5 写作四项评分标准与权重【已核实】</h4>
+<p>官方名称（英文原文，<strong>务必用英文原名</strong>）：</p>
+<div class='tw'><table><thead>
+<tr><th>#</th><th>官方名称</th><th>Task 1 用</th><th>Task 2 用</th></tr>
+</thead><tbody>
+<tr><td>1</td><td><strong>Task Achievement</strong></td><td>是（Task 1）</td><td>-</td></tr>
+<tr><td>1&#x27;</td><td><strong>Task Response</strong></td><td>-</td><td>是（Task 2）</td></tr>
+<tr><td>2</td><td><strong>Coherence and Cohesion</strong></td><td>是</td><td>是</td></tr>
+<tr><td>3</td><td><strong>Lexical Resource</strong></td><td>是</td><td>是</td></tr>
+<tr><td>4</td><td><strong>Grammatical Range and Accuracy</strong></td><td>是</td><td>是</td></tr>
+</tbody></table></div>
+<p><strong>权重规则</strong>【已核实】：</p>
+<ul>
+<li>每项标准<strong>等权</strong>（each of the criteria carry equal weighting），四项平均 = 该 Task 的分数；</li>
+<li><strong>Task 2 在写作总分中的权重是 Task 1 的两倍</strong>（&quot;Task 2 contributes twice as much as Task 1&quot;）。</li>
+</ul>
+<p>推算公式（【部分核实】按「2 倍权重 + 四项等权」推算，官方未以公式形式写出）：</p>
+<p>写作分 = (Task1 四项均分 x 1 + Task2 四项均分 x 2) / 3，再四舍五入到半分。</p>
+<p>来源：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing</a> ；<a href="https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail" target="_blank" rel="noopener">https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail</a> 【已核实】</p>
+<p><strong>关键澄清</strong>：Task 1 的第一项叫 <strong>Task Achievement</strong>，Task 2 的叫 <strong>Task Response</strong> —— 不是同一个词，但都是第 1 项标准。</p>
+<hr>
+<h3>5. 口语 Speaking</h3>
+<h4>5.1 三个 Part 的准确结构【已核实】</h4>
+<div class='tw'><table><thead>
+<tr><th>Part</th><th>官方名称</th><th>时长</th><th>内容</th></tr>
+</thead><tbody>
+<tr><td><strong>Part 1</strong></td><td>Introduction and interview</td><td><strong>4-5 分钟</strong></td><td>考官自我介绍、核对身份；就<strong>熟悉话题</strong>（home, family, work, studies, interests）提问</td></tr>
+<tr><td><strong>Part 2</strong></td><td>Long turn（个人陈述）</td><td><strong>3-4 分钟</strong>（含 1 分钟准备）</td><td>给 <strong>cue card / task card</strong>，<strong>1 分钟准备</strong>（发纸笔做笔记）-&gt; <strong>说 1-2 分钟</strong>（官方要求能讲满 2 分钟，考官到时打断）-&gt; 可能追问 1-2 个问题</td></tr>
+<tr><td><strong>Part 3</strong></td><td>Discussion（双向讨论）</td><td><strong>4-5 分钟</strong></td><td>就 Part 2 话题<strong>更抽象、更深入</strong>地讨论</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>总时长：11-14 分钟</strong>【已核实】</li>
+<li>来源：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking</a> （GT 页内容相同：<a href="https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-speaking" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-general-training-test/ielts-general-training-format-speaking</a>）</li>
+<li>官方原文 Part 2【已核实】：&quot;You have one minute to prepare your talk... keep talking for 2 minutes. The examiner will then ask you to begin talking and <strong>will stop you when the time is up</strong>.&quot;</li>
+<li>【部分核实】Part 2 的 <strong>2 分钟是「上限/目标」</strong>，不是「必须正好 2 分钟」；官方要求「能讲满 2 分钟」以展示 long turn 能力。</li>
+<li>【已核实】口语全程<strong>录音</strong>（&quot;The Speaking test is recorded&quot;）。</li>
+<li>【已核实】中国大陆机考：口语为<strong>视频通话</strong>形式（见 1.2 补充说明）。</li>
+</ul>
+<h4>5.2 口语四项评分标准【已核实】</h4>
+<div class='tw'><table><thead>
+<tr><th>#</th><th>官方名称</th></tr>
+</thead><tbody>
+<tr><td>1</td><td><strong>Fluency and Coherence</strong></td></tr>
+<tr><td>2</td><td><strong>Lexical Resource</strong></td></tr>
+<tr><td>3</td><td><strong>Grammatical Range and Accuracy</strong></td></tr>
+<tr><td>4</td><td><strong>Pronunciation</strong></td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>四项等权</strong>（&quot;Each of the criteria carry equal weighting and the overall average gives the IELTS score for Speaking&quot;）【已核实】</li>
+<li>来源：<a href="https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking" target="_blank" rel="noopener">https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-speaking</a> ；<a href="https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail" target="_blank" rel="noopener">https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail</a></li>
+<li>官方对四项的释义【已核实】：</li>
+<p>  - <strong>Fluency and coherence</strong>：以正常语速流利表达、不过多犹豫；句子与观点<strong>逻辑有序</strong>；恰当使用衔接手段（连接词、代词、连词）使听者不费力。</p>
+<p>  - <strong>Lexical resource</strong>：词汇<strong>广度</strong>与使用<strong>准确性/得体性</strong>；包括<strong>不会某个词时的替换能力（paraphrase）</strong>。</p>
+<p>  - <strong>Grammatical range and accuracy</strong>：语法<strong>结构多样性</strong> + <strong>准确性/得体性</strong>。</p>
+<p>  - <strong>Pronunciation</strong>：让听者<strong>不费力就能听懂</strong>的能力。</p>
+<li>【部分核实】口语<strong>不考</strong>「内容是否正确/观点是否深刻」，也不存在「词汇量分数」。Part 3 的抽象讨论考的是<strong>能否展开论证</strong>（属 Fluency and Coherence 的 &quot;topic development&quot;）。</li>
+<li>【已核实】评分方式：「考官在整个考试过程中评估」，最终按<strong>全程平均表现</strong>评分（band descriptor 附注 ii：&quot;A candidate will be rated on their average performance across all parts of the test&quot;）。</li>
+</ul>
+<hr>
+<h3>6. 分数段官方描述（Band Descriptors）</h3>
+<h4>6.1 总分 Band 描述（官方，适用于 Overall）【已核实】</h4>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>官方级别名</th><th>官方描述（译文）</th></tr>
+</thead><tbody>
+<tr><td>9</td><td>Expert</td><td>完全掌握语言；使用恰当、准确、流利，理解完整</td></tr>
+<tr><td>8</td><td>Very good</td><td>完全掌握，仅有<strong>偶发的非系统性</strong>不准确与不得体；在<strong>不熟悉情境</strong>可能误解；<strong>能很好处理复杂详细的论证</strong></td></tr>
+<tr><td>7</td><td>Good</td><td>掌握语言，但有<strong>偶发</strong>不准确、不得体与<strong>某些情境下</strong>的误解；<strong>总体上能处理复杂语言</strong>、理解详细论证</td></tr>
+<tr><td>6</td><td>Competent</td><td><strong>有效</strong>掌握，尽管有不准确、不得体与误解；能使用并理解<strong>相当复杂</strong>的语言，<strong>尤其在熟悉情境</strong></td></tr>
+<tr><td>5</td><td>Modest</td><td><strong>部分</strong>掌握；多数情境能把握大意，但错误多；在本专业领域能基本沟通</td></tr>
+<tr><td>4</td><td>Limited</td><td>基本能力<strong>局限于熟悉情境</strong>；理解与表达常有困难</td></tr>
+<tr><td>3</td><td>Extremely limited</td><td>仅能在<strong>非常熟悉</strong>情境中传达/理解大意；沟通<strong>频繁中断</strong></td></tr>
+<tr><td>2</td><td>Intermittent</td><td>理解口语与书面英语<strong>极困难</strong></td></tr>
+<tr><td>1</td><td>Non-user</td><td>除个别单词外<strong>无使用能力</strong></td></tr>
+<tr><td>0</td><td>Did not attempt</td><td>未作答</td></tr>
+</tbody></table></div>
+<p>来源：<a href="https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail" target="_blank" rel="noopener">https://ielts.org/take-a-test/your-results/ielts-scoring-in-detail</a> 【已核实】</p>
+<p><strong>Overall 计分规则</strong>【已核实】：四项平均后，若小数位为 <strong>.25 -&gt; 进位到 .5</strong>；<strong>.75 -&gt; 进位到整数</strong>。官方例：6.5 / 6.5 / 5.0 / 7.0 -&gt; 平均 6.25 -&gt; <strong>6.5</strong>。</p>
+<h4>6.2 写作 Band 6 / 7 / 8 差在哪</h4>
+<p>依据官方 Writing Band Descriptors（PDF 页脚标注 &quot;Updated May 2023&quot;，2026-11 抓取仍为该版本）【已核实】</p>
+<p>来源：<a href="https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf" target="_blank" rel="noopener">https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf</a></p>
+<h5>Task 2 - Task Response（TR）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td>&quot;<strong>appropriately and sufficiently</strong> addressed&quot;；<strong>a clear and well-developed position</strong>；<strong>ideas are relevant, well extended and supported</strong>；偶有遗漏</td></tr>
+<tr><td><strong>7</strong></td><td>&quot;<strong>main parts</strong> appropriately addressed&quot;；<strong>a clear and developed position</strong>；主要观点有展开与支持，但<strong>倾向过度概括（over-generalise）</strong>或<strong>支持材料缺乏聚焦与精确</strong></td></tr>
+<tr><td><strong>6</strong></td><td>主要部分都涉及（<strong>某些部分比另一些更充分</strong>）；<strong>position 与题目直接相关，但结论可能不清楚、未论证或重复</strong>；主要观点相关，但<strong>部分展开不足/不清晰</strong>，支持论据可能<strong>不够相关或不足</strong></td></tr>
+<tr><td><strong>5</strong></td><td>主要部分<strong>未完整</strong>回应；表达了立场但<strong>展开不总是清晰</strong>；观点有限、展开不足、可能有无关细节、重复</td></tr>
+</tbody></table></div>
+<blockquote><strong>6 -&gt; 7 的核心跨越</strong>：6 分「有立场但结论可能模糊、论据不足」；7 分「立场清晰且<strong>有发展</strong>、主要观点<strong>被展开和支持</strong>」。7 -&gt; 8 的核心：8 分要求「<strong>充分且恰当</strong>回应 + <strong>充分展开</strong>」，7 分容忍「过度概括 / 论据不够精准」。</blockquote>
+<h5>Task 2 - Coherence and Cohesion</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td>逻辑排序、<strong>cohesion 管理良好</strong>；段落使用充分且恰当</td></tr>
+<tr><td><strong>7</strong></td><td>逻辑组织、<strong>全程清晰推进</strong>；衔接手段使用灵活但<strong>有些不准或过度/不足使用</strong>；分段有效、段内排序一般合乎逻辑</td></tr>
+<tr><td><strong>6</strong></td><td>总体连贯、有清晰推进；但句内/句间衔接<strong>可能机械或出错</strong>（误用/过度/缺失）；<strong>分段不一定合乎逻辑，段落主题不一定清晰</strong></td></tr>
+<tr><td><strong>5</strong></td><td>有组织但不完全合乎逻辑、缺乏整体推进；句子间不流畅；<strong>分段可能不足或缺失</strong></td></tr>
+</tbody></table></div>
+<blockquote><strong>6 -&gt; 7</strong>：6 分「衔接机械、分段不一定合理」；7 分「清晰推进 + 分段有效」。</blockquote>
+<h5>Task 2 - Lexical Resource</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>wide resource</strong>，流畅灵活表达精确含义；<strong>恰当使用不常见/习语</strong>（偶有搭配错误）；拼写错误<strong>偶发且几乎不影响</strong></td></tr>
+<tr><td><strong>7</strong></td><td><strong>sufficient</strong> 资源，有一定灵活与精确；<strong>有一定能力使用不常见/习语</strong>；<strong>有文体与搭配意识但仍有不得体</strong>；少量拼写/构词错误<strong>不影响整体清晰</strong></td></tr>
+<tr><td><strong>6</strong></td><td><strong>generally adequate</strong>；意义一般清楚，但<strong>词汇范围受限或选词缺乏精确</strong>；<strong>「冒险型」考生</strong>词汇更广但错误更多；有拼写/构词错误<strong>但不阻碍沟通</strong></td></tr>
+<tr><td><strong>5</strong></td><td>资源<strong>有限</strong>但勉强够用；简单词用得准但<strong>表达变化有限</strong>；词选得体性<strong>频繁失误</strong>；拼写错误<strong>明显，给读者造成困难</strong></td></tr>
+</tbody></table></div>
+<blockquote><strong>6 -&gt; 7</strong>：6 分「够用但受限/不准」；7 分「有灵活性、能使用不常见词与习语、有文体意识」。</blockquote>
+<h5>Task 2 - Grammatical Range and Accuracy</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>wide range</strong>，灵活准确；<strong>大多数句子无错</strong>，标点管理良好；偶发非系统性错误</td></tr>
+<tr><td><strong>7</strong></td><td><strong>a variety of complex structures</strong>，有一定灵活与准确；语法标点<strong>总体控制良好，无错句频繁</strong>；少量错误<strong>不阻碍沟通</strong></td></tr>
+<tr><td><strong>6</strong></td><td><strong>简单句与复杂句混合，但灵活性有限</strong>；复杂结构的准确度<strong>低于简单结构</strong>；语法标点错误<strong>存在但很少阻碍沟通</strong></td></tr>
+<tr><td><strong>5</strong></td><td>结构范围<strong>有限且重复</strong>；尝试复杂句但<strong>常出错</strong>，简单句最准；语法错误<strong>频繁，给读者造成困难</strong>；标点可能出错</td></tr>
+</tbody></table></div>
+<blockquote><strong>6 -&gt; 7</strong>：6 分「复杂句准确度明显掉档」；7 分「多种复杂结构 + 无错句频繁」。</blockquote>
+<h5>Task 1 - Task Achievement 的 6/7/8 差异（Academic）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>Key features skilfully selected, clearly presented, highlighted and illustrated</strong>；覆盖全部要求</td></tr>
+<tr><td><strong>7</strong></td><td>选出并清晰突出 key features，但<strong>本可更充分/更恰当地说明或展开</strong>；<strong>清晰的 overview</strong>、数据恰当分类、识别主要趋势/差异</td></tr>
+<tr><td><strong>6</strong></td><td>key features 被覆盖并<strong>适度</strong>突出；<strong>尝试了 overview（a relevant overview is attempted）</strong>；用数据支持；但<strong>细节可能有无关/不准信息，可能有遗漏或过多</strong></td></tr>
+<tr><td><strong>5</strong></td><td>key features <strong>覆盖不足</strong>，主要是<strong>机械罗列细节</strong>；<strong>可能没有数据支撑</strong>；倾向只讲细节不看大局</td></tr>
+</tbody></table></div>
+<blockquote><strong>6 -&gt; 7 的 Task 1 关键</strong>：「<strong>overview 是否清晰</strong>」+「<strong>主要趋势/差异是否被识别</strong>」。6 分只是 &quot;attempted overview&quot;。</blockquote>
+<h5>Task 1 - Task Achievement（General Training 书信）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>所有 bullet points</strong> 清晰呈现并恰当说明/展开</td></tr>
+<tr><td><strong>7</strong></td><td>所有 bullet points 覆盖并清晰突出（可更充分展开）；<strong>目的清晰；语气一致且恰当</strong></td></tr>
+<tr><td><strong>6</strong></td><td>所有 bullet points 覆盖并<strong>适度</strong>突出；<strong>目的总体清楚；语气可能略有不当</strong></td></tr>
+<tr><td><strong>5</strong></td><td>所有 bullet points 都写了但<strong>一项或多项覆盖不足</strong>；<strong>目的有时不清；语气可能变化且有时不当</strong></td></tr>
+</tbody></table></div>
+<blockquote><strong>GT 书信 6 -&gt; 7</strong>：<strong>语气（tone）一致且恰当</strong>是 7 分的明确门槛。</blockquote>
+<h4>6.3 口语 Band 6 / 7 / 8 差在哪</h4>
+<p>依据官方 Speaking Band Descriptors【已核实】</p>
+<p>来源：<a href="https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf" target="_blank" rel="noopener">https://ielts.org/cdn/ielts-guides/ielts-speaking-band-descriptors.pdf</a></p>
+<h5>Fluency and Coherence（FC）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td>流利，仅<strong>偶发</strong>重复/自我纠正；犹豫<strong>多为内容相关</strong>；话题发展<strong>连贯、恰当、相关</strong></td></tr>
+<tr><td><strong>7</strong></td><td><strong>能持续说、轻松产出 long turns</strong>；有些犹豫/重复/自我纠正，<strong>常出现在句中，显示找语言的困难，但不影响连贯</strong>；灵活使用话语标记与衔接</td></tr>
+<tr><td><strong>6</strong></td><td><strong>愿意说长段</strong>；但<strong>连贯可能因犹豫/重复/自我纠正而丢失</strong>；使用一系列话语标记但<strong>不总是恰当</strong></td></tr>
+<tr><td><strong>5</strong></td><td>通常能继续，但<strong>依赖重复与自我纠正</strong>，或语速慢；犹豫常出现在<strong>找基础词汇/语法</strong>时；<strong>过度使用</strong>某些衔接词</td></tr>
+</tbody></table></div>
+<blockquote><strong>6 -&gt; 7</strong>：6 分「连贯会断」；7 分「<strong>能不断地说、能产长段、犹豫不影响连贯</strong>」。<strong>7 -&gt; 8</strong>：8 分「犹豫主要是为了组织内容，而非找词」。</blockquote>
+<h5>Lexical Resource（LR）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>wide resource</strong>，灵活用于所有话题、传达精确含义；<strong>能熟练使用不常见与习语表达</strong>（偶有选词/搭配错误）；<strong>有效转述</strong></td></tr>
+<tr><td><strong>7</strong></td><td>资源灵活用于多种话题；<strong>有一些能力使用不常见与习语</strong>，<strong>有文体与搭配意识但仍有不得体</strong>；有效转述</td></tr>
+<tr><td><strong>6</strong></td><td>资源<strong>足以长段讨论</strong>话题；用词可能不得体但<strong>意义清楚</strong>；<strong>一般能成功转述</strong></td></tr>
+<tr><td><strong>5</strong></td><td>足以讨论熟悉/不熟悉话题但<strong>灵活性有限</strong>；尝试转述但<strong>不总成功</strong></td></tr>
+</tbody></table></div>
+<h5>Grammatical Range and Accuracy（GRA）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>wide range</strong>，灵活；<strong>大多数句子无错</strong>；偶有非系统性错误，<strong>少数基础错误可能残留</strong></td></tr>
+<tr><td><strong>7</strong></td><td><strong>多种结构灵活使用</strong>；<strong>无错句频繁</strong>；<strong>简单句与复杂句都有效使用</strong>，尽管有些错误；少数基础错误残留</td></tr>
+<tr><td><strong>6</strong></td><td><strong>长短句混合 + 多种结构，但灵活性有限</strong>；复杂结构<strong>错误频繁但不影响沟通</strong></td></tr>
+<tr><td><strong>5</strong></td><td>基础句型控制尚可；复杂结构<strong>范围有限、几乎总有错、需重述</strong></td></tr>
+</tbody></table></div>
+<h5>Pronunciation（P）</h5>
+<div class='tw'><table><thead>
+<tr><th>Band</th><th>关键表述</th></tr>
+</thead><tbody>
+<tr><td><strong>8</strong></td><td><strong>wide range of phonological features</strong> 传达精确/细微含义；<strong>能保持恰当节奏</strong>；重音语调灵活；<strong>全程易听懂</strong>；口音对可懂度<strong>影响极小</strong></td></tr>
+<tr><td><strong>7</strong></td><td>具备 <strong>Band 6 全部正面特征 + 部分（非全部）Band 8 特征</strong></td></tr>
+<tr><td><strong>6</strong></td><td>使用一系列语音特征但<strong>控制不稳定</strong>；分块一般恰当，但<strong>节奏受缺乏重音计时和/或语速过快影响</strong>；语调重音<strong>有使用但不持续</strong>；个别词/音素误读，<strong>偶尔不够清晰</strong>；一般不需太费力就能听懂</td></tr>
+<tr><td><strong>5</strong></td><td>具备 <strong>Band 4 全部正面特征 + 部分（非全部）Band 6 特征</strong></td></tr>
+</tbody></table></div>
+<blockquote><strong>口语 6 -&gt; 7 的三条主线</strong>：① FC：能持续产长段、犹豫不影响连贯；② LR：能使用不常见词/习语、有文体意识；③ GRA：多种复杂结构 + 无错句频繁。</blockquote>
+<blockquote><strong>7 -&gt; 8</strong>：从「有能力但偶有失误」到「<strong>wide range + 灵活 + 大多数句子无错 + 几乎全程易懂</strong>」。</blockquote>
+<h4>6.4 阅读/听力的 Band 描述</h4>
+<p>【未查到官方原文】：官方<strong>没有</strong> Reading / Listening 的 band descriptors（评分细则表）。阅读与听力是<strong>客观题计分</strong>，只有「raw score -&gt; band」换算 + 第 6.1 节的<strong>总分 band 描述</strong>可参考。【已核实】（ielts.org 的 band descriptors PDF 只有 Writing 与 Speaking 两份）</p>
+<hr></div>
+  </div>
+</div>
+
+<!-- ============ 怎么用 ============ -->
+<div class="page" id="page-about">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">How to use</div>
+      <h1>每天怎么用这个站</h1>
+      <p>网站每天自动更新一期。下面是一套 20–30 分钟的用法，比「刷时长」有效。</p>
+    </div>
+    <div class="outline">
+      <h2>一、词组：先看文段，再看词表</h2>
+      <p>顺序很重要。先读下面的英文文段（不查字典，遇到陌生词先猜），读完再回头看词表——这时你会发现那些词在句子里有了位置。最后遮住中文，试着复述文段大意。</p>
+      <p><b>为什么这样设计：</b>孤立背单词的遗忘率极高，因为大脑记的是「词—释义」这一条极弱的连接。放回文段，它连上了语法、搭配和语境，连接变粗，才留得住。</p>
+
+      <h2>二、阅读：先读英文，翻译是你的「对答案」</h2>
+      <p>中文翻译默认是收起来的。请强制自己读完英文再展开——展开的作用不是学习，是<b>校验你有没有理解错</b>。如果某句你看懂了但翻译读起来不一样，那正是你该停下来看的地方。</p>
+
+      <h2>三、口语：一定先自己说，再看参考</h2>
+      <p>每期 3 道题：2 道小题（Part 1 风格，答 3–5 句）+ 1 道大题（Part 2 独白或 Part 3 抽象讨论）。<b>先录一遍自己的声音</b>，再对照参考答案。参考答案下面的「换成你的情况」是整块替换模块，把里面的例子换成你自己的真实经历——考官能听出背稿，但听不出「背了自己」。</p>
+      <p><b>一个提醒：</b>参考答案里我刻意留了一些口语化的转折（Honestly / I have to admit / That said），这些不是废话，它们正是 Fluency and Coherence 拿分的证据。</p>
+
+      <h2>四、词库底座怎么用</h2>
+      <p>词库按考试和主题分组，每组都配一段覆盖全部词条的文段。<b>不要从头背到尾</b>——先选你今天感兴趣的主题，读完文段再看词。跨考试的部分（比如 undermine 在雅思和 GRE 都出现）说明它值得优先掌握。</p>
+
+      <h2>五、关于雅思考纲页</h2>
+      <p>那一页是我查的官方原文汇总，标注了核实状态。特别提醒三个最容易记错的点：</p>
+      <ul>
+        <li><b>2026 年年中起全面转机考</b>（中国大陆已全面机考），但题型、时长、评分标准<b>没有任何变化</b>；</li>
+        <li>中国大陆机考的口语是<b>真人考官视频通话</b>，不是同房间面对面；</li>
+        <li>阅读和听力<b>没有 band descriptors</b>，只有原始分换算表；只有写作和口语有评分细则。</li>
+      </ul>
+
+      <h2>六、每天更新什么</h2>
+      <p>每期包含：<b>10 个词组</b>（配完整文段）+ <b>1–2 段阅读</b>（配中文翻译）+ <b>3 道口语题</b>（配参考答案与替换模块）。网站每天自动生成新一期并上线。</p>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <b>英语每天</b> · 内容构建于 2026-11-13 · 最近一期 2026-11-17<br>
+  考纲信息来源：ielts.org 官方页面与官方 Band Descriptors PDF（查证 2026-11-13）。<br>
+  个人学习用站点 · 单文件零依赖 · 断网可读
+</div>
+
+<script>
+(function(){
+  var pages = ['today','bank','outline','about'];
+  var btns = [].slice.call(document.querySelectorAll('#nav button'));
+
+  function go(name, push){
+    if (pages.indexOf(name) === -1) name = 'today';
+    pages.forEach(function(p){
+      var el = document.getElementById('page-'+p);
+      if (el) el.classList.toggle('on', p === name);
+    });
+    btns.forEach(function(b){ b.classList.toggle('on', b.dataset.go === name); });
+    if (push !== false) {
+      history.replaceState(null, '', '#' + name);
+    }
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ go(b.dataset.go); });
+  });
+
+  window.addEventListener('hashchange', function(){
+    go((location.hash||'#today').slice(1), false);
+  });
+
+  var initial = (location.hash || '#today').slice(1);
+  go(initial, false);
+
+  // 键盘：1-4 切页
+  document.addEventListener('keydown', function(e){
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    var n = parseInt(e.key, 10);
+    if (n >= 1 && n <= 4) go(pages[n-1]);
+  });
+})();
+</script>
+</body>
+</html>

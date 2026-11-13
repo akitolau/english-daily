@@ -1,0 +1,195 @@
+{
+  "_meta": {
+    "note": "口语题库。daily.py 每天从这里抽 2 道小题 + 1 道大题。答案都按 Akito 的真实背景写（金融转 AI 产品、在北京/珠海/苏州生活过、做音乐），替换模块留给临场调整。",
+    "structure": {
+      "part1": "Part 1 小题：3-5 句，要有一个具体细节",
+      "part2": "Part 2 cue card：能讲满 2 分钟",
+      "part3": "Part 3 抽象讨论：先给对手最强版本再拆"
+    }
+  },
+  "titles": [
+    "为什么我重新开始学英语",
+    "从金融到 AI 的一次转向",
+    "把一件事说清楚有多难",
+    "关于「不确定」的练习",
+    "我怎么判断一个东西值不值得学",
+    "具体比正确重要",
+    "一个人怎么建立自己的判断",
+    "慢一点，但留下来",
+    "什么是真正的准备工作",
+    "关于改变的代价",
+    "为什么细节比结论动人",
+    "两件互相矛盾的事可以同时成立",
+    "学会承认自己不知道",
+    "重复的意义"
+  ],
+
+  "part1": [
+    {
+      "id": "p1-hometown",
+      "part": "Part 1",
+      "q": "Where are you from?",
+      "ans": "I'm from Shenyang, in the north-east, though I've moved around a lot since then — Beijing for university, then Zhuhai and Suzhou for work. Shenyang still feels like home in a way the other places don't. When people ask, I usually say I'm from the north, because the accent gives it away before I get a chance to explain.",
+      "note": "「一个细节胜过三个形容词」。最后那句「口音先说漏了」是自然的口语推理。",
+      "swap": "换成你的真实家乡 + 一句家乡特征。不要列城市清单，选一个能展开的细节。"
+    },
+    {
+      "id": "p1-work",
+      "part": "Part 1",
+      "q": "Do you work or are you a student?",
+      "ans": "I'm working, though the honest description is that I'm between two things. My background is in finance — I did a master's in that — but for the past year or so I've been working on AI products, which is a fairly big jump. Right now I'm taking some time to prepare for the next step, which involves both studying and job hunting.",
+      "note": "「between two things」比直接说「我在找工作」体面且真实。主动说出转折，反而让后面的话题有抓手。",
+      "swap": "把 finance→AI 换成你自己的转折。核心句式：My background is X, but recently I've been Y."
+    },
+    {
+      "id": "p1-music",
+      "part": "Part 1",
+      "q": "Do you like music?",
+      "ans": "I do, and more than just listening — I write and record my own songs, so music takes up a strange amount of my thinking time. The odd thing is that the more I learn about how a track is made, the harder it becomes to listen casually. I notice the mixing decisions now. Sometimes I miss being able to just enjoy it.",
+      "note": "「the more...the harder...」这个结构在口语里很显水平。承认代价（失去纯粹听歌的乐趣）比单纯夸音乐好。",
+      "swap": "如果你不创作，可以换成「我听得很多，而且有偏好」+ 一个具体的歌手或专辑。"
+    },
+    {
+      "id": "p1-reading",
+      "part": "Part 1",
+      "q": "Do you prefer reading paper books or e-books?",
+      "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+      "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+      "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+    },
+    {
+      "id": "p1-weekend",
+      "part": "Part 1",
+      "q": "What do you usually do at weekends?",
+      "ans": "It depends on how the week went. If I've been staring at a screen for five days, I try to spend Saturday somewhere with no signal — a long walk, or a book in a café where nobody knows me. Sunday is more practical: I plan the week, catch up on the reading I skipped, and try not to panic about Monday.",
+      "note": "「It depends」开头很好，避免变成一个贫乏的清单。「where nobody knows me」这种细节很生动。",
+      "swap": "换成你真实的周末节奏。保留「周六恢复 / 周日准备」这个对照结构。"
+    },
+    {
+      "id": "p1-language",
+      "part": "Part 1",
+      "q": "Why are you learning English?",
+      "ans": "Two reasons, and they're not equally noble. The practical one is that most of the material I need for work is published in English first — by the time a decent article gets translated, the conversation has moved on. The less practical reason is that I want to be able to read a novel without feeling like I'm doing homework. That's the goal I actually care about.",
+      "note": "「not equally noble」是很好的自我觉察式表达。把功利理由和私人理由并列，比只说一个更真实。",
+      "swap": "把 practical reason 换成你的真实需求（考试、工作、移民、追剧）。"
+    },
+    {
+      "id": "p1-friends",
+      "part": "Part 1",
+      "q": "Do you prefer to spend time with a large group or a few close friends?",
+      "ans": "A few, definitely. I'm not shy exactly, but I find large groups exhausting in a way I can't fully explain — I come home feeling like I've been performing rather than talking. With two or three people I can be slower and more honest, and I've noticed that's when I actually remember the conversation afterwards.",
+      "note": "「performing rather than talking」是很精准的对比。用「我记得那次对话」作为证据，比空说「我更放松」有说服力。",
+      "swap": "如果你更爱大群体，就说它的好处：能量、随机性、认识新人。保持「用具体体验作证据」的结构。"
+    },
+    {
+      "id": "p1-weather",
+      "part": "Part 1",
+      "q": "What kind of weather do you like?",
+      "ans": "Overcast, which people find strange. Bright sun makes me feel like I should be outside doing something useful; grey weather gives me permission to stay in and read. I spent a winter in a place where it dropped to minus twenty, and oddly that was the most comfortable I've been — the cold was so serious that nobody expected you to be productive.",
+      "note": "反直觉的偏好（喜欢阴天）立刻抓住注意。后面用真实经历做支撑。",
+      "swap": "换成你真实的天气偏好 + 一个支撑它的记忆。"
+    }
+  ],
+
+  "part2": [
+    {
+      "id": "p2-person",
+      "part": "Part 2",
+      "q": "Describe a person who has influenced you. You should say: who this person is; how you know them; what they are like; and explain how they influenced you.",
+      "ans": "I'd like to talk about a former manager of mine — someone I worked with for less than a year, but who changed how I think about being wrong.\n\nShe was the head of a data team, and what struck me first was how comfortable she was saying 'I don't know' in a meeting with thirty people in it. I was twenty-four and terrified of exactly that. I assumed that admitting a gap would cost you authority. She seemed to gain it.\n\nThe specific moment I remember is a review where I'd presented an analysis I was quite proud of. She asked one question I couldn't answer, and instead of moving on she said, 'Let's not guess at that — can you find out by Thursday?' It wasn't a rebuke. It was almost worse, because it made me realise the standard wasn't 'look smart', it was 'be reliable'.\n\nWhat she actually taught me wasn't a skill. It was that uncertainty is information, not failure. If you can say precisely where you don't know something, people trust the parts you do claim. I've used that in every project since — especially in AI work, where the honest answer is very often 'this looks plausible but I haven't verified it'.",
+      "note": "Part 2 最容易变成流水账。这段的结构是：一句定性 → 一个反直觉观察 → 一个具体场景 → 一个提炼出的原则 → 落到现在。注意「It wasn't a rebuke. It was almost worse」这种转折。",
+      "swap": "换成你真实的某个人（老师、同事、朋友、家人）。保留结构：一句概括 → 一个具体的场景 → 一句你后来一直在用的话。"
+    },
+    {
+      "id": "p2-place",
+      "part": "Part 2",
+      "q": "Describe a place you like to go to relax. You should say: where it is; how often you go there; what you do there; and explain why it helps you relax.",
+      "ans": "The place I'd describe isn't scenic. It's a particular stretch of riverside in Suzhou — maybe four hundred metres long, with a bench roughly in the middle that I've come to think of as mine.\n\nI started going there about two years ago, during a period when work was going badly and I couldn't sleep. I'd walk there at ten or eleven at night. There were always a few other people — someone fishing who never caught anything, a couple arguing quietly. Nobody talked to me, which was the point.\n\nWhat I did there was mostly nothing. Walked the same four hundred metres, sat on the bench, went home. But something in the repetition helped. When everything else was changing — job, city, plans — that stretch of river was exactly the same on a Tuesday as it had been in March.\n\nI think that's why it works. It's not that the place is peaceful, exactly; it's that it's indifferent. It makes my problems feel smaller in a way that a sympathetic friend sometimes can't. I don't go as often now, but I still think of it as a place I could go.",
+      "note": "「不是景色美，是重复带来的稳定」这是高分点。最后一句「make my problems feel smaller」+「indifferent」是很成熟的表达。",
+      "swap": "换成你真实的地方（图书馆、健身房、某条街、某个咖啡馆）。保留「为什么它能让你放松」的功能性解释，而不是形容词堆砌。"
+    },
+    {
+      "id": "p2-object",
+      "part": "Part 2",
+      "q": "Describe something you own that is important to you. You should say: what it is; how long you've had it; how you got it; and explain why it's important.",
+      "ans": "I'd like to describe a fairly cheap pair of headphones, which sounds like an odd choice for something important.\n\nI bought them about four years ago, in a period when I was moving cities every few months. They cost almost nothing. I got them in a hurry at an airport, because the pair I had broke the night before a flight.\n\nWhat makes them matter is what happened after. I write music, and for a while those were the only headphones I had, so every song I finished in that period — three or four of them — was mixed on these. They're not good. They colour the sound badly, and I can hear it now that I have better ones. But that's precisely why they're important to me: they're the reason those tracks sound the way they do, in a technical sense I can't undo.\n\nSo it's not really the object I care about. It's that it's a physical record of a specific stretch of my life — a period when I had very little money and quite a lot of time, which is a combination I don't expect to have again.",
+      "note": "「便宜的东西却重要」这个反差是抓点。承认它的缺点（音质不好）+ 把缺点变成意义，是很好的结构。",
+      "swap": "换成你真实的物件。关键是找出「它的不完美恰恰是它重要的原因」这个角度。"
+    },
+    {
+      "id": "p2-decision",
+      "part": "Part 2",
+      "q": "Describe an important decision you made. You should say: what the decision was; when you made it; what alternatives you had; and explain why you think it was important.",
+      "ans": "The decision I'd describe is deciding to leave a stable job without having another one lined up. That was about a year ago.\n\nAt the time the choice looked different from how it looks now. On paper I had two options: stay, keep the salary and the title, and wait for a better moment to move; or leave and figure out the next thing while looking. The reasonable choice was obviously the first one. Almost everyone I trusted said so, and they weren't being unkind — they were right about the risk.\n\nWhat made me leave was a realisation that was not really about the job. I noticed that I'd been choosing the second-best version of a career I wasn't sure I wanted. Staying would have been comfortable and it would have made the next decision harder, not easier, because every year the salary gets a bit better and the switching cost gets a bit higher.\n\nWas it a good decision? I don't think I'm the right person to judge yet, honestly. What I can say is that it forced me to find out what I'm actually good at, rather than what I've done before. That's worth something even if the timing turns out to have been bad.",
+      "note": "「我不知道这决定好不好」这种诚实比「这是我最正确的决定」高级得多。注意「choosing the second-best version of a career」是全文最强的一句。",
+      "swap": "换成你真实的决定。保留「承认风险、不确定结论」的态度——考官更信这个。"
+    },
+    {
+      "id": "p2-skill",
+      "part": "Part 2",
+      "q": "Describe a skill you learned that took a long time. You should say: what the skill is; when you learned it; how you learned it; and explain why it took so long.",
+      "ans": "The skill I'd describe is writing clearly — not writing well, which is a different and much rarer thing, but writing in a way that doesn't waste the reader's time. I've been working on it for about four years and I'm still not done.\n\nI started because I had to. My job involved writing analysis that other people had to act on, and I kept getting the same response: 'I'm not sure what you're telling me to do.' That was humbling. I thought I was being thorough. I was being long.\n\nThe way I learned was mostly by deleting. I'd write something, cut it in half, and see what survived. Then someone showed me that most of what I was cutting was the part where I explained that I wasn't sure. The uncertainty was real, but burying it in caveats made the whole document useless.\n\nWhy it takes so long is that the skill isn't grammatical — it's deciding what matters. You can learn grammar in months. Judging relevance takes years, because you have to be wrong in front of people a lot of times first. I'm better than I was. I still over-explain when I'm nervous.",
+      "note": "「writing clearly 不是 writing well」这个区分很好。最后一句「我紧张时还是会解释太多」收了漂亮的自知之明。",
+      "swap": "换成你真实的技能（开车、做饭、编曲、数据分析）。核心是「为什么它慢」要给一个认知层面的理由，不是「需要多练」。"
+    }
+  ],
+
+  "part3": [
+    {
+      "id": "p3-tech-education",
+      "part": "Part 3",
+      "q": "Do you think technology has improved education?",
+      "ans": "I'd say it has expanded access without necessarily improving learning, and those are different things.\n\nThe strongest argument for technology is distributional. A student in a small city can now watch lectures from people who would never have visited, and that's genuinely new. Twenty years ago that advantage was geographically locked.\n\nBut the case gets weaker when you ask about depth. Access to information isn't the bottleneck anymore — almost everyone I know has more material available than they can use. What's scarce is attention and a reason to care. And I'd argue technology has made both harder, not easier, because a screen is a place where distraction is always one tap away.\n\nSo my honest position is: technology solved the supply problem and left the demand problem untouched. Which means the next useful innovation in education probably isn't a better platform. It's something that makes people want to finish what they start.",
+      "note": "「solved the supply problem, left the demand problem untouched」是全篇核心。这个「分清两个问题」的动作在 Part 3 极其加分。",
+      "swap": "这套「它解决的是 A，不是 B」的框架适用于几乎所有「XX 有没有改善 YY」类问题。"
+    },
+    {
+      "id": "p3-work-life",
+      "part": "Part 3",
+      "q": "Why do some people find it difficult to separate work from personal life?",
+      "ans": "I'd separate two causes that get conflated: structural and psychological.\n\nStructurally, remote work dissolved the physical boundary that used to do the separating for us. Commuting was miserable, but it also marked the end of the day. Without it, the day simply doesn't end — it just continues with a different set of tasks.\n\nPsychologically, there's something less sympathetic going on. For a lot of people, work has become the primary source of identity and recognition. If your sense of worth comes from being useful, then stopping isn't rest, it's a mild threat. And a company will rarely discourage that, because it benefits from it.\n\nWhat I'd push back on is the framing of this as an individual discipline problem. Telling people to set boundaries is a bit like telling them to sleep more — true, unhelpful, and it puts the cost on the person rather than on the arrangement that created the problem.",
+      "note": "注意最后那段「把责任推给个人是偷懒」——这种对常见建议的批评很有力，是 Part 3 上 7.5 的标志。",
+      "swap": "任何「为什么有些人 X」的问题都可以套「结构原因 + 心理原因」两层。"
+    },
+    {
+      "id": "p3-cities",
+      "part": "Part 3",
+      "q": "Is it better to live in a city or in the countryside?",
+      "ans": "I don't think the question has a general answer, and I'd be suspicious of anyone who gives one quickly.\n\nWhat I can say is that the trade-off isn't the one people usually describe. The common framing is opportunity versus peace, and that's partly true. But the thing I noticed after living in six cities in five years is that cities don't actually give you more opportunities — they give you more options, which is not the same. Options cost attention. You spend a lot of energy deciding, and very little actually committing.\n\nSmaller places have the opposite problem: fewer options means you commit to the ones you have, and that can be genuinely better for doing anything difficult. The catch is that they're much less forgiving if you turn out to be different from the people around you.\n\nSo I'd frame it as: cities are better if you're still deciding who you are; smaller places are better once you know. The mistake is optimising for the wrong stage.",
+      "note": "「more options ≠ more opportunities」这个区分是整段的价值所在。最后一句「优化错了阶段」是很漂亮的收尾。",
+      "swap": "这类「A 还是 B 更好」的题，最安全的答法就是「取决于阶段/取决于你是谁」，然后给出判据。"
+    },
+    {
+      "id": "p3-ai-jobs",
+      "part": "Part 3",
+      "q": "How will artificial intelligence change the kind of work people do?",
+      "ans": "I think the honest answer is that it will change work in ways that are easy to predict in aggregate and very hard to predict for any specific person — which is exactly why it's unsettling.\n\nThe predictable part is that tasks involving retrieval, formatting and first drafts are already being absorbed. That's not speculation; it's happening in my own work. What follows is that the value of a person shifts towards judgement — knowing which of five plausible outputs is actually right, and being accountable when it isn't.\n\nThe part I'm less sure about is whether that leaves enough work for everyone. The optimistic case is that it's like previous transitions and new categories of job appear. The pessimistic case is that this one moves faster than retraining cycles, so the adjustment cost lands on a specific generation rather than being spread out.\n\nWhat I'd resist is both the utopian and the apocalyptic version. The realistic statement is: the technology is neither good nor bad, but the distribution of its benefits is a political question, not a technical one.",
+      "note": "「easy to predict in aggregate, hard to predict for a specific person」是极好的开场。结尾「distribution is political, not technical」把问题提到更高层。",
+      "swap": "任何「AI 会怎么改变 X」都可用：可预测的部分 → 不确定的部分 → 拒绝两个极端 → 落到分配问题。"
+    },
+    {
+      "id": "p3-traditions",
+      "part": "Part 3",
+      "q": "Should old traditions be preserved?",
+      "ans": "I'd want to distinguish preserving a tradition from preserving the practice of it, because those often conflict.\n\nThere's a strong case for keeping the knowledge. If a craft or a form of music disappears, you lose something you can't reconstruct from a description — the technique lives in people, not in documents. In that sense preservation is genuinely urgent.\n\nThe weaker case is the one that gets made most often, which is that a tradition should continue simply because it's old. Age isn't an argument; plenty of old things were bad ideas. And there's a real cost to this framing, because it tends to freeze practices that were always changing, turning something living into a museum piece.\n\nSo I'd say: preserve the knowledge, be sceptical of the obligation. The traditions that survive are usually the ones people keep choosing, not the ones they're told to keep.",
+      "note": "「preserve the knowledge vs preserve the obligation」这个拆分是全篇骨架。最后一句「活下来的是人们仍在选择的东西」很有力。",
+      "swap": "这类「应该保留 X 吗」的题，核心动作是「把 X 拆成两种东西」，然后分别判断。"
+    },
+    {
+      "id": "p3-competition",
+      "part": "Part 3",
+      "q": "Is competition good for children?",
+      "ans": "It depends entirely on what the competition is about and who's watching, which is why I don't trust general answers.\n\nCompetition against a measurable standard can be extremely useful. It gives a child a clear signal about where they stand, and losing in that setting teaches something that praise cannot — that effort and outcome are correlated but not identical, which is an uncomfortable and necessary lesson.\n\nWhat's damaging is competition for a limited number of positions, where winning requires someone else to lose. That structure teaches a very specific thing: that other people are obstacles. And it's often applied far too early, before a child has any way of separating 'I lost' from 'I am a loser'.\n\nSo my position would be that competition is a tool, and like most tools the question isn't whether it's good but whether it's being used at the right age for the right thing.",
+      "note": "「competition against a standard」vs「competition for positions」这个区分是关键。结尾用「工具」框架收口比给结论安全。",
+      "swap": "「X 对孩子好不好」类问题都可用：区分两种形态 → 各给判断 → 用「取决于用法」收口。"
+    },
+    {
+      "id": "p3-money",
+      "part": "Part 3",
+      "q": "Do you think money can buy happiness?",
+      "ans": "The research answer is that it can, up to a point, and then it stops — which is a more interesting finding than either extreme.\n\nBelow a certain level of income, money is basically buying the absence of stress: you can pay the bill, fix the thing, take the taxi. That's not a small effect; it's the difference between being able to think about your life and being unable to.\n\nAbove that level, what money buys is mostly optionality — the ability to say no. And I'd argue that's the genuinely valuable part, more than any purchase. The people I've known who seemed most at ease weren't spending more; they just had more room to refuse things.\n\nWhat money can't buy is the part that actually determines whether a life feels good, which is roughly: whether you're doing something you chose, with people you'd choose again. That's not a satisfying answer at a dinner party, but I think it's the accurate one.",
+      "note": "「optionality — the ability to say no」是整段最亮的点。结尾「不是你买了什么，而是你能拒绝什么」很有分量。",
+      "swap": "这类「钱能不能买 X」的题，都用「分段讨论」：低区间解决什么 / 高区间解决什么 / 什么都解决不了的是什么。"
+    }
+  ]
+}

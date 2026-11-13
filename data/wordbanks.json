@@ -1,0 +1,175 @@
+{
+  "_meta": {
+    "name": "英语备考综合词库底座",
+    "description": "雅思 / 托福 / GRE 三考试的核心词汇与词组，按考试和主题组织。每日帖子的词组和阅读文段从这里取材。",
+    "exams": ["IELTS", "TOEFL", "GRE"],
+    "updated": "2026-11-13"
+  },
+  "ielts": {
+    "label": "雅思 IELTS",
+    "desc": "Academic 与 General Training 共用。偏学术阅读与议论文写作，Band 6→7 的关键是「用得上、用得准」而不是生僻。",
+    "chunks": [
+      {
+        "id": "ielts-edu-01",
+        "topic": "Education 教育",
+        "words": [
+          {"w": "curriculum", "pos": "n.", "cn": "课程体系", "note": "可数，复数 curricula / curriculums。比 course 大，指整个课程设置。"},
+          {"w": "rote learning", "pos": "n.", "cn": "死记硬背", "note": "固定搭配。反义是 hands-on learning / experiential learning。"},
+          {"w": "critical thinking", "pos": "n.", "cn": "批判性思维", "note": "议论文高频。collocation: foster / cultivate critical thinking。"},
+          {"w": "vocational training", "pos": "n.", "cn": "职业培训", "note": "对照 academic education。写职业教育话题必备。"},
+          {"w": "syllabus", "pos": "n.", "cn": "教学大纲", "note": "单数 syllabus，复数 syllabi / syllabuses。"},
+          {"w": "truancy", "pos": "n.", "cn": "旷课", "note": "不可数。truancy rate 旷课率。动词是 play truant。"},
+          {"w": "peer pressure", "pos": "n.", "cn": "同辈压力", "note": "不可数。青少年话题极高频。"},
+          {"w": "extra-curricular activities", "pos": "n.", "cn": "课外活动", "note": "常用复数。写作时说明「软技能来源」很好用。"},
+          {"w": "literacy rate", "pos": "n.", "cn": "识字率 / 文化程度", "note": "数字型话题（如教育投入）常配数据描述。"},
+          {"w": "academic performance", "pos": "n.", "cn": "学业表现", "note": "比 grades 正式。collocation: improve / decline in academic performance。"}
+        ],
+        "passage": {
+          "en": "For decades, education systems in many countries were built around a fixed curriculum and a single syllabus that every student had to follow at the same pace. Rote learning was the default method: students memorised facts, recited them in exams, and moved on. Critics argue that this approach leaves little room for critical thinking, which is now considered one of the most valuable skills in the workplace.\n\nVocational training has gradually gained ground as an alternative. Instead of pushing every student towards university, some governments now fund apprenticeships and technical colleges, arguing that a country needs both engineers and electricians. Supporters point to lower truancy rates and higher employment among graduates of such programmes.\n\nHowever, the picture is not entirely positive. Peer pressure and a culture of comparison can push students towards paths their families consider respectable rather than ones that suit them. Extra-curricular activities, which used to be treated as optional, are increasingly seen as essential, because they build teamwork and resilience that academic performance alone cannot measure. Some researchers also warn that rising literacy rates do not automatically translate into better judgement.",
+          "cn": "几十年来，许多国家的教育体系都围绕一套固定的课程（curriculum）和所有人必须按同一进度完成的教学大纲（syllabus）来搭建。死记硬背（rote learning）是默认的方法：学生记住事实，在考试中背诵出来，然后继续往前走。批评者认为，这种做法几乎没有给批判性思维（critical thinking）留出空间——而这在今天被视为职场中最有价值的能力之一。\n\n职业培训（vocational training）作为一种替代路径逐渐受到重视。一些政府不再把每个学生都往大学里推，而是资助学徒制和技术学院，理由是：一个国家既需要工程师，也需要电工。支持者指出，这类项目的毕业生旷课率（truancy rate）更低，就业率更高。\n\n但情况并非全然正面。同辈压力（peer pressure）和攀比文化，可能把学生推向家人认为体面的道路，而不是真正适合他们的道路。课外活动（extra-curricular activities）过去被视为可有可无，现在越来越被看作必需品，因为它们培养的团队协作与韧性，是单看学业表现（academic performance）衡量不出来的。也有研究者警告：识字率（literacy rate）的上升，并不会自动转化为更好的判断力。",
+          "note": "这段覆盖本组 10 个词。建议朗读 3 遍，然后遮住中文复述大意——能复述出来才算真记住。"
+        }
+      },
+      {
+        "id": "ielts-env-01",
+        "topic": "Environment 环境",
+        "words": [
+          {"w": "carbon footprint", "pos": "n.", "cn": "碳足迹", "note": "可数。reduce / shrink your carbon footprint。"},
+          {"w": "renewable energy", "pos": "n.", "cn": "可再生能源", "note": "不可数。solar / wind / hydro 都属于它。"},
+          {"w": "emissions", "pos": "n.", "cn": "排放物", "note": "常用复数。cut emissions 是标准动宾搭配。"},
+          {"w": "sustainable", "pos": "adj.", "cn": "可持续的", "note": "名词 sustainability。写作里别滥用，配具体宾语才有力。"},
+          {"w": "deforestation", "pos": "n.", "cn": "毁林 / 滥伐森林", "note": "不可数。反义是 reforestation 再造林。"},
+          {"w": "biodiversity", "pos": "n.", "cn": "生物多样性", "note": "不可数。loss of biodiversity 是高频搭配。"},
+          {"w": "single-use plastic", "pos": "n.", "cn": "一次性塑料", "note": "single-use 是很好的形容词前缀，比 disposable 更现代。"},
+          {"w": "carbon tax", "pos": "n.", "cn": "碳税", "note": "可数。政策类议论文常用。"},
+          {"w": "greenwashing", "pos": "n.", "cn": "漂绿 / 伪环保宣传", "note": "不可数。企业话题的高分词，Band 7+ 辨识度很高。"},
+          {"w": "offset", "pos": "v.", "cn": "抵消", "note": "carbon offset 碳抵消。也可说 offset the cost。"}
+        ],
+        "passage": {
+          "en": "Every product we buy carries a carbon footprint, from the raw materials extracted to the transport that brings it to our door. In response, many governments have promoted renewable energy and introduced a carbon tax designed to make pollution expensive. The logic is simple: if emissions cost money, companies will find ways to reduce them.\n\nThe results have been mixed. Between 2010 and 2020, the cost of solar panels fell by more than eighty per cent, and in several countries renewable energy now supplies a larger share of electricity than coal. Yet global emissions continued to rise, largely because demand for energy grew even faster than clean supply.\n\nDeforestation remains a stubborn problem. Forests absorb roughly a third of the carbon dioxide released each year, and losing them threatens biodiversity in ways that are difficult to reverse. Meanwhile, consumer campaigns against single-use plastic have changed behaviour in visible ways, but some researchers caution that such gestures can distract from the harder structural questions.\n\nThe most persistent criticism concerns greenwashing. A company may advertise a sustainable packaging line while expanding the factories behind it. Unless claims are audited, shoppers have little way of knowing whether a product genuinely offsets its impact, or simply markets the appearance of doing so.",
+          "cn": "我们购买的每件商品都带有碳足迹（carbon footprint）——从开采的原材料，到把它送到家门口的运输。作为回应，许多政府推广可再生能源（renewable energy），并引入碳税（carbon tax），意在让污染变得昂贵。逻辑很简单：如果排放（emissions）要花钱，企业就会想办法减少排放。\n\n结果是好坏参半。2010 到 2020 年间，太阳能板的成本下降超过八成，在几个国家，可再生能源提供的电力占比已经超过煤炭。但全球排放量仍在上升，主要原因是能源需求的增长比清洁供给更快。\n\n毁林（deforestation）仍是个顽固的难题。森林吸收了每年排放的二氧化碳中约三分之一，失去森林会以难以逆转的方式威胁生物多样性（biodiversity）。与此同时，反对一次性塑料（single-use plastic）的消费者运动确实可见地改变了行为，但有研究者提醒：这类姿态性行动可能让人分心，忽略了更艰难的结构性问题。\n\n最持续的批评指向漂绿（greenwashing）。一家公司可以一边宣传可持续（sustainable）包装线，一边扩建背后的工厂。除非宣传被第三方审核，消费者几乎无从判断一件产品是真的抵消（offset）了它的影响，还是只是在营销一种「我在做」的样子。",
+          "note": "「对比 + 转折」是环境类文章最常用的骨架：说成效 → 说但是。注意 Meanwhile / Yet / Unless 三个衔接词的用法。"
+        }
+      },
+      {
+        "id": "ielts-tech-01",
+        "topic": "Technology 科技",
+        "words": [
+          {"w": "automation", "pos": "n.", "cn": "自动化", "note": "不可数。automate (v.) / automated (adj.)。"},
+          {"w": "displace workers", "pos": "phr.", "cn": "取代工人", "note": "比 fire workers 学术。displacement 是名词形式。"},
+          {"w": "digital divide", "pos": "n.", "cn": "数字鸿沟", "note": "可数。bridge / narrow the digital divide。"},
+          {"w": "algorithm", "pos": "n.", "cn": "算法", "note": "注意发音 /ˈælɡərɪðəm/，重音在第一节。"},
+          {"w": "data privacy", "pos": "n.", "cn": "数据隐私", "note": "不可数。和 data protection 有细微差别：前者是权利，后者是措施。"},
+          {"w": "surveillance", "pos": "n.", "cn": "监控", "note": "不可数。mass surveillance 大规模监控。"},
+          {"w": "innovation", "pos": "n.", "cn": "创新", "note": "可数/不可数皆可。foster innovation 促进创新。"},
+          {"w": "obsolescence", "pos": "n.", "cn": "过时 / 淘汰", "note": "planned obsolescence 计划性淘汰，消费主义话题高分词。"},
+          {"w": "upskill", "pos": "v.", "cn": "提升技能", "note": "reskill 是「重新学一门技能」，upskill 是「在原有基础上升级」。"},
+          {"w": "connectivity", "pos": "n.", "cn": "连通性", "note": "不可数。rural connectivity 农村网络覆盖。"}
+        ],
+        "passage": {
+          "en": "The debate over automation is often framed as a simple question: will machines take our jobs? The evidence suggests a more complicated answer. Automation rarely eliminates an entire occupation at once; instead it removes specific tasks, and the people who performed those tasks must either upskill or move on. Historians note that similar fears accompanied the arrival of the spinning machine and the personal computer, and that in both cases employment eventually rose — though not necessarily for the same people, in the same places.\n\nWhat worries economists today is the speed. Previous transitions took generations; algorithmic systems can now be deployed across an industry in a few years. Call centres, translation services and routine accounting have already been reshaped, and the workers displaced are often those with the least room to retrain.\n\nThe digital divide adds another layer. In cities, connectivity is treated as a utility; in rural areas it can still be a luxury. Without reliable access, distance learning and remote work remain theoretical. Governments have responded with subsidies and infrastructure programmes, but critics argue these rarely keep pace with innovation.\n\nData privacy and surveillance raise a different set of questions. The same systems that recommend a film can infer a person's health, politics or income. Some commentators point to planned obsolescence as evidence that the problem is not technology itself but the incentives around it: devices are designed to be replaced, and data is collected because it is valuable, not because it is needed.",
+          "cn": "关于自动化（automation）的讨论常被简化成一个问题：机器会抢走我们的工作吗？证据指向一个更复杂的答案。自动化很少一次性消灭整个职业，它更多是移除特定的任务，而做这些任务的人必须要么提升技能（upskill），要么转行。历史学家指出，纺纱机和个人电脑出现时也有过类似的恐惧，而两次的结果都是就业最终上升——尽管受益的未必是同一批人，也未必在同一个地方。\n\n今天让经济学家担心的是速度。过去的转型要花几代人，而算法（algorithm）系统现在可以在几年内铺满一个行业。呼叫中心、翻译服务和常规会计已经被重塑，而被取代（displace workers）的往往是再培训空间最小的那群人。\n\n数字鸿沟（digital divide）又加了一层。在城市，连通性（connectivity）被当作基础设施；在农村，它仍可能是奢侈品。没有可靠的接入，远程教育和远程办公只能停留在理论上。政府用补贴和基建计划来应对，但批评者认为这些很少跟得上创新（innovation）的节奏。\n\n数据隐私（data privacy）和监控（surveillance）带来的是另一类问题。给一个人推荐电影的系统，同样能推断出他的健康、政治倾向或收入。一些评论者用计划性淘汰（planned obsolescence）举例，说明问题不在技术本身，而在围绕技术的激励机制：设备被设计成需要更换的，数据被收集是因为它值钱，而不是因为它被需要。",
+          "note": "注意这一段的三层递进：就业 → 公平（鸿沟）→ 权利（隐私）。写科技类大作文时，「分层讨论」比「罗列优缺点」更容易上 7。"
+        }
+      }
+    ]
+  },
+
+  "toefl": {
+    "label": "托福 TOEFL",
+    "desc": "偏北美学术场景：讲座、教科书、自然科学与人文社科。词汇要求「认得出」多于「写得出」，但学术名词密度高。",
+    "chunks": [
+      {
+        "id": "toefl-geo-01",
+        "topic": "Geology 地质",
+        "words": [
+          {"w": "tectonic plate", "pos": "n.", "cn": "构造板块", "note": "托福地质听力第一大主题。plate boundary 板块边界。"},
+          {"w": "sediment", "pos": "n.", "cn": "沉积物", "note": "不可数。sedimentary rock 沉积岩。"},
+          {"w": "erosion", "pos": "n.", "cn": "侵蚀", "note": "不可数。动词 erode。风蚀 wind erosion / 水蚀 water erosion。"},
+          {"w": "magma", "pos": "n.", "cn": "岩浆（地下）", "note": "注意：喷出地表后叫 lava。托福常考这个区分。"},
+          {"w": "fossil record", "pos": "n.", "cn": "化石记录", "note": "不可数。the fossil record shows / suggests。"},
+          {"w": "stratigraphy", "pos": "n.", "cn": "地层学", "note": "通过地层顺序断代的方法。"},
+          {"w": "continental drift", "pos": "n.", "cn": "大陆漂移", "note": "魏格纳提出，后被板块构造理论取代。"},
+          {"w": "subduction", "pos": "n.", "cn": "俯冲（板块）", "note": "subduction zone 俯冲带，地震高发区。"},
+          {"w": "mineral deposit", "pos": "n.", "cn": "矿床", "note": "可数。"},
+          {"w": "radiometric dating", "pos": "n.", "cn": "放射性测年", "note": "靠同位素半衰期定年代。托福常考方法题。"}
+        ],
+        "passage": {
+          "en": "In the early twentieth century, Alfred Wegener noticed that the coastlines of South America and Africa appeared to fit together like pieces of a puzzle. He proposed the theory of continental drift, arguing that the continents had once formed a single landmass and had since drifted apart. His evidence included matching fossil record across oceans and similar rock formations on opposite shores. The theory was largely dismissed for decades, because Wegener could not explain what force could move something as massive as a continent.\n\nThe answer came from the ocean floor. Mapping after the Second World War revealed a chain of underwater mountains, and scientists realised that new crust was forming along them. As magma rises and cools, it records the direction of the Earth's magnetic field at that moment — producing symmetrical stripes on either side of the ridge. This became strong support for the idea of tectonic plate movement.\n\nWhere plates meet, the consequences are dramatic. At a subduction zone, one plate slides beneath another, generating earthquakes and volcanic activity. Sediment carried by rivers is compressed over millions of years into sedimentary rock, and stratigraphy allows geologists to reconstruct the sequence of events. Radiometric dating then provides absolute ages, while the fossil record supplies a parallel timeline of life. Mineral deposits, often concentrated along ancient plate boundaries, became the practical incentive for much of this research.",
+          "cn": "二十世纪初，阿尔弗雷德·魏格纳注意到南美洲和非洲的海岸线看起来像拼图一样能对合。他提出了大陆漂移（continental drift）理论，主张各大陆曾经连成一整块陆地，后来才彼此分开。他的证据包括跨越大洋相互吻合的化石记录（fossil record），以及对岸相似的岩层构造。这个理论在此后几十年里基本被否定，因为魏格纳无法解释，什么样的力能推动像大陆这么巨大的东西。\n\n答案来自海底。二战后的海底测绘揭示出一条海底山脉，科学家意识到新的地壳正沿着它生成。岩浆（magma）上升冷却时，会记录下当时地磁场的方向——于是在洋脊两侧形成对称的条纹。这成为构造板块（tectonic plate）运动的有力证据。\n\n板块相交之处，后果非常剧烈。在俯冲（subduction）带，一个板块滑入另一个板块之下，引发地震和火山活动。河流携带的沉积物（sediment）在数百万年里被压成沉积岩，而地层学（stratigraphy）让地质学家得以重建事件的先后顺序。放射性测年（radiometric dating）提供绝对年代，化石记录则提供一条平行的生命时间线。矿床（mineral deposit）常富集于古板块边界附近，这成了推动这类研究的现实动力。",
+          "note": "托福阅读的典型结构：提出旧理论 → 指出漏洞 → 新证据推翻 → 补充细节。抓住这个骨架，细节题就不慌。"
+        }
+      },
+      {
+        "id": "toefl-bio-01",
+        "topic": "Biology 生物",
+        "words": [
+          {"w": "photosynthesis", "pos": "n.", "cn": "光合作用", "note": "不可数。托福生物第一大词。"},
+          {"w": "symbiosis", "pos": "n.", "cn": "共生", "note": "三种类型：mutualism 互利 / commensalism 偏利 / parasitism 寄生。"},
+          {"w": "adaptation", "pos": "n.", "cn": "适应（演化）", "note": "可数。adaptation to 后接环境。"},
+          {"w": "predator", "pos": "n.", "cn": "捕食者", "note": "prey 猎物。predator-prey relationship。"},
+          {"w": "habitat", "pos": "n.", "cn": "栖息地", "note": "habitat loss 栖息地丧失，物种灭绝首因。"},
+          {"w": "metabolism", "pos": "n.", "cn": "新陈代谢", "note": "metabolic rate 代谢率。冷血/温血动物话题常考。"},
+          {"w": "cell membrane", "pos": "n.", "cn": "细胞膜", "note": "半透性 semi-permeable。"},
+          {"w": "evolutionary advantage", "pos": "n.", "cn": "演化优势", "note": "解释「为什么演化出这个特征」的标准答法。"},
+          {"w": "migration", "pos": "n.", "cn": "迁徙", "note": "动物迁徙；人类移民用 immigration/emigration 区分。"},
+          {"w": "extinction", "pos": "n.", "cn": "灭绝", "note": "mass extinction 大规模灭绝。extinct (adj.)。"}
+        ],
+        "passage": {
+          "en": "Photosynthesis is the process by which plants convert sunlight into chemical energy, and it underpins almost every food chain on Earth. Yet the relationship between organisms is rarely simple. Symbiosis — in which two species live in close association — takes several forms. In mutualism, both partners benefit: certain ants protect acacia trees and receive shelter and food in return. Parasitism is the opposite: one organism gains at the other's expense, sometimes without killing it, since a dead host is a useless host.\n\nPredators exert a subtler influence. By removing the weakest prey, they keep populations healthy and prevent any single species from dominating. When wolves were reintroduced to Yellowstone in 1995, the elk changed their grazing behaviour, which in turn allowed willow and aspen to recover along riverbanks — a chain of effects that ecologists call a trophic cascade.\n\nEvery organism is shaped by its habitat. A thick coat, a slow metabolism or an ability to store water may each confer an evolutionary advantage in a cold or arid environment. Migration allows animals to exploit resources that appear only seasonally, while hibernation permits them to survive the months when food is scarce.\n\nToday the dominant pressure is habitat loss. As forests are fragmented, populations become isolated, and a species with a small range faces extinction from a single drought or disease. Conservationists argue that protecting connected corridors matters as much as protecting individual reserves.",
+          "cn": "光合作用（photosynthesis）是植物把阳光转化为化学能的过程，它支撑着地球上几乎所有的食物链。但生物之间的关系很少这么简单。共生（symbiosis）——两个物种紧密共处——有好几种形式。互利（mutualism）中双方都受益：某些蚂蚁保护金合欢树，换来住所和食物。寄生（parasitism）正好相反：一方以另一方为代价获益，有时并不杀死对方，因为死掉的宿主等于没用的宿主。\n\n捕食者（predator）施加的影响更为微妙。它们移除最弱的猎物，使种群保持健康，并防止任何一个物种独大。1995 年狼群被重新引入黄石公园后，麋鹿的取食行为改变了，河岸的柳树和白杨因此得以恢复——生态学家把这种连锁效应称为营养级联。\n\n每个生物都被它的栖息地（habitat）塑造。厚实的毛皮、缓慢的新陈代谢（metabolism）、储水的能力，在寒冷或干旱的环境中各自构成一种演化优势（evolutionary advantage）。迁徙（migration）让动物能利用只是季节性出现的资源，而冬眠则让它们熬过食物短缺的月份。\n\n今天最主要的压力是栖息地丧失。森林被切割成碎片后，种群彼此隔离，分布范围狭窄的物种可能因一场干旱或一次疾病就走向灭绝（extinction）。保育人士主张：保护相互连通的廊道，和保护单个保护区同样重要。",
+          "note": "托福生物文的高频考点是「因果链」：A 变化 → B 变化 → C 变化。读的时候用箭头把链条画出来。"
+        }
+      }
+    ]
+  },
+
+  "gre": {
+    "label": "GRE",
+    "desc": "Verbal 部分考的是「词义的精确分辨」和「句内逻辑」。核心不在认识多少词，而在同义词群的分野和填空的逻辑信号。",
+    "chunks": [
+      {
+        "id": "gre-verb-01",
+        "topic": "高频动词 Verbs",
+        "words": [
+          {"w": "mitigate", "pos": "v.", "cn": "减轻（不良影响）", "note": "同义 alleviate / assuage。宾语多为负面事物。"},
+          {"w": "exacerbate", "pos": "v.", "cn": "加剧（负面）", "note": "mitigate 的反义。GRE 填空常成对出现。"},
+          {"w": "corroborate", "pos": "v.", "cn": "佐证", "note": "≈ confirm / substantiate。宾语是证词、说法。"},
+          {"w": "refute", "pos": "v.", "cn": "反驳", "note": "≈ disprove。别和 rebut（仅口头反驳）混。"},
+          {"w": "vindicate", "pos": "v.", "cn": "证明…正确", "note": "偏「洗清冤屈/证明清白」。"},
+          {"w": "attenuate", "pos": "v.", "cn": "使减弱/稀释", "note": "偏物理或强度上的减弱，比 weaken 正式。"},
+          {"w": "proliferate", "pos": "v.", "cn": "激增 / 扩散", "note": "≈ multiply。主语常是抽象事物（谣言、平台）。"},
+          {"w": "undermine", "pos": "v.", "cn": "削弱（根基）", "note": "≈ weaken / erode。宾语常是 confidence / authority。"},
+          {"w": "capitulate", "pos": "v.", "cn": "投降 / 让步", "note": "≈ surrender，偏有条件地屈服。"},
+          {"w": "extol", "pos": "v.", "cn": "极力赞扬", "note": "≈ praise lavishly。反义 decry / disparage。"}
+        ],
+        "passage": {
+          "en": "In the closing decades of the twentieth century, a group of economists set out to refute the prevailing view that urban growth inevitably exacerbates inequality. Their argument rested on a distinction that their critics had largely ignored: growth may indeed widen the gap in the short term, but the same forces that produce congestion also generate the tax base needed to mitigate it.\n\nAt first the evidence seemed to corroborate them. Cities that expanded most rapidly also invested most heavily in transit, and the wage premium for low-skill service work rose rather than fell. But subsequent work began to undermine the claim. When researchers extended the sample to smaller cities, the pattern vanished; in several cases inequality proliferated precisely where growth was slowest.\n\nA second line of criticism was methodological. If the original authors had selectively cited cases that vindicated their position, the correlation they reported might attenuate or even reverse under a fuller dataset. One sceptical reviewer was blunt: he did not think the thesis could capitulate to the weight of evidence, because the thesis had never really been about evidence. Others extolled the study for raising a question the field had avoided for years.",
+          "cn": "在二十世纪的最后几十年，一群经济学家着手反驳（refute）当时的主流看法——城市增长必然加剧（exacerbate）不平等。他们的论证建立在一个批评者基本忽略的区分上：增长确实可能在短期扩大差距，但产生拥堵的那些力量，同时也在创造减轻（mitigate）它所需的税基。\n\n起初，证据似乎佐证（corroborate）了他们。扩张最快的城市在交通上的投入也最多，低技能服务业的工资溢价是上升而非下降的。但后续研究开始削弱（undermine）这个论断。当研究者把样本扩展到较小的城市时，规律消失了；在若干案例中，不平等恰恰在增长最慢的地方激增（proliferate）。\n\n第二条批评是方法论的。如果原作者选择性地引用那些能证明（vindicate）其立场的案例，他们所报告的相关性在更完整的数据集下可能减弱（attenuate），甚至反向。一位持怀疑态度的评论者说得很直白：他认为这个论点不会向证据的分量投降（capitulate），因为这个论点从来就不是关于证据的。另一些人则赞扬（extol）这项研究，因为它提出了学界多年回避的问题。",
+          "note": "GRE 阅读的关键是分清「作者说的」和「作者引用的别人说的」。这段里 At first / But / A second line 是三个转向信号。"
+        }
+      },
+      {
+        "id": "gre-adj-01",
+        "topic": "高频形容词 Adjectives",
+        "words": [
+          {"w": "ambiguous", "pos": "adj.", "cn": "歧义的 / 含糊的", "note": "双义性。反义 unambiguous / explicit。"},
+          {"w": "equivocal", "pos": "adj.", "cn": "模棱两可的（有意含混）", "note": "比 ambiguous 多一层「回避表态」的意味。"},
+          {"w": "tenuous", "pos": "adj.", "cn": "薄弱的 / 牵强的", "note": "常修饰 link / connection / evidence。GRE 经典词。"},
+          {"w": "ubiquitous", "pos": "adj.", "cn": "无处不在的", "note": "≈ omnipresent。修饰技术、广告、现象。"},
+          {"w": "ephemeral", "pos": "adj.", "cn": "转瞬即逝的", "note": "≈ fleeting / transient。修饰流行、快乐、名声。"},
+          {"w": "pragmatic", "pos": "adj.", "cn": "务实的", "note": "≈ practical。对立面通常是 dogmatic / idealistic。"},
+          {"w": "obscure", "pos": "adj./v.", "cn": "晦涩的 / 使模糊", "note": "作动词是「遮蔽」，GRE 填空常作 adj. 用。"},
+          {"w": "intractable", "pos": "adj.", "cn": "棘手的 / 难处理的", "note": "修饰 problem / conflict。反义 tractable。"},
+          {"w": "meticulous", "pos": "adj.", "cn": "一丝不苟的", "note": "≈ scrupulous。修饰 research / attention to detail。"},
+          {"w": "spurious", "pos": "adj.", "cn": "虚假的 / 站不住脚的", "note": "≈ false。修饰 correlation / argument。"}
+        ],
+        "passage": {
+          "en": "The report's central claim is deliberately equivocal. It asserts that the link between screen time and adolescent anxiety is \"tenuous at best\", yet the evidence it presents is ambiguous enough to be read either way. This is not necessarily dishonest; policy documents often adopt a pragmatic tone precisely because the underlying science is intractable.\n\nWhat is clear is that such devices are now ubiquitous. A generation ago a telephone was a fixed object in a hallway; today the same functions are distributed across an ephemeral stream of notifications. Whether this represents a durable change in cognition or a transient fashion is an empirical question, and no study has yet answered it with the meticulous care the question deserves.\n\nThe most damaging criticism is not that the report is wrong, but that several of its supporting citations are obscure in a way that discourages verification, and that at least one widely quoted statistic appears to be spurious. The authors have since argued that the omission was inadvertent. Critics remain unconvinced, noting that the same error appeared in two earlier drafts.",
+          "cn": "这份报告的核心主张是刻意模棱两可（equivocal）的。它声称屏幕时间与青少年焦虑之间的联系「最多只能算薄弱（tenuous at best）」，然而它给出的证据足够含糊（ambiguous），怎么解读都说得通。这未必是不诚实；政策文件常常刻意采用务实（pragmatic）的语气，恰恰是因为背后的科学本身棘手（intractable）。\n\n可以确定的是，这类设备如今无处不在（ubiquitous）。一代人之前，电话是走廊里固定的一件东西；今天同样的功能被分散在不断流动、转瞬即逝（ephemeral）的通知流里。这究竟意味着认知上的一种持久改变，还是一时的风潮，是一个要靠实证回答的问题，而目前还没有任何研究以这个问题应得的一丝不苟（meticulous）的态度给出答案。\n\n最致命的批评不是说报告错了，而是它引用的若干文献来源晦涩（obscure）到让人不愿去核实，而至少有一个被广泛引用的统计数字看起来是虚假（spurious）的。作者后来辩称这是无心之失。批评者并不信服，指出同一个错误在早前两版草稿中也出现过。",
+          "note": "GRE 形容词题的解题核心：判断这个词是「正、负、还是中性」。形容词往往在句中承担了作者态度的方向。"
+        }
+      }
+    ]
+  }
+}

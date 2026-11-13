@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>英语每天 · IELTS / TOEFL / GRE 综合学习站</title>
+<meta name="description" content="每天 10 个词组、几段阅读、3 道口语。含雅思 2026 考纲与三考试词库底座。">
+<style>
+:root{
+  --paper:#FBF9F4; --paper-2:#F4F1E8; --ink:#22201C; --ink-2:#4A463F;
+  --muted:#8A8377; --line:#E2DCCE; --line-2:#EFEADE;
+  --accent:#2F6B5A;      /* 墨绿：主色 */
+  --accent-l:#E7F0EC;
+  --warm:#B5654A;        /* 陶土：强调 */
+  --warm-l:#F9EDE8;
+  --blue:#3C5A78;
+  --blue-l:#EAF0F5;
+  --gold:#96762F;
+  --serif:"Songti SC","Source Han Serif SC",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(47,107,90,.3)}
+a:hover{border-bottom-color:var(--accent)}
+
+/* ---------- 顶栏 ---------- */
+.top{
+  position:sticky;top:0;z-index:50;background:rgba(251,249,244,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+}
+.top-in{
+  max-width:1080px;margin:0 auto;padding:0 22px;
+  display:flex;align-items:center;gap:22px;height:60px;
+}
+.brand{display:flex;align-items:baseline;gap:9px;flex:0 0 auto}
+.brand b{font-family:var(--serif);font-size:17px;letter-spacing:.04em;font-weight:600}
+.brand span{font-size:10.5px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+.nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav button{
+  border:none;background:transparent;cursor:pointer;white-space:nowrap;
+  font-family:var(--sans);font-size:13px;color:var(--ink-2);
+  padding:7px 13px;border-radius:5px;transition:.15s;
+}
+.nav button:hover{background:var(--paper-2)}
+.nav button.on{background:var(--accent);color:#fff}
+
+/* ---------- 布局 ---------- */
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px 80px}
+.page{display:none;animation:fade .3s ease}
+.page.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ---------- 首页 Hero ---------- */
+.hero{padding:64px 0 44px;border-bottom:1px solid var(--line)}
+.hero-kicker{font-size:11px;letter-spacing:.24em;color:var(--warm);text-transform:uppercase;font-weight:600}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(30px,5vw,46px);line-height:1.25;
+  margin:14px 0 16px;letter-spacing:-.01em;font-weight:600;
+}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:15.5px;color:var(--ink-2);max-width:640px;margin:0}
+.stats{display:flex;gap:0;margin-top:36px;flex-wrap:wrap;border-top:1px solid var(--line)}
+.stat{flex:1 1 130px;padding:18px 20px 18px 0;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat b{display:block;font-family:var(--serif);font-size:27px;color:var(--accent);line-height:1.2}
+.stat span{font-size:11.5px;color:var(--muted);letter-spacing:.06em}
+
+/* ---------- 每日帖子 ---------- */
+.post{
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:30px 32px 34px;margin:30px 0;
+}
+.post-h{display:flex;gap:18px;align-items:flex-start;padding-bottom:20px;border-bottom:1px solid var(--line-2)}
+.post-date{flex:0 0 auto;text-align:center;padding-right:18px;border-right:1px solid var(--line-2)}
+.pd-day{display:block;font-family:var(--serif);font-size:22px;color:var(--warm);font-weight:600;line-height:1.2}
+.pd-wd{display:block;font-size:10.5px;color:var(--muted);letter-spacing:.06em;margin-top:3px}
+.post-t{font-family:var(--serif);font-size:22px;margin:0;line-height:1.4;font-weight:600;padding-top:2px}
+
+.sec{margin-top:30px}
+.sec-h{display:flex;align-items:baseline;gap:11px;margin-bottom:15px;flex-wrap:wrap}
+.sec-n{
+  font-family:var(--mono);font-size:11px;color:var(--warm);font-weight:700;
+  border:1px solid var(--warm);border-radius:3px;padding:2px 6px;line-height:1;
+}
+.sec-h h3{font-family:var(--serif);font-size:17px;margin:0;font-weight:600;letter-spacing:.02em}
+.sec-note{font-size:11.5px;color:var(--muted);margin-left:auto}
+
+.chunk{margin-bottom:22px}
+.chunk-h{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.chunk-topic{font-size:12.5px;font-weight:600;color:var(--accent);letter-spacing:.04em}
+.chunk-exam{
+  font-size:10px;color:var(--muted);border:1px solid var(--line);
+  border-radius:3px;padding:1px 6px;letter-spacing:.04em;
+}
+
+/* 词表 */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:#fff}
+.tw table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}
+.tw th{
+  background:var(--paper-2);text-align:left;padding:8px 11px;
+  font-size:11px;letter-spacing:.08em;color:var(--ink-2);font-weight:600;
+  border-bottom:1px solid var(--line);white-space:nowrap;
+}
+.tw td{padding:9px 11px;border-bottom:1px solid var(--line-2);vertical-align:top;line-height:1.65}
+.tw tr:last-child td{border-bottom:none}
+.tw td.num{color:var(--muted);font-family:var(--mono);font-size:11px;width:26px}
+.tw td.w{font-weight:600;color:var(--ink);white-space:nowrap}
+.tw td.pos{color:var(--warm);font-size:11.5px;white-space:nowrap}
+.tw td.cn{color:var(--ink-2);white-space:nowrap}
+.tw td.note{color:var(--muted);font-size:12px}
+
+/* 文段 */
+.passage{margin-top:12px;border-left:2px solid var(--accent-l);padding-left:16px}
+.p-en p{margin:0 0 14px;font-size:14.5px;line-height:1.95;color:var(--ink-2);font-family:Georgia,var(--serif)}
+.p-why{
+  font-size:12.5px;color:var(--ink-2);background:var(--blue-l);
+  border-radius:5px;padding:10px 13px;margin-bottom:13px;line-height:1.7;
+}
+.p-cn{margin:14px 0 0}
+.p-cn summary{
+  cursor:pointer;font-size:12.5px;color:var(--accent);font-weight:600;
+  list-style:none;padding:7px 0;
+}
+.p-cn summary::-webkit-details-marker{display:none}
+.p-cn summary::before{content:"▸ ";transition:.2s;display:inline-block}
+.p-cn[open] summary::before{transform:rotate(90deg)}
+.p-cn summary span{font-weight:400;color:var(--muted);font-size:11px;margin-left:6px}
+.p-cn-body{background:var(--paper-2);border-radius:6px;padding:14px 16px;margin-top:6px}
+.p-cn-body p{margin:0 0 12px;font-size:13.5px;line-height:1.95;color:var(--ink-2)}
+.p-cn-body p:last-child{margin-bottom:0}
+.p-note{
+  margin-top:12px;font-size:12.5px;color:var(--ink-2);
+  background:var(--warm-l);border-radius:5px;padding:10px 13px;line-height:1.7;
+}
+
+/* 口语 */
+.speak{
+  border:1px solid var(--line);border-radius:8px;padding:18px 20px;
+  margin-bottom:14px;background:#fff;
+}
+.sp-head{margin-bottom:8px}
+.sp-part{
+  font-size:10.5px;font-weight:700;letter-spacing:.1em;color:var(--blue);
+  background:var(--blue-l);border-radius:3px;padding:2px 8px;
+}
+.sp-q{
+  font-family:var(--serif);font-size:16px;color:var(--ink);
+  line-height:1.6;margin-bottom:13px;font-weight:600;
+}
+.sp-ans{background:var(--paper-2);border-radius:6px;padding:14px 16px}
+.sp-ans p{margin:0 0 12px;font-size:14px;line-height:1.9;color:var(--ink-2);font-family:Georgia,var(--serif)}
+.sp-ans p:last-child{margin-bottom:0}
+.sp-foot{margin-top:12px;display:flex;flex-direction:column;gap:7px}
+.sp-note,.sp-swap{font-size:12.5px;line-height:1.7;color:var(--ink-2);padding-left:2px}
+.sp-note b,.sp-swap b{
+  display:inline-block;font-size:10.5px;letter-spacing:.08em;color:var(--accent);
+  margin-right:8px;font-weight:700;
+}
+.sp-swap b{color:var(--warm)}
+
+.tip{
+  font-size:12.5px;color:var(--ink-2);background:var(--accent-l);
+  border-left:2px solid var(--accent);border-radius:0 5px 5px 0;
+  padding:11px 14px;line-height:1.75;margin-top:16px;
+}
+
+/* ---------- 词库页 ---------- */
+.bank{margin:40px 0}
+.bank-h{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.bank-h h2{font-family:var(--serif);font-size:25px;margin:0;font-weight:600}
+.bank-count{font-size:11.5px;color:var(--muted);letter-spacing:.05em}
+.bank-desc{font-size:13.5px;color:var(--ink-2);max-width:700px;margin:10px 0 22px}
+
+/* ---------- 考纲页 ---------- */
+.outline{background:#fff;border:1px solid var(--line);border-radius:10px;padding:34px 38px;margin-top:28px}
+.outline h2{font-family:var(--serif);font-size:24px;margin:34px 0 12px;font-weight:600;padding-bottom:8px;border-bottom:1px solid var(--line-2)}
+.outline h2:first-child{margin-top:0}
+.outline h3{font-family:var(--serif);font-size:18px;margin:26px 0 10px;color:var(--ink);font-weight:600}
+.outline h4{font-size:15px;margin:20px 0 8px;color:var(--ink-2);font-weight:600}
+.outline p{font-size:13.5px;line-height:1.85;color:var(--ink-2);margin:0 0 13px}
+.outline ul,.outline ol{margin:0 0 14px;padding-left:22px}
+.outline li{font-size:13.5px;line-height:1.8;color:var(--ink-2);margin-bottom:5px}
+.outline blockquote{
+  margin:12px 0;padding:11px 15px;background:var(--paper-2);
+  border-left:2px solid var(--warm);border-radius:0 5px 5px 0;
+  font-size:13px;color:var(--ink-2);line-height:1.8;
+}
+.outline blockquote p{margin:0;font-size:13px}
+.outline code{
+  font-family:var(--mono);font-size:12px;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:3px;padding:1px 5px;color:var(--warm);
+}
+.outline .code{
+  background:#2E2C27;color:#EDE7D6;padding:14px 16px;border-radius:5px;
+  overflow-x:auto;font-family:var(--mono);font-size:12px;line-height:1.8;
+}
+.outline hr{border:none;border-top:1px dashed var(--line);margin:26px 0}
+.outline .tw table{font-size:12.5px}
+.outline .tw table td:first-child{white-space:nowrap;font-weight:600}
+
+/* ---------- 页脚 ---------- */
+.foot{
+  max-width:1080px;margin:0 auto;padding:34px 22px 50px;
+  border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.9;
+}
+.foot b{color:var(--ink-2);font-weight:600}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:760px){
+  .top-in{height:auto;flex-wrap:wrap;padding:10px 16px;gap:10px}
+  .brand{width:100%}
+  .nav{margin-left:0;width:100%;padding-bottom:2px}
+  .wrap{padding:0 16px 60px}
+  .hero{padding:38px 0 30px}
+  .post{padding:20px 16px 24px;margin:20px 0;border-radius:8px}
+  .post-h{flex-direction:column;gap:8px}
+  .post-date{display:flex;gap:8px;align-items:baseline;border-right:none;padding-right:0}
+  .pd-day{font-size:18px}
+  .post-t{font-size:18.5px}
+  .sec-note{margin-left:0;width:100%;font-size:11px}
+  .outline{padding:20px 16px}
+  .outline h2{font-size:20px}
+  .outline h3{font-size:16px}
+  .sp-q{font-size:15px}
+  .stats{margin-top:24px}
+  .stat{flex:1 1 45%;padding:14px 0}
+  .stat b{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-in">
+    <div class="brand"><b>英语每天</b><span>Daily English</span></div>
+    <nav class="nav" id="nav">
+      <button data-go="today" class="on">每日</button>
+      <button data-go="bank">词库底座</button>
+      <button data-go="outline">雅思考纲</button>
+      <button data-go="about">怎么用</button>
+    </nav>
+  </div>
+</div>
+
+<!-- ============ 首页 / 每日 ============ -->
+<div class="page on" id="page-today">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">IELTS · TOEFL · GRE</div>
+      <h1>每天十组词、几段文、<em>三道口语</em>。</h1>
+      <p>不是打卡式的学习，是<b>每天有一点东西真的进到脑子里</b>。词组配文段（在语境里记），阅读配翻译（先读英文，别急着看中文），口语配参考答案（先自己说一遍）。</p>
+      <div class="stats">
+        <div class="stat"><b>{{POST_COUNT}}</b><span>期帖子</span></div>
+        <div class="stat"><b>{{WORD_COUNT}}</b><span>词汇文段</span></div>
+        <div class="stat"><b>{{CHUNK_COUNT}}</b><span>词组分组</span></div>
+        <div class="stat"><b>{{SPEAK_COUNT}}</b><span>口语题</span></div>
+      </div>
+    </div>
+    {{POSTS}}
+  </div>
+</div>
+
+<!-- ============ 词库底座 ============ -->
+<div class="page" id="page-bank">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">Knowledge Base</div>
+      <h1>三考试共用的<em>词库底座</em></h1>
+      <p>雅思偏学术议论文，托福偏学术讲座，GRE 偏逻辑辨析。三个考试的词不是三套，而是<b>同一批知识在不同难度上的切片</b>——所以放在一个底座里，每天从里面取用。</p>
+    </div>
+    {{BANK}}
+  </div>
+</div>
+
+<!-- ============ 考纲 ============ -->
+<div class="page" id="page-outline">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">IELTS 2026 · 官方考纲</div>
+      <h1>最新雅思<em>考纲</em>（读 / 写 / 说）</h1>
+      <p>查证日期 2026-11-13，来源为 ielts.org 官方页面与官网 PDF。每条都标了核实状态：<b>已核实</b>／<b>部分核实</b>／<b>存疑</b>／<b>未查到官方原文</b>。最重要的变化是——<b>2026 年年中起全面转机考，中国大陆已全面机考</b>，但题型和评分标准没有任何变化。</p>
+    </div>
+    <div class="outline">{{OUTLINE}}</div>
+  </div>
+</div>
+
+<!-- ============ 怎么用 ============ -->
+<div class="page" id="page-about">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-kicker">How to use</div>
+      <h1>每天怎么用这个站</h1>
+      <p>网站每天自动更新一期。下面是一套 20–30 分钟的用法，比「刷时长」有效。</p>
+    </div>
+    <div class="outline">
+      <h2>一、词组：先看文段，再看词表</h2>
+      <p>顺序很重要。先读下面的英文文段（不查字典，遇到陌生词先猜），读完再回头看词表——这时你会发现那些词在句子里有了位置。最后遮住中文，试着复述文段大意。</p>
+      <p><b>为什么这样设计：</b>孤立背单词的遗忘率极高，因为大脑记的是「词—释义」这一条极弱的连接。放回文段，它连上了语法、搭配和语境，连接变粗，才留得住。</p>
+
+      <h2>二、阅读：先读英文，翻译是你的「对答案」</h2>
+      <p>中文翻译默认是收起来的。请强制自己读完英文再展开——展开的作用不是学习，是<b>校验你有没有理解错</b>。如果某句你看懂了但翻译读起来不一样，那正是你该停下来看的地方。</p>
+
+      <h2>三、口语：一定先自己说，再看参考</h2>
+      <p>每期 3 道题：2 道小题（Part 1 风格，答 3–5 句）+ 1 道大题（Part 2 独白或 Part 3 抽象讨论）。<b>先录一遍自己的声音</b>，再对照参考答案。参考答案下面的「换成你的情况」是整块替换模块，把里面的例子换成你自己的真实经历——考官能听出背稿，但听不出「背了自己」。</p>
+      <p><b>一个提醒：</b>参考答案里我刻意留了一些口语化的转折（Honestly / I have to admit / That said），这些不是废话，它们正是 Fluency and Coherence 拿分的证据。</p>
+
+      <h2>四、词库底座怎么用</h2>
+      <p>词库按考试和主题分组，每组都配一段覆盖全部词条的文段。<b>不要从头背到尾</b>——先选你今天感兴趣的主题，读完文段再看词。跨考试的部分（比如 undermine 在雅思和 GRE 都出现）说明它值得优先掌握。</p>
+
+      <h2>五、关于雅思考纲页</h2>
+      <p>那一页是我查的官方原文汇总，标注了核实状态。特别提醒三个最容易记错的点：</p>
+      <ul>
+        <li><b>2026 年年中起全面转机考</b>（中国大陆已全面机考），但题型、时长、评分标准<b>没有任何变化</b>；</li>
+        <li>中国大陆机考的口语是<b>真人考官视频通话</b>，不是同房间面对面；</li>
+        <li>阅读和听力<b>没有 band descriptors</b>，只有原始分换算表；只有写作和口语有评分细则。</li>
+      </ul>
+
+      <h2>六、每天更新什么</h2>
+      <p>每期包含：<b>10 个词组</b>（配完整文段）+ <b>1–2 段阅读</b>（配中文翻译）+ <b>3 道口语题</b>（配参考答案与替换模块）。网站每天自动生成新一期并上线。</p>
+    </div>
+  </div>
+</div>
+
+<div class="foot">
+  <b>英语每天</b> · 内容构建于 {{BUILD_DATE}} · 最近一期 {{LATEST}}<br>
+  考纲信息来源：ielts.org 官方页面与官方 Band Descriptors PDF（查证 2026-11-13）。<br>
+  个人学习用站点 · 单文件零依赖 · 断网可读
+</div>
+
+<script>
+(function(){
+  var pages = ['today','bank','outline','about'];
+  var btns = [].slice.call(document.querySelectorAll('#nav button'));
+
+  function go(name, push){
+    if (pages.indexOf(name) === -1) name = 'today';
+    pages.forEach(function(p){
+      var el = document.getElementById('page-'+p);
+      if (el) el.classList.toggle('on', p === name);
+    });
+    btns.forEach(function(b){ b.classList.toggle('on', b.dataset.go === name); });
+    if (push !== false) {
+      history.replaceState(null, '', '#' + name);
+    }
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ go(b.dataset.go); });
+  });
+
+  window.addEventListener('hashchange', function(){
+    go((location.hash||'#today').slice(1), false);
+  });
+
+  var initial = (location.hash || '#today').slice(1);
+  go(initial, false);
+
+  // 键盘：1-4 切页
+  document.addEventListener('keydown', function(e){
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    var n = parseInt(e.key, 10);
+    if (n >= 1 && n <= 4) go(pages[n-1]);
+  });
+})();
+</script>
+</body>
+</html>

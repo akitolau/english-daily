@@ -1,0 +1,154 @@
+{
+  "_meta": {
+    "note": "每一条 = 一天的帖子。build.py 按日期倒序渲染。新增一天就往后加一条，字段照抄。",
+    "fields": {
+      "date": "YYYY-MM-DD，也是文件名锚点",
+      "title": "当天主题（中文短语）",
+      "chunks": "词组组 id，取自 wordbanks.json",
+      "reading": "阅读篇目：英文原文 + 中文翻译 + 一句阅读提示",
+      "speaking": "3 道口语：小题 2 道（Part1 风格）+ 大题 1 道（Part2 cue card 或 Part3 抽象题），每道含参考答案 + 可替换模块"
+    }
+  },
+  "posts": [
+    {
+      "date": "2026-11-14",
+      "title": "教育与学习 · 为什么我重新开始学英语",
+      "chunks": [
+        "ielts-edu-01"
+      ],
+      "reading": {
+        "source": "ielts-edu-01 passage",
+        "why": "教育类是雅思写作和口语 Part 3 的第一大话题。今天这段覆盖 10 个核心词，读完请用中文说出「死记硬背 vs 批判性思维」这对矛盾。"
+      },
+      "speaking": [
+        {
+          "part": "Part 1",
+          "q": "Do you enjoy learning languages?",
+          "ans": "I do now, though I didn't when I was younger. At school, English was just another subject I had to pass — I memorised vocabulary lists and forgot them within a week. Things changed when I started reading music criticism in English. I wanted to understand why a reviewer called an album 'deceptively simple', and that curiosity did what ten years of exams couldn't. So now I'd say I learn languages out of appetite rather than obligation.",
+          "note": "结构：现在的答案 → 转折 → 一个具体的触发点。考官最想听「一个具体细节」，不是「英语很重要」。",
+          "swap": "把 reading music criticism 换成你自己真实的触发点：看美剧、和一个外国朋友聊天、读论文、听播客。"
+        },
+        {
+          "part": "Part 1",
+          "q": "Do you think it's important to learn a second language?",
+          "ans": "I think it changes what you can access rather than simply adding a skill. My work involves a lot of reading about AI products, and the best material is still published in English first — by the time something is translated, the conversation has moved on. Beyond that, there's a subtler benefit: when you speak a language badly but willingly, you get used to being wrong in public, and that turns out to be useful in almost every other part of life.",
+          "note": "两个层次：实用层（获取信息）+ 心理层（容忍犯错）。第二层是 7 分以上的加分点。",
+          "swap": "把 AI products 换成你的行业；「being wrong in public」这个观察很通用，可以保留。"
+        },
+        {
+          "part": "Part 2",
+          "q": "Describe a subject you found difficult but now find interesting. You should say: what the subject was; when you studied it; why it was difficult; and explain why your attitude changed.",
+          "ans": "I'd like to talk about statistics. I first met it during my master's degree in finance, and I have to admit I struggled badly. The formulas themselves weren't the problem — I could follow the algebra. What defeated me was that I couldn't see what any of it was for. We were asked to compute confidence intervals for abstract datasets, and I remember thinking that this had nothing to do with anything I cared about.\n\nIt was difficult for a second reason, which is less flattering. I'd been good at exams my whole life by being good at memorising, and statistics doesn't reward that. You can memorise the formula and still get the interpretation wrong. It exposed a habit I'd been relying on for years.\n\nMy attitude changed quite suddenly, when I started working on real data. I was asked to judge whether a difference in survey results between two regions was meaningful or just noise, and I realised I finally had a reason to care. Once the question was concrete, the statistics stopped being abstract machinery and became the only honest way to answer it. Now I find it genuinely elegant — it's a discipline for admitting how little you can actually conclude, which is rarer and more valuable than it sounds.",
+          "note": "Part 2 拿高分的关键是「讲一个变化」而不是「描述一个科目」。注意用了两层困难 + 一个转折点 + 一个现在的评价。全程约 2 分钟。",
+          "swap": "如果你不想讲统计，可换成：编程 / 会计 / 数据可视化。把「我喜欢记忆式学习」这个自我观察保留，它让你显得真实。"
+        }
+      ],
+      "wordtips": "今天 10 个词里，最值得直接用在作文的是 critical thinking、vocational training、academic performance。rote learning 和 peer pressure 是「负面词」，写议论文时用来描述问题很顺手。"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "环境 · 从「我很关心环保」到「我能说清一个取舍」",
+      "chunks": [
+        "ielts-env-01"
+      ],
+      "reading": {
+        "source": "ielts-env-01 passage",
+        "why": "环境类文章几乎都是「成效 + 但是」结构。今天读完，试着用一句话说出作者对 greenwashing 的态度。"
+      },
+      "speaking": [
+        {
+          "part": "Part 1",
+          "q": "Do you do anything to protect the environment?",
+          "ans": "Nothing heroic, I'm afraid. I cycle rather than drive when the weather allows, and I've got much better at not buying things I don't need — which, honestly, is the part that took the longest. I used to think environmentalism was about sorting rubbish correctly. Now I think it's mostly about buying less, which is far less satisfying to talk about at dinner parties.",
+          "note": "诚实 + 一句自嘲，比「我每天都做环保」可信得多。结尾那个反讽是加分项。",
+          "swap": "cycling 换成你真实做的：自带杯、少点外卖、买二手、修而不换。"
+        },
+        {
+          "part": "Part 1",
+          "q": "Is recycling important in your country?",
+          "ans": "It's become a routine, at least in cities. Most residential compounds have sorting bins and there's real social pressure to use them properly. My scepticism is about what happens afterwards — I've read that a fair amount of sorted waste is recombined at the collection stage, which makes the household effort feel a bit theatrical. I still do it, but I'd rather see investment in the sorting infrastructure than another campaign poster.",
+          "note": "「制度性怀疑」是成熟观点。别说「很重要，我们都应该做」——那是没有信息量的答案。",
+          "swap": "如果你所在城市执行力度不同，把 residential compounds 换成真实场景。"
+        },
+        {
+          "part": "Part 3",
+          "q": "Some people argue that individual action is meaningless and only government policy can address environmental problems. To what extent do you agree?",
+          "ans": "I'd push back on the word 'meaningless', though I'd agree that individual action alone is insufficient.\n\nThe strongest version of the pessimistic argument is about scale. If a household cuts its carbon footprint by twenty per cent while national emissions rise, the aggregate effect is invisible. And there's a fairness problem too: when responsibility is framed as personal virtue, it conveniently shifts attention away from the small number of companies and policies that account for most emissions.\n\nBut I don't think that leads where the argument wants to go. Individual behaviour is what creates political permission. A carbon tax is electorally impossible in a country where nobody has changed their habits; it becomes possible once enough people have. So I'd frame it as sequence rather than substitution: individual action doesn't replace policy, it makes policy survivable. The mistake is treating it as the finish line when it's actually the precondition.",
+          "note": "Part 3 高分结构：先给对手最强版本 → 承认其合理处 → 指出它推不到结论 → 给一个替代框架（sequence not substitution）。注意「conveniently」这类态度词。",
+          "swap": "这套「先强化对手论点再拆」的框架可用于任何 Part 3 的 agree/disagree 题。"
+        }
+      ],
+      "wordtips": "greenwashing 和 planned obsolescence 是那种「一用就显水平」的词，但别硬塞。carbon footprint 已经很常用，不算高分词，用它只是为了让句子具体。"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "科技与工作 · 我为什么要转向 AI 产品",
+      "chunks": [
+        "ielts-tech-01"
+      ],
+      "reading": {
+        "source": "ielts-tech-01 passage",
+        "why": "今天这段有明确的三层递进（就业→公平→权利）。读完试着说出第三层为什么和第一层不是同一类问题。"
+      },
+      "speaking": [
+        {
+          "part": "Part 1",
+          "q": "Do you use technology more than you'd like to?",
+          "ans": "Almost certainly. The honest version is that I don't notice it happening — I open my phone to check one thing and surface twenty minutes later having read three articles I didn't want. What's changed recently is that I've started using AI tools for work, and that has made me more, not less, attached to a screen. I haven't decided yet whether that's a fair trade.",
+          "note": "「I don't notice it happening」是很自然的英语表达。承认矛盾比给结论更真实。",
+          "swap": "具体工具换成你每天真在用的（AI 助手、日历、笔记软件）。"
+        },
+        {
+          "part": "Part 1",
+          "q": "Do you think machines will replace human workers?",
+          "ans": "Partly, and I think the 'replace' framing hides the interesting part. In my own work, what got automated was the tedious middle — cleaning data, formatting documents, drafting the first version of something. The judgement stayed human. So I'd say machines are replacing tasks faster than they're replacing jobs, and the people who struggle most aren't the ones whose whole job disappears; they're the ones whose job becomes half-automated and who aren't given time to retrain.",
+          "note": "「replace tasks, not jobs」是全篇最有力的区分。后面那句「最难的是半自动化的人」显示你真的想过。",
+          "swap": "把 cleaning data / formatting documents 换成你真实工作中被自动化掉的部分。"
+        },
+        {
+          "part": "Part 2",
+          "q": "Describe a piece of technology you find useful. You should say: what it is; how you use it; how long you've used it; and explain why you find it useful.",
+          "ans": "I'd like to describe a tool I use every day, which is an AI assistant that runs locally on my laptop.\n\nI started using it about a year ago, mainly out of curiosity. The first thing I asked it to do was read a long document and pull out the parts that contradicted each other. I expected it to fail. It didn't — it found two figures that disagreed and quoted both, which is more than I would have done at eleven at night.\n\nWhat makes it genuinely useful isn't that it's clever. It's that it can act rather than just talk. I can ask it to open a file, change something, check the result, and tell me what it did. That loop — do, verify, report — is the difference between a tool that helps and a tool that merely impresses.\n\nI'd add one caveat, because I don't want to sound like an advertisement. It's confidently wrong often enough that I never accept its output without checking. It has made me better at verification, which I suppose is an unexpected side effect.",
+          "note": "关键句：「act rather than just talk」+「do, verify, report」。最后主动说它的缺点，反而增加可信度。",
+          "swap": "把工具换成你真常用的：某个 App、某个硬件、某个 AI 产品。保留「一个具体失败/意外的故事」。"
+        }
+      ],
+      "wordtips": "digital divide、planned obsolescence、upskill 三个词在写作里都能直接用于「不只是技术问题」的论证。注意 obsolete 是形容词，obsolescence 是名词。"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Biology 生物 · 关于改变的代价",
+      "chunks": [
+        "toefl-bio-01"
+      ],
+      "reading": {
+        "source": "toefl-bio-01 passage",
+        "why": "这段覆盖今天全部 10 个词。读的时候别查字典——先猜，读完再回头看词表，你会发现它们在句子里有了位置。"
+      },
+      "speaking": [
+        {
+          "part": "Part 2",
+          "q": "Describe a skill you learned that took a long time. You should say: what the skill is; when you learned it; how you learned it; and explain why it took so long.",
+          "ans": "The skill I'd describe is writing clearly — not writing well, which is a different and much rarer thing, but writing in a way that doesn't waste the reader's time. I've been working on it for about four years and I'm still not done.\n\nI started because I had to. My job involved writing analysis that other people had to act on, and I kept getting the same response: 'I'm not sure what you're telling me to do.' That was humbling. I thought I was being thorough. I was being long.\n\nThe way I learned was mostly by deleting. I'd write something, cut it in half, and see what survived. Then someone showed me that most of what I was cutting was the part where I explained that I wasn't sure. The uncertainty was real, but burying it in caveats made the whole document useless.\n\nWhy it takes so long is that the skill isn't grammatical — it's deciding what matters. You can learn grammar in months. Judging relevance takes years, because you have to be wrong in front of people a lot of times first. I'm better than I was. I still over-explain when I'm nervous.",
+          "note": "「writing clearly 不是 writing well」这个区分很好。最后一句「我紧张时还是会解释太多」收了漂亮的自知之明。",
+          "swap": "换成你真实的技能（开车、做饭、编曲、数据分析）。核心是「为什么它慢」要给一个认知层面的理由，不是「需要多练」。"
+        },
+        {
+          "part": "Part 1",
+          "q": "Do you prefer reading paper books or e-books?",
+          "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+          "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+          "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+        },
+        {
+          "part": "Part 1",
+          "q": "What kind of weather do you like?",
+          "ans": "Overcast, which people find strange. Bright sun makes me feel like I should be outside doing something useful; grey weather gives me permission to stay in and read. I spent a winter in a place where it dropped to minus twenty, and oddly that was the most comfortable I've been — the cold was so serious that nobody expected you to be productive.",
+          "note": "反直觉的偏好（喜欢阴天）立刻抓住注意。后面用真实经历做支撑。",
+          "swap": "换成你真实的天气偏好 + 一个支撑它的记忆。"
+        }
+      ],
+      "wordtips": "今天这 10 个词里，优先掌握出现频率最高的那三四个；其余的先做到「见到能认出来」，写作时自然会用上。"
+    }
+  ]
+}
