@@ -7,7 +7,7 @@ LOG=".publish.log"
 echo "===== $(date '+%Y-%m-%d %H:%M:%S') 开始 =====" >> "$LOG"
 
 # 1) 补 30 个词的例句（断点续跑，已有的自动跳过）
-python3 enrich.py --batch 30 >> "$LOG" 2>&1
+python3 enrich.py --batch 50 >> "$LOG" 2>&1
 
 # 2) 重新切分册（把新例句带进去）
 python3 build_lexicon.py >> "$LOG" 2>&1
