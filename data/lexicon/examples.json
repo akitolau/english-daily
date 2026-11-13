@@ -3334,5 +3334,125 @@
 "navigation": {
 "en": "Early sailors relied on the stars for navigation before the compass was invented.",
 "zh": "在指南针发明之前，早期的水手依靠星星进行航海导航。"
+},
+"phenomenon": {
+"en": "Scientists are still trying to explain the phenomenon of birds navigating thousands of miles without any visible landmarks.",
+"zh": "科学家们仍在试图解释鸟类在没有任何可见地标的情况下导航数千英里的现象。"
+},
+"philosophy": {
+"en": "Her teaching philosophy emphasizes critical thinking rather than memorizing facts for exams.",
+"zh": "她的教学理念强调批判性思维，而非为考试死记硬背事实。"
+},
+"proportion": {
+"en": "A growing proportion of city residents now rely on public transport instead of private cars.",
+"zh": "如今越来越大比例的城市居民依赖公共交通而非私家车。"
+},
+"recreation": {
+"en": "The city council has invested heavily in parks and sports facilities to promote healthy recreation.",
+"zh": "市议会大力投资公园和体育设施，以促进健康的休闲活动。"
+},
+"stationery": {
+"en": "The school provides free stationery such as notebooks and pens to students from low-income families.",
+"zh": "学校为低收入家庭的学生免费提供笔记本和钢笔等文具。"
+},
+"statistics": {
+"en": "According to recent statistics, unemployment among young graduates has fallen for the third year.",
+"zh": "根据最新统计数据，年轻毕业生的失业率已连续第三年下降。"
+},
+"vertebrate": {
+"en": "The museum's new exhibit traces how the vertebrate skeleton evolved from fish to land animals.",
+"zh": "博物馆的新展览追溯了脊椎动物骨骼从鱼类到陆生动物的演化过程。"
+},
+"commentator": {
+"en": "A well-known political commentator argued that social media has weakened public trust in journalism.",
+"zh": "一位知名政治评论员认为，社交媒体削弱了公众对新闻业的信任。"
+},
+"complicated": {
+"en": "Reforming the pension system is far more complicated than simply raising the retirement age.",
+"zh": "改革养老金体系远比单纯提高退休年龄复杂得多。"
+},
+"composition": {
+"en": "Researchers analysed the chemical composition of the soil to determine how polluted the site was.",
+"zh": "研究人员分析了土壤的化学成分，以确定该场地的污染程度。"
+},
+"destructive": {
+"en": "Logging has had a destructive impact on the region's forests and the wildlife that depends on them.",
+"zh": "伐木对该地区的森林以及依赖森林生存的野生动物造成了破坏性影响。"
+},
+"documentary": {
+"en": "The documentary follows three families as they adapt to life in a foreign country.",
+"zh": "这部纪录片记录了三户家庭适应异国生活的过程。"
+},
+"extravagant": {
+"en": "Critics say the government's extravagant spending on a new stadium could have been used for hospitals.",
+"zh": "批评者说，政府在新体育场上的奢侈开支本可以用于医院。"
+},
+"hibernation": {
+"en": "Climate change is disrupting the hibernation patterns of bears and other animals that depend on winter sleep.",
+"zh": "气候变化正在扰乱熊和其他依赖冬眠的动物的冬眠规律。"
+},
+"intelligent": {
+"en": "An intelligent tutoring system can adjust the difficulty of exercises to match each student's level.",
+"zh": "智能辅导系统可以根据每个学生的水平调整练习难度。"
+},
+"lithosphere": {
+"en": "Earthquakes occur mainly where the plates of the lithosphere collide or slide past one another.",
+"zh": "地震主要发生在岩石圈板块碰撞或相互滑过的地方。"
+},
+"merchandise": {
+"en": "The online store sells official merchandise, including T-shirts and mugs featuring the museum's famous painting.",
+"zh": "这家网店出售官方商品，包括印有该博物馆名画的T恤和马克杯。"
+},
+"orientation": {
+"en": "New students attend a week-long orientation to learn about campus facilities and academic expectations.",
+"zh": "新生参加为期一周的迎新活动，了解校园设施和学业要求。"
+},
+"outstanding": {
+"en": "She received a scholarship in recognition of her outstanding performance in scientific research.",
+"zh": "她因在科研方面的杰出表现而获得奖学金。"
+},
+"radioactive": {
+"en": "Engineers must safely dispose of radioactive waste produced by nuclear power plants.",
+"zh": "工程师必须安全处理核电站产生的放射性废物。"
+},
+"renaissance": {
+"en": "During the Renaissance, artists and scholars revived interest in the literature and science of ancient Greece.",
+"zh": "在文艺复兴时期，艺术家和学者重新燃起了对古希腊文学和科学的兴趣。"
+},
+"scholarship": {
+"en": "His scholarship on ancient Chinese poetry has influenced generations of literary researchers.",
+"zh": "他在中国古诗方面的学术研究影响了几代文学研究者。"
+},
+"ultraviolet": {
+"en": "Prolonged exposure to ultraviolet radiation from the sun can seriously damage your skin and eyes.",
+"zh": "长时间暴露在太阳的紫外线辐射下会严重损害皮肤和眼睛。"
+},
+"ventilation": {
+"en": "Poor ventilation in classrooms has been linked to lower concentration and higher rates of illness.",
+"zh": "教室通风不良已被认为与注意力下降和患病率上升有关。"
+},
+"breakthrough": {
+"en": "The discovery of a new vaccine marked a major breakthrough in the fight against the disease.",
+"zh": "新疫苗的发现标志着抗击该疾病的重大突破。"
+},
+"circumstance": {
+"en": "Under no circumstance should personal data be shared with third parties without the user's consent.",
+"zh": "在任何情况下，未经用户同意都不得将个人数据分享给第三方。"
+},
+"conservation": {
+"en": "Wildlife conservation groups are working to protect endangered species and their natural habitats.",
+"zh": "野生动物保护组织正在努力保护濒危物种及其自然栖息地。"
+},
+"intelligence": {
+"en": "Artificial intelligence is transforming industries from healthcare to transportation at an unprecedented speed.",
+"zh": "人工智能正以前所未有的速度改变着从医疗到交通的各行各业。"
+},
+"interstellar": {
+"en": "astronomers dream of one day sending a spacecraft on an interstellar journey to a nearby star system.",
+"zh": "天文学家梦想有朝一日将航天器送上前往邻近恒星系统的星际旅程。"
+},
+"questionnaire": {
+"en": "Participants completed a questionnaire about their daily eating habits and exercise routines.",
+"zh": "参与者填写了一份关于日常饮食习惯和锻炼习惯的调查问卷。"
 }
 }

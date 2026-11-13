@@ -22,8 +22,14 @@ if git diff --cached --quiet; then
 else
   git commit -m "daily: $(date '+%Y-%m-%d') 更新" >> "$LOG" 2>&1
   for i in 1 2 3 4 5; do
-    if git push origin main >> "$LOG" 2>&1; then
+    # 直连经常 TLS 失败，带上本地代理一起试
+    if HTTPS_PROXY=http://127.0.0.1:7897 HTTP_PROXY=http://127.0.0.1:7897 \
+       git push origin main >> "$LOG" 2>&1; then
       echo "推送成功（第 $i 次）" >> "$LOG"
+      break
+    fi
+    if git push origin main >> "$LOG" 2>&1; then
+      echo "推送成功（直连，第 $i 次）" >> "$LOG"
       break
     fi
     echo "推送失败，第 $i 次重试…" >> "$LOG"

@@ -35,3 +35,58 @@ SKIP: 2026-11-13 已有帖子
   同时属于 3 个考试: 458 词
   带例句: 910/10349 (8%)
 SKIP: 2026-11-14 已有帖子
+[main 4b01d19] daily: 2026-11-14 更新
+ 41 files changed, 136326 insertions(+), 413 deletions(-)
+ create mode 100644 build_lexicon.py
+ create mode 100755 daily_update.sh
+ create mode 100644 data/lexicon/_master.json
+ create mode 100644 data/lexicon/daily.json
+ create mode 100644 data/lexicon/examples.json
+ create mode 100644 data/lexicon/index.json
+ create mode 100644 data/lexicon/vol_a.json
+ create mode 100644 data/lexicon/vol_b.json
+ create mode 100644 data/lexicon/vol_c.json
+ create mode 100644 data/lexicon/vol_d.json
+ create mode 100644 data/lexicon/vol_e.json
+ create mode 100644 data/lexicon/vol_f.json
+ create mode 100644 data/lexicon/vol_g.json
+ create mode 100644 data/lexicon/vol_h.json
+ create mode 100644 data/lexicon/vol_i.json
+ create mode 100644 data/lexicon/vol_j.json
+ create mode 100644 data/lexicon/vol_k.json
+ create mode 100644 data/lexicon/vol_l.json
+ create mode 100644 data/lexicon/vol_m.json
+ create mode 100644 data/lexicon/vol_n.json
+ create mode 100644 data/lexicon/vol_o.json
+ create mode 100644 data/lexicon/vol_p.json
+ create mode 100644 data/lexicon/vol_q.json
+ create mode 100644 data/lexicon/vol_r.json
+ create mode 100644 data/lexicon/vol_s.json
+ create mode 100644 data/lexicon/vol_t.json
+ create mode 100644 data/lexicon/vol_u.json
+ create mode 100644 data/lexicon/vol_v.json
+ create mode 100644 data/lexicon/vol_w.json
+ create mode 100644 data/lexicon/vol_x.json
+ create mode 100644 data/lexicon/vol_y.json
+ create mode 100644 data/lexicon/vol_z.json
+ create mode 100644 enrich.py
+ create mode 100755 run_enrich.sh
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+推送失败，第 1 次重试…
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+推送失败，第 2 次重试…
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+推送失败，第 3 次重试…
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+推送失败，第 4 次重试…
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+推送失败，第 5 次重试…
+===== 00:21:36 结束 =====
+===== 2026-11-14 00:22:35 开始 =====
+本次生成 30 个词…
+✅ 新增 30 条例句 | tokens=1718 | 累计 864/10352
+词库分册: 26 册, 共 10349 词
+  雅思 1626 / 托福 4510 / GRE 7717
+  同时属于 3 个考试: 458 词
+  带例句: 935/10349 (9%)
+SKIP: 2026-11-14 已有帖子
