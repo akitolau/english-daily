@@ -348,12 +348,26 @@ def main():
     )
     total_speak = sum(len(p["speaking"]) for p in posts)
 
+    # 词库总量与例句进度
+    lex_idx_path = os.path.join(DATA, "lexicon", "index.json")
+    lex_total, ex_count = 0, 0
+    if os.path.exists(lex_idx_path):
+        with open(lex_idx_path, encoding="utf-8") as f:
+            lex_idx = json.load(f)
+        lex_total = lex_idx.get("total", 0)
+    ex_path = os.path.join(DATA, "lexicon", "examples.json")
+    if os.path.exists(ex_path):
+        with open(ex_path, encoding="utf-8") as f:
+            ex_count = len(json.load(f))
+
     out = (tpl.replace("{{POSTS}}", posts_html)
               .replace("{{BANK}}", bank_html)
               .replace("{{OUTLINE}}", outline_html)
               .replace("{{POST_COUNT}}", str(len(posts)))
               .replace("{{WORD_COUNT}}", str(total_words))
               .replace("{{CHUNK_COUNT}}", str(total_chunks))
+              .replace("{{LEX_TOTAL}}", f"{lex_total:,}")
+              .replace("{{EX_COUNT}}", f"{ex_count:,}")
               .replace("{{SPEAK_COUNT}}", str(total_speak))
               .replace("{{LATEST}}", latest)
               .replace("{{BUILD_DATE}}", date.today().isoformat()))

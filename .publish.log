@@ -90,3 +90,12 @@ fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreS
   同时属于 3 个考试: 458 词
   带例句: 935/10349 (9%)
 SKIP: 2026-11-14 已有帖子
+[main a66ab70] daily: 2026-11-14 更新
+ 18 files changed, 197 insertions(+), 16 deletions(-)
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+fatal: unable to access 'https://github.com/akitolau/english-daily.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
+推送失败，第 1 次重试…
+To https://github.com/akitolau/english-daily.git
+   4b01d19..a66ab70  main -> main
+推送成功（第 2 次）
+===== 00:23:03 结束 =====
