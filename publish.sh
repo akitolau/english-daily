@@ -54,11 +54,14 @@ fi
 
 # 4) 线上验证
 sleep 20
+CODE=000
 for i in 1 2 3 4 5; do
   CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 25 -x http://127.0.0.1:7897 \
          "https://akitolau.github.io/english-daily/?v=$(date +%s)")
   say "线上检查 $i：HTTP $CODE"
-  [ "$CODE" = "200" ] && break
+  if [ "$CODE" = "200" ]; then
+    break
+  fi
   sleep 15
 done
 
