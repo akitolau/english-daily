@@ -3654,5 +3654,205 @@
 "track": {
 "en": "Scientists use satellites to track the movement of whales across the ocean.",
 "zh": "科学家利用卫星追踪鲸鱼在海洋中的移动。"
+},
+"trunk": {
+"en": "The elephant used its strong trunk to pull branches from the tall tree.",
+"zh": "大象用它有力的鼻子从高树上拉下树枝。"
+},
+"waste": {
+"en": "Governments must reduce food waste if they hope to build more sustainable cities.",
+"zh": "如果政府希望建设更可持续的城市，就必须减少食物浪费。"
+},
+"arctic": {
+"en": "Rising temperatures are threatening the arctic habitat of polar bears and other wildlife.",
+"zh": "气温上升正威胁着北极熊及其他野生动物的北极栖息地。"
+},
+"bucket": {
+"en": "The villagers carried water from the well in a wooden bucket every morning.",
+"zh": "村民们每天早上用木桶从井里打水。"
+},
+"cement": {
+"en": "Workers used cement to bind the bricks together and strengthen the building's walls.",
+"zh": "工人们用水泥把砖块黏合在一起，以加固建筑墙体。"
+},
+"deduce": {
+"en": "From the fossil's shape, scientists could deduce that the creature once lived in water.",
+"zh": "根据化石的形状，科学家可以推断这种生物曾生活在水中。"
+},
+"falcon": {
+"en": "A falcon can dive at remarkable speed when hunting its prey in open fields.",
+"zh": "隼在开阔田野中捕猎时能以惊人的速度俯冲。"
+},
+"fringe": {
+"en": "These experimental technologies remain on the fringe of the market rather than the mainstream.",
+"zh": "这些实验性技术仍处于市场的边缘，而非主流。"
+},
+"matrix": {
+"en": "Researchers arranged the survey data in a matrix to compare results across regions.",
+"zh": "研究人员将调查数据排列成矩阵，以便比较各地区的结。"
+},
+"mentor": {
+"en": "A supportive mentor can help new students adapt quickly to university life and study habits.",
+"zh": "一位给予支持的导师能帮助新生迅速适应大学生活和学习习惯。"
+},
+"nuance": {
+"en": "Translators must capture every nuance of meaning when rendering poetry into another language.",
+"zh": "译者把诗歌译成另一种语言时必须捕捉意义上的每一处细微差别。"
+},
+"outset": {
+"en": "From the outset, the research team agreed to publish all data openly.",
+"zh": "从一开始，研究团队就同意公开所有数据。"
+},
+"plough": {
+"en": "Farmers traditionally plough the fields before planting rice in the spring.",
+"zh": "农民传统上在春季插秧前犁田。"
+},
+"purify": {
+"en": "New filters can purify drinking water by removing harmful metals and bacteria.",
+"zh": "新型过滤器能通过去除有害金属和细菌来净化饮用水。"
+},
+"reckon": {
+"en": "Economists reckon that the new policy will create thousands of jobs within two years.",
+"zh": "经济学家估计这项新政策将在两年内创造数千个就业岗位。"
+},
+"roster": {
+"en": "The coach posted a roster of players selected for the national team.",
+"zh": "教练公布了入选国家队的球员名单。"
+},
+"smooth": {
+"en": "The negotiations proceeded smoothly, and both sides reached an agreement quickly.",
+"zh": "谈判进展顺利，双方很快达成了协议。"
+},
+"tumble": {
+"en": "Falling rocks tumbled down the mountain slope after the heavy rain.",
+"zh": "大雨过后，落石顺着山坡滚落下来。"
+},
+"violet": {
+"en": "A patch of wild violet grew quietly beside the old stone wall.",
+"zh": "一丛野紫罗兰静静地生长在古老的石墙旁。"
+},
+"antenna": {
+"en": "The antenna on the roof receives signals from distant television stations.",
+"zh": "屋顶上的天线接收来自远处电视台的信号。"
+},
+"bristle": {
+"en": "The brush is made of stiff bristle, ideal for cleaning rough surfaces.",
+"zh": "这把刷子由坚硬的鬃毛制成，非常适合清洁粗糙表面。"
+},
+"engrave": {
+"en": "The craftsman engraved the family name onto the silver cup with great care.",
+"zh": "工匠小心翼翼地把家族姓氏雕刻在银杯上。"
+},
+"excrete": {
+"en": "Some animals excrete waste products through specialized organs in their bodies.",
+"zh": "一些动物通过体内专门的器官排泄废物。"
+},
+"formula": {
+"en": "Scientists proposed a new formula to predict how quickly the ice sheets will melt.",
+"zh": "科学家提出一个新公式来预测冰盖融化的速度。"
+},
+"garment": {
+"en": "Each garment in the collection was made from recycled cotton and natural dyes.",
+"zh": "该系列中的每件衣服都由再生棉和天然染料制成。"
+},
+"gesture": {
+"en": "She made a small gesture with her hand to signal that the meeting should end.",
+"zh": "她用手做了个小手势，示意会议应该结束了。"
+},
+"indulge": {
+"en": "Parents should not indulge every demand of their children, or they may lose self-discipline.",
+"zh": "父母不应纵容孩子的每一个要求，否则他们可能会失去自律。"
+},
+"monsoon": {
+"en": "The monsoon brings heavy rain to South Asia, affecting farmers and city dwellers alike.",
+"zh": "季风给南亚带来大雨，既影响农民也影响城市居民。"
+},
+"opacity": {
+"en": "The opacity of the glass protects privacy while still letting in some light.",
+"zh": "这块玻璃的不透明性保护了隐私，同时仍让部分光线透入。"
+},
+"pottery": {
+"en": "Ancient pottery found at the site reveals how early people stored food and water.",
+"zh": "在该遗址发现的古代陶器揭示了早期人类如何储存食物和水。"
+},
+"preview": {
+"en": "Students should preview the chapter before class to understand the lecture better.",
+"zh": "学生应在课前预习这一章，以便更好地理解讲座。"
+},
+"quantum": {
+"en": "Quantum computing may one day solve problems that current computers cannot handle.",
+"zh": "量子计算或许有朝一日能解决现有计算机无法处理的问题。"
+},
+"reclaim": {
+"en": "The city plans to reclaim abandoned industrial land and turn it into public parks.",
+"zh": "该市计划开垦废弃的工业用地，并将其改造成公园。"
+},
+"setback": {
+"en": "Despite an early setback, the research team eventually completed the experiment successfully.",
+"zh": "尽管早期遭遇挫折，研究团队最终成功完成了实验。"
+},
+"terrace": {
+"en": "Farmers built terraces on the hillside to grow rice on steep land.",
+"zh": "农民在山坡上修建梯田，以便在陡峭的土地上种稻。"
+},
+"thermal": {
+"en": "Thermal energy from the sun can be stored and used to heat buildings in winter.",
+"zh": "来自太阳的热能可以被储存起来，用于冬季供暖。"
+},
+"trumpet": {
+"en": "The musician played a short tune on the trumpet during the cultural festival.",
+"zh": "音乐家在文化节上用喇叭吹奏了一段短曲。"
+},
+"typhoon": {
+"en": "The typhoon forced thousands of residents to leave their homes along the coast.",
+"zh": "台风迫使数千名沿海居民离开家园。"
+},
+"upgrade": {
+"en": "The school decided to upgrade its computer labs to support online learning.",
+"zh": "学校决定升级其计算机实验室，以支持在线学习。"
+},
+"utensil": {
+"en": "Every kitchen utensil should be cleaned thoroughly after preparing raw meat.",
+"zh": "处理生肉后，每件厨房用具都应彻底清洗。"
+},
+"aromatic": {
+"en": "The aromatic herbs added a pleasant scent and flavor to the soup.",
+"zh": "芳香的香草为汤增添了宜人的香气和风味。"
+},
+"bacteria": {
+"en": "Harmful bacteria can multiply quickly in food that is left at room temperature.",
+"zh": "有害细菌在室温下放置的食物中能迅速繁殖。"
+},
+"deforest": {
+"en": "Companies that deforest large areas destroy habitats and contribute to climate change.",
+"zh": "大面积毁林的公司破坏了栖息地，并加剧了气候变化。"
+},
+"disclose": {
+"en": "The company refused to disclose details of the accident to the public.",
+"zh": "该公司拒绝向公众透露事故的细节。"
+},
+"downpour": {
+"en": "A sudden downpour flooded the streets and delayed the morning traffic.",
+"zh": "一场突如其来的倾盆大雨淹没了街道，延误了早高峰交通。"
+},
+"drainage": {
+"en": "Poor drainage in the old town causes flooding whenever it rains heavily.",
+"zh": "老城区排水系统差，每逢大雨就会积水。"
+},
+"feedback": {
+"en": "Teachers gave detailed feedback on each essay to help students improve their writing.",
+"zh": "老师对每篇作文都给出了详细反馈，帮助学生提高写作水平。"
+},
+"forestry": {
+"en": "The university offers a degree in forestry for students interested in managing woodlands.",
+"zh": "该大学为对林地管理感兴趣的学生开设林学学位。"
+},
+"hallowed": {
+"en": "The hallowed halls of the ancient university attract scholars from around the world.",
+"zh": "这所古老大学神圣的殿堂吸引着世界各地的学者。"
+},
+"imperial": {
+"en": "The imperial palace once housed emperors and their families for centuries.",
+"zh": "这座皇宫曾供皇帝及其家族居住数百年。"
 }
 }
