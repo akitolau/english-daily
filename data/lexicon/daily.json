@@ -1,5 +1,5 @@
 {
- "cursor": 20,
+ "cursor": 30,
  "used": [
   "arid",
   "axis",
@@ -11,6 +11,16 @@
   "bulb",
   "cell",
   "cite",
+  "clay",
+  "cone",
+  "cram",
+  "damp",
+  "emit",
+  "epic",
+  "even",
+  "file",
+  "flaw",
+  "flip",
   "gem",
   "jar",
   "jog",
@@ -24,6 +34,7 @@
  ],
  "days": [
   "2026-11-15",
-  "2026-11-15"
+  "2026-11-15",
+  "2026-11-16"
  ]
 }

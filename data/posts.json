@@ -288,6 +288,215 @@
     }
    ],
    "wordtips": "今天这 10 个词里，tag、wax、arid 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-16",
+   "title": "教育 · 数字化档案与教育公平",
+   "chunks": [
+    "d20261116"
+   ],
+   "words": [
+    {
+     "w": "clay",
+     "ipa": "klei",
+     "pos": "n.",
+     "defs": [
+      "黏土；陶土",
+      "n. 泥土，粘土",
+      "n.黏土"
+     ],
+     "ex": "Ancient potters shaped clay into bowls and left them to dry in the sun.",
+     "zh": "古代陶工把黏土捏成碗，然后放在阳光下晾干。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "cone",
+     "ipa": "kəun",
+     "pos": "n.",
+     "defs": [
+      "圆锥体；锥形物",
+      "n. 圆锥体,球果vt. 使成锥形",
+      "n.松果；圆锥体"
+     ],
+     "ex": "The volcano's perfect cone shape attracts thousands of tourists to the island each year.",
+     "zh": "这座火山完美的锥形每年吸引成千上万的游客来到该岛。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "cram",
+     "ipa": "kræm",
+     "pos": "v.",
+     "defs": [
+      "把...塞进；（为应考）临时死记硬背",
+      "vt. 塞满,填满,猛吃vi. 贪吃n. 塞满",
+      "v.（超限）填塞，塞满；临时抱佛脚，为考试而学习"
+     ],
+     "ex": "Many students cram all night before exams instead of reviewing material gradually.",
+     "zh": "许多学生在考试前通宵死记硬背，而不是循序渐进地复习。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "damp",
+     "ipa": "dæmp",
+     "pos": "adj.",
+     "defs": [
+      "湿气重的；潮湿的",
+      "n. 湿气a. 潮湿的vt. 使潮湿,阻尼,抑止vi. 变潮湿,衰减",
+      "v.减弱，制止振动；a.潮湿的"
+     ],
+     "ex": "The basement felt cold and damp, so we bought a machine to remove the moisture.",
+     "zh": "地下室又冷又潮湿，所以我们买了一台机器来除湿。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "emit",
+     "ipa": "i'mit",
+     "pos": "v.",
+     "defs": [
+      "散发 (光、热、气等)；发出（声音）",
+      "vt. 发出; 放射",
+      "v.放射(光、热、味等)"
+     ],
+     "ex": "Older vehicles emit far more harmful gases than modern electric cars do.",
+     "zh": "老旧车辆排放的有害气体远远多于现代电动汽车。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "epic",
+     "ipa": "'epik",
+     "pos": "n./adj.",
+     "defs": [
+      "史诗；宏大的",
+      "n. 史诗; a. 英雄的",
+      "n.叙事诗，史诗；a.英雄的；大规模的"
+     ],
+     "ex": "The film is an epic story of migration, spanning three generations across two continents.",
+     "zh": "这部电影是一部跨越两大洲三代人的史诗般的迁徙故事。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "even",
+     "ipa": "'i:vən",
+     "pos": "adj./adv.",
+     "defs": [
+      "均匀的；偶数的；相等的。甚至",
+      "a. 平坦的,偶数的,相等的,均匀的,连贯的,均等的,公平的,荹玫?平静的,",
+      "a.平的"
+     ],
+     "ex": "The paint must be applied in an even layer, or the wall will look patchy.",
+     "zh": "涂料必须均匀地涂上一层，否则墙面会显得斑驳。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "file",
+     "ipa": "fail",
+     "pos": "n./v.",
+     "defs": [
+      "档案；把...归档",
+      "n. 档案; 行列; v. 归档; 提出",
+      "n.锉刀；v.锉平"
+     ],
+     "ex": "Please file these documents alphabetically so that they can be found quickly.",
+     "zh": "请按字母顺序把这些文件归档，以便快速查找。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "flaw",
+     "ipa": "flɔ:",
+     "pos": "n.",
+     "defs": [
+      "缺陷；错误",
+      "n. 缺点,裂纹,瑕疵,一阵狂风",
+      "n.瑕疵；v.生裂缝；有瑕疵"
+     ],
+     "ex": "The main flaw in the study is that it ignores the influence of family background.",
+     "zh": "这项研究的主要缺陷是忽略了家庭背景的影响。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "flip",
+     "ipa": "flip",
+     "pos": "v./n.",
+     "defs": [
+      "掷；快速翻转。随便的；宽泛的",
+      "vt. 掷,弹,轻击,空翻vi. 用指轻弹,抽打,蹦跳n. 抛,弹,筋斗",
+      "v.用指轻弹；蹦跳；a.无礼的"
+     ],
+     "ex": "The teacher asked students to flip the card over and read the question on the back.",
+     "zh": "老师让学生把卡片翻过来，读背面的问题。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "The shift toward digital learning archives has been celebrated as an **epic** advance in educational equity, yet a closer look reveals a troubling **flaw**: uneven access to reliable infrastructure. In many rural schools, students must **cram** into overcrowded rooms where the only computer is a battered laptop, and connectivity is as fragile as **damp** paper. Such conditions hardly **emit** the promise of modern pedagogy. Even worse, teachers rarely have time to **file** each learner's progress systematically, so valuable data simply vanish. To address this, policymakers should **flip** the current funding model and direct resources toward the most underserved districts rather than scattering them in an **even** but ineffective layer. A simple **clay** model of a **cone**, used in a hands-on science lesson, may teach more than a dozen disconnected tablets; meaningful investment, not technological theatre, is what genuine reform requires.",
+    "zh": "向数字化学习档案的转变被誉为教育公平的一次**宏大**进步，然而细看之下却暴露出一个令人不安的**缺陷**：可靠基础设施的获取并不均衡。在许多乡村学校，学生不得不**挤**进拥挤的教室，唯一的电脑是一台破旧的笔记本电脑，网络连接像**潮湿**的纸张一样脆弱。这样的条件几乎无法**散发**现代教学法的希望。更糟的是，教师很少有时间系统地**归档**每个学习者的进步，因此宝贵的数据就这样消失了。为解决这一问题，政策制定者应当**翻转**当前的资助模式，把资源投向最缺乏服务的地区，而不是把它们分散成**均匀**却无效的一层。在动手科学课上使用一个简单的**黏土****圆锥**模型，或许比十几台互不相连的平板电脑教得更多；真正有意义的投入，而非技术作秀，才是真正改革所需要的。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 1",
+     "q": "Why are you learning English?",
+     "ans": "Two reasons, and they're not equally noble. The practical one is that most of the material I need for work is published in English first — by the time a decent article gets translated, the conversation has moved on. The less practical reason is that I want to be able to read a novel without feeling like I'm doing homework. That's the goal I actually care about.",
+     "note": "「not equally noble」是很好的自我觉察式表达。把功利理由和私人理由并列，比只说一个更真实。",
+     "swap": "把 practical reason 换成你的真实需求（考试、工作、移民、追剧）。"
+    },
+    {
+     "part": "Part 1",
+     "q": "What kind of weather do you like?",
+     "ans": "Overcast, which people find strange. Bright sun makes me feel like I should be outside doing something useful; grey weather gives me permission to stay in and read. I spent a winter in a place where it dropped to minus twenty, and oddly that was the most comfortable I've been — the cold was so serious that nobody expected you to be productive.",
+     "note": "反直觉的偏好（喜欢阴天）立刻抓住注意。后面用真实经历做支撑。",
+     "swap": "换成你真实的天气偏好 + 一个支撑它的记忆。"
+    },
+    {
+     "part": "Part 2",
+     "q": "Describe a skill you learned that took a long time. You should say: what the skill is; when you learned it; how you learned it; and explain why it took so long.",
+     "ans": "The skill I'd describe is writing clearly — not writing well, which is a different and much rarer thing, but writing in a way that doesn't waste the reader's time. I've been working on it for about four years and I'm still not done.\n\nI started because I had to. My job involved writing analysis that other people had to act on, and I kept getting the same response: 'I'm not sure what you're telling me to do.' That was humbling. I thought I was being thorough. I was being long.\n\nThe way I learned was mostly by deleting. I'd write something, cut it in half, and see what survived. Then someone showed me that most of what I was cutting was the part where I explained that I wasn't sure. The uncertainty was real, but burying it in caveats made the whole document useless.\n\nWhy it takes so long is that the skill isn't grammatical — it's deciding what matters. You can learn grammar in months. Judging relevance takes years, because you have to be wrong in front of people a lot of times first. I'm better than I was. I still over-explain when I'm nervous.",
+     "note": "「writing clearly 不是 writing well」这个区分很好。最后一句「我紧张时还是会解释太多」收了漂亮的自知之明。",
+     "swap": "换成你真实的技能（开车、做饭、编曲、数据分析）。核心是「为什么它慢」要给一个认知层面的理由，不是「需要多练」。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，clay、cone、cram 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }
