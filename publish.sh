@@ -1,12 +1,12 @@
 #!/bin/bash
 # 英语每天 · 每日自动出稿并上线
-# 手动跑：bash ~/Desktop/英语学习/publish.sh
+# 手动跑：bash ~/Desktop/11月的准备/英语学习/publish.sh
 #
 # 注意：这台机器只有 8GB 内存，fork 容易失败。所以这里刻意只用
 # python 一次调用做完「生成 + 构建」，把子进程数量压到最低。
 set -uo pipefail
 
-PROJ="$HOME/Desktop/英语学习"
+PROJ="$HOME/Desktop/11月的准备/英语学习"
 cd "$PROJ" || exit 1
 export PATH="/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin"
 export HTTPS_PROXY=http://127.0.0.1:7897
