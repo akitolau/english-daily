@@ -84,6 +84,47 @@ a:hover{border-bottom-color:var(--accent)}
 .pd-wd{display:block;font-size:10.5px;color:var(--muted);letter-spacing:.06em;margin-top:3px}
 .post-t{font-family:var(--serif);font-size:22px;margin:0;line-height:1.4;font-weight:600;padding-top:2px}
 
+/* ---------- 每日：左侧时间轴 + 单日视图 ---------- */
+.daywrap{display:grid;grid-template-columns:158px minmax(0,1fr);gap:34px;align-items:start;margin-top:34px}
+/* 竖轴 */
+.tl{position:sticky;top:78px;max-height:calc(100vh - 100px);overflow-y:auto;padding:2px 0 10px}
+.tl::-webkit-scrollbar{width:4px}
+.tl::-webkit-scrollbar-thumb{background:var(--line);border-radius:2px}
+.tl-h{font-size:10.5px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;margin:0 0 14px 15px;font-weight:600}
+.tl-item{
+  position:relative;display:block;width:100%;text-align:left;background:none;border:none;
+  padding:7px 8px 7px 22px;cursor:pointer;font-family:inherit;color:var(--ink-2);
+  border-radius:6px;transition:background .16s ease,color .16s ease;
+}
+.tl-item::before{
+  content:"";position:absolute;left:8px;top:13px;width:6px;height:6px;border-radius:50%;
+  background:var(--paper);border:1.5px solid #CFC7B5;transition:all .18s ease;z-index:2;
+}
+.tl-item::after{
+  content:"";position:absolute;left:10.5px;top:19px;bottom:-7px;width:1px;background:#DED6C4;z-index:1;
+}
+.tl-item:last-child::after{display:none}
+.tl-item:hover{background:var(--paper-2)}
+.tl-item.on{background:var(--accent-l)}
+.tl-item.on::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 3px rgba(47,107,90,.14)}
+.tl-d{display:block;font-family:var(--serif);font-size:14.5px;font-weight:600;letter-spacing:.02em}
+.tl-item.on .tl-d{color:var(--accent)}
+.tl-t{display:block;font-size:11px;color:#6B6559;line-height:1.45;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tl-wd{font-size:10px;color:var(--muted);margin-left:4px;font-weight:400}
+.tl-new{display:inline-block;font-size:9px;background:var(--warm);color:#fff;padding:1px 4px;border-radius:3px;margin-left:4px;vertical-align:1px;letter-spacing:.04em}
+/* 单日面板 */
+.daypane{min-width:0}
+.daypane .post{display:none;margin:0}
+.daypane .post.on{display:block;animation:fade .28s ease}
+.daynav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:22px}
+.daynav button{
+  font-family:inherit;font-size:13px;padding:9px 16px;border-radius:6px;cursor:pointer;
+  border:1px solid var(--line);background:#fff;color:var(--ink-2);transition:all .16s ease;
+}
+.daynav button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.daynav button:disabled{opacity:.35;cursor:default}
+.daynav .daypos{font-family:var(--mono);font-size:11.5px;color:var(--muted);letter-spacing:.05em}
+
 .sec{margin-top:30px}
 .sec-h{display:flex;align-items:baseline;gap:11px;margin-bottom:15px;flex-wrap:wrap}
 .sec-n{
@@ -233,6 +274,17 @@ a:hover{border-bottom-color:var(--accent)}
   .stats{margin-top:24px}
   .stat{flex:1 1 45%;padding:14px 0}
   .stat b{font-size:22px}
+  /* 移动端：竖轴改为顶部横向滑动 */
+  .daywrap{grid-template-columns:1fr;gap:0;margin-top:24px}
+  .tl{position:static;max-height:none;display:flex;gap:8px;overflow-x:auto;overflow-y:hidden;
+      padding:0 0 12px;margin-bottom:6px;border-bottom:1px solid var(--line-2)}
+  .tl-h{display:none}
+  .tl-item{flex:0 0 auto;width:auto;min-width:104px;padding:8px 12px;border:1px solid var(--line);background:#fff}
+  .tl-item::before,.tl-item::after{display:none}
+  .tl-item.on{background:var(--accent-l);border-color:var(--accent)}
+  .tl-t{display:none}
+  .tl-d{font-size:13px}
+  .daynav .daypos{font-size:10.5px}
 }
 /* ---------- 每日 10 词（带逐词例句） ---------- */
 .dailywords{display:flex;flex-direction:column;margin-bottom:20px}
@@ -340,7 +392,20 @@ a:hover{border-bottom-color:var(--accent)}
         <div class="stat"><b>{{SPEAK_COUNT}}</b><span>口语题</span></div>
       </div>
     </div>
-    {{POSTS}}
+    <div class="daywrap">
+      <aside class="tl" id="tl" aria-label="学习日记时间轴">
+        <div class="tl-h">Timeline · 学习日记</div>
+        <!-- {{TIMELINE}} -->
+      </aside>
+      <div class="daypane" id="daypane">
+        {{POSTS}}
+        <nav class="daynav">
+          <button id="dayPrev" type="button">← 更早</button>
+          <span class="daypos" id="dayPos"></span>
+          <button id="dayNext" type="button">更新 →</button>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -617,6 +682,109 @@ a:hover{border-bottom-color:var(--accent)}
     });
     lexBoot();
   }
+})();
+(function(){
+  /* ---------- 每日帖子：左侧时间轴 + 单日视图 ---------- */
+  var pane = document.getElementById('daypane');
+  var tl = document.getElementById('tl');
+  if (!pane || !tl) return;
+  var posts = [].slice.call(pane.querySelectorAll('.post'));
+  if (!posts.length) return;
+  var KEY = 'en_daily_seen';
+
+  // 时间轴条目由 JS 依帖子生成（保证与帖子一一对应）
+  var items = posts.map(function(p, i){
+    var d = p.querySelector('.pd-day'), t = p.querySelector('.post-t');
+    var w = p.querySelector('.pd-wd');
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'tl-item';
+    b.dataset.i = i;
+    b.innerHTML = '<span class="tl-d">' + (d ? d.textContent : '') +
+      (w ? '<span class="tl-wd">' + w.textContent.split('·')[0].trim() + '</span>' : '') +
+      '</span>' + (t ? '<span class="tl-t">' + t.textContent + '</span>' : '');
+    return b;
+  });
+
+  // 新帖标记：帖子倒序（index 0 最新），上次看到之后的新日期 index 更小
+  var seen = null;
+  try { seen = localStorage.getItem(KEY); } catch(e){}
+  var dates = posts.map(function(p){ return p.id.replace('post-',''); });
+  var lastSeenIdx = seen ? dates.indexOf(seen) : -1;
+  if (lastSeenIdx > 0) {
+    for (var k = lastSeenIdx - 1; k >= 0; k--) {
+      var badge = document.createElement('span');
+      badge.className = 'tl-new';
+      badge.textContent = '新';
+      var dEl = items[k].querySelector('.tl-d');
+      if (dEl) dEl.appendChild(badge);
+    }
+  }
+
+  // 帖子本身已按倒序渲染（最新在前），时间轴直接同序追加，最新在最上
+  var frag = document.createDocumentFragment();
+  items.forEach(function(b){ frag.appendChild(b); });
+  tl.appendChild(frag);
+
+  // 帖子在 HTML 中按倒序渲染（最新在前），所以 index 0 就是最新一期
+  var NEWEST = 0;
+  var cur = NEWEST;
+  var posEl = document.getElementById('dayPos');
+  var prevBtn = document.getElementById('dayPrev');
+  var nextBtn = document.getElementById('dayNext');
+
+  function show(i, scroll){
+    i = Math.max(0, Math.min(posts.length - 1, i));
+    cur = i;
+    posts.forEach(function(p, j){ p.classList.toggle('on', j === i); });
+    items.forEach(function(b, j){
+      var on = j === i;
+      b.classList.toggle('on', on);
+      if (on) {
+        var mark = b.querySelector('.tl-new'); if (mark) mark.remove();
+      }
+    });
+    if (posEl) posEl.textContent = (i + 1) + ' / ' + posts.length;
+    // index 0 = 最新，所以 i=0 时「更新」不可用，i=最后时「更早」不可用
+    if (prevBtn) prevBtn.disabled = (i === 0);
+    if (nextBtn) nextBtn.disabled = (i === posts.length - 1);
+    try { localStorage.setItem(KEY, dates[i]); } catch(e){}
+    var active = tl.querySelector('.tl-item.on');
+    if (active && active.scrollIntoView && scroll) {
+      active.scrollIntoView({block:'nearest', inline:'nearest'});
+    }
+    if (scroll) {
+      var y = pane.getBoundingClientRect().top + window.pageYOffset - 84;
+      window.scrollTo({top: y, behavior:'smooth'});
+    }
+    if (history.replaceState) history.replaceState(null, '', '#day-' + dates[i]);
+  }
+
+  tl.addEventListener('click', function(e){
+    var b = e.target.closest('.tl-item'); if (!b) return;
+    show(parseInt(b.dataset.i, 10), true);
+  });
+  if (prevBtn) prevBtn.addEventListener('click', function(){ show(cur - 1, true); });
+  if (nextBtn) nextBtn.addEventListener('click', function(){ show(cur + 1, true); });
+
+  // 支持地址栏直达 #day-2026-11-17；否则一律默认最新一期
+  var m = /^#day-(\d{4}-\d{2}-\d{2})$/.exec(location.hash || '');
+  var start = 0;   // 默认最新一期
+  if (m) {
+    var idx = dates.indexOf(m[1]);
+    if (idx >= 0) start = idx;
+  }
+  show(start, false);
+
+  // 键盘左右翻页
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target.tagName || '').toLowerCase();
+    if (tag === 'input' || tag === 'textarea') return;
+    var todayPage = document.getElementById('page-today');
+    if (!todayPage || !todayPage.classList.contains('on')) return;
+    if (e.key === 'ArrowLeft') { show(cur + 1, true); }   // 更早
+    if (e.key === 'ArrowRight') { show(cur - 1, true); }  // 更新
+  });
 })();
 </script>
 </body>
