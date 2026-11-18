@@ -1,5 +1,5 @@
 {
- "cursor": 40,
+ "cursor": 50,
  "used": [
   "arid",
   "axis",
@@ -32,12 +32,22 @@
   "hawk",
   "herd",
   "hike",
+  "hive",
+  "horn",
+  "idol",
   "jar",
   "jog",
   "lag",
   "log",
+  "mate",
+  "mean",
+  "mint",
+  "mode",
   "ore",
   "owl",
+  "peak",
+  "pine",
+  "prey",
   "sow",
   "tag",
   "wax"
@@ -46,6 +56,7 @@
   "2026-11-15",
   "2026-11-15",
   "2026-11-16",
-  "2026-11-17"
+  "2026-11-17",
+  "2026-11-18"
  ]
 }
