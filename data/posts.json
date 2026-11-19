@@ -1124,6 +1124,215 @@
     }
    ],
    "wordtips": "今天这 10 个词里，scan、silt、skim 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-20",
+   "title": "教育 · 音乐教育与认知发展",
+   "chunks": [
+    "d20261120"
+   ],
+   "words": [
+    {
+     "w": "adapt",
+     "ipa": "ə'dæpt",
+     "pos": "v.",
+     "defs": [
+      "适应；改编",
+      "vt. 使适应,改编vi. 适应",
+      "v.使„适应；修改"
+     ],
+     "ex": "Some species can adapt quickly to changing environments, while others face extinction within decades.",
+     "zh": "有些物种能迅速适应变化的环境，而另一些则在几十年内面临灭绝。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "adorn",
+     "ipa": "ə'dɔ:n",
+     "pos": "v.",
+     "defs": [
+      "装饰；装扮",
+      "vt. 装饰，装扮",
+      "v.装饰"
+     ],
+     "ex": "The ancient temple was adorned with intricate carvings depicting scenes from local mythology.",
+     "zh": "这座古庙装饰着描绘当地神话场景的精致雕刻。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "alter",
+     "ipa": "'ɔ:ltə",
+     "pos": "v.",
+     "defs": [
+      "变更；改变",
+      "vt. vi. 改变",
+      "v.改变，更改"
+     ],
+     "ex": "Rising sea levels are likely to alter the coastlines of many low-lying island nations beyond recognition.",
+     "zh": "海平面上升可能会使许多低洼岛国的海岸线变得面目全非。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "amuse",
+     "ipa": "ə'mju:z",
+     "pos": "v.",
+     "defs": [
+      "逗乐；给...提供娱乐",
+      "v. 逗乐，逗笑",
+      "v.使愉快，逗某人笑"
+     ],
+     "ex": "Educational apps that amuse children while teaching them basic math skills have gained popularity among parents.",
+     "zh": "那些在教孩子基础数学的同时逗他们开心的教育应用程序在家长中越来越受欢迎。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "audit",
+     "ipa": "'ɔ:dit",
+     "pos": "n./v.",
+     "defs": [
+      "审计。旁听；审计",
+      "n. 稽核,查帐vt. 稽核,旁听vi. 查账",
+      "v.审计，核对；旁听"
+     ],
+     "ex": "The company was required to conduct an independent audit of its carbon emissions before receiving certification.",
+     "zh": "该公司在获得认证之前被要求对其碳排放进行独立审计。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "breed",
+     "ipa": "bri:d",
+     "pos": "v./n.",
+     "defs": [
+      "饲养；繁殖；品种",
+      "n. 种类,品种vt. vi. 养育,引起,饲养,繁殖",
+      "v.繁殖；教养；n.品种，种类"
+     ],
+     "ex": "Scientists have managed to breed a variety of rice that can survive in salty soil.",
+     "zh": "科学家们成功培育出一种能在盐碱土壤中存活的水稻品种。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "carve",
+     "ipa": "kɑ:v",
+     "pos": "v.",
+     "defs": [
+      "雕刻；切下",
+      "vt. 切; 雕刻",
+      "v.雕刻；（把肉等）切成片"
+     ],
+     "ex": "Local artisans carve traditional patterns into wooden panels that are sold to tourists worldwide.",
+     "zh": "当地工匠在木板上雕刻传统图案，销往世界各地的游客。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "choir",
+     "ipa": "'kwaiə",
+     "pos": "n.",
+     "defs": [
+      "唱诗班",
+      "n. 唱诗班，合唱队",
+      "n.(教堂的)歌唱队"
+     ],
+     "ex": "Joining the school choir helped the shy student build confidence and make new friends.",
+     "zh": "加入学校唱诗班帮助这个害羞的学生建立了自信并结交了新朋友。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "crack",
+     "ipa": "kræk",
+     "pos": "v./n.",
+     "defs": [
+      "破裂；发出爆裂声；裂缝；缝隙",
+      "v. (使)破裂; n. 裂(缝、纹)",
+      "n.爆裂声；裂缝；v.裂开；破解，破译"
+     ],
+     "ex": "A large crack appeared in the dam wall after the earthquake, forcing nearby residents to evacuate.",
+     "zh": "地震后坝墙上出现了一条大裂缝，迫使附近居民撤离。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "crust",
+     "ipa": "krʌst",
+     "pos": "n.",
+     "defs": [
+      "地壳；外壳",
+      "n. 外壳,坚硬的外壳,面包皮vt. 盖以硬皮vi. 结硬皮",
+      "n.硬的表面；(一片)面包片；地壳"
+     ],
+     "ex": "The Earth's crust is divided into several tectonic plates that move slowly over millions of years.",
+     "zh": "地壳被分为几个构造板块，它们在数百万年间缓慢移动。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "Music education offers a compelling case for broadening the school curriculum. When children join a **choir**, they must **adapt** their voices to a collective rhythm, a discipline that strengthens listening and cooperation. Teachers who **audit** rehearsals can identify pupils who need support, while carefully chosen repertoire may **amuse** reluctant learners and draw them into active participation. Schools should not **alter** this provision merely to satisfy narrow testing goals, nor should they **carve** music into an optional extra for the talented few. Just as a **crack** in a **crust** can weaken an entire structure, neglecting the arts may leave cognitive development fragile. A well-designed programme can **breed** confidence and persistence, and even modest classrooms can be **adorn**ed with student artwork to celebrate achievement, reminding us that a balanced education shapes the whole person.",
+    "zh": "音乐教育为拓宽学校课程提供了有力例证。当孩子们加入**唱诗班**时，他们必须让自己的声音**适应**集体节奏，这种训练能增强倾听与合作能力。**旁听**排练的教师可以识别出需要支持的学生，而精心挑选的曲目则能**逗乐**不情愿的学习者，吸引他们积极参与。学校不应仅仅为了满足狭隘的考试目标而**改变**这一安排，也不应把音乐**雕刻**成少数有天赋者的可选附加项。正如**地壳**中的一道**裂缝**会削弱整个结构，忽视艺术可能使认知发展变得脆弱。设计良好的课程能够**培育**自信与坚持，甚至简陋的教室也可以用学生的艺术作品来**装饰**，以庆祝成就，提醒我们均衡的教育塑造的是完整的人。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 1",
+     "q": "Where are you from?",
+     "ans": "I'm from Shenyang, in the north-east, though I've moved around a lot since then — Beijing for university, then Zhuhai and Suzhou for work. Shenyang still feels like home in a way the other places don't. When people ask, I usually say I'm from the north, because the accent gives it away before I get a chance to explain.",
+     "note": "「一个细节胜过三个形容词」。最后那句「口音先说漏了」是自然的口语推理。",
+     "swap": "换成你的真实家乡 + 一句家乡特征。不要列城市清单，选一个能展开的细节。"
+    },
+    {
+     "part": "Part 2",
+     "q": "Describe something you own that is important to you. You should say: what it is; how long you've had it; how you got it; and explain why it's important.",
+     "ans": "I'd like to describe a fairly cheap pair of headphones, which sounds like an odd choice for something important.\n\nI bought them about four years ago, in a period when I was moving cities every few months. They cost almost nothing. I got them in a hurry at an airport, because the pair I had broke the night before a flight.\n\nWhat makes them matter is what happened after. I write music, and for a while those were the only headphones I had, so every song I finished in that period — three or four of them — was mixed on these. They're not good. They colour the sound badly, and I can hear it now that I have better ones. But that's precisely why they're important to me: they're the reason those tracks sound the way they do, in a technical sense I can't undo.\n\nSo it's not really the object I care about. It's that it's a physical record of a specific stretch of my life — a period when I had very little money and quite a lot of time, which is a combination I don't expect to have again.",
+     "note": "「便宜的东西却重要」这个反差是抓点。承认它的缺点（音质不好）+ 把缺点变成意义，是很好的结构。",
+     "swap": "换成你真实的物件。关键是找出「它的不完美恰恰是它重要的原因」这个角度。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you work or are you a student?",
+     "ans": "I'm working, though the honest description is that I'm between two things. My background is in finance — I did a master's in that — but for the past year or so I've been working on AI products, which is a fairly big jump. Right now I'm taking some time to prepare for the next step, which involves both studying and job hunting.",
+     "note": "「between two things」比直接说「我在找工作」体面且真实。主动说出转折，反而让后面的话题有抓手。",
+     "swap": "把 finance→AI 换成你自己的转折。核心句式：My background is X, but recently I've been Y."
+    }
+   ],
+   "wordtips": "今天这 10 个词里，adapt、adorn、alter 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }

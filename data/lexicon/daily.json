@@ -1,20 +1,30 @@
 {
- "cursor": 60,
+ "cursor": 70,
  "used": [
   "abuse",
+  "adapt",
+  "adorn",
+  "alter",
+  "amuse",
   "arid",
+  "audit",
   "axis",
   "bar",
   "bark",
   "barn",
+  "breed",
   "brim",
   "bud",
   "bulb",
+  "carve",
   "cell",
+  "choir",
   "cite",
   "clay",
   "cone",
+  "crack",
   "cram",
+  "crust",
   "damp",
   "emit",
   "epic",
@@ -68,6 +78,7 @@
   "2026-11-16",
   "2026-11-17",
   "2026-11-18",
-  "2026-11-19"
+  "2026-11-19",
+  "2026-11-20"
  ]
 }

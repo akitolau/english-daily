@@ -4654,5 +4654,205 @@
 "flash": {
 "en": "A sudden flash of lightning lit up the sky just before the storm arrived.",
 "zh": "就在暴风雨来临前，一道突然的闪电照亮了天空。"
+},
+"fluid": {
+"en": "The human body loses fluid rapidly in extreme heat, so athletes must drink water frequently during competition.",
+"zh": "人体在极端高温下会迅速流失体液，因此运动员在比赛期间必须频繁喝水。"
+},
+"flute": {
+"en": "Archaeologists discovered a bone flute dating back 40,000 years, suggesting early humans already enjoyed music.",
+"zh": "考古学家发现了一支距今四万年的骨笛，表明早期人类已经懂得欣赏音乐。"
+},
+"flyby": {
+"en": "During its flyby of Jupiter, the spacecraft captured detailed images of the planet's turbulent atmosphere.",
+"zh": "在飞掠木星期间，该航天器拍摄到了这颗行星动荡大气层的详细图像。"
+},
+"focus": {
+"en": "Many education systems now focus on developing critical thinking rather than simply memorizing facts.",
+"zh": "许多教育体系现在侧重于培养批判性思维，而不是单纯地记忆事实。"
+},
+"fruit": {
+"en": "The apple trees in the orchard usually fruit in early autumn, providing farmers with a rich harvest.",
+"zh": "果园里的苹果树通常在初秋结果，为农民带来丰厚的收成。"
+},
+"gizmo": {
+"en": "This tiny electronic gizmo can monitor your heart rate and sleep quality throughout the night.",
+"zh": "这个小小的电子装置可以整夜监测你的心率和睡眠质量。"
+},
+"globe": {
+"en": "Climate change affects every corner of the globe, from polar ice caps to tropical rainforests.",
+"zh": "气候变化影响着地球的每一个角落，从极地冰盖到热带雨林。"
+},
+"glove": {
+"en": "Workers handling hazardous chemicals must wear protective gloves to prevent skin damage.",
+"zh": "处理危险化学品的工人必须戴上防护手套，以防皮肤受损。"
+},
+"goose": {
+"en": "A wild goose can migrate thousands of kilometers each year, navigating by the sun and stars.",
+"zh": "一只野鹅每年能迁徙数千公里，依靠太阳和星辰导航。"
+},
+"grade": {
+"en": "Teachers spend hours grading essays, but fair and consistent assessment remains a challenging task.",
+"zh": "老师们花数小时批改论文，但公平而一致的评分仍是一项艰巨的任务。"
+},
+"grass": {
+"en": "Overgrazing by livestock has destroyed much of the grass on this once fertile grassland.",
+"zh": "牲畜的过度放牧破坏了这片曾经肥沃的草原上的大部分牧草。"
+},
+"horse": {
+"en": "Before railways were built, the horse was the fastest means of transporting goods across land.",
+"zh": "在铁路建成之前，马是陆地上运输货物最快捷的方式。"
+},
+"index": {
+"en": "The consumer price index rose sharply last month, indicating growing pressure on household budgets.",
+"zh": "上个月消费者物价指数大幅上升，表明家庭预算面临越来越大的压力。"
+},
+"jewel": {
+"en": "The museum's collection includes a jewel-encrusted crown once worn by an ancient queen.",
+"zh": "该博物馆的藏品中有一顶镶嵌宝石的王冠，曾为一位古代女王所佩戴。"
+},
+"knock": {
+"en": "Scientists warn that a large asteroid could knock the Earth off its delicate ecological balance.",
+"zh": "科学家警告，一颗大型小行星可能打破地球微妙的生态平衡。"
+},
+"learn": {
+"en": "Researchers learned that children who read regularly develop stronger language skills later in life.",
+"zh": "研究人员得知，经常阅读的儿童在日后的语言能力发展上更为出色。"
+},
+"local": {
+"en": "The new policy aims to support local farmers by reducing taxes on agricultural produce.",
+"zh": "这项新政策旨在通过降低农产品税收来扶持当地农民。"
+},
+"logic": {
+"en": "The logic behind the argument is flawed, because it ignores several key economic factors.",
+"zh": "这一论证背后的逻辑存在缺陷，因为它忽略了几个关键的经济因素。"
+},
+"magic": {
+"en": "For young children, watching a magic show can spark curiosity about science and illusion.",
+"zh": "对幼儿来说，观看魔术表演能激发他们对科学和幻觉的好奇心。"
+},
+"maths": {
+"en": "Students who struggle with maths often benefit from practical examples linked to daily life.",
+"zh": "数学学习有困难的学生往往能从与日常生活相关的实际例子中受益。"
+},
+"metal": {
+"en": "Recycling metal requires far less energy than extracting it from raw ore.",
+"zh": "回收金属所需的能源远少于从原矿石中提炼金属。"
+},
+"minus": {
+"en": "Temperatures in the Arctic can drop to minus forty degrees, making survival extremely difficult.",
+"zh": "北极的气温可降至零下四十度，使生存变得极其困难。"
+},
+"model": {
+"en": "Economists use computer models to predict how inflation might affect employment in the coming year.",
+"zh": "经济学家利用计算机模型预测通货膨胀可能如何影响来年的就业。"
+},
+"mould": {
+"en": "Excessive humidity in the building caused mould to grow on the walls of the classrooms.",
+"zh": "建筑物内湿度过高，导致教室墙壁上长了霉菌。"
+},
+"mouse": {
+"en": "A wireless mouse allows users to control the computer from a comfortable distance.",
+"zh": "无线鼠标使用户可以在舒适的距离上控制电脑。"
+},
+"movie": {
+"en": "The documentary movie explores how technology is reshaping traditional forms of cultural expression.",
+"zh": "这部纪录片探讨了科技如何重塑传统文化表达形式。"
+},
+"nylon": {
+"en": "Nylon is widely used in the textile industry because it is strong, light and quick-drying.",
+"zh": "尼龙因其结实、轻便且速干而被广泛应用于纺织业。"
+},
+"ocean": {
+"en": "Plastic waste dumped into the ocean poses a serious threat to marine ecosystems worldwide.",
+"zh": "倾倒入海洋的塑料垃圾对全球海洋生态系统构成严重威胁。"
+},
+"olive": {
+"en": "The olive tree has been cultivated in the Mediterranean region for thousands of years.",
+"zh": "橄榄树在地中海地区已被种植了数千年。"
+},
+"ounce": {
+"en": "Even an ounce of prevention in public health can save governments enormous medical costs.",
+"zh": "公共卫生领域哪怕一丁点的预防，也能为政府节省巨额医疗开支。"
+},
+"ozone": {
+"en": "The ozone layer protects life on Earth by absorbing most of the sun's harmful ultraviolet radiation.",
+"zh": "臭氧层通过吸收太阳大部分有害的紫外线辐射来保护地球上的生命。"
+},
+"padal": {
+"en": "Cyclists should pedal smoothly rather than push too hard on steep mountain roads.",
+"zh": "在陡峭的山路上，骑行者应平稳地踩踏板，而不是用力过猛。"
+},
+"panda": {
+"en": "The giant panda's diet consists almost entirely of bamboo, which it must eat for many hours daily.",
+"zh": "大熊猫的食物几乎全是竹子，它每天必须花很多时间进食。"
+},
+"paper": {
+"en": "The researcher published a paper on renewable energy that attracted considerable academic attention.",
+"zh": "这位研究员发表了一篇关于可再生能源的论文，引起了学术界的广泛关注。"
+},
+"phone": {
+"en": "Many teenagers spend several hours each day on their phone, which worries some parents.",
+"zh": "许多青少年每天花好几个小时玩手机，这让一些家长感到担忧。"
+},
+"point": {
+"en": "The main point of the lecture was that economic growth should not come at the expense of the environment.",
+"zh": "这场讲座的要点是，经济增长不应以牺牲环境为代价。"
+},
+"print": {
+"en": "Despite the rise of digital media, many readers still prefer the print version of newspapers.",
+"zh": "尽管数字媒体兴起，许多读者仍然偏爱报纸的印刷版。"
+},
+"prove": {
+"en": "Recent studies prove that regular exercise significantly reduces the risk of heart disease.",
+"zh": "近期研究证明，经常锻炼能显著降低患心脏病的风险。"
+},
+"queen": {
+"en": "The queen delivered a speech emphasizing national unity during a time of economic uncertainty.",
+"zh": "女王发表讲话，强调在经济不确定时期国家团结的重要性。"
+},
+"reuse": {
+"en": "Consumers are encouraged to reuse shopping bags to reduce plastic pollution in cities.",
+"zh": "政府鼓励消费者重复使用购物袋，以减少城市中的塑料污染。"
+},
+"round": {
+"en": "The government launched a new round of negotiations aimed at reducing carbon emissions.",
+"zh": "政府启动了新一轮谈判，旨在减少碳排放。"
+},
+"royal": {
+"en": "The royal family's public appearances often attract widespread media coverage and public interest.",
+"zh": "王室成员的公开露面往往吸引广泛的媒体报道和公众关注。"
+},
+"sandy": {
+"en": "The sandy beaches along the coast attract millions of tourists every summer.",
+"zh": "沿海的沙滩每年夏天吸引数百万游客。"
+},
+"scene": {
+"en": "The police arrived at the scene within minutes, but the evidence had already been removed.",
+"zh": "警察几分钟内就赶到了现场，但证据已被移走。"
+},
+"shave": {
+"en": "Some men shave every morning before work, while others prefer a beard.",
+"zh": "有些男士每天早晨上班前刮胡子，而另一些人则喜欢留胡须。"
+},
+"sheet": {
+"en": "Please write your answers on a single sheet of paper and submit it before Friday.",
+"zh": "请将答案写在一张纸上，并在周五之前提交。"
+},
+"shelf": {
+"en": "The library shelves are organized by subject, making it easier for students to find references.",
+"zh": "图书馆的书架按学科分类，使学生更容易找到参考资料。"
+},
+"skate": {
+"en": "In winter, many families skate on frozen lakes and rivers in northern countries.",
+"zh": "冬季，北方国家的许多家庭会在结冰的湖泊和河流上滑冰。"
+},
+"skill": {
+"en": "Employers increasingly value communication skills alongside technical knowledge when hiring graduates.",
+"zh": "雇主在招聘毕业生时越来越看重沟通技巧，而不仅仅是专业知识。"
+},
+"spade": {
+"en": "Volunteers used a spade to dig holes and plant young trees along the riverbank.",
+"zh": "志愿者们用铲子挖坑，在河岸边种下小树。"
 }
 }
