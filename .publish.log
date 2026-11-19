@@ -175,3 +175,79 @@ OK: 2026-11-18 — 环境 · 城市蜂群与生态平衡
 OK -> /Users/xavierlau/Desktop/11月的准备/英语学习/index.html
    帖子 6 期 | 最近 2026-11-18 | 词组 7 组 / 70 词 | 口语题 18 道
    大小 159 KB
+[main c94fce4] daily: 2026-11-18 更新
+ 17 files changed, 506 insertions(+), 18 deletions(-)
+To https://github.com/akitolau/english-daily.git
+   9582a0e..c94fce4  main -> main
+推送成功（第 1 次）
+===== 08:06:30 结束 =====
+===== 2026-11-19 07:21:21 开始 =====
+本次生成 50 个词…
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1091, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/xavierlau/Desktop/11月的准备/英语学习/enrich.py", line 229, in <module>
+    main()
+  File "/Users/xavierlau/Desktop/11月的准备/英语学习/enrich.py", line 208, in main
+    raw, usage = call_api(key, prompt)
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xavierlau/Desktop/11月的准备/英语学习/enrich.py", line 100, in call_api
+    raise last if last else RuntimeError('API 调用失败')
+  File "/Users/xavierlau/Desktop/11月的准备/英语学习/enrich.py", line 94, in call_api
+    with urllib.request.urlopen(req, timeout=180) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>
+词库分册: 26 册, 共 10349 词
+  雅思 1626 / 托福 4510 / GRE 7717
+  同时属于 3 个考试: 458 词
+  带例句: 1195/10349 (11%)
+LLM 失败: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>
+LLM 失败: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>
+LLM 失败: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>
+OK: 2026-11-19 — 综合 · scan 等词
+    今日 10 词 | 游标 60 | 已用 60/10352 | 还能 1029 天不重复
+OK -> /Users/xavierlau/Desktop/11月的准备/英语学习/index.html
+   帖子 7 期 | 最近 2026-11-19 | 词组 7 组 / 70 词 | 口语题 21 道
+   大小 170 KB
