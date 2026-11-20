@@ -1,5 +1,5 @@
 {
- "cursor": 70,
+ "cursor": 80,
  "used": [
   "abuse",
   "adapt",
@@ -26,13 +26,23 @@
   "cram",
   "crust",
   "damp",
+  "delta",
+  "draft",
+  "drain",
+  "elite",
   "emit",
   "epic",
+  "erupt",
   "even",
+  "fault",
   "file",
   "flaw",
   "flip",
+  "flock",
+  "flora",
+  "forge",
   "gale",
+  "gauge",
   "gear",
   "gem",
   "gene",
@@ -79,6 +89,7 @@
   "2026-11-17",
   "2026-11-18",
   "2026-11-19",
-  "2026-11-20"
+  "2026-11-20",
+  "2026-11-21"
  ]
 }

@@ -1333,6 +1333,215 @@
     }
    ],
    "wordtips": "今天这 10 个词里，adapt、adorn、alter 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-21",
+   "title": "环境 · 三角洲生态保护",
+   "chunks": [
+    "d20261121"
+   ],
+   "words": [
+    {
+     "w": "delta",
+     "ipa": "'deltə",
+     "pos": "n.",
+     "defs": [
+      "三角洲",
+      "n. (河流的)三角洲",
+      "n.三角洲"
+     ],
+     "ex": "The fertile soil of the river delta supports intensive agriculture and a dense human population.",
+     "zh": "河流三角洲的肥沃土壤支撑着集约化农业和稠密的人口。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "draft",
+     "ipa": "drɑ:ft",
+     "pos": "n.",
+     "defs": [
+      "草稿；汇票；起草",
+      "n. 草图，草稿; v. 起草; a. 供役使的",
+      "n.草稿，草案；汇票"
+     ],
+     "ex": "The committee released a draft of the new environmental policy for public consultation last week.",
+     "zh": "委员会上周公布了新环境政策的草案，供公众咨询。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "drain",
+     "ipa": "drein",
+     "pos": "v./n.",
+     "defs": [
+      "排空；流出；耗竭",
+      "n. 排水; 消耗; v. (使)流走",
+      "v.排出沟外；喝光"
+     ],
+     "ex": "Excessive irrigation has drained the underground water reserves faster than they can be replenished.",
+     "zh": "过度灌溉使地下水资源枯竭的速度超过了其补充的速度。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "elite",
+     "ipa": "ei'li:t",
+     "pos": "n.",
+     "defs": [
+      "精英",
+      "n. 精华,精锐,中坚分子",
+      "n.精华，中坚"
+     ],
+     "ex": "Access to elite universities remains heavily skewed toward students from wealthy urban families.",
+     "zh": "进入精英大学的机会仍然严重偏向来自富裕城市家庭的学生。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "erupt",
+     "ipa": "i'rʌpt",
+     "pos": "v.",
+     "defs": [
+      "爆发；喷发；（斑疹等）突然出现",
+      "vi. 爆发vt. 喷出",
+      "v.爆发；喷出(熔岩、水、气体、泥浆等)"
+     ],
+     "ex": "The volcano erupted without warning, forcing authorities to evacuate thousands of people from nearby villages.",
+     "zh": "火山毫无预警地喷发，迫使当局从附近村庄疏散数千人。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "fault",
+     "ipa": "fɔ:lt",
+     "pos": "n./v.",
+     "defs": [
+      "缺点；故障；找出缺点",
+      "n. 过错; 【地质学】断层",
+      "n.错误；(地质学)断层"
+     ],
+     "ex": "Critics pointed out several faults in the research design, including a small and unrepresentative sample.",
+     "zh": "批评者指出了该研究设计中的几个缺陷，包括样本量小且不具代表性。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "flock",
+     "ipa": "flɔk",
+     "pos": "n./v.",
+     "defs": [
+      "（羊或鸟）群；聚集",
+      "n. 群; 大量; v. 聚结",
+      "n.羊群；鸟群"
+     ],
+     "ex": "Every autumn, huge flocks of migratory birds stop at this wetland to rest and feed.",
+     "zh": "每年秋天，大批候鸟会在这个湿地停留休息和觅食。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "flora",
+     "ipa": "'flɔ:rə",
+     "pos": "n.",
+     "defs": [
+      "（尤指某一地区的）植物群",
+      "n. 植物群",
+      "n.(某地区或时代的)植物群"
+     ],
+     "ex": "The island's unique flora has evolved in isolation for millions of years, producing many endemic species.",
+     "zh": "该岛独特的植物群在隔离状态下进化了数百万年，产生了许多特有物种。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "forge",
+     "ipa": "fɔ:dʒ",
+     "pos": "n./v.",
+     "defs": [
+      "炼铁炉；锻造；伪造",
+      "n. 熔炉,铁工厂vt. 打制,锻炼,伪造vi. 锻造,伪造",
+      "n.铁匠铺；v.锤炼；伪造"
+     ],
+     "ex": "The two universities agreed to forge a partnership aimed at advancing research in renewable energy.",
+     "zh": "这两所大学同意建立合作伙伴关系，旨在推进可再生能源的研究。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "gauge",
+     "ipa": "geidʒ",
+     "pos": "n./v.",
+     "defs": [
+      "测量仪器；测量；判断",
+      "n. 标准度量,计量器vt. 精确计量,估计",
+      "n.标准规格(尤指宽度或厚度)；测量仪；v.测量"
+     ],
+     "ex": "It is difficult to gauge public opinion on the issue without conducting a large-scale survey.",
+     "zh": "如果不进行大规模调查，就很难判断公众对该问题的看法。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "Protecting a river **delta** requires more than an emotional appeal; it demands rigorous science and coordinated policy. Researchers first **draft** a management plan, then **gauge** sediment flow and water quality to judge whether the ecosystem is stable. If upstream dams **drain** the wetlands too quickly, native **flora** may collapse and fish stocks decline. A single engineering **fault**, such as poor irrigation design, can trigger conflict once nutrients **erupt** into algal blooms. Meanwhile, tourist **flocks** gather each summer, and an **elite** group of developers often pushes for hotels that damage the very landscape visitors admire. Local communities therefore **forge** new agreements that balance conservation with livelihoods, treating every weakness as a chance to improve governance rather than a reason to delay action.",
+    "zh": "保护河流三角洲需要的不仅是情感呼吁，还需要严谨的科学与协调的政策。研究人员首先起草管理计划，然后测量泥沙流量和水质，以判断生态系统是否稳定。如果上游水坝过快排空湿地，本地植物群可能崩溃，鱼类资源也会下降。单一工程故障，例如灌溉设计不当，可能在营养物质爆发为藻华后引发冲突。与此同时，游客群每年夏天聚集，而一个精英开发商群体往往推动建设酒店，损害游客所欣赏的景观本身。因此，当地社区锻造新的协议，在保护与生计之间取得平衡，把每一个弱点视为改进治理的机会，而不是拖延行动的理由。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 3",
+     "q": "Do you think technology has improved education?",
+     "ans": "I'd say it has expanded access without necessarily improving learning, and those are different things.\n\nThe strongest argument for technology is distributional. A student in a small city can now watch lectures from people who would never have visited, and that's genuinely new. Twenty years ago that advantage was geographically locked.\n\nBut the case gets weaker when you ask about depth. Access to information isn't the bottleneck anymore — almost everyone I know has more material available than they can use. What's scarce is attention and a reason to care. And I'd argue technology has made both harder, not easier, because a screen is a place where distraction is always one tap away.\n\nSo my honest position is: technology solved the supply problem and left the demand problem untouched. Which means the next useful innovation in education probably isn't a better platform. It's something that makes people want to finish what they start.",
+     "note": "「solved the supply problem, left the demand problem untouched」是全篇核心。这个「分清两个问题」的动作在 Part 3 极其加分。",
+     "swap": "这套「它解决的是 A，不是 B」的框架适用于几乎所有「XX 有没有改善 YY」类问题。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Why are you learning English?",
+     "ans": "Two reasons, and they're not equally noble. The practical one is that most of the material I need for work is published in English first — by the time a decent article gets translated, the conversation has moved on. The less practical reason is that I want to be able to read a novel without feeling like I'm doing homework. That's the goal I actually care about.",
+     "note": "「not equally noble」是很好的自我觉察式表达。把功利理由和私人理由并列，比只说一个更真实。",
+     "swap": "把 practical reason 换成你的真实需求（考试、工作、移民、追剧）。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you prefer reading paper books or e-books?",
+     "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+     "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+     "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，delta、draft、drain 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }
