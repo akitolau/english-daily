@@ -1542,6 +1542,208 @@
     }
    ],
    "wordtips": "今天这 10 个词里，delta、draft、drain 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-22",
+   "title": "文化 · 语言保护与生态隐喻",
+   "chunks": [
+    "d20261122"
+   ],
+   "words": [
+    {
+     "w": "glide",
+     "ipa": "glaid",
+     "pos": "v./n.",
+     "defs": [
+      "滑动；掠过；滑行",
+      "n. 滑动,滑过,流水vi. 滑动,滑翔,溜走vt. 使滑动",
+      "v.滑行，滑动"
+     ],
+     "ex": "The eagle glided silently over the valley, scanning the ground for signs of prey.",
+     "zh": "老鹰无声地滑翔在山谷上空，扫视地面寻找猎物的踪迹。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "grace",
+     "ipa": "greis",
+     "pos": "n.",
+     "defs": [
+      "优美；优雅",
+      "n. 优美，优雅",
+      "n.优美(尤指动作顺畅协调)"
+     ],
+     "ex": "The ballet dancer moved across the stage with remarkable grace, captivating the entire audience.",
+     "zh": "这位芭蕾舞者以非凡的优雅在舞台上移动，令全场观众着迷。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "grant",
+     "ipa": "grɑ:nt",
+     "pos": "v.",
+     "defs": [
+      "授予；准予；承认",
+      "v. 给予，授予; 同意; 承认; n. 拨款",
+      "v.同意给予"
+     ],
+     "ex": "The government granted the research team a substantial fund to develop a new water purification system.",
+     "zh": "政府授予该研究团队一笔可观的资金，用于开发新的水净化系统。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "hatch",
+     "ipa": "hætʃ",
+     "pos": "v./n.",
+     "defs": [
+      "孵化",
+      "n. 孵化,舱口vt. 孵,孵出,策划vi. 孵化",
+      "n.船舱盖；v.孵化"
+     ],
+     "ex": "Sea turtles return to the same beach where they were born to lay eggs that will hatch weeks later.",
+     "zh": "海龟回到它们出生的同一片海滩产卵，这些卵将在几周后孵化。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "humid",
+     "ipa": "'hju:mid",
+     "pos": "adj.",
+     "defs": [
+      "潮湿的；湿热的",
+      "a. 潮湿的,湿润的,多湿气的",
+      "a.湿润的"
+     ],
+     "ex": "The hot and humid climate of the tropical region makes it ideal for growing rice and tropical fruits.",
+     "zh": "热带地区湿热的气候使其非常适合种植水稻和热带水果。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "idiom",
+     "ipa": "'idiəm",
+     "pos": "n.",
+     "defs": [
+      "习语",
+      "n. 习惯用语; (在艺术上所表现的)风格，特色",
+      "n.习语，语言的习惯用法；特色"
+     ],
+     "ex": "Learning idioms is essential for language learners who wish to understand everyday conversation among native speakers.",
+     "zh": "学习习语对于希望理解母语者日常对话的语言学习者来说至关重要。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "inert",
+     "ipa": "i'nə:t",
+     "pos": "adj.",
+     "defs": [
+      "无生气的；惰性的；不活泼",
+      "a. 惰性的,迟钝的,无活力的,呆滞的",
+      "a.惰性的；行动迟钝的"
+     ],
+     "ex": "Noble gases are chemically inert, meaning they rarely react with other substances under normal conditions.",
+     "zh": "稀有气体在化学上是惰性的，这意味着它们在正常条件下很少与其他物质发生反应。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "infer",
+     "ipa": "in'fə:",
+     "pos": "v.",
+     "defs": [
+      "推断；推理",
+      "vt. 推论出,推断vi. 作推论",
+      "v.推断，推定"
+     ],
+     "ex": "From the fossil evidence, scientists can infer that the species lived in a warm, humid environment.",
+     "zh": "从化石证据中，科学家可以推断该物种生活在温暖潮湿的环境中。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "issue",
+     "ipa": "'iʃu:",
+     "pos": "n./v.",
+     "defs": [
+      "重要问题；发行。公布；发出",
+      "n. 发行,问题,后果,争端,出口vi. 发行,流出,传下,进行辩护,造成. . .",
+      "v.出来，流出；发给，分发；n.(书刊的)期"
+     ],
+     "ex": "Climate change is no longer a distant threat but an urgent issue requiring immediate global action.",
+     "zh": "气候变化不再是一个遥远的威胁，而是一个需要立即采取全球行动的紧迫问题。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "ivory",
+     "ipa": "'aivəri",
+     "pos": "n.",
+     "defs": [
+      "象牙",
+      "n. 象牙",
+      "n.象牙，长牙"
+     ],
+     "ex": "The international ban on ivory trade aims to protect elephants from being killed for their tusks.",
+     "zh": "国际象牙贸易禁令旨在保护大象免遭为获取象牙而被杀害。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "In discussions of language loss, scholars often **infer** from statistical trends that minority tongues will disappear within decades, yet such predictions risk overlooking the vitality that survives beneath apparently **inert** vocabularies. Consider the **idiom** embedded in everyday speech: a phrase may **glide** across generations with remarkable **grace**, carrying ecological knowledge that formal curricula rarely **grant** students. In **humid** tropical regions, for instance, farmers preserve terms describing how insects **hatch** after seasonal rains, a subtle vocabulary of timing that outsiders cannot easily decode. The central **issue** for educators is whether schools should treat such expressions as **ivory**-tower curiosities or as living evidence of community adaptation. When a language is reduced to a museum exhibit, its speakers lose the authority to name their own world; when it is nurtured, it becomes a tool for environmental resilience. Language policy, therefore, is never merely technical but deeply cultural.",
+    "zh": "在讨论语言流失时，学者常从统计趋势**推断**少数族群语言将在数十年内消失，然而此类预测可能忽视看似**无生气的**词汇之下存续的活力。试看日常言语中的**习语**：一个短语可能以非凡的**优雅****掠过**代际，承载正规课程很少**授予**学生的生态知识。例如在**湿热的**热带地区，农民保留描述昆虫在季节性降雨后如何**孵化**的词语，这是一种外人难以解读的微妙时间词汇。对教育者而言，核心**重要问题**在于学校应将这些表达视为**象牙**塔中的奇珍，还是社区适应力的活证据。当一种语言被缩减为博物馆展品，其使用者便失去为自身世界命名的权利；当它得到培育，便成为环境韧性的工具。因此，语言政策从来不只是技术问题，而是深层的文化问题。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 2",
+     "q": "Describe a person who has influenced you. You should say: who this person is; how you know them; what they are like; and explain how they influenced you.",
+     "ans": "I'd like to talk about a former manager of mine — someone I worked with for less than a year, but who changed how I think about being wrong.\n\nShe was the head of a data team, and what struck me first was how comfortable she was saying 'I don't know' in a meeting with thirty people in it. I was twenty-four and terrified of exactly that. I assumed that admitting a gap would cost you authority. She seemed to gain it.\n\nThe specific moment I remember is a review where I'd presented an analysis I was quite proud of. She asked one question I couldn't answer, and instead of moving on she said, 'Let's not guess at that — can you find out by Thursday?' It wasn't a rebuke. It was almost worse, because it made me realise the standard wasn't 'look smart', it was 'be reliable'.\n\nWhat she actually taught me wasn't a skill. It was that uncertainty is information, not failure. If you can say precisely where you don't know something, people trust the parts you do claim. I've used that in every project since — especially in AI work, where the honest answer is very often 'this looks plausible but I haven't verified it'.",
+     "note": "Part 2 最容易变成流水账。这段的结构是：一句定性 → 一个反直觉观察 → 一个具体场景 → 一个提炼出的原则 → 落到现在。注意「It wasn't a rebuke. It was almost worse」这种转折。",
+     "swap": "换成你真实的某个人（老师、同事、朋友、家人）。保留结构：一句概括 → 一个具体的场景 → 一句你后来一直在用的话。"
+    },
+    {
+     "part": "Part 1",
+     "q": "What do you usually do at weekends?",
+     "ans": "It depends on how the week went. If I've been staring at a screen for five days, I try to spend Saturday somewhere with no signal — a long walk, or a book in a café where nobody knows me. Sunday is more practical: I plan the week, catch up on the reading I skipped, and try not to panic about Monday.",
+     "note": "「It depends」开头很好，避免变成一个贫乏的清单。「where nobody knows me」这种细节很生动。",
+     "swap": "换成你真实的周末节奏。保留「周六恢复 / 周日准备」这个对照结构。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，glide、grace、grant 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }

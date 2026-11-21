@@ -1,5 +1,5 @@
 {
- "cursor": 80,
+ "cursor": 90,
  "used": [
   "abuse",
   "adapt",
@@ -48,14 +48,24 @@
   "gene",
   "germ",
   "gist",
+  "glide",
+  "grace",
+  "grant",
   "gush",
   "hail",
+  "hatch",
   "hawk",
   "herd",
   "hike",
   "hive",
   "horn",
+  "humid",
+  "idiom",
   "idol",
+  "inert",
+  "infer",
+  "issue",
+  "ivory",
   "jar",
   "jog",
   "lag",
@@ -90,6 +100,7 @@
   "2026-11-18",
   "2026-11-19",
   "2026-11-20",
-  "2026-11-21"
+  "2026-11-21",
+  "2026-11-22"
  ]
 }
