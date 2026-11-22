@@ -1,5 +1,5 @@
 {
- "cursor": 90,
+ "cursor": 100,
  "used": [
   "abuse",
   "adapt",
@@ -69,15 +69,25 @@
   "jar",
   "jog",
   "lag",
+  "linen",
   "log",
+  "lunar",
+  "lyric",
   "mate",
   "mean",
+  "mimic",
   "mint",
   "mode",
+  "oasis",
   "ore",
   "owl",
   "peak",
   "pine",
+  "pitch",
+  "pivot",
+  "plain",
+  "polar",
+  "press",
   "prey",
   "scan",
   "silt",
@@ -101,6 +111,7 @@
   "2026-11-19",
   "2026-11-20",
   "2026-11-21",
-  "2026-11-22"
+  "2026-11-22",
+  "2026-11-23"
  ]
 }

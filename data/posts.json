@@ -1744,6 +1744,216 @@
     }
    ],
    "wordtips": "今天这 10 个词里，glide、grace、grant 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-23",
+   "title": "科学 · 月球绿洲：极地科研与教育",
+   "chunks": [
+    "d20261123"
+   ],
+   "words": [
+    {
+     "w": "linen",
+     "ipa": "'linin",
+     "pos": "n.",
+     "defs": [
+      "亚麻布；亚麻织品",
+      "n. 亚麻织品，亚麻布; a. 亚麻(布制)的",
+      "n.亚麻织品，亚麻布"
+     ],
+     "ex": "In ancient Egypt, linen was the most common fabric used for clothing due to its lightness and durability.",
+     "zh": "在古埃及，亚麻布因其轻盈耐用而成为最常用的服装面料。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "lunar",
+     "ipa": "'lu:nə(r)",
+     "pos": "adj.",
+     "defs": [
+      "月亮的；月球的",
+      "a. 月亮的",
+      "a.月亮的"
+     ],
+     "ex": "The lunar surface is covered with craters formed by meteorite impacts over billions of years.",
+     "zh": "月球表面布满了数十亿年来陨石撞击形成的坑。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "lyric",
+     "ipa": "'lirik",
+     "pos": "n./adj.",
+     "defs": [
+      "抒情诗；抒情的",
+      "n. 抒情诗,歌词a. 抒情的",
+      "a.抒情的；n.抒情诗；歌词"
+     ],
+     "ex": "The poet's early works are highly lyric, expressing deep personal emotions through vivid imagery.",
+     "zh": "这位诗人的早期作品极具抒情性，通过生动的意象表达深切的个人情感。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "mimic",
+     "ipa": "'mimik",
+     "pos": "v.",
+     "defs": [
+      "模仿；戏仿",
+      "vt. 模仿",
+      "v.戏弄性模仿；n.善于模仿他人言行的人"
+     ],
+     "ex": "Some birds can mimic human speech with surprising accuracy, which fascinates researchers studying animal cognition.",
+     "zh": "有些鸟类能以惊人的准确度模仿人类语言，这令研究动物认知的研究人员着迷。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "oasis",
+     "ipa": "'əueisis",
+     "pos": "n.",
+     "defs": [
+      "绿洲；宜人之地",
+      "n. 绿洲,舒适的地方",
+      "n.绿洲"
+     ],
+     "ex": "The oasis in the middle of the desert provides water and shade for travelers and local wildlife.",
+     "zh": "沙漠中央的绿洲为旅行者和当地野生动物提供水源和阴凉。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "pitch",
+     "ipa": "pitʃ",
+     "pos": "v./n.",
+     "defs": [
+      "投；掷；球场；（棒球中的）投球",
+      "沥青",
+      "n. 高度，音调",
+      "n.沥青，柏油；音调"
+     ],
+     "ex": "The children pitched their tent near the lake and spent the evening watching the stars.",
+     "zh": "孩子们在湖边搭起了帐篷，傍晚时分观看星星。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "pivot",
+     "ipa": "'pivət",
+     "pos": "n.",
+     "defs": [
+      "枢轴；支点；中心；重点",
+      "n. 枢轴,支点a. 枢轴的vi. 在枢轴上转动vt. 装枢轴于",
+      "n. 枢轴，中心；v. 旋转"
+     ],
+     "ex": "The discussion began to pivot around the question of who should bear the cost of environmental cleanup.",
+     "zh": "讨论开始围绕谁应承担环境清理费用这一问题展开。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "plain",
+     "ipa": "plein",
+     "pos": "n./adj.",
+     "defs": [
+      "平原；简朴的；明白的",
+      "a. 平的; 简单的; 朴素的; n. 平原，草原",
+      "a.简单的；清楚的；n.平原"
+     ],
+     "ex": "Vast plains covered in grass stretch for hundreds of kilometers across the interior of the continent.",
+     "zh": "覆盖着草皮的广阔平原在大陆内陆延伸数百公里。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "polar",
+     "ipa": "'pəulə",
+     "pos": "adj.",
+     "defs": [
+      "极地的；近极地的；对立的",
+      "a. (南、北)极的",
+      "a.地极的，两极的；磁极的"
+     ],
+     "ex": "Polar ice caps are melting at an alarming rate due to rising global temperatures.",
+     "zh": "由于全球气温上升，极地冰盖正以惊人的速度融化。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "press",
+     "ipa": "pres",
+     "pos": "n.",
+     "defs": [
+      "新闻界；记者；报刊；出版社",
+      "n. 报刊，新闻界，通讯社; 挤压; v. 挤压; 催促",
+      "v.挤压"
+     ],
+     "ex": "The press played a crucial role in exposing the corruption scandal that led to the minister's resignation.",
+     "zh": "新闻界在揭露导致部长辞职的腐败丑闻中发挥了关键作用。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "Scientific exploration of the **lunar** surface has become a **pivot** for modern education, offering students a vivid case of how curiosity drives discovery. In **plain** language, researchers explain that any base near the **polar** regions must rely on local ice, turning a frozen site into a scientific **oasis** where life-support experiments can proceed. Students then **mimic** this logic in classroom projects, designing shelters from **linen**-like insulating fabrics and calculating the **pitch** of supply capsules dropped from orbit. Meanwhile, the **press** reports each mission, shaping public debate about funding priorities. A **lyric** essay assigned afterwards asks learners to reflect on humanity's place in space, linking technical facts with ethical questions. Such teaching does more than transmit knowledge; it trains young people to evaluate evidence, appreciate uncertainty, and communicate complex ideas clearly to society.",
+    "zh": "对**月球**表面的科学探索已成为现代教育的**枢轴**，为学生提供了一个好奇心驱动发现的生动案例。用**简朴的**语言来说，研究人员解释说，**极地**地区附近的任何基地都必须依赖当地冰层，从而将一片冰封之地变成科学**绿洲**，使生命保障实验得以推进。随后，学生在课堂项目中**模仿**这一逻辑，用类似**亚麻布**的隔热织物设计庇护所，并计算从轨道投下的补给舱的**投掷**角度。与此同时，**新闻界**报道每一次任务，塑造关于资助优先事项的公众讨论。之后布置的一篇**抒情**散文要求学习者反思人类在太空中的位置，将技术事实与伦理问题联系起来。这种教学不仅传授知识，还培养年轻人评估证据、理解不确定性，并向社会清晰地传达复杂观点。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 1",
+     "q": "Why are you learning English?",
+     "ans": "Two reasons, and they're not equally noble. The practical one is that most of the material I need for work is published in English first — by the time a decent article gets translated, the conversation has moved on. The less practical reason is that I want to be able to read a novel without feeling like I'm doing homework. That's the goal I actually care about.",
+     "note": "「not equally noble」是很好的自我觉察式表达。把功利理由和私人理由并列，比只说一个更真实。",
+     "swap": "把 practical reason 换成你的真实需求（考试、工作、移民、追剧）。"
+    },
+    {
+     "part": "Part 2",
+     "q": "Describe an important decision you made. You should say: what the decision was; when you made it; what alternatives you had; and explain why you think it was important.",
+     "ans": "The decision I'd describe is deciding to leave a stable job without having another one lined up. That was about a year ago.\n\nAt the time the choice looked different from how it looks now. On paper I had two options: stay, keep the salary and the title, and wait for a better moment to move; or leave and figure out the next thing while looking. The reasonable choice was obviously the first one. Almost everyone I trusted said so, and they weren't being unkind — they were right about the risk.\n\nWhat made me leave was a realisation that was not really about the job. I noticed that I'd been choosing the second-best version of a career I wasn't sure I wanted. Staying would have been comfortable and it would have made the next decision harder, not easier, because every year the salary gets a bit better and the switching cost gets a bit higher.\n\nWas it a good decision? I don't think I'm the right person to judge yet, honestly. What I can say is that it forced me to find out what I'm actually good at, rather than what I've done before. That's worth something even if the timing turns out to have been bad.",
+     "note": "「我不知道这决定好不好」这种诚实比「这是我最正确的决定」高级得多。注意「choosing the second-best version of a career」是全文最强的一句。",
+     "swap": "换成你真实的决定。保留「承认风险、不确定结论」的态度——考官更信这个。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you prefer reading paper books or e-books?",
+     "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+     "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+     "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，linen、lunar、lyric 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }
