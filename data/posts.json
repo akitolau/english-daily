@@ -1954,6 +1954,215 @@
     }
    ],
    "wordtips": "今天这 10 个词里，linen、lunar、lyric 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-24",
+   "title": "教育 · 偏远地区教育资源的公平性",
+   "chunks": [
+    "d20261124"
+   ],
+   "words": [
+    {
+     "w": "probe",
+     "ipa": "prəub",
+     "pos": "n.",
+     "defs": [
+      "太空探测器；详尽调查",
+      "n. 探针,调查,探测针vt. 用探针测,详细调查vi. 探索,调查",
+      "v.探索，探测"
+     ],
+     "ex": "NASA launched a space probe to study the atmosphere of Jupiter and its numerous moons.",
+     "zh": "美国宇航局发射了一个太空探测器来研究木星的大气层及其众多卫星。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "query",
+     "ipa": "'kwiəri",
+     "pos": "n./v.",
+     "defs": [
+      "\u0010疑问；询问；怀疑；询问",
+      "n. 疑问,疑问号,质问vt. vi. 询问,质问n. 查询",
+      "n./v. 质问，疑问，询问"
+     ],
+     "ex": "The audience raised several queries about the reliability of the data presented in the lecture.",
+     "zh": "观众对讲座中所提供数据的可靠性提出了几个疑问。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "quote",
+     "ipa": "kwəut",
+     "pos": "v.",
+     "defs": [
+      "引用；引述；报（价）",
+      "n. 引文; v. 引用",
+      "v.引用，引述"
+     ],
+     "ex": "In her essay, she quoted a famous economist to support her argument about income inequality.",
+     "zh": "在文章中，她引用了一位著名经济学家的话来支持她关于收入不平等的论点。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "realm",
+     "ipa": "'relm",
+     "pos": "n.",
+     "defs": [
+      "领域",
+      "n. 王国,领土,领域",
+      "n.王国；领域，范围"
+     ],
+     "ex": "Artificial intelligence is rapidly entering the realm of medical diagnosis, assisting doctors in detecting diseases.",
+     "zh": "人工智能正迅速进入医学诊断领域，协助医生检测疾病。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "ridge",
+     "ipa": "ridʒ",
+     "pos": "n./v.",
+     "defs": [
+      "山脊；山脉；使隆起",
+      "n. 脊，山脊",
+      "n.脊(如屋脊，山脊等)，隆起物"
+     ],
+     "ex": "The village sits on a narrow ridge overlooking the valley, protected from floods but exposed to strong winds.",
+     "zh": "这个村庄坐落在俯瞰山谷的狭窄山脊上，免受洪水侵袭但暴露在强风中。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "rural",
+     "ipa": "'ruərəl",
+     "pos": "adj.",
+     "defs": [
+      "农村的；乡村的；田园的",
+      "a. 乡村的，农村的; 田园的",
+      "a.乡村的"
+     ],
+     "ex": "Many young people leave rural areas to seek better job opportunities in large cities.",
+     "zh": "许多年轻人离开农村地区去大城市寻找更好的工作机会。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "scale",
+     "ipa": "skeil",
+     "pos": "n./v.",
+     "defs": [
+      "刻度；规模。攀登 scales 天平；鳞",
+      "n. 刻度,衡量,比例,比例尺,数值范围,等级,规模,天平,秤盘,秤,鳞,水?vt",
+      "n.鱼鳞；(音乐)音阶"
+     ],
+     "ex": "The scale of the damage caused by the earthquake was far greater than initially estimated.",
+     "zh": "地震造成的破坏规模远远超出最初的估计。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "scarf",
+     "ipa": "skɑ:f",
+     "pos": "n.",
+     "defs": [
+      "围巾；头巾",
+      "n. 围巾，披巾",
+      "n.围巾，披肩"
+     ],
+     "ex": "She wrapped a thick woolen scarf around her neck to protect herself from the biting wind.",
+     "zh": "她将一条厚厚的羊毛围巾裹在脖子上，以抵御刺骨的寒风。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "score",
+     "ipa": "skɔ:",
+     "pos": "n.",
+     "defs": [
+      "得分、成绩",
+      "n. 得分，分数; 乐谱; v. 评分",
+      "n.乐谱"
+     ],
+     "ex": "Students who scored well on the standardized test were more likely to be admitted to top universities.",
+     "zh": "在标准化考试中得分高的学生更有可能被顶尖大学录取。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "shear",
+     "ipa": "ʃiə",
+     "pos": "n./v.",
+     "defs": [
+      "shears（尤指修篱笆用的）大剪刀；剪",
+      "n. 修剪,剪下的东西,羊的一岁,大剪刀,切,剪,切变vt. 修剪,割,砍,切,",
+      "v.剪(羊毛)，剪发"
+     ],
+     "ex": "Farmers use large shears to trim the hedges that separate their fields from the road.",
+     "zh": "农民们使用大剪刀修剪将田地与道路隔开的树篱。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "A recent nationwide **probe** into educational inequality raises a serious **query** about whether students in **rural** areas can access the same quality of instruction as their urban peers. Researchers **quote** official statistics showing that the **scale** of the funding gap remains substantial, and they note that a school's average test **score** often reflects resources rather than ability. This problem spans the entire **realm** of public policy, from teacher training to infrastructure. Along a remote mountain **ridge**, for instance, children may walk for hours to reach a classroom, wrapped in a thick **scarf** against the cold, while administrators far away decide how to **shear** budgets from already fragile programmes. Unless governments address this imbalance systematically, rural education will continue to lag behind, and social mobility will remain an empty promise for millions of young people.",
+    "zh": "最近一项针对教育不平等的全国性**详尽调查**，引发了人们对**农村**地区学生能否获得与城市同龄人同等质量教学的严重**疑问**。研究人员**引用**官方统计数据表明，资金缺口的**规模**依然巨大，并指出学校的平均考试**得分**往往反映的是资源而非能力。这一问题横跨公共政策的整个**领域**，从教师培训到基础设施建设皆是如此。例如，在偏远的一座山**脊**上，孩子们可能要走几个小时才能到教室，裹着厚厚的**围巾**御寒，而远处的管理者却在决定如何从本已脆弱的项目中**削减**预算。除非政府系统性地解决这一失衡，否则农村教育将继续落后，社会流动对数百万年轻人而言仍将是一句空话。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 3",
+     "q": "How will artificial intelligence change the kind of work people do?",
+     "ans": "I think the honest answer is that it will change work in ways that are easy to predict in aggregate and very hard to predict for any specific person — which is exactly why it's unsettling.\n\nThe predictable part is that tasks involving retrieval, formatting and first drafts are already being absorbed. That's not speculation; it's happening in my own work. What follows is that the value of a person shifts towards judgement — knowing which of five plausible outputs is actually right, and being accountable when it isn't.\n\nThe part I'm less sure about is whether that leaves enough work for everyone. The optimistic case is that it's like previous transitions and new categories of job appear. The pessimistic case is that this one moves faster than retraining cycles, so the adjustment cost lands on a specific generation rather than being spread out.\n\nWhat I'd resist is both the utopian and the apocalyptic version. The realistic statement is: the technology is neither good nor bad, but the distribution of its benefits is a political question, not a technical one.",
+     "note": "「easy to predict in aggregate, hard to predict for a specific person」是极好的开场。结尾「distribution is political, not technical」把问题提到更高层。",
+     "swap": "任何「AI 会怎么改变 X」都可用：可预测的部分 → 不确定的部分 → 拒绝两个极端 → 落到分配问题。"
+    },
+    {
+     "part": "Part 1",
+     "q": "What do you usually do at weekends?",
+     "ans": "It depends on how the week went. If I've been staring at a screen for five days, I try to spend Saturday somewhere with no signal — a long walk, or a book in a café where nobody knows me. Sunday is more practical: I plan the week, catch up on the reading I skipped, and try not to panic about Monday.",
+     "note": "「It depends」开头很好，避免变成一个贫乏的清单。「where nobody knows me」这种细节很生动。",
+     "swap": "换成你真实的周末节奏。保留「周六恢复 / 周日准备」这个对照结构。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you prefer reading paper books or e-books?",
+     "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+     "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+     "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，probe、query、quote 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }

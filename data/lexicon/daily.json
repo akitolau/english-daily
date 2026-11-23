@@ -1,5 +1,5 @@
 {
- "cursor": 100,
+ "cursor": 110,
  "used": [
   "abuse",
   "adapt",
@@ -89,7 +89,17 @@
   "polar",
   "press",
   "prey",
+  "probe",
+  "query",
+  "quote",
+  "realm",
+  "ridge",
+  "rural",
+  "scale",
   "scan",
+  "scarf",
+  "score",
+  "shear",
   "silt",
   "skim",
   "solo",
@@ -112,6 +122,7 @@
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-24"
  ]
 }
