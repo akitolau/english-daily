@@ -1,5 +1,5 @@
 {
- "cursor": 110,
+ "cursor": 120,
  "used": [
   "abuse",
   "adapt",
@@ -104,10 +104,20 @@
   "skim",
   "solo",
   "sow",
+  "spawn",
+  "spoil",
   "spur",
+  "stale",
+  "steep",
   "stem",
+  "sting",
+  "swamp",
+  "swarm",
   "tag",
   "thaw",
+  "thorn",
+  "toxic",
+  "trend",
   "vent",
   "wax",
   "weed"
@@ -123,6 +133,7 @@
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25"
  ]
 }

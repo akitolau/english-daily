@@ -2163,6 +2163,208 @@
     }
    ],
    "wordtips": "今天这 10 个词里，probe、query、quote 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-25",
+   "title": "社会 · 社交媒体虚假信息的治理",
+   "chunks": [
+    "d20261125"
+   ],
+   "words": [
+    {
+     "w": "spawn",
+     "ipa": "spɔ:n",
+     "pos": "n./v.",
+     "defs": [
+      "（鱼、蛙的）卵；产卵；引起",
+      "n. 卵,鱼卵vt. 产卵,酿成vi. 产卵",
+      "n.(鱼等)卵子；v.大量生产；产卵"
+     ],
+     "ex": "The documentary sparked a debate that spawned numerous research projects on the effects of social media.",
+     "zh": "这部纪录片引发了一场辩论，催生了许多关于社交媒体影响的研究项目。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "spoil",
+     "ipa": "spɔil",
+     "pos": "v.",
+     "defs": [
+      "宠坏；溺爱；破坏；糟蹋",
+      "n. 战利品,赃物,次品,掠夺,奖品vt. 损坏,破坏,溺爱vi. 腐坏,掠夺",
+      "v.损坏，破坏；溺爱(尤指儿童)"
+     ],
+     "ex": "The sudden power outage spoiled the food stored in the refrigerator, causing significant waste.",
+     "zh": "突然的停电使冰箱里储存的食物变质，造成了大量浪费。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "stale",
+     "ipa": "steil",
+     "pos": "adj.",
+     "defs": [
+      "不新鲜的；没有新意的；陈腐的",
+      "n. 尿a. 不新鲜的,陈腐的,疲倦的,陈旧的vt. 使变旧,走味vi. 变陈旧",
+      "a.不新鲜的；陈腐的，过时的，老掉牙的"
+     ],
+     "ex": "The bread had gone stale after being left uncovered on the counter overnight.",
+     "zh": "面包在柜台上敞开放了一夜后变得不新鲜了。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "steep",
+     "ipa": "sti:p",
+     "pos": "adj.",
+     "defs": [
+      "陡峭的",
+      "a. 陡峭的; 急剧的",
+      "v.浸泡，浸透；a.陡峭的"
+     ],
+     "ex": "The steep slopes of the mountain make it difficult for farmers to cultivate crops.",
+     "zh": "这座山陡峭的坡地使农民难以种植庄稼。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "sting",
+     "ipa": "stiŋ",
+     "pos": "v./n.",
+     "defs": [
+      "刺；叮；（使）感觉刺痛；鳌针；蜇痛",
+      "n. (昆虫的)尾刺; 刺痛",
+      "v.刺痛；叮螫；n.螫刺"
+     ],
+     "ex": "The sting of a bee can cause severe allergic reactions in some people, requiring immediate medical attention.",
+     "zh": "蜜蜂的蜇伤可能引起某些人严重的过敏反应，需要立即就医。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "swamp",
+     "ipa": "swɔmp",
+     "pos": "n.",
+     "defs": [
+      "沼泽；湿地",
+      "n. 沼泽; v. (以繁多的事)压倒某人",
+      "n.沼泽；v.使陷入，使忙得不可开交；淹没"
+     ],
+     "ex": "The swamp provides a vital habitat for frogs, insects, and numerous species of water birds.",
+     "zh": "沼泽为青蛙、昆虫和众多水鸟提供了重要的栖息地。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "swarm",
+     "ipa": "swɔ:m",
+     "pos": "n.",
+     "defs": [
+      "（蜜蜂昆虫的）一大群；（快速移动的）人群",
+      "n. 群,大群,蜂群vi. 群集,聚集一块,云集,爬树vt. 挤满,爬(树)",
+      "n. (蜜蜂)一群；一群(人)"
+     ],
+     "ex": "A swarm of locusts descended on the farmland, destroying crops across several villages within hours.",
+     "zh": "一大群蝗虫降临农田，在数小时内摧毁了几个村庄的庄稼。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "thorn",
+     "ipa": "θɔ:n",
+     "pos": "n.",
+     "defs": [
+      "刺；荆棘",
+      "n. 刺，荆棘",
+      "n.(植物的)刺；荆棘"
+     ],
+     "ex": "Roses are beautiful but their thorns can cause painful injuries if handled carelessly.",
+     "zh": "玫瑰虽美，但如果处理不当，其刺会造成疼痛的伤害。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "toxic",
+     "ipa": "'tɔksik",
+     "pos": "adj.",
+     "defs": [
+      "有毒的",
+      "a. 有毒的",
+      "a.有毒的，中毒的"
+     ],
+     "ex": "The factory was fined for dumping toxic waste into the river, contaminating the water supply.",
+     "zh": "该工厂因向河中倾倒有毒废物、污染水源而被罚款。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "trend",
+     "ipa": "trend",
+     "pos": "n.",
+     "defs": [
+      "趋势；倾向",
+      "n. 趋势,倾向,方位vi. 倾向,转向n. 趋势",
+      "v./n.趋势，倾向"
+     ],
+     "ex": "There is a growing trend toward remote work, which is reshaping urban housing markets worldwide.",
+     "zh": "远程工作的趋势日益增长，正在重塑全球城市住房市场。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "The rapid expansion of social media has created a fertile environment for misinformation to **spawn** and spread across entire populations within hours. False claims often **swarm** through online platforms, overwhelming users before fact-checkers can respond, and this phenomenon can **spoil** public trust in legitimate journalism. Because audiences frequently encounter **stale** narratives recycled as breaking news, they may struggle to distinguish verified facts from rumour. The **trend** toward sensational content further complicates matters, as platforms reward engagement over accuracy, creating a **toxic** information ecosystem in which reasoned debate is increasingly difficult. Regulators face a **steep** challenge in curbing such harms without infringing free expression, and any attempt to **swamp** citizens with constant warnings risks desensitising them altogether. Moreover, every misleading story carries a hidden **thorn**: it can **sting** readers into reactive outrage rather than careful reflection. Consequently, media literacy education must become central to policy, equipping individuals to question sources critically and resist manipulation.",
+    "zh": "社交媒体的迅速扩张为虚假信息创造了滋生的沃土，使其能在数小时内产生并传遍整个人群。虚假说法常常成群涌过网络平台，在事实核查人员作出回应之前就淹没用户，而这一现象会破坏公众对正当新闻业的信任。由于受众经常接触到被当作突发新闻重新包装的陈腐叙事，他们可能难以区分经核实的事实与谣言。追求耸动内容的趋势使问题更加复杂，因为平台奖励的是参与度而非准确性，从而形成有毒的信息生态，使理性辩论日益困难。监管者在遏制此类危害而不侵犯言论自由方面面临严峻挑战，而任何以持续警告淹没民众的尝试都可能使人们彻底麻木。此外，每一个误导性故事都带有隐藏的荆棘：它可能刺痛读者，使其作出冲动愤怒的反应而非审慎思考。因此，媒介素养教育必须成为政策的核心，使个人能够批判性地质疑信息来源并抵制操纵。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 3",
+     "q": "Should old traditions be preserved?",
+     "ans": "I'd want to distinguish preserving a tradition from preserving the practice of it, because those often conflict.\n\nThere's a strong case for keeping the knowledge. If a craft or a form of music disappears, you lose something you can't reconstruct from a description — the technique lives in people, not in documents. In that sense preservation is genuinely urgent.\n\nThe weaker case is the one that gets made most often, which is that a tradition should continue simply because it's old. Age isn't an argument; plenty of old things were bad ideas. And there's a real cost to this framing, because it tends to freeze practices that were always changing, turning something living into a museum piece.\n\nSo I'd say: preserve the knowledge, be sceptical of the obligation. The traditions that survive are usually the ones people keep choosing, not the ones they're told to keep.",
+     "note": "「preserve the knowledge vs preserve the obligation」这个拆分是全篇骨架。最后一句「活下来的是人们仍在选择的东西」很有力。",
+     "swap": "这类「应该保留 X 吗」的题，核心动作是「把 X 拆成两种东西」，然后分别判断。"
+    },
+    {
+     "part": "Part 1",
+     "q": "What kind of weather do you like?",
+     "ans": "Overcast, which people find strange. Bright sun makes me feel like I should be outside doing something useful; grey weather gives me permission to stay in and read. I spent a winter in a place where it dropped to minus twenty, and oddly that was the most comfortable I've been — the cold was so serious that nobody expected you to be productive.",
+     "note": "反直觉的偏好（喜欢阴天）立刻抓住注意。后面用真实经历做支撑。",
+     "swap": "换成你真实的天气偏好 + 一个支撑它的记忆。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，spawn、spoil、stale 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }
