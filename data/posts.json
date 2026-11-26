@@ -2575,6 +2575,215 @@
     }
    ],
    "wordtips": "今天这 10 个词里，tutor、virus、vogue 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-27",
+   "title": "教育 · 植物学教育的价值",
+   "chunks": [
+    "d20261127"
+   ],
+   "words": [
+    {
+     "w": "attain",
+     "ipa": "ə'tein",
+     "pos": "v.",
+     "defs": [
+      "获得；达到",
+      "vt. 达到; 获得",
+      "v.达到，实现"
+     ],
+     "ex": "Few developing countries have managed to attain the level of industrial efficiency seen in Western Europe.",
+     "zh": "很少有发展中国家能够达到西欧那样的工业效率水平。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "barren",
+     "ipa": "'bærən",
+     "pos": "adj.",
+     "defs": [
+      "贫瘠的；荒芜的；不结果实的",
+      "a. 不育的,贫瘠的n. 荒地",
+      "a.不育的；贫瘠的；不结果实的"
+     ],
+     "ex": "Decades of intensive farming left the once fertile hillside barren and unable to support any crops.",
+     "zh": "几十年的集约耕作使曾经肥沃的山坡变得贫瘠，无法再种植任何作物。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "botany",
+     "ipa": "'bɔtəni",
+     "pos": "n.",
+     "defs": [
+      "植物学",
+      "n. 植物学",
+      "n.植物学"
+     ],
+     "ex": "Her early interest in botany led her to document hundreds of plant species in the rainforest.",
+     "zh": "她对植物学的早期兴趣促使她记录了雨林中的数百种植物。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "canvas",
+     "ipa": "'kænvəs",
+     "pos": "n.",
+     "defs": [
+      "帆布；油画布",
+      "n. 帆布,画布,油画",
+      "n.画布；帆布"
+     ],
+     "ex": "The artist stretched a large canvas across the frame before beginning his portrait of the village.",
+     "zh": "画家在开始画村庄肖像之前，把一块大画布绷在画框上。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "clause",
+     "ipa": "klɔ:z",
+     "pos": "n.",
+     "defs": [
+      "从句；分句；条款",
+      "n. 子句,条款",
+      "n.从句；(法律等)条款"
+     ],
+     "ex": "The contract contains a clause requiring both parties to resolve disputes through arbitration.",
+     "zh": "合同中有一项条款要求双方通过仲裁解决争议。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "cosmos",
+     "ipa": "'kɔzmɔs",
+     "pos": "n.",
+     "defs": [
+      "宇宙",
+      "n. 宇宙",
+      "n.宇宙"
+     ],
+     "ex": "Astronomers continue to debate how the earliest galaxies formed in the vast cosmos.",
+     "zh": "天文学家仍在争论最早的星系是如何在浩瀚宇宙中形成的。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "crater",
+     "ipa": "'kreitə",
+     "pos": "n.",
+     "defs": [
+      "（撞击或爆炸形成的）坑",
+      "n. 火山口; (弹)坑",
+      "n.火山口；弹坑"
+     ],
+     "ex": "The meteorite left a massive crater in the desert that scientists now study for clues.",
+     "zh": "那颗陨石在沙漠中留下了一个巨大的坑，科学家们正在研究它寻找线索。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "credit",
+     "ipa": "'kredit",
+     "pos": "n.",
+     "defs": [
+      "赊购；学分；信任",
+      "n. 信用,信任,学分,贷款,荣誉vt. 归功于,赞颂,信任,相信",
+      "n.赊购；信任；(电影)片头字幕"
+     ],
+     "ex": "Students must complete 120 credits before they can graduate with a bachelor's degree.",
+     "zh": "学生必须修满120个学分才能获得学士学位毕业。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "critic",
+     "ipa": "'kritik",
+     "pos": "n.",
+     "defs": [
+      "批评家；挑剔的人",
+      "n. 评论家，批评家",
+      "n.批评者"
+     ],
+     "ex": "The film critic praised the director for tackling social inequality with unusual sensitivity.",
+     "zh": "这位影评人赞扬导演以非凡的敏感度处理了社会不平等问题。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "debate",
+     "ipa": "di'beit",
+     "pos": "v./n.",
+     "defs": [
+      "辩论；争论；讨论",
+      "n. v. 辩论; 讨论，争论",
+      "n.正式的辩论，讨论"
+     ],
+     "ex": "The debate over whether to ban single-use plastics has divided the local community.",
+     "zh": "关于是否禁止一次性塑料制品的辩论使当地社区产生了分歧。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "A university education should **attain** a balance between practical skills and intellectual curiosity, and the study of **botany** offers a clear illustration. Students who examine how plants survive on **barren** land learn to respect the fragile systems that sustain life, while a single **clause** in an environmental law can determine whether a habitat is protected or destroyed. This connection between science and policy deserves careful **debate**, since a **critic** of purely vocational training might argue that such knowledge carries genuine academic **credit**. Meanwhile, researchers studying the **cosmos** remind us that every **crater** on a distant planet tells a story of collision and survival, much like a **canvas** painted by nature itself. When students understand these links, they are better equipped to protect the world they inherit.",
+    "zh": "大学教育应当在实用技能与求知欲之间**达到**平衡，而**植物学**的学习提供了一个清晰的例证。研究植物如何在**贫瘠**土地上生存的学生，会学会尊重维系生命的脆弱系统，而环境法中的一项**条款**就可能决定一个栖息地是被保护还是被摧毁。科学与政策之间的这种联系值得仔细**讨论**，因为一位**批评家**可能会指出，纯粹的职业培训所欠缺的正是这种知识所具有的真正学术**学分**价值。与此同时，研究**宇宙**的研究者提醒我们，遥远行星上的每一个**坑**都讲述着碰撞与生存的故事，就像大自然亲手绘制的一幅**油画布**。当学生理解这些联系时，他们就能更好地保护自己所继承的世界。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 1",
+     "q": "Do you prefer reading paper books or e-books?",
+     "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+     "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+     "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+    },
+    {
+     "part": "Part 3",
+     "q": "Is it better to live in a city or in the countryside?",
+     "ans": "I don't think the question has a general answer, and I'd be suspicious of anyone who gives one quickly.\n\nWhat I can say is that the trade-off isn't the one people usually describe. The common framing is opportunity versus peace, and that's partly true. But the thing I noticed after living in six cities in five years is that cities don't actually give you more opportunities — they give you more options, which is not the same. Options cost attention. You spend a lot of energy deciding, and very little actually committing.\n\nSmaller places have the opposite problem: fewer options means you commit to the ones you have, and that can be genuinely better for doing anything difficult. The catch is that they're much less forgiving if you turn out to be different from the people around you.\n\nSo I'd frame it as: cities are better if you're still deciding who you are; smaller places are better once you know. The mistake is optimising for the wrong stage.",
+     "note": "「more options ≠ more opportunities」这个区分是整段的价值所在。最后一句「优化错了阶段」是很漂亮的收尾。",
+     "swap": "这类「A 还是 B 更好」的题，最安全的答法就是「取决于阶段/取决于你是谁」，然后给出判据。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you prefer to spend time with a large group or a few close friends?",
+     "ans": "A few, definitely. I'm not shy exactly, but I find large groups exhausting in a way I can't fully explain — I come home feeling like I've been performing rather than talking. With two or three people I can be slower and more honest, and I've noticed that's when I actually remember the conversation afterwards.",
+     "note": "「performing rather than talking」是很精准的对比。用「我记得那次对话」作为证据，比空说「我更放松」有说服力。",
+     "swap": "如果你更爱大群体，就说它的好处：能量、随机性、认识新人。保持「用具体体验作证据」的结构。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，attain、barren、botany 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }
