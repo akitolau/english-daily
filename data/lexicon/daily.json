@@ -1,12 +1,19 @@
 {
- "cursor": 120,
+ "cursor": 130,
  "used": [
+  "absorb",
   "abuse",
   "adapt",
+  "adjust",
   "adorn",
   "alter",
   "amuse",
+  "arable",
   "arid",
+  "aspect",
+  "assess",
+  "assume",
+  "attach",
   "audit",
   "axis",
   "bar",
@@ -118,7 +125,10 @@
   "thorn",
   "toxic",
   "trend",
+  "tutor",
   "vent",
+  "virus",
+  "vogue",
   "wax",
   "weed"
  ],
@@ -134,6 +144,7 @@
   "2026-11-22",
   "2026-11-23",
   "2026-11-24",
-  "2026-11-25"
+  "2026-11-25",
+  "2026-11-26"
  ]
 }

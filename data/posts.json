@@ -2365,6 +2365,216 @@
     }
    ],
    "wordtips": "今天这 10 个词里，spawn、spoil、stale 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-26",
+   "title": "综合 · tutor 等词",
+   "chunks": [
+    "d20261126"
+   ],
+   "words": [
+    {
+     "w": "tutor",
+     "ipa": "'tju:tə(r)",
+     "pos": "n.",
+     "defs": [
+      "家庭教师；（英国大学或者学院的）导师",
+      "n. 家庭教师; vt. 辅导",
+      "n.助教；监护人；v.辅导"
+     ],
+     "ex": "The university assigns a personal tutor to each student to provide academic guidance and support.",
+     "zh": "大学为每位学生分配一名个人导师，提供学术指导和支持。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "virus",
+     "ipa": "'vaiərəs",
+     "pos": "n.",
+     "defs": [
+      "病毒",
+      "n. 病毒",
+      "n.病毒"
+     ],
+     "ex": "Scientists are racing to develop a vaccine against the newly discovered virus before it spreads further.",
+     "zh": "科学家们正争分夺秒地开发针对新发现病毒的疫苗，以防其进一步传播。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "vogue",
+     "ipa": "vəug",
+     "pos": "n.",
+     "defs": [
+      "流行",
+      "n. 时尚,时髦,流行a. 流行的,时髦的",
+      "n.时髦，时尚；a.流行的"
+     ],
+     "ex": "Plant-based diets have come into vogue as more people become aware of their environmental impact.",
+     "zh": "随着越来越多的人意识到其环境影响，植物性饮食开始流行。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "absorb",
+     "ipa": "əb'sɔ:b",
+     "pos": "v.",
+     "defs": [
+      "吸收；吸引全部注意力",
+      "理解；掌握",
+      "vt. 吸收,并吞,全神贯注,同化",
+      "v.吸收；同化；吸引„的注意"
+     ],
+     "ex": "Forests absorb enormous amounts of carbon dioxide, making them essential in the fight against climate change.",
+     "zh": "森林吸收大量二氧化碳，使其在应对气候变化中至关重要。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "adjust",
+     "ipa": "ə'dʒʌst",
+     "pos": "v.",
+     "defs": [
+      "调节；改变（行为或观点）以适应",
+      "vt. 调整,使适应于,校准vi. 调整,适应于,校准",
+      "v.整顿，整理；适应"
+     ],
+     "ex": "Farmers in the region have had to adjust their planting schedules in response to shifting rainfall patterns.",
+     "zh": "该地区的农民不得不调整种植时间表以应对降雨模式的变化。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "arable",
+     "ipa": "'ærəbl",
+     "pos": "adj.",
+     "defs": [
+      "适合耕种的",
+      "a. 适于耕种的,可耕的",
+      "a.可耕的，适合种植的"
+     ],
+     "ex": "Only a small percentage of the country's land is arable, which limits its agricultural output.",
+     "zh": "该国只有一小部分土地适合耕种，这限制了其农业产量。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "aspect",
+     "ipa": "'æspekt",
+     "pos": "n.",
+     "defs": [
+      "（问题、事务的）方面",
+      "n. 外观,方面,方向",
+      "n.(问题等的)方面；面貌，外表"
+     ],
+     "ex": "One important aspect of urban planning is ensuring that public spaces are accessible to all residents.",
+     "zh": "城市规划的一个重要方面是确保公共空间对所有居民都可及。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "assess",
+     "ipa": "ə'ses",
+     "pos": "v.",
+     "defs": [
+      "评估；估算",
+      "vt. 估定,评定",
+      "v.确定，评定；估计„的质量"
+     ],
+     "ex": "Researchers are trying to assess the long-term impact of screen time on children's cognitive development.",
+     "zh": "研究人员正试图评估屏幕时间对儿童认知发展的长期影响。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "assume",
+     "ipa": "ə'sju:m",
+     "pos": "v.",
+     "defs": [
+      "假定；设想；承担（责任）；取得（权力）",
+      "vt. 假定; 承担",
+      "v.假定；承担"
+     ],
+     "ex": "Many policymakers assume that economic growth will automatically reduce poverty, but the evidence is mixed.",
+     "zh": "许多政策制定者假定经济增长会自动减少贫困，但证据并不一致。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "attach",
+     "ipa": "ə'tætʃ",
+     "pos": "v.",
+     "defs": [
+      "使依附；附加；缚；系；贴",
+      "vt. 连接; 贴上，依附于",
+      "v.将某物系在(另一物)上"
+     ],
+     "ex": "Some parents attach tracking devices to their children's bags to monitor their whereabouts.",
+     "zh": "一些家长在孩子书包上安装追踪设备以监控他们的行踪。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "The university assigns a personal tutor to each student to provide academic guidance and support.  Scientists are racing to develop a vaccine against the newly discovered virus before it spreads further.  Plant-based diets have come into vogue as more people become aware of their environmental impact.  Forests absorb enormous amounts of carbon dioxide, making them essential in the fight against climate change.  Farmers in the region have had to adjust their planting schedules in response to shifting rainfall patterns.  Only a small percentage of the country's land is arable, which limits its agricultural output.  One important aspect of urban planning is ensuring that public spaces are accessible to all residents.  Researchers are trying to assess the long-term impact of screen time on children's cognitive development.  Many policymakers assume that economic growth will automatically reduce poverty, but the evidence is mixed.  Some parents attach tracking devices to their children's bags to monitor their whereabouts.",
+    "zh": "",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 2",
+     "q": "Describe a place you like to go to relax. You should say: where it is; how often you go there; what you do there; and explain why it helps you relax.",
+     "ans": "The place I'd describe isn't scenic. It's a particular stretch of riverside in Suzhou — maybe four hundred metres long, with a bench roughly in the middle that I've come to think of as mine.\n\nI started going there about two years ago, during a period when work was going badly and I couldn't sleep. I'd walk there at ten or eleven at night. There were always a few other people — someone fishing who never caught anything, a couple arguing quietly. Nobody talked to me, which was the point.\n\nWhat I did there was mostly nothing. Walked the same four hundred metres, sat on the bench, went home. But something in the repetition helped. When everything else was changing — job, city, plans — that stretch of river was exactly the same on a Tuesday as it had been in March.\n\nI think that's why it works. It's not that the place is peaceful, exactly; it's that it's indifferent. It makes my problems feel smaller in a way that a sympathetic friend sometimes can't. I don't go as often now, but I still think of it as a place I could go.",
+     "note": "「不是景色美，是重复带来的稳定」这是高分点。最后一句「make my problems feel smaller」+「indifferent」是很成熟的表达。",
+     "swap": "换成你真实的地方（图书馆、健身房、某条街、某个咖啡馆）。保留「为什么它能让你放松」的功能性解释，而不是形容词堆砌。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you like music?",
+     "ans": "I do, and more than just listening — I write and record my own songs, so music takes up a strange amount of my thinking time. The odd thing is that the more I learn about how a track is made, the harder it becomes to listen casually. I notice the mixing decisions now. Sometimes I miss being able to just enjoy it.",
+     "note": "「the more...the harder...」这个结构在口语里很显水平。承认代价（失去纯粹听歌的乐趣）比单纯夸音乐好。",
+     "swap": "如果你不创作，可以换成「我听得很多，而且有偏好」+ 一个具体的歌手或专辑。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you prefer to spend time with a large group or a few close friends?",
+     "ans": "A few, definitely. I'm not shy exactly, but I find large groups exhausting in a way I can't fully explain — I come home feeling like I've been performing rather than talking. With two or three people I can be slower and more honest, and I've noticed that's when I actually remember the conversation afterwards.",
+     "note": "「performing rather than talking」是很精准的对比。用「我记得那次对话」作为证据，比空说「我更放松」有说服力。",
+     "swap": "如果你更爱大群体，就说它的好处：能量、随机性、认识新人。保持「用具体体验作证据」的结构。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，tutor、virus、vogue 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }
