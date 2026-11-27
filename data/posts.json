@@ -2784,6 +2784,215 @@
     }
    ],
    "wordtips": "今天这 10 个词里，attain、barren、botany 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
+  },
+  {
+   "date": "2026-11-28",
+   "title": "环境 · 沙漠化与科研教育",
+   "chunks": [
+    "d20261128"
+   ],
+   "words": [
+    {
+     "w": "debris",
+     "ipa": "'deibri:",
+     "pos": "n.",
+     "defs": [
+      "碎片；残骸",
+      "n. 废墟，残骸; 碎片",
+      "n.废墟，残骸"
+     ],
+     "ex": "Rescue workers searched the debris for survivors after the earthquake struck the coastal town.",
+     "zh": "地震袭击这座沿海城镇后，救援人员在废墟中搜寻生还者。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "decent",
+     "ipa": "'di:snt",
+     "pos": "adj.",
+     "defs": [
+      "得体的；尚好的",
+      "a. 有分寸的,得体的,大方的",
+      "a.适当的，可接受的；得体的"
+     ],
+     "ex": "Many families in the region still lack decent housing and access to clean drinking water.",
+     "zh": "该地区的许多家庭仍然缺乏像样的住房和清洁饮用水。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "depict",
+     "ipa": "di'pikt",
+     "pos": "v.",
+     "defs": [
+      "描述；描写；描绘",
+      "vt. 描述,描写",
+      "v.描绘，描画"
+     ],
+     "ex": "The novel depicts rural life in the nineteenth century with remarkable historical accuracy.",
+     "zh": "这部小说以惊人的历史准确性描绘了十九世纪的乡村生活。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "desert",
+     "ipa": "'dezət,di'zə:t",
+     "pos": "n./v.",
+     "defs": [
+      "沙漠；遗弃",
+      "n. 沙漠a. 沙漠的,不毛的vt. 放弃,遗弃,逃跑vi. 逃掉n. 应得的赏",
+      "v.放弃，离弃"
+     ],
+     "ex": "Rising temperatures could cause fertile land to desertify and eventually become desert.",
+     "zh": "气温上升可能导致肥沃的土地荒漠化，最终变成沙漠。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "devise",
+     "ipa": "di'vaiz",
+     "pos": "v.",
+     "defs": [
+      "设计；发明",
+      "vt. 设计,发明,图谋,遗赠给n. 遗赠",
+      "v.发明，设计；图谋；遗赠给"
+     ],
+     "ex": "Engineers devised a new system to reduce energy consumption in large office buildings.",
+     "zh": "工程师们设计了一套新系统来降低大型办公楼的能耗。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "devour",
+     "ipa": "di'vauə",
+     "pos": "v.",
+     "defs": [
+      "吞食；狼吞虎咽的吃",
+      "vt. 吞食,挥霍,吞没",
+      "v.吞食；贪婪地看"
+     ],
+     "ex": "Hungry caterpillars can devour an entire field of crops within a few days.",
+     "zh": "饥饿的毛虫能在几天内吞食掉整片田地的庄稼。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "dilute",
+     "ipa": "dai'lut",
+     "pos": "v./adj.",
+     "defs": [
+      "冲淡；稀释。稀释了的；减弱了的",
+      "vt. 冲淡,稀释a. 淡的,稀释的",
+      "v.把(液体)弄稀，弄淡"
+     ],
+     "ex": "Factories should not dilute chemical waste before releasing it into the river.",
+     "zh": "工厂不应在将化学废料排入河流之前对其进行稀释。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "domain",
+     "ipa": "dəu'mein",
+     "pos": "n.",
+     "defs": [
+      "（活动、学问等的）领域；领土；领地",
+      "n. 领域; 领土",
+      "n.领土；领域"
+     ],
+     "ex": "Genetic engineering has moved beyond the domain of science fiction into everyday agriculture.",
+     "zh": "基因工程已经超越了科幻小说的领域，进入了日常农业。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "elicit",
+     "ipa": "i'lisit",
+     "pos": "v.",
+     "defs": [
+      "引出；探出；套出",
+      "vt. 得出，引出",
+      "v.引出，探出"
+     ],
+     "ex": "The researcher used open-ended questions to elicit detailed responses from the interviewees.",
+     "zh": "研究人员使用开放式问题来引出受访者的详细回答。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    },
+    {
+     "w": "enzyme",
+     "ipa": "'enzaim",
+     "pos": "n.",
+     "defs": [
+      "酶",
+      "n. 酶，酵素",
+      "n.酵素，酶"
+     ],
+     "ex": "This enzyme helps break down starch into simpler sugars during the digestion process.",
+     "zh": "这种酶在消化过程中帮助将淀粉分解成更简单的糖。",
+     "exams": [
+      "GRE",
+      "IELTS",
+      "TOEFL"
+     ]
+    }
+   ],
+   "reading": {
+    "source": "每日词段",
+    "en": "Desertification offers a compelling case for integrating field research into environmental education. In dryland regions, scientists **devise** low-cost methods to stabilise soil, since wind can **devour** fertile topsoil and leave only barren **debris** behind. Students who visit such sites can **depict** the process in reports and learn how a **decent** standard of living may still be maintained through careful water management. Because scarce rainfall **dilutes** few pollutants but cannot revive exhausted land, researchers must **elicit** local knowledge before designing solutions. Interestingly, the **domain** of soil science has shown that certain plants release an **enzyme** capable of binding loose particles, a finding that turns a **desert** landscape into a living laboratory. Embedding these discoveries in curricula helps learners grasp environmental cause and effect far more vividly than textbooks alone allow.",
+    "zh": "沙漠化为将野外研究纳入环境教育提供了有力例证。在干旱地区，科学家**设计**低成本方法来稳定土壤，因为风会**吞食**肥沃的表土，只留下贫瘠的**残骸**。到访此类场地的学生能在报告中**描述**这一过程，并了解通过谨慎的水资源管理仍可维持**尚好的**生活水平。由于稀少的降雨只能**稀释**少量污染物，却无法让枯竭的土地复苏，研究人员必须先**探出**当地知识，再设计解决方案。有趣的是，土壤科学**领域**已表明，某些植物会释放一种能黏结松散颗粒的**酶**，这一发现把**沙漠**景观变成了活的实验室。将这些发现融入课程，能帮助学生比单靠教科书更生动地理解环境中的因果关系。",
+    "why": "这段把你今天的 10 个词全串起来了。读第一遍别查词——先按上下文猜；读完再看上面的词表，你会发现这些词在句子里各自有了位置。"
+   },
+   "speaking": [
+    {
+     "part": "Part 3",
+     "q": "Is competition good for children?",
+     "ans": "It depends entirely on what the competition is about and who's watching, which is why I don't trust general answers.\n\nCompetition against a measurable standard can be extremely useful. It gives a child a clear signal about where they stand, and losing in that setting teaches something that praise cannot — that effort and outcome are correlated but not identical, which is an uncomfortable and necessary lesson.\n\nWhat's damaging is competition for a limited number of positions, where winning requires someone else to lose. That structure teaches a very specific thing: that other people are obstacles. And it's often applied far too early, before a child has any way of separating 'I lost' from 'I am a loser'.\n\nSo my position would be that competition is a tool, and like most tools the question isn't whether it's good but whether it's being used at the right age for the right thing.",
+     "note": "「competition against a standard」vs「competition for positions」这个区分是关键。结尾用「工具」框架收口比给结论安全。",
+     "swap": "「X 对孩子好不好」类问题都可用：区分两种形态 → 各给判断 → 用「取决于用法」收口。"
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you work or are you a student?",
+     "ans": "I'm working, though the honest description is that I'm between two things. My background is in finance — I did a master's in that — but for the past year or so I've been working on AI products, which is a fairly big jump. Right now I'm taking some time to prepare for the next step, which involves both studying and job hunting.",
+     "note": "「between two things」比直接说「我在找工作」体面且真实。主动说出转折，反而让后面的话题有抓手。",
+     "swap": "把 finance→AI 换成你自己的转折。核心句式：My background is X, but recently I've been Y."
+    },
+    {
+     "part": "Part 1",
+     "q": "Do you prefer reading paper books or e-books?",
+     "ans": "Paper, though not for the reason people usually give. I don't think paper is inherently more romantic — it's that I can't skim a physical book convincingly. On a screen I scroll and convince myself I've read the page. With paper, my eye has to travel across every line, so I actually finish what I start.",
+     "note": "不要重复「纸质书有味道」这种陈词。给一个功能性理由（物理限制导致真读完了）更有说服力。",
+     "swap": "如果你确实更爱电子书，就说它的理由：搜索、随身、便宜。关键是给出「别人没想到的理由」。"
+    }
+   ],
+   "wordtips": "今天这 10 个词里，debris、decent、depict 最值得先吃透；其余的做到「见到能认出来」，写作时自然会想起来。"
   }
  ]
 }

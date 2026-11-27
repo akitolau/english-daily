@@ -1,5 +1,5 @@
 {
- "cursor": 140,
+ "cursor": 150,
  "used": [
   "absorb",
   "abuse",
@@ -43,11 +43,21 @@
   "crust",
   "damp",
   "debate",
+  "debris",
+  "decent",
   "delta",
+  "depict",
+  "desert",
+  "devise",
+  "devour",
+  "dilute",
+  "domain",
   "draft",
   "drain",
+  "elicit",
   "elite",
   "emit",
+  "enzyme",
   "epic",
   "erupt",
   "even",
@@ -156,6 +166,7 @@
   "2026-11-24",
   "2026-11-25",
   "2026-11-26",
-  "2026-11-27"
+  "2026-11-27",
+  "2026-11-28"
  ]
 }
